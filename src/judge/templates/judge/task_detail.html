@@ -1,0 +1,23 @@
+<h1>{{object.title}}</h1>
+<p>{{object.description|safe}}</br>
+{% if object.description_photo %}
+<img src='{{object.description_photo.url}}'</p>
+{% endif %}
+<p>{{object.input_condition}}</p>
+<p>{{object.output_condition}}</p>
+<p>{{object.special_warning|safe|default_if_none:""}}</p>
+<hr>
+<p>
+<span>Memory limit:{{object.memory_limit}} MiB</span></br>
+<span>Time limit:{{object.time_limit}} seconds</span>
+</p>
+<hr>
+{% for sample in object.get_all_samples %}
+    <div>Input example #{{forloop.counter}}</br>{{sample.sample_input}}</div>
+    <div>Output example #{{forloop.counter}}</br>{{sample.sample_output}}</div>
+    <hr>
+{%empty%}
+    <span>No samples. Think by yourself.</span>
+    <hr>
+{% endfor %}
+<span><a href="{% url 'judge:submit_solution' object.number %}" >Submit solution</a></span>
