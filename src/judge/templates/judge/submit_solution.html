@@ -1,12 +1,14 @@
+{% extends 'base.html' %} 
 {% load widget_tweaks %}
 
 {% load static %}
-<html>
-<head>
-    <title>Submit solution</title>
-    <link rel='stylesheet' href='{% static 'css/judge/submit_solution.css' %}'
-</head>
-<body>
+{% block title %}Submit solution {{task_number}}{% endblock title %}
+{% block extra_head %}
+    <link rel='stylesheet' href="{% static 'css/judge/submit_solution.css' %}"
+{% endblock extra_head %}>
+
+{% block main_content %}
+<div class="wrapper">
     <form method="post" action=''>
     {% csrf_token %}
 
@@ -43,6 +45,6 @@
     </p>
     <button type="submit">Submit</button>
     </form>
-</body>
-</html>
+</div>
+{% endblock main_content %}
 

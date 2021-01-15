@@ -1,0 +1,105 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% load widget_tweaks %}
+
+{% block title %}Login & Signup{% endblock title %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/users/log.css' %}">
+{% endblock extra_head %}
+
+{% block main_content %}
+    <div class="wrapper">
+            <div class="title-text">
+            <div class="title login">Login Form</div>
+            <div class="title signup">Signup Form</div>
+    </div>
+    <div class="form-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">Login</label>
+            <label for="signup" class="slide signup">Signup</label>
+            <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+        <form action="{% url 'users:login' %}" class="login" method='post'>
+        {% csrf_token %}
+        {{ login_form.non_field_errors }}
+        {% for hidden_field in login_form.hidden_fields %}
+            {{ hidden_field.errors }}
+            {{ hidden_field }}
+        {% endfor %}
+            <div class="field">
+                {{ login_form.email.errors }}
+                {% render_field login_form.email placeholder="Email Address" required="required" id="id_login_email" %}
+            </div>
+            <div class="field">
+                {{ login_form.password.errors }}
+                {% render_field login_form.password placeholder="Password" required="required" id="id_login_password" %}
+            </div>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Login">
+            </div>
+            {% for message in messages %}
+                <p class='messages'>{{ message }}</p>
+            {% endfor %}
+            <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+        </form>
+        <form action="{% url 'users:signup' %}" class="signup" method="post">
+        {% csrf_token %}
+        {{ signup_form.non_field_errors }}
+        {% for hidden_field in signup_form.hidden_fields %}
+            {{ hidden_field.errors }}
+            {{ hidden_field }}
+        {% endfor %}
+            <div class="field">
+                {{ signup_form.email.errors }}
+                {% render_field signup_form.email placeholder="Email Address" required="required" id="id_signup_email"%}
+            </div>
+            <div class="field">
+                {{ signup_form.username.errors }}
+                {% render_field signup_form.username placeholder="Username" required="required" id="id_signup_username" %}
+            </div>
+            <div class="field">
+                {{ signup_form.password1.errors }}
+                {% render_field signup_form.password1 placeholder="Password" required="required" id="id_signup_password1" %}
+            </div>
+            <div class="field">
+                {{ signup_form.password2.errors }}
+                {% render_field signup_form.password2 placeholder="Confirm password" required="required" id="id_signup_password2" %}
+            </div>
+            <div class="field btn">
+                <div class="btn-layer"></div>
+                <input type="submit" value="Signup">
+            </div>
+        </form>
+    </div>
+    </div>
+    </div>
+    <script>
+        const loginText = document.querySelector(".title-text .login");
+        const loginForm = document.querySelector("form.login");
+        const loginBtn = document.querySelector("label.login");
+        const signupBtn = document.querySelector("label.signup");
+        const signupLink = document.querySelector("form .signup-link a");
+        signupBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "-50%";
+            loginText.style.marginLeft = "-50%";
+        });
+        loginBtn.onclick = (()=>{
+            loginForm.style.marginLeft = "0%";
+            loginText.style.marginLeft = "0%";
+        });
+        signupLink.onclick = (()=>{
+            signupBtn.click();
+            return false;
+        });
+        {% if signup %}signupBtn.click();{% endif %}
+    </script>
+{% endblock main_content %}
+        
+    </body>
+</html>

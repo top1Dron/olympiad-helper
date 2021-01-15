@@ -1,7 +1,9 @@
 from django.conf import settings
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, Http404
 from django.utils.translation import ugettext_lazy as _
-from django.views.generic import CreateView, DetailView
+from django.views.generic import CreateView, DetailView, ListView
 from datetime import datetime as dt
 from difflib import ndiff
 from .forms import LanguageForm, SubmitSolutionForm
@@ -22,10 +24,19 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+@login_required
 def api_show_language_dropdown(request):
     if request.method == 'GET':
         language_form = LanguageForm()
     return render(request, 'judge/language.html', {'form': language_form})
+
+
+class ProblemListView(ListView):
+    model = Task
+    template_name = 'judge/problem_list.html'
+    queryset = get_all_available_tasks()
+    context_object_name = 'problems'
+    paginate_by = 10
 
 
 class TaskDetailView(DetailView):
@@ -41,7 +52,7 @@ class TaskDetailView(DetailView):
         except:
             raise Http404(_('Task not found'))
 
-
+@login_required
 def api_submit_solution(request, slug):
     if request.method == 'POST':
         form = SubmitSolutionForm(request.POST)
