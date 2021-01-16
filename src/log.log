@@ -1471,72 +1471,525 @@ INFO 2021-01-13 13:35:10,854 service 29842 139867851085568 12.561798095703125
 INFO 2021-01-13 13:35:10,866 service 29842 139867851085568 Error protection queue 1 - done successfully.
 INFO 2021-01-14 15:05:23,471 views 3496 139640152692480 pro100moneyfarmer@gmail.com
 INFO 2021-01-14 15:07:41,033 views 3815 140234471880448 AnonymousUser
-INFO 2021-01-14 18:08:51,100 views 7870 140131039115008 <QueryDict: {'csrfmiddlewaretoken': ['aHV6vGt0zEm7d90LQYClEHC1HuTXh7bdCSuyvmoTz1hG2TSKOhm76DVhq9IKIWXd'], 'email': ['asd@asd'], 'username': ['asdasd'], 'password1': ['sadsadas'], 'password2': ['dasdasd']}>
-INFO 2021-01-15 01:48:22,077 views 8998 140402682230528 <QueryDict: {'csrfmiddlewaretoken': ['MZIUXirXdnFiu2sIbN6kxt75HV4fddoUeahmXYmQdKARjMkH96Q6ZpqlqAT2E2aU'], 'email': ['sasa@sadasd'], 'username': ['sdasdasd'], 'password1': ['sadasdasd'], 'password2': ['sadasdasd']}>
-INFO 2021-01-15 01:50:15,462 views 9083 140224590989056 <QueryDict: {'csrfmiddlewaretoken': ['MZIUXirXdnFiu2sIbN6kxt75HV4fddoUeahmXYmQdKARjMkH96Q6ZpqlqAT2E2aU'], 'email': ['sasa@sadasd'], 'username': ['sdasdasd'], 'password1': ['sadasdasd'], 'password2': ['sadasdasd']}>
-INFO 2021-01-15 01:50:23,646 views 9083 140224590989056 <QueryDict: {'csrfmiddlewaretoken': ['nuUMMd0AZgssztvcUpxOISKlTEs8R5uTPFteMTVtZDn1odnbSIhAaO3BCjhViUgT'], 'email': ['weq@asdasd'], 'username': ['dasds'], 'password1': ['dsadasd'], 'password2': ['asdasd']}>
-INFO 2021-01-15 01:52:53,246 views 9176 139696343394048 <QueryDict: {'csrfmiddlewaretoken': ['ehCAesh5dHto2plqCUofSeY7sUElY4Q8Gsb2e8cYd4oXR9dpAd81kahnbzt8pTC8'], 'email': ['dfsdfsd@wsdasd'], 'username': ['sdfsdfsd'], 'password1': ['fdsfsdf'], 'password2': ['dsfsdfsd']}>
-INFO 2021-01-15 01:53:37,352 views 9213 140486584284928 <QueryDict: {'csrfmiddlewaretoken': ['eHFS1XKg3o7vgPdBld8LSk41D8wIUzC0GSek1DF93L245z5AjwSxkgnhmNlvloo0'], 'email': ['sadasdas@sadasd'], 'username': ['sadasdas'], 'password1': ['dasdasd'], 'password2': ['sadasdasd']}>
-INFO 2021-01-15 01:56:33,804 views 9269 140326879016704 <QueryDict: {'csrfmiddlewaretoken': ['CKwSqaUeb6E4op08qXyLvjOXoYzrTJ6F4V5kqQP7btzDd9S7ogixXf7d7DoekySF'], 'email': ['qwewqeqw@qwewqe.com'], 'username': ['ewqewqe'], 'password1': ['12345678d'], 'password2': ['12345678d']}>
-INFO 2021-01-15 01:57:23,642 views 9315 140254900958976 <QueryDict: {'csrfmiddlewaretoken': ['BU9at9xiqSZU7CBF4R7AgMTOVVhpHApI35ICtPsbqfUtWmtE2aRmIIc4EA6c8pbI'], 'email': ['pro100mdm@gmail.com'], 'username': ['top1_dron'], 'password1': ['top1Dron'], 'password2': ['top1Dron']}>
-INFO 2021-01-15 01:58:02,928 views 9336 140071188907776 <QueryDict: {'csrfmiddlewaretoken': ['lAtfLp8FDWIeUxZSknaTTThfci6A4XNGNL2HL53yDjDNJhRRiGUFlPAvVXVnvMzG'], 'email': ['proo100dk@gmail.com'], 'username': ['last_warrior'], 'password1': ['top1Dron'], 'password2': ['top1Dron']}>
 INFO 2021-01-15 02:00:47,655 views 9368 139974625478400 <QueryDict: {'csrfmiddlewaretoken': ['cshtnQAv2sgoNEd6z4qFZK6e5F4wmcBAEDQVnwvo2PbXCo55xnarrGpuOkTjN1nA'], 'email': ['sdas@sdasd'], 'username': ['top1Dron'], 'password1': ['last_Warrior'], 'password2': ['last_warrior']}>
 INFO 2021-01-15 02:04:41,692 views 9531 139862967928576 {'email': <django.forms.fields.EmailField object at 0x7f34628e76a0>, 'username': <django.forms.fields.CharField object at 0x7f34628e7ee0>, 'password1': <django.forms.fields.CharField object at 0x7f3462884d90>, 'password2': <django.forms.fields.CharField object at 0x7f3462884df0>}
-INFO 2021-01-15 02:06:21,386 views 9619 140429003196160 <input type="email" name="email" value="sadasd@asdasd" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:44:08,534 views 10182 140243483219712 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:49:19,453 views 10182 140243212515072 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:49:34,549 views 10182 140243203598080 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:50:08,938 views 10182 140243474827008 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:50:20,133 views 10182 140243195205376 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
-INFO 2021-01-15 10:50:29,553 views 10182 140243186812672 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
 INFO 2021-01-15 10:51:10,430 views 10182 140243178419968 <input type="email" name="email" value="pro100sasas@sdasd.com" maxlength="254" required id="id_email">
 INFO 2021-01-15 10:57:46,843 views 10769 140609109096192 {'email': 'sadsad@asasd.com', 'username': 'asdasdasdas', 'password1': 'top1Dron', 'password2': 'top1Dron'}
-INFO 2021-01-15 12:01:19,825 views 10769 140609100703488 {'email': 'sadsad@asasd.com', 'username': 'asdasdasdas', 'password1': 'top1Dron', 'password2': 'top1Dron'}
 INFO 2021-01-15 12:04:43,051 views 11653 139756305884928 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:12:22,659 views 11807 140431032002304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:16:48,738 views 11807 140431032002304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:19:45,244 views 12093 140364053333760 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:19:45,250 views 12093 140364041234176 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
 INFO 2021-01-15 12:19:45,256 views 12093 140364041234176 [<django.core.validators.EmailValidator object at 0x7fa90c27cd60>, <django.core.validators.MaxLengthValidator object at 0x7fa8eeb73bb0>, <django.core.validators.ProhibitNullCharactersValidator object at 0x7fa8eeb73c10>]
-INFO 2021-01-15 12:19:45,255 views 12093 140364053333760 [<django.core.validators.EmailValidator object at 0x7fa90c27cd60>, <django.core.validators.MaxLengthValidator object at 0x7fa8eeb73bb0>, <django.core.validators.ProhibitNullCharactersValidator object at 0x7fa8eeb73c10>]
-INFO 2021-01-15 12:20:17,998 views 12220 139731431651072 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:20:18,004 views 12220 139731431651072 [<django.core.validators.EmailValidator object at 0x7f15d94a0d60>, <django.core.validators.MaxLengthValidator object at 0x7f15c3d99bb0>, <django.core.validators.ProhibitNullCharactersValidator object at 0x7f15c3d99c10>]
-INFO 2021-01-15 12:31:00,474 views 12527 140608479938304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:31:16,577 views 12527 140608479938304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:33:25,681 views 12527 140608479938304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:34:35,624 views 12527 140608479938304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The password is too similar to the username.</li><li>This password is too common.</li></ul></li></ul>
-INFO 2021-01-15 12:36:06,693 views 12527 140608479938304 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The password is too similar to the username.</li><li>This password is too short. It must contain at least 8 characters.</li></ul></li></ul>
-INFO 2021-01-15 12:36:35,169 views 12781 140229314856704 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:36:53,778 views 12781 140229314856704 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:37:05,253 views 12858 140468380219136 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:38:11,578 views 12925 140684715607808 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:38:49,441 views 12925 140684715607808 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:39:04,502 views 13007 140691367778048 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:39:13,328 views 13007 140691367778048 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:41:07,079 views 13105 140651899373312 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:41:30,620 views 13227 140508932089600 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:42:45,423 views 13227 140508932089600 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:42:52,666 views 13227 140508932089600 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:43:43,940 views 13331 140261669721856 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:43:55,951 views 13331 140261669721856 <ul class="errorlist"><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:50:05,687 views 13488 139886231512832 <ul class="errorlist"><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:50:16,754 views 13488 139886231512832 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 12:50:21,377 views 13488 139886231512832 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 12:50:31,099 views 13488 139886231512832 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 12:50:42,835 views 13488 139886231512832 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li></ul>
 INFO 2021-01-15 12:50:55,748 views 13488 139886231512832 {'email': 'asdasda@ewqe.com', 'username': 'wqeqwe', 'password1': 'top1Dron', 'password2': 'top1Dron'}
-INFO 2021-01-15 14:07:12,513 views 14660 140311459219200 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>This password is too short. It must contain at least 8 characters.</li></ul></li></ul>
-INFO 2021-01-15 14:08:12,508 views 14708 139949393565440 <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
-INFO 2021-01-15 14:08:22,581 views 14708 139949393565440 <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
-INFO 2021-01-15 14:10:28,032 views 14708 139949393565440 <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
-INFO 2021-01-15 14:12:00,412 views 14708 139949393565440 <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
-INFO 2021-01-15 14:15:44,179 views 14708 139949393565440 <ul class="errorlist"><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 14:17:46,515 views 14983 139785649510144 <ul class="errorlist"><li>username<ul class="errorlist"><li>A user with that username already exists.</li></ul></li><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
-INFO 2021-01-15 14:18:49,025 views 14983 139785649510144 <ul class="errorlist"><li>password2<ul class="errorlist"><li>The password is too similar to the username.</li></ul></li></ul>
-INFO 2021-01-15 14:38:05,632 views 15365 139628035708672 <ul class="errorlist"><li>email<ul class="errorlist"><li>This field is required.</li></ul></li><li>username<ul class="errorlist"><li>This field is required.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 14:38:12,054 views 15365 139628035708672 <ul class="errorlist"><li>email<ul class="errorlist"><li>This field is required.</li></ul></li><li>username<ul class="errorlist"><li>This field is required.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 14:38:19,407 views 15365 139628035708672 <ul class="errorlist"><li>email<ul class="errorlist"><li>This field is required.</li></ul></li><li>username<ul class="errorlist"><li>This field is required.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 14:39:51,554 views 15365 139628035708672 <ul class="errorlist"><li>email<ul class="errorlist"><li>This field is required.</li></ul></li><li>username<ul class="errorlist"><li>This field is required.</li></ul></li><li>password1<ul class="errorlist"><li>This field is required.</li></ul></li><li>password2<ul class="errorlist"><li>This field is required.</li></ul></li></ul>
-INFO 2021-01-15 14:40:38,093 views 15365 139628035708672 <ul class="errorlist"><li>email<ul class="errorlist"><li>Enter a valid email address.</li></ul></li><li>password2<ul class="errorlist"><li>The two password fields didn’t match.</li></ul></li></ul>
-INFO 2021-01-15 15:27:32,286 views 17384 140114872149760 <ul class="errorlist"><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li><li>password2<ul class="errorlist"><li>The password is too similar to the username.</li></ul></li></ul>
-INFO 2021-01-15 15:28:00,911 views 17384 140114872149760 <ul class="errorlist"><li>email<ul class="errorlist"><li>User with this Email address already exists.</li></ul></li></ul>
+ERROR 2021-01-15 20:25:11,197 service 18128 140523175094016 /usr/projects/olympiad-helper/src/config/media/main.cpp:1:1: error: ‘wqeqwewqeqw’ does not name a type
+ wqeqwewqeqw
+ ^~~~~~~~~~~
+
+INFO 2021-01-15 21:41:59,185 service 21150 139946074359616 5.970478057861328
+INFO 2021-01-15 21:41:59,194 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 21:41:59,211 service 21150 139946074359616 4.059314727783203
+INFO 2021-01-15 21:41:59,219 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 21:41:59,235 service 21150 139946074359616 7.713556289672852
+INFO 2021-01-15 21:41:59,242 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 21:41:59,269 service 21150 139946074359616 11.65771484375
+INFO 2021-01-15 21:41:59,281 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 21:42:42,142 service 21150 139946074359616 3.8645267486572266
+INFO 2021-01-15 21:42:42,159 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 21:42:42,180 service 21150 139946074359616 3.6423206329345703
+INFO 2021-01-15 21:42:42,196 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 21:42:42,220 service 21150 139946074359616 2.5110244750976562
+INFO 2021-01-15 21:42:42,250 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 21:42:42,277 service 21150 139946074359616 2.6710033416748047
+INFO 2021-01-15 21:42:42,289 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 21:57:21,310 service 21150 139946074359616 6.5555572509765625
+INFO 2021-01-15 21:57:21,321 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 21:57:21,338 service 21150 139946074359616 4.244327545166016
+INFO 2021-01-15 21:57:21,357 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 21:57:21,382 service 21150 139946074359616 6.535768508911133
+INFO 2021-01-15 21:57:21,389 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 21:57:21,407 service 21150 139946074359616 6.449222564697266
+INFO 2021-01-15 21:57:21,419 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 22:11:07,006 service 21150 139946074359616 5.397319793701172
+INFO 2021-01-15 22:11:07,025 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 22:11:07,063 service 21150 139946074359616 15.300989151000977
+INFO 2021-01-15 22:11:07,081 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 22:11:07,113 service 21150 139946074359616 10.04791259765625
+INFO 2021-01-15 22:11:07,119 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 22:11:07,142 service 21150 139946074359616 9.465932846069336
+INFO 2021-01-15 22:11:07,149 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 22:11:28,812 service 21150 139946074359616 5.9032440185546875
+INFO 2021-01-15 22:11:28,821 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 22:11:28,839 service 21150 139946074359616 5.008220672607422
+INFO 2021-01-15 22:11:28,851 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 22:11:28,870 service 21150 139946074359616 5.58018684387207
+INFO 2021-01-15 22:11:28,885 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 22:11:28,916 service 21150 139946074359616 6.950855255126953
+INFO 2021-01-15 22:11:28,923 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 22:18:09,583 service 21150 139946074359616 5.370378494262695
+INFO 2021-01-15 22:18:09,622 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 22:18:09,653 service 21150 139946074359616 6.451606750488281
+INFO 2021-01-15 22:18:09,661 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 22:18:09,680 service 21150 139946074359616 7.240056991577148
+INFO 2021-01-15 22:18:09,699 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 22:18:09,742 service 21150 139946074359616 4.834890365600586
+INFO 2021-01-15 22:18:09,747 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 22:19:19,239 service 21150 139946074359616 1.936197280883789
+INFO 2021-01-15 22:19:19,245 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 22:19:19,259 service 21150 139946074359616 5.297660827636719
+INFO 2021-01-15 22:19:19,270 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 22:19:19,291 service 21150 139946074359616 5.051374435424805
+INFO 2021-01-15 22:19:19,295 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 22:19:19,307 service 21150 139946074359616 4.575252532958984
+INFO 2021-01-15 22:19:19,319 service 21150 139946074359616 Simple problem 4 - done successfully.
+ERROR 2021-01-15 23:13:54,864 service 21150 139946074359616 /usr/projects/olympiad-helper/src/config/media/main.cpp:1:1: error: ‘eqeweqweqweqw’ does not name a type
+ eqeweqweqweqw
+ ^~~~~~~~~~~~~
+
+INFO 2021-01-15 23:40:33,056 service 21150 139946074359616 4.28318977355957
+INFO 2021-01-15 23:40:33,069 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 23:40:33,090 service 21150 139946074359616 5.626916885375977
+INFO 2021-01-15 23:40:33,099 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 23:40:33,120 service 21150 139946074359616 6.107807159423828
+INFO 2021-01-15 23:40:33,129 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 23:40:33,145 service 21150 139946074359616 7.832050323486328
+INFO 2021-01-15 23:40:33,154 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-15 23:57:01,275 service 21150 139946074359616 8.057594299316406
+INFO 2021-01-15 23:57:01,286 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-15 23:57:01,351 service 21150 139946074359616 34.609317779541016
+INFO 2021-01-15 23:57:01,376 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-15 23:57:01,433 service 21150 139946074359616 8.001565933227539
+INFO 2021-01-15 23:57:01,451 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-15 23:57:01,512 service 21150 139946074359616 3.2591819763183594
+INFO 2021-01-15 23:57:01,535 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:27:39,933 service 21150 139946074359616 6.445169448852539
+INFO 2021-01-16 01:27:39,947 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:27:39,968 service 21150 139946074359616 5.343914031982422
+INFO 2021-01-16 01:27:39,977 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:27:39,993 service 21150 139946074359616 8.525609970092773
+INFO 2021-01-16 01:27:39,999 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:27:40,018 service 21150 139946074359616 4.631757736206055
+INFO 2021-01-16 01:27:40,025 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:32:18,612 service 21150 139946074359616 3.7560462951660156
+INFO 2021-01-16 01:32:18,621 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:32:18,634 service 21150 139946074359616 3.6628246307373047
+INFO 2021-01-16 01:32:18,641 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:32:18,682 service 21150 139946074359616 7.131814956665039
+INFO 2021-01-16 01:32:18,688 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:32:18,704 service 21150 139946074359616 2.5081634521484375
+INFO 2021-01-16 01:32:18,713 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:34:20,882 service 21150 139946074359616 1.917123794555664
+INFO 2021-01-16 01:34:20,903 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:34:20,915 service 21150 139946074359616 4.083156585693359
+INFO 2021-01-16 01:34:20,922 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:34:20,937 service 21150 139946074359616 5.318880081176758
+INFO 2021-01-16 01:34:20,946 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:34:20,988 service 21150 139946074359616 5.090236663818359
+INFO 2021-01-16 01:34:20,995 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:36:24,928 service 21150 139946074359616 2.1719932556152344
+INFO 2021-01-16 01:36:24,939 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:36:24,963 service 21150 139946074359616 7.130146026611328
+INFO 2021-01-16 01:36:24,972 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:36:25,007 service 21150 139946074359616 9.530782699584961
+INFO 2021-01-16 01:36:25,016 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:36:25,049 service 21150 139946074359616 17.84205436706543
+INFO 2021-01-16 01:36:25,062 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:38:04,987 service 21150 139946074359616 3.6628246307373047
+INFO 2021-01-16 01:38:05,000 service 21150 139946074359616 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:38:05,021 service 21150 139946074359616 1.337289810180664
+INFO 2021-01-16 01:38:05,039 service 21150 139946074359616 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:38:05,052 service 21150 139946074359616 5.60760498046875
+INFO 2021-01-16 01:38:05,059 service 21150 139946074359616 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:38:05,073 service 21150 139946074359616 6.34765625
+INFO 2021-01-16 01:38:05,078 service 21150 139946074359616 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:46:37,278 service 27546 140406541313856 4.847526550292969
+INFO 2021-01-16 01:46:37,285 service 27546 140406541313856 Simple problem 1 - done successfully.
+INFO 2021-01-16 01:46:37,285 service 27546 140406541313856 here
+INFO 2021-01-16 01:46:37,311 service 27546 140406541313856 4.451513290405273
+INFO 2021-01-16 01:46:37,317 service 27546 140406541313856 Simple problem 2 - done successfully.
+INFO 2021-01-16 01:46:37,317 service 27546 140406541313856 here
+INFO 2021-01-16 01:46:37,347 service 27546 140406541313856 10.797977447509766
+INFO 2021-01-16 01:46:37,354 service 27546 140406541313856 Simple problem 3 - done successfully.
+INFO 2021-01-16 01:46:37,354 service 27546 140406541313856 here
+INFO 2021-01-16 01:46:37,383 service 27546 140406541313856 10.700225830078125
+INFO 2021-01-16 01:46:37,407 service 27546 140406541313856 Simple problem 4 - done successfully.
+INFO 2021-01-16 01:46:37,410 service 27546 140406541313856 here
+INFO 2021-01-16 01:55:38,832 service 27546 140406541313856 Simple problem 1 - timeout
+INFO 2021-01-16 01:55:38,834 service 27546 140406541313856 here
+INFO 2021-01-16 01:55:39,880 service 27546 140406541313856 Simple problem 2 - timeout
+INFO 2021-01-16 01:55:39,887 service 27546 140406541313856 here
+INFO 2021-01-16 01:55:40,983 service 27546 140406541313856 Simple problem 3 - timeout
+INFO 2021-01-16 01:55:40,988 service 27546 140406541313856 here
+INFO 2021-01-16 01:55:42,044 service 27546 140406541313856 Simple problem 4 - timeout
+INFO 2021-01-16 01:55:42,046 service 27546 140406541313856 here
+INFO 2021-01-16 01:57:18,839 service 27801 140374700058432 Simple problem 1 - timeout
+INFO 2021-01-16 01:57:19,909 service 27801 140374700058432 Simple problem 2 - timeout
+INFO 2021-01-16 01:57:20,964 service 27801 140374700058432 Simple problem 3 - timeout
+INFO 2021-01-16 01:57:22,065 service 27801 140374700058432 Simple problem 4 - timeout
+INFO 2021-01-16 02:42:52,747 service 28754 140231083640640 /usr/bin/g++ /usr/projects/olympiad-helper/src/config/media/yyyy-mm-dd--HH-MM_admin.cpp -O2 -fomit-frame-pointer -o /usr/projects/olympiad-helper/src/config/media/yyyy-mm-dd--HH-MM_admin
+INFO 2021-01-16 02:45:38,272 service 28754 140231083640640 /usr/bin/g++  -o /usr/projects/olympiad-helper/src/config/media/yyyy-mm-dd--HH-MM_admin /usr/projects/olympiad-helper/src/config/media/yyyy-mm-dd--HH-MM_admin.cpp
+INFO 2021-01-16 02:50:53,218 service 29032 140671140992832 ['/usr/bin/g++', '-o', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-50_admin', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-50_admin.cpp']
+ERROR 2021-01-16 02:50:58,301 service 29032 140671140992832 <class 'NameError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 116, in _check_submition_c_plus_plus
+    execution = subprocess.Popen([ofile,], stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+NameError: name 'ofile' is not defined
+
+INFO 2021-01-16 02:53:14,448 service 29113 140444383745856 ['/usr/bin/g++', '-o', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-53_admin', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-53_admin.cpp']
+INFO 2021-01-16 02:53:19,436 service 29113 140444383745856 77.6214599609375
+INFO 2021-01-16 02:53:19,444 service 29113 140444383745856 Simple problem 1 - done successfully.
+INFO 2021-01-16 02:53:19,564 service 29113 140444383745856 27.4813175201416
+INFO 2021-01-16 02:53:19,586 service 29113 140444383745856 Simple problem 2 - done successfully.
+INFO 2021-01-16 02:53:19,696 service 29113 140444383745856 34.12890434265137
+INFO 2021-01-16 02:53:19,705 service 29113 140444383745856 Simple problem 3 - done successfully.
+INFO 2021-01-16 02:53:19,791 service 29113 140444383745856 18.987178802490234
+INFO 2021-01-16 02:53:19,801 service 29113 140444383745856 Simple problem 4 - done successfully.
+INFO 2021-01-16 02:54:16,107 service 29113 140444383745856 ['/usr/bin/g++', '-o', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-54_admin', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--02-54_admin.cpp']
+ERROR 2021-01-16 02:54:16,565 service 29113 140444383745856 /usr/projects/olympiad-helper/src/config/media/2021-01-16--02-54_admin.cpp:1:1: error: ‘esfsdf’ does not name a type
+ esfsdf
+ ^~~~~~
+
+INFO 2021-01-16 11:34:17,016 service 1938 140550354143040 ['/usr/bin/g++', '-o', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--11-34_admin', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--11-34_admin.cpp']
+INFO 2021-01-16 11:34:18,283 service 1938 140550354143040 1.8723011016845703
+INFO 2021-01-16 11:34:18,289 service 1938 140550354143040 Simple problem 1 - done successfully.
+INFO 2021-01-16 11:34:18,304 service 1938 140550354143040 1.8625259399414062
+INFO 2021-01-16 11:34:18,308 service 1938 140550354143040 Simple problem 2 - done successfully.
+INFO 2021-01-16 11:34:18,321 service 1938 140550354143040 1.7285346984863281
+INFO 2021-01-16 11:34:18,325 service 1938 140550354143040 Simple problem 3 - done successfully.
+INFO 2021-01-16 11:34:18,339 service 1938 140550354143040 2.481222152709961
+INFO 2021-01-16 11:34:18,345 service 1938 140550354143040 Simple problem 4 - done successfully.
+INFO 2021-01-16 11:34:18,352 service 1938 140550354143040 <QuerySet [<SolutionTest: 21 - 1>, <SolutionTest: 21 - 2>, <SolutionTest: 21 - 3>, <SolutionTest: 21 - 4>]>
+INFO 2021-01-16 11:34:55,223 service 1938 140550354143040 ['/usr/bin/g++', '-o', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--11-34_admin', '/usr/projects/olympiad-helper/src/config/media/2021-01-16--11-34_admin.cpp']
+ERROR 2021-01-16 11:34:55,276 service 1938 140550354143040 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-16--11-34_admin.cpp:1:1: error: ‘wqewqewqe’ does not name a type
+ wqewqewqe
+ ^~~~~~~~~
+
+INFO 2021-01-16 11:34:55,281 service 1938 140550354143040 <QuerySet []>
+ERROR 2021-01-16 13:14:35,197 service 3493 139776248014656 <class 'NameError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 126, in _execute
+    output = execution.communicate(timeout=float(task.time_limit))[0].decode('utf-8')
+NameError: name 'task' is not defined
+
+ERROR 2021-01-16 13:14:35,199 service 3493 139776248014656 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 151, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-16 13:17:56,679 service 3603 139664235022144 3.919839859008789
+INFO 2021-01-16 13:17:56,684 service 3603 139664235022144 Simple problem 1 - done successfully.
+INFO 2021-01-16 13:17:56,704 service 3603 139664235022144 4.868984222412109
+INFO 2021-01-16 13:17:56,710 service 3603 139664235022144 Simple problem 2 - done successfully.
+INFO 2021-01-16 13:17:56,729 service 3603 139664235022144 4.002094268798828
+INFO 2021-01-16 13:17:56,737 service 3603 139664235022144 Simple problem 3 - done successfully.
+INFO 2021-01-16 13:17:56,755 service 3603 139664235022144 3.8089752197265625
+INFO 2021-01-16 13:17:56,762 service 3603 139664235022144 Simple problem 4 - done successfully.
+INFO 2021-01-16 13:17:56,770 service 3603 139664235022144 <QuerySet [<SolutionTest: 25 - 1>, <SolutionTest: 25 - 2>, <SolutionTest: 25 - 3>, <SolutionTest: 25 - 4>]>
+ERROR 2021-01-16 13:18:45,550 service 3603 139664235022144 <class 'AttributeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 169, in _execute
+    logger.error(f"status - {solution_status}, {error.decode('utf-8')}")
+AttributeError: 'str' object has no attribute 'decode'
+
+INFO 2021-01-16 13:19:54,880 service 3692 140147803920192 4.55927848815918
+INFO 2021-01-16 13:19:54,891 service 3692 140147803920192 Simple problem 1 - done successfully.
+INFO 2021-01-16 13:19:54,920 service 3692 140147803920192 2.9516220092773438
+INFO 2021-01-16 13:19:54,926 service 3692 140147803920192 Simple problem 2 - done successfully.
+INFO 2021-01-16 13:19:54,947 service 3692 140147803920192 4.4231414794921875
+INFO 2021-01-16 13:19:54,952 service 3692 140147803920192 Simple problem 3 - done successfully.
+INFO 2021-01-16 13:19:54,977 service 3692 140147803920192 5.154132843017578
+INFO 2021-01-16 13:19:54,990 service 3692 140147803920192 Simple problem 4 - done successfully.
+INFO 2021-01-16 13:19:55,000 service 3692 140147803920192 <QuerySet [<SolutionTest: 27 - 1>, <SolutionTest: 27 - 2>, <SolutionTest: 27 - 3>, <SolutionTest: 27 - 4>]>
+ERROR 2021-01-16 13:20:09,236 service 3692 140147803920192 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-16--13-20_admin.cpp:1:1: error: ‘adsasdasd’ does not name a type
+ adsasdasd
+ ^~~~~~~~~
+
+INFO 2021-01-16 13:20:09,244 service 3692 140147803920192 <QuerySet []>
+INFO 2021-01-16 13:22:31,992 service 3692 140147803920192 21.073341369628906
+INFO 2021-01-16 13:22:32,012 service 3692 140147803920192 Simple problem 1 - done failed
+INFO 2021-01-16 13:22:32,078 service 3692 140147803920192 8.060455322265625
+INFO 2021-01-16 13:22:32,092 service 3692 140147803920192 Simple problem 2 - done failed
+ERROR 2021-01-16 13:22:32,192 service 3692 140147803920192 <class 'BrokenPipeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 120, in _execute
+    execution.stdin.flush()
+BrokenPipeError: [Errno 32] Broken pipe
+
+INFO 2021-01-16 13:22:32,309 service 3692 140147803920192 9.21773910522461
+INFO 2021-01-16 13:22:32,339 service 3692 140147803920192 Simple problem 4 - done failed
+INFO 2021-01-16 13:22:32,353 service 3692 140147803920192 <QuerySet [<SolutionTest: 29 - 1>, <SolutionTest: 29 - 2>, <SolutionTest: 29 - 3>, <SolutionTest: 29 - 4>]>
+INFO 2021-01-16 13:24:15,424 service 3692 140147803920192 4.582643508911133
+INFO 2021-01-16 13:24:15,433 service 3692 140147803920192 Simple problem 1 - done successfully.
+INFO 2021-01-16 13:24:15,457 service 3692 140147803920192 6.573200225830078
+INFO 2021-01-16 13:24:15,465 service 3692 140147803920192 Simple problem 2 - done successfully.
+INFO 2021-01-16 13:24:15,489 service 3692 140147803920192 5.938529968261719
+INFO 2021-01-16 13:24:15,496 service 3692 140147803920192 Simple problem 3 - done successfully.
+INFO 2021-01-16 13:24:15,522 service 3692 140147803920192 4.21905517578125
+INFO 2021-01-16 13:24:15,527 service 3692 140147803920192 Simple problem 4 - done successfully.
+INFO 2021-01-16 13:24:15,551 service 3692 140147803920192 4.506826400756836
+INFO 2021-01-16 13:24:15,558 service 3692 140147803920192 Simple problem 5 - done failed
+INFO 2021-01-16 13:24:15,567 service 3692 140147803920192 <QuerySet [<SolutionTest: 30 - 1>, <SolutionTest: 30 - 2>, <SolutionTest: 30 - 3>, <SolutionTest: 30 - 4>, <SolutionTest: 30 - 5>]>
+INFO 2021-01-16 13:26:05,204 service 3692 140147803920192 124.54843521118164
+INFO 2021-01-16 13:26:05,217 service 3692 140147803920192 Simple problem 1 - done failed
+INFO 2021-01-16 13:26:05,340 service 3692 140147803920192 100.1434326171875
+INFO 2021-01-16 13:26:05,348 service 3692 140147803920192 Simple problem 2 - done failed
+INFO 2021-01-16 13:26:05,359 service 3692 140147803920192 <QuerySet [<SolutionTest: 31 - 1>, <SolutionTest: 31 - 2>]>
+INFO 2021-01-16 13:30:45,188 service 3989 140126564009792 125.90312957763672
+INFO 2021-01-16 13:30:45,194 service 3989 140126564009792 Simple problem 1 - done failed
+INFO 2021-01-16 13:30:45,435 service 3989 140126564009792 209.04016494750977
+INFO 2021-01-16 13:30:45,451 service 3989 140126564009792 Simple problem 2 - done failed
+INFO 2021-01-16 13:33:30,752 service 4092 139800405731136 101.36890411376953
+INFO 2021-01-16 13:33:30,759 service 4092 139800405731136 Simple problem 1 - done failed
+INFO 2021-01-16 13:33:31,031 service 4092 139800405731136 248.3832836151123
+INFO 2021-01-16 13:33:31,045 service 4092 139800405731136 Simple problem 2 - done failed
+INFO 2021-01-16 13:35:59,826 service 4092 139800405731136 104.78377342224121
+INFO 2021-01-16 13:35:59,831 service 4092 139800405731136 Simple problem 1 - done failed
+INFO 2021-01-16 13:36:00,008 service 4092 139800405731136 152.5282859802246
+INFO 2021-01-16 13:36:00,031 service 4092 139800405731136 Simple problem 2 - done failed
+INFO 2021-01-16 13:43:43,360 service 4539 139923991349056 46.5545654296875
+INFO 2021-01-16 13:43:43,370 service 4539 139923991349056 Simple problem 1 - done failed
+INFO 2021-01-16 13:43:43,454 service 4539 139923991349056 60.59980392456055
+INFO 2021-01-16 13:43:43,463 service 4539 139923991349056 Simple problem 2 - done failed
+INFO 2021-01-16 13:45:09,844 service 4594 139883920729920 52.82878875732422
+ERROR 2021-01-16 13:45:09,850 service 4594 139883920729920 <class 'TypeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 133, in _execute
+    logger.info(f'{test.output_data}' - {output})
+TypeError: unsupported operand type(s) for -: 'str' and 'set'
+
+INFO 2021-01-16 13:45:09,932 service 4594 139883920729920 59.24487113952637
+ERROR 2021-01-16 13:45:09,934 service 4594 139883920729920 <class 'TypeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 133, in _execute
+    logger.info(f'{test.output_data}' - {output})
+TypeError: unsupported operand type(s) for -: 'str' and 'set'
+
+INFO 2021-01-16 13:46:04,144 service 4653 140002292557632 124.9995231628418
+INFO 2021-01-16 13:46:04,155 service 4653 140002292557632 2 3 - 2 3
+
+INFO 2021-01-16 13:46:04,173 service 4653 140002292557632 Simple problem 1 - done failed
+INFO 2021-01-16 13:46:04,372 service 4653 140002292557632 146.22092247009277
+INFO 2021-01-16 13:46:04,372 service 4653 140002292557632 9 9 - 9 9
+
+INFO 2021-01-16 13:46:04,389 service 4653 140002292557632 Simple problem 2 - done failed
+INFO 2021-01-16 13:50:27,906 service 4653 140002292557632 43.97702217102051
+INFO 2021-01-16 13:50:27,907 service 4653 140002292557632 2 3 - 2 3
+INFO 2021-01-16 13:50:27,925 service 4653 140002292557632 Simple problem 1 - done successfully.
+INFO 2021-01-16 13:50:28,015 service 4653 140002292557632 51.0861873626709
+INFO 2021-01-16 13:50:28,016 service 4653 140002292557632 9 9 - 9 9
+INFO 2021-01-16 13:50:28,024 service 4653 140002292557632 Simple problem 2 - done successfully.
+INFO 2021-01-16 13:51:46,682 service 4653 140002292557632 Simple problem 1 - timeout
+INFO 2021-01-16 13:51:47,720 service 4653 140002292557632 Simple problem 2 - timeout
+ERROR 2021-01-16 13:52:55,175 service 4653 140002292557632 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-16--13-52_admin.cpp:1:6: error: expected constructor, destructor, or type conversion before ‘(’ token
+ print(dsadsadasd)
+      ^
+
+INFO 2021-01-16 14:12:39,124 service 4653 140002292557632 2.6934146881103516
+INFO 2021-01-16 14:12:39,127 service 4653 140002292557632 2 3 - 2 3
+INFO 2021-01-16 14:12:39,141 service 4653 140002292557632 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:12:39,176 service 4653 140002292557632 2.031087875366211
+INFO 2021-01-16 14:12:39,178 service 4653 140002292557632 9 9 - 9 9
+INFO 2021-01-16 14:12:39,192 service 4653 140002292557632 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:12:39,257 service 4653 140002292557632 3.166675567626953
+INFO 2021-01-16 14:12:39,263 service 4653 140002292557632 4 5 - 4 5
+INFO 2021-01-16 14:12:39,272 service 4653 140002292557632 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:12:39,379 service 4653 140002292557632 8.359193801879883
+INFO 2021-01-16 14:12:39,381 service 4653 140002292557632 4 0 - 4 0
+INFO 2021-01-16 14:12:39,392 service 4653 140002292557632 Simple problem 4 - done successfully.
+ERROR 2021-01-16 14:19:18,468 service 5340 140657502627648 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 170, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:22:40,531 service 5340 140657502627648 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 170, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:24:25,740 service 5489 140277935241024 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 171, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:25:42,293 service 5489 140277935241024 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 171, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:27:16,000 service 5649 139655346435904 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:28:17,085 service 5649 139655346435904 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-16--14-28_admin.cpp:1:1: error: ‘yguyufyutfytf’ does not name a type
+ yguyufyutfytf
+ ^~~~~~~~~~~~~
+
+ERROR 2021-01-16 14:32:17,500 service 5649 139655346435904 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:32:59,618 service 5845 140049798600512 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 14:34:29,203 service 5845 140049798600512 165.45939445495605
+INFO 2021-01-16 14:34:29,209 service 5845 140049798600512 Simple problem 1 - done failed
+INFO 2021-01-16 14:34:29,488 service 5845 140049798600512 204.7138214111328
+INFO 2021-01-16 14:34:29,520 service 5845 140049798600512 Simple problem 2 - done failed
+INFO 2021-01-16 14:35:38,567 service 5845 140049798600512 118.53218078613281
+INFO 2021-01-16 14:35:38,578 service 5845 140049798600512 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:35:38,794 service 5845 140049798600512 158.97345542907715
+INFO 2021-01-16 14:35:38,804 service 5845 140049798600512 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:36:19,494 service 5845 140049798600512 2.178668975830078
+INFO 2021-01-16 14:36:19,503 service 5845 140049798600512 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:36:19,550 service 5845 140049798600512 8.526325225830078
+INFO 2021-01-16 14:36:19,555 service 5845 140049798600512 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:36:19,608 service 5845 140049798600512 14.005661010742188
+INFO 2021-01-16 14:36:19,613 service 5845 140049798600512 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:36:19,646 service 5845 140049798600512 14.459609985351562
+INFO 2021-01-16 14:36:19,652 service 5845 140049798600512 Simple problem 4 - done successfully.
+ERROR 2021-01-16 14:36:39,571 service 5845 140049798600512 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    except Exception as e:
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:37:14,172 service 5845 140049798600512 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    except Exception as e:
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 14:37:31,105 service 5845 140049798600512 3.7806034088134766
+INFO 2021-01-16 14:37:31,114 service 5845 140049798600512 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:37:31,162 service 5845 140049798600512 2.2733211517333984
+INFO 2021-01-16 14:37:31,168 service 5845 140049798600512 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:37:31,217 service 5845 140049798600512 10.933399200439453
+INFO 2021-01-16 14:37:31,222 service 5845 140049798600512 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:37:31,267 service 5845 140049798600512 10.919332504272461
+INFO 2021-01-16 14:37:31,271 service 5845 140049798600512 Simple problem 4 - done successfully.
+ERROR 2021-01-16 14:38:30,634 service 5845 140049798600512 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    except Exception as e:
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+ERROR 2021-01-16 14:40:49,156 service 5845 140049798600512 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    except Exception as e:
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 14:41:29,344 service 6216 140068904683328 9.292125701904297
+INFO 2021-01-16 14:41:29,376 service 6216 140068904683328 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:41:29,457 service 6216 140068904683328 23.049354553222656
+INFO 2021-01-16 14:41:29,473 service 6216 140068904683328 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:41:29,589 service 6216 140068904683328 3.017425537109375
+INFO 2021-01-16 14:41:29,604 service 6216 140068904683328 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:41:29,713 service 6216 140068904683328 19.895076751708984
+INFO 2021-01-16 14:41:29,721 service 6216 140068904683328 Simple problem 4 - done successfully.
+ERROR 2021-01-16 14:42:03,901 service 6216 140068904683328 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 167, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 14:50:26,542 service 6381 140491068573504 60
+INFO 2021-01-16 14:50:28,080 service 6381 140491068573504 2.1822452545166016
+INFO 2021-01-16 14:50:28,084 service 6381 140491068573504 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:50:28,118 service 6381 140491068573504 5.465507507324219
+INFO 2021-01-16 14:50:28,123 service 6381 140491068573504 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:50:28,161 service 6381 140491068573504 2.5129318237304688
+INFO 2021-01-16 14:50:28,167 service 6381 140491068573504 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:50:28,195 service 6381 140491068573504 1.898050308227539
+INFO 2021-01-16 14:50:28,199 service 6381 140491068573504 Simple problem 4 - done successfully.
+INFO 2021-01-16 14:51:03,905 service 6381 140491068573504 61
+ERROR 2021-01-16 14:51:05,338 service 6381 140491068573504 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 14:52:22,012 service 6381 140491068573504 62
+INFO 2021-01-16 14:52:23,629 service 6381 140491068573504 4.401922225952148
+INFO 2021-01-16 14:52:23,637 service 6381 140491068573504 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:52:23,679 service 6381 140491068573504 2.138853073120117
+INFO 2021-01-16 14:52:23,686 service 6381 140491068573504 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:52:23,739 service 6381 140491068573504 9.684562683105469
+INFO 2021-01-16 14:52:23,744 service 6381 140491068573504 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:52:23,786 service 6381 140491068573504 15.849590301513672
+INFO 2021-01-16 14:52:23,790 service 6381 140491068573504 Simple problem 4 - done successfully.
+INFO 2021-01-16 14:59:04,073 service 6700 140271722387264 /usr/projects/olympiad-helper/src/config/media/2021-01-16--14-59_admin -- C++11 -- <QuerySet [<TaskTest: Simple problem - 1 - C++11>, <TaskTest: Simple problem - 2 - C++11>, <TaskTest: Simple problem - 3 - C++11>, <TaskTest: Simple problem - 4 - C++11>]> --  -- /usr/projects/olympiad-helper/src/config/media/2021-01-16--14-59_admin
+INFO 2021-01-16 14:59:04,117 service 6700 140271722387264 10.830879211425781
+INFO 2021-01-16 14:59:04,129 service 6700 140271722387264 Simple problem 1 - done successfully.
+INFO 2021-01-16 14:59:04,179 service 6700 140271722387264 10.376930236816406
+INFO 2021-01-16 14:59:04,192 service 6700 140271722387264 Simple problem 2 - done successfully.
+INFO 2021-01-16 14:59:04,223 service 6700 140271722387264 1.8644332885742188
+INFO 2021-01-16 14:59:04,228 service 6700 140271722387264 Simple problem 3 - done successfully.
+INFO 2021-01-16 14:59:04,259 service 6700 140271722387264 5.726814270019531
+INFO 2021-01-16 14:59:04,264 service 6700 140271722387264 Simple problem 4 - done successfully.
+INFO 2021-01-16 14:59:24,520 service 6700 140271722387264 /usr/projects/olympiad-helper/src/config/media/2021-01-16--14-59_admin -- C++14 -- <QuerySet []> --  -- /usr/projects/olympiad-helper/src/config/media/2021-01-16--14-59_admin
+ERROR 2021-01-16 14:59:24,524 service 6700 140271722387264 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 168, in _execute
+    _final_update_solution_result(solution, solution_status)
+UnboundLocalError: local variable 'solution_status' referenced before assignment
+
+INFO 2021-01-16 15:02:32,762 service 6819 140556639397696 /usr/projects/olympiad-helper/src/config/media/2021-01-16--15-02_admin -- C++14 -- <QuerySet []> --  -- /usr/projects/olympiad-helper/src/config/media/2021-01-16--15-02_admin
+INFO 2021-01-16 15:03:22,546 service 6819 140556639397696 /usr/projects/olympiad-helper/src/config/media/2021-01-16--15-03_admin -- C++14 -- <QuerySet []> --  -- /usr/projects/olympiad-helper/src/config/media/2021-01-16--15-03_admin
+ERROR 2021-01-16 15:05:10,015 service 6955 140695751354176 <class 'django.db.utils.DataError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.StringDataRightTruncation: ОШИБКА:  значение не умещается в тип character varying(2)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 169, in _execute
+    _final_update_solution_result(solution, solution_status)
+  File "/usr/projects/olympiad-helper/src/judge/service.py", line 228, in _final_update_solution_result
+    solution.save()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/base.py", line 753, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/base.py", line 790, in save_base
+    updated = self._save_table(
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/base.py", line 872, in _save_table
+    updated = self._do_update(base_qs, using, pk_val, values, update_fields,
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/base.py", line 926, in _do_update
+    return filtered._update(values) > 0
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/query.py", line 803, in _update
+    return query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1522, in execute_sql
+    cursor = super().execute_sql(result_type)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1156, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.DataError: ОШИБКА:  значение не умещается в тип character varying(2)
+
+
+INFO 2021-01-16 15:26:38,436 service 6955 140695751354176 12.031793594360352
+INFO 2021-01-16 15:26:38,455 service 6955 140695751354176 Simple problem 1 - done successfully.
+INFO 2021-01-16 15:26:38,526 service 6955 140695751354176 17.184734344482422
+INFO 2021-01-16 15:26:38,531 service 6955 140695751354176 Simple problem 2 - done successfully.
+INFO 2021-01-16 15:26:38,589 service 6955 140695751354176 15.450000762939453
+INFO 2021-01-16 15:26:38,596 service 6955 140695751354176 Simple problem 3 - done successfully.
+INFO 2021-01-16 15:26:38,647 service 6955 140695751354176 8.77237319946289
+INFO 2021-01-16 15:26:38,652 service 6955 140695751354176 Simple problem 4 - done successfully.
+INFO 2021-01-16 15:27:52,974 service 7359 140165253855040 9.251832962036133
+INFO 2021-01-16 15:27:52,980 service 7359 140165253855040 Simple problem 1 - done successfully.
+INFO 2021-01-16 15:58:58,614 execute_solutions 8229 139958998583104 8.172273635864258
+INFO 2021-01-16 15:58:58,622 execute_solutions 8229 139958998583104 Simple problem 1 - done successfully.
+ERROR 2021-01-16 16:01:20,573 execute_solutions 8327 140322634676032 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-16--16-01_admin.cpp:1:1: error: ‘kbnhvhk’ does not name a type
+ kbnhvhk
+ ^~~~~~~
+
+INFO 2021-01-16 16:08:08,288 execute_solutions 8476 139995849402176 2.0606517791748047
+INFO 2021-01-16 16:08:08,295 execute_solutions 8476 139995849402176 Simple problem 1 - done successfully.
+INFO 2021-01-16 16:08:08,345 execute_solutions 8476 139995849402176 11.195898056030273
+INFO 2021-01-16 16:08:08,350 execute_solutions 8476 139995849402176 Simple problem 2 - done successfully.
+INFO 2021-01-16 16:08:08,394 execute_solutions 8476 139995849402176 1.8305778503417969
+INFO 2021-01-16 16:08:08,408 execute_solutions 8476 139995849402176 Simple problem 3 - done successfully.
+INFO 2021-01-16 16:08:08,438 execute_solutions 8476 139995849402176 6.97779655456543
+INFO 2021-01-16 16:08:08,449 execute_solutions 8476 139995849402176 Simple problem 4 - done successfully.
+INFO 2021-01-16 16:09:21,555 execute_solutions 8561 140017807890240 4.890918731689453
+INFO 2021-01-16 16:09:21,563 execute_solutions 8561 140017807890240 Simple problem 1 - done successfully.
+INFO 2021-01-16 16:14:12,388 execute_solutions 8687 140472931247936 9.299516677856445
+INFO 2021-01-16 16:14:12,394 execute_solutions 8687 140472931247936 Simple problem 1 - done successfully.

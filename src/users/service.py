@@ -33,7 +33,10 @@ def get_and_activate_user(uid, token) -> bool:
 
 
 def get_user_by_email(email):
-    user = CustomUser.objects.get(email=email)
+    try:
+        user = CustomUser.objects.get(email=email)
+    except(TypeError, ValueError, OverflowError, CustomUser.DoesNotExist):
+        user = None
     if user is not None:
         return user
     else:

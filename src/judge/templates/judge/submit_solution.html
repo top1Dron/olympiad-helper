@@ -2,7 +2,7 @@
 {% load widget_tweaks %}
 
 {% load static %}
-{% block title %}Submit solution {{task_number}}{% endblock title %}
+{% block title %}Solve task {{task_number}}{% endblock title %}
 {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/submit_solution.css' %}"
 {% endblock extra_head %}>
@@ -41,7 +41,7 @@
 
         {{ form.source_code.label_tag }}</br>
         {{ form.source_code.errors }}
-        {% render_field form.source_code class='textarea-wrapper' %}
+        {% render_field form.source_code class='textarea-wrapper' rows='20' %}
     </p>
     <button type="submit">Submit</button>
     </form>

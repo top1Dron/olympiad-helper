@@ -8,9 +8,12 @@ from users.models import CustomUser
 STATUS = (
     # '''enum of execution tests results'''
     
+    ('JG', _('Judging')),
     ('CE', _('Compilation error')),
     ('WA', _('Wrong answer')),
     ('PA', _('Partially accepted')),
+    ('TO', _('Timeout')),
+    ('MO', _('Memory out')),
     ('AC', _('Accepted')),
 )
     
@@ -20,6 +23,9 @@ class ProgrammingLanguage(models.Model):
     '''model that describes available for solution submition programming languages'''
 
     name = models.TextField(_("Programming language"))
+    extension = models.CharField(max_length=5)
+    compile = models.CharField(max_length=300)
+    execute = models.CharField(max_length=300)
 
     def __str__(self):
         return self.name
@@ -81,7 +87,20 @@ class TaskSamples(models.Model):
 
     def __str__(self):
         return self.task.title
-    
+
+
+class TaskTest(models.Model):
+    '''model that describes task validation tests'''
+
+    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+    test_number = models.IntegerField()
+    language = models.ForeignKey(to=ProgrammingLanguage, on_delete=models.CASCADE)
+    input_data = models.TextField()
+    output_data = models.TextField()
+
+
+    def __str__(self):
+        return f'{self.task.title} - {self.test_number} - {self.language}'
 
 
 class Solution(models.Model):
@@ -97,23 +116,13 @@ class Solution(models.Model):
     avg_time_usage = models.CharField(max_length=30)
 
 
-    def __str__(self):
-        return self.pk
-    
-
-
-class TaskTest(models.Model):
-    '''model that describes task validation tests'''
-
-    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
-    test_number = models.IntegerField()
-    language = models.ForeignKey(to=ProgrammingLanguage, on_delete=models.CASCADE)
-    input_data = models.TextField()
-    output_data = models.TextField()
+    @property
+    def get_all_tests(self):
+        return SolutionTest.objects.filter(solution=self.id)
 
 
     def __str__(self):
-        return f'{self.task.title} - {self.test_number} - {self.language}'
+        return str(self.pk)
     
 
 

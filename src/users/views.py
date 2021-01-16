@@ -1,5 +1,6 @@
 from .forms import CustomUserCreationForm, LoginForm
-from .service import send_email, get_and_activate_user, get_user_by_email
+from .service import get_and_activate_user, get_user_by_email
+from .tasks import task_send_email
 from .tokens import account_activation_token
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -13,10 +14,10 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def api_get_login_and_register_user(request):
+def api_get_login_and_register_user(request, signup=False):
     signup_form = CustomUserCreationForm()
     login_form = LoginForm()
-    return render(request, 'users/log.html', context={'signup_form': signup_form, 'login_form': login_form, 'signup':False})
+    return render(request, 'users/log.html', context={'signup_form': signup_form, 'login_form': login_form, 'signup':signup})
 
 
 def api_login_user(request):
@@ -29,7 +30,7 @@ def api_login_user(request):
             return redirect(reverse('judge:problem_list'))
         else:
             user = get_user_by_email(email)
-            if user is not None:
+            if user is not None and user.is_active == False:
                 messages.error(request, _('User is not active!'))
             else:
                 messages.error(request, _('User with inputed email and password is not exists!'))
@@ -52,7 +53,7 @@ def api_signup_user(request):
             user.is_active = False
             user.save()
             current_site = get_current_site(request)
-            mail_subject = _('Activate your blog account.')
+            mail_subject = _('Activate your judge account.')
             message = render_to_string(
                 'users/account_activate_email.html',
                 {
@@ -63,11 +64,10 @@ def api_signup_user(request):
                 }
             )
             to_email = form.cleaned_data.get('email')
-            send_email(subject=mail_subject, message=message, to=[to_email])
+            task_send_email.delay(subject=mail_subject, message=message, to=[to_email])
             messages.info(request, _('Please, confirm your email address to complete the registration and login from this page!'))
             return redirect(reverse('users:login_or_signup'))
         else:
-            logger.info(form.errors)
             login_form = LoginForm()
             return render(request, 'users/log.html', context={'signup_form': form, 'login_form': login_form, 'signup':True})
 
@@ -78,47 +78,3 @@ def activate(request, uidb64, token):
     else:
         messages.error(request, _('Activation link is invalid!'))
     return api_get_login_and_register_user(request)
-        
-    # return render(request, 'users/log.html', context={})
-
-
-
-# <form action="#" class="signup">
-#         {% csrf_token %}
-#         {% if signup_form.non_field_errors %}
-#             <ul>
-#             {% for error in signup_form.non_field_errors %}
-#                 <li>{{ error }}</li>
-#             {% endfor %}
-#             </ul>
-#         {% endif %}
-#         {% for hidden_field in signup_form.hidden_fields %}
-#             {% if hidden_field.errors %}
-#             <ul>
-#                 {% for error in hidden_field.errors %}
-#                 <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
-#                 {% endfor %}
-#             </ul>
-#             {% endif %}
-#             {{ hidden_field }}
-#         {% endfor %}
-#             <div class="field">
-#                 {{ form.task_number.errors }}
-#                 {% render_field signup_form.email placeholder="Email Address" required="required" %}
-#                 {% comment %} <input type="text" placeholder="Email Address" required> {% endcomment %}
-#             </div>
-#             <div class="field">
-#                 <input type="text" placeholder="Username" required>
-#             </div>
-#             <div class="field">
-#                 <input type="password" placeholder="Password" required>
-#             </div>
-#             <div class="field">
-#                 <input type="password" placeholder="Confirm password" required>
-#             </div>
-#             <div class="field btn">
-#                 <div class="btn-layer"></div>
-#                 <input type="submit" value="Signup">
-#             </div>
-#         </form>
-    
