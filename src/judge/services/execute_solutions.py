@@ -1,3 +1,4 @@
+from judge.decorators import limit_permisions
 from judge.models import Task, Solution, SolutionTest, TaskTest, ProgrammingLanguage
 from judge.services import getter
 from judge.services.memory_limites import MemoryLimiter
@@ -22,7 +23,7 @@ def create_solution(user, task_number, programming_language, source_code) -> int
         task=getter.get_task_by_number(task_number),
         language=ProgrammingLanguage.objects.get(pk=programming_language),
         program_code=source_code,
-        status='JG',
+        status='PD',
         avg_memory_usage=0,
         avg_time_usage=0
     )
@@ -39,13 +40,13 @@ def submit_solution(task_number, programming_language, source_code, solution_id)
     solution = getter.get_solution_by_id(solution_id)
     
     code_file_name = os.path.join(settings.MEDIA_ROOT, f'{datetime.now().strftime("%Y-%m-%d--%H-%M-%S-%f")[:-3]}_{solution.user.username}')
-    # print user code to file with language extension
     
+    # print user code to file with language extension
     with open(f'{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
         print(source_code, file=file, end='')
 
     task = Task.objects.get(pk=task_number)
-    tests = TaskTest.objects.filter(task=task).filter(language=language)
+    tests = TaskTest.objects.filter(task=task)
     error = ''
 
     if language.name in ('C++11', 'C++14', 'C++17'):
@@ -66,35 +67,28 @@ def _compile(language, code_file_name:str) -> str:
     used only for compiled languages
     '''
 
-     # compile = subprocess.Popen(['/usr/bin/g++', "-o", ofile, cfile], stderr=subprocess.PIPE)
     complile_string = language.compile.replace('[codefilename]', code_file_name)
     compile = subprocess.Popen(complile_string.split(), stderr=subprocess.PIPE)
     error = compile.communicate()[1]
     return error.decode('utf-8')
-    # _execute(source_code:str, task, language, solution, code_file_name, error.decode('utf-8'))
 
 
+@limit_permisions
 def _execute(solution, tests, execute_line, time_limit, error=''):
     '''
     method for execution submitted code
     '''
+    
     try:
         if error == '':
             if len(tests) == 0:
                 solution_status = 'NT'
             for test in tests:
-                # tracemalloc.start()
-
-                # TODO limit access to directories
-                # os.system("chmod 100 .")
-                # 'ulimit -p 100; su judge -c \"', '; exit;\"' float(task.memory_limit) * 1.048576 * 1024 * 1024), preexec_fn=limit_virtual_memory()
                 try:
                     execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
                     execution.stdin.write(bytes(test.input_data, 'UTF-8'))
                     execution.stdin.flush()
                     
-                    # snapshot = tracemalloc.take_snapshot()
-                    # memory_usage = display_top(snapshot)
                     test.output_data = test.output_data.replace('\r', '')
 
                     start_time = time.time()
@@ -102,10 +96,9 @@ def _execute(solution, tests, execute_line, time_limit, error=''):
                     end_time = time.time()
                     finish_time = end_time - start_time
                     logger.info(finish_time*1000)
-                    test_status = 'JG'
+                    test_status = 'PD'
 
                     if test.output_data == output:
-                        # logger.info(f'{test.task} {test.test_number} - done successfully. Time: {finish_time}, memory: {memory_usage/1024}')
                         logger.info(f'{test.task} {test.test_number} - done successfully.')
                         test_status = 'AC'
                     else:
@@ -130,12 +123,6 @@ def _execute(solution, tests, execute_line, time_limit, error=''):
                         memory_usage='1'
                     )
                 solution_status = _get_solution_tests_status_counts(SolutionTest.objects.filter(solution=solution))
-
-                # kill all process spawned by user 'judge'
-                # os.system("pkill -u judge")
-
-                # Make directly readable / executable again.
-                # os.system("chmod 777 src")
         else:
             solution_status = 'CE'
             logger.error(f"status - {solution_status}, {error}")
@@ -150,7 +137,7 @@ def _get_solution_tests_status_counts(tests):
     '''
     judging = wrong_answers = timeout = memoryout = right_answers = 0
     for test in tests:
-        if test.status == 'JG':
+        if test.status == 'PD':
             judging += 1
         elif test.status == 'WA':
             wrong_answers += 1
@@ -173,9 +160,9 @@ def _get_solution_status(answers:dict, test_count:int) -> str:
     '''
     function to return solution status using tuple with solution tests status counts
     '''
-    status = 'JG'
+    status = 'PD'
     if answers.get('judging') == test_count:
-        status = 'JG'
+        status = 'PD'
     elif answers.get('wrong_answers') > 0 and answers.get('right_answers') > 0:
         status = 'PA'
     elif answers.get('wrong_answers') > 0:

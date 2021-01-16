@@ -14,6 +14,13 @@ def get_all_available_tasks():
     return Task.objects.filter(is_active=True)
 
 
+def get_all_submissions():
+    '''
+    returns all submitted problem solutions
+    '''
+    return Solution.objects.all()
+
+
 def get_task_by_number(number):
     '''
     returns task by unique number

@@ -18,7 +18,7 @@
         <label class="logo">Olympiad-helper</label>
         <ul>
             <li><a href="{% url 'judge:problem_list' %}" class='active'>Problems</a></li>
-            <li><a href="#">Queue</a></li>
+            <li><a href="{% url 'judge:solution_list' %}">Queue</a></li>
             <li><a href="#">Contact</a></li>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'users:logout' %}">{{user.username}}</a></li>

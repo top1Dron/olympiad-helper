@@ -8,7 +8,7 @@ from users.models import CustomUser
 STATUS = (
     # '''enum of execution tests results'''
     
-    ('JG', _('Judging')),
+    ('PD', _('Pending')),
     ('CE', _('Compilation error')),
     ('WA', _('Wrong answer')),
     ('PA', _('Partially accepted')),
@@ -94,13 +94,12 @@ class TaskTest(models.Model):
 
     task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
     test_number = models.IntegerField()
-    language = models.ForeignKey(to=ProgrammingLanguage, on_delete=models.CASCADE)
     input_data = models.TextField()
     output_data = models.TextField()
 
 
     def __str__(self):
-        return f'{self.task.title} - {self.test_number} - {self.language}'
+        return f'{self.task.title} - {self.test_number}'
 
 
 class Solution(models.Model):

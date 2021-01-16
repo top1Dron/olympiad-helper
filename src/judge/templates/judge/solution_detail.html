@@ -22,6 +22,8 @@
         </p>
         {% endfor %}
         <hr>
-        <p>{{object.program_code}}</p>
+        {% if user == object.user %}
+            <p>{{object.program_code}}</p>
+        {% endif %}
     </div>
 {% endblock main_content %}

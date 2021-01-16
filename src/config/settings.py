@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+from django.shortcuts import reverse
 from pathlib import Path
 import os, sys
 
@@ -58,7 +59,9 @@ ROOT_URLCONF = 'config.urls'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
-LOGIN_REDIRECT_URL = 'users/problem/list/'
+LOGIN_URL = '/users/login_or_signup/'
+
+LOGIN_REDIRECT_URL = '/judge/problem/list/'
 
 TEMPLATES = [
     {

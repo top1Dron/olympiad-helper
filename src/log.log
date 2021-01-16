@@ -1993,3 +1993,101 @@ INFO 2021-01-16 16:09:21,555 execute_solutions 8561 140017807890240 4.8909187316
 INFO 2021-01-16 16:09:21,563 execute_solutions 8561 140017807890240 Simple problem 1 - done successfully.
 INFO 2021-01-16 16:14:12,388 execute_solutions 8687 140472931247936 9.299516677856445
 INFO 2021-01-16 16:14:12,394 execute_solutions 8687 140472931247936 Simple problem 1 - done successfully.
+ERROR 2021-01-16 22:19:00,413 execute_solutions 11120 139830843025216 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 108, in _execute
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'ulimit'
+
+ERROR 2021-01-16 22:19:00,414 execute_solutions 11120 139830843025216 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 142, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-01-16 22:26:08,555 execute_solutions 11233 140410295306048 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 110, in _execute
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/projects/olympiad-helper/src/config/media/2021-01-16--22-26-07-604_admin;'
+
+ERROR 2021-01-16 22:26:08,556 execute_solutions 11233 140410295306048 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 144, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-01-16 22:27:49,580 execute_solutions 11233 140410295306048 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 110, in _execute
+    execution.stdin.write(bytes(test.input_data, 'UTF-8'))
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: '/usr/projects/olympiad-helper/src/config/media/2021-01-16--22-27-47-885_admin;'
+
+ERROR 2021-01-16 22:27:49,585 execute_solutions 11233 140410295306048 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 144, in _execute
+    solution=solution,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-16 22:31:25,050 execute_solutions 11371 140673715054400 2.5229454040527344
+INFO 2021-01-16 22:31:25,062 execute_solutions 11371 140673715054400 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:31:25,165 execute_solutions 11371 140673715054400 2.2208690643310547
+INFO 2021-01-16 22:31:25,169 execute_solutions 11371 140673715054400 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:31:25,262 execute_solutions 11371 140673715054400 1.7418861389160156
+INFO 2021-01-16 22:31:25,267 execute_solutions 11371 140673715054400 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:31:25,371 execute_solutions 11371 140673715054400 8.512020111083984
+INFO 2021-01-16 22:31:25,375 execute_solutions 11371 140673715054400 Simple problem 4 - done successfully.
+INFO 2021-01-16 22:35:20,883 execute_solutions 11479 140049830983488 2.5548934936523438
+INFO 2021-01-16 22:35:20,895 execute_solutions 11479 140049830983488 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:35:20,937 execute_solutions 11479 140049830983488 1.80816650390625
+INFO 2021-01-16 22:35:20,941 execute_solutions 11479 140049830983488 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:35:20,979 execute_solutions 11479 140049830983488 1.8448829650878906
+INFO 2021-01-16 22:35:20,983 execute_solutions 11479 140049830983488 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:35:21,021 execute_solutions 11479 140049830983488 4.488706588745117
+INFO 2021-01-16 22:35:21,025 execute_solutions 11479 140049830983488 Simple problem 4 - done successfully.
+INFO 2021-01-16 22:36:35,854 execute_solutions 11533 140670217553728 4.523992538452148
+INFO 2021-01-16 22:36:35,866 execute_solutions 11533 140670217553728 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:36:35,897 execute_solutions 11533 140670217553728 1.6756057739257812
+INFO 2021-01-16 22:36:35,908 execute_solutions 11533 140670217553728 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:36:35,952 execute_solutions 11533 140670217553728 4.301548004150391
+INFO 2021-01-16 22:36:35,956 execute_solutions 11533 140670217553728 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:36:35,992 execute_solutions 11533 140670217553728 10.016918182373047
+INFO 2021-01-16 22:36:35,997 execute_solutions 11533 140670217553728 Simple problem 4 - done successfully.
+INFO 2021-01-16 22:42:29,971 execute_solutions 11683 140073393493824 2.0601749420166016
+INFO 2021-01-16 22:42:29,985 execute_solutions 11683 140073393493824 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:42:30,102 execute_solutions 11683 140073393493824 9.581804275512695
+INFO 2021-01-16 22:42:30,117 execute_solutions 11683 140073393493824 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:42:30,181 execute_solutions 11683 140073393493824 37.86945343017578
+INFO 2021-01-16 22:42:30,187 execute_solutions 11683 140073393493824 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:42:30,236 execute_solutions 11683 140073393493824 5.863428115844727
+INFO 2021-01-16 22:42:30,240 execute_solutions 11683 140073393493824 Simple problem 4 - done successfully.
+INFO 2021-01-16 22:46:25,199 execute_solutions 12131 140524472043328 9.079456329345703
+INFO 2021-01-16 22:46:25,205 execute_solutions 12131 140524472043328 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:46:25,240 execute_solutions 12131 140524472043328 3.783702850341797
+INFO 2021-01-16 22:46:25,244 execute_solutions 12131 140524472043328 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:46:25,283 execute_solutions 12131 140524472043328 1.8024444580078125
+INFO 2021-01-16 22:46:25,290 execute_solutions 12131 140524472043328 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:46:25,319 execute_solutions 12131 140524472043328 7.136344909667969
+INFO 2021-01-16 22:46:25,324 execute_solutions 12131 140524472043328 Simple problem 4 - done successfully.
+INFO 2021-01-16 22:52:48,124 execute_solutions 12449 139807345420096 49.38530921936035
+INFO 2021-01-16 22:52:48,129 execute_solutions 12449 139807345420096 Simple problem 1 - done successfully.
+INFO 2021-01-16 22:52:48,247 execute_solutions 12449 139807345420096 80.67202568054199
+INFO 2021-01-16 22:52:48,252 execute_solutions 12449 139807345420096 Simple problem 2 - done successfully.
+INFO 2021-01-16 22:52:48,350 execute_solutions 12449 139807345420096 69.48018074035645
+INFO 2021-01-16 22:52:48,354 execute_solutions 12449 139807345420096 Simple problem 3 - done successfully.
+INFO 2021-01-16 22:52:48,476 execute_solutions 12449 139807345420096 85.58106422424316
+INFO 2021-01-16 22:52:48,482 execute_solutions 12449 139807345420096 Simple problem 4 - done successfully.
+INFO 2021-01-16 23:04:29,758 execute_solutions 12681 139927152379712 147.63617515563965
+INFO 2021-01-16 23:04:29,763 execute_solutions 12681 139927152379712 Simple problem 1 - done successfully.
+INFO 2021-01-16 23:04:29,980 execute_solutions 12681 139927152379712 136.39140129089355
+INFO 2021-01-16 23:04:29,987 execute_solutions 12681 139927152379712 Simple problem 2 - done successfully.
+INFO 2021-01-16 23:04:30,171 execute_solutions 12681 139927152379712 97.29528427124023
+INFO 2021-01-16 23:04:30,182 execute_solutions 12681 139927152379712 Simple problem 3 - done successfully.
+INFO 2021-01-16 23:04:30,321 execute_solutions 12681 139927152379712 78.01938056945801
+INFO 2021-01-16 23:04:30,337 execute_solutions 12681 139927152379712 Simple problem 4 - done successfully.
