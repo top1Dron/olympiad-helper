@@ -2091,3 +2091,298 @@ INFO 2021-01-16 23:04:30,171 execute_solutions 12681 139927152379712 97.29528427
 INFO 2021-01-16 23:04:30,182 execute_solutions 12681 139927152379712 Simple problem 3 - done successfully.
 INFO 2021-01-16 23:04:30,321 execute_solutions 12681 139927152379712 78.01938056945801
 INFO 2021-01-16 23:04:30,337 execute_solutions 12681 139927152379712 Simple problem 4 - done successfully.
+ERROR 2021-01-16 23:40:30,825 execute_solutions 13145 139738351347520 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 90, in _execute
+    # execution.wait()
+  File "/usr/local/lib/python3.9/subprocess.py", line 1185, in wait
+    return self._wait(timeout=timeout)
+  File "/usr/local/lib/python3.9/subprocess.py", line 1915, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/usr/local/lib/python3.9/subprocess.py", line 1873, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/billiard/common.py", line 119, in _shutdown_cleanup
+    sys.exit(-(256 - signum))
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/billiard/pool.py", line 283, in exit
+    return _exit(status)
+SystemExit: -241
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 122, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-16 23:42:02,938 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:02,939 execute_solutions 13208 140158601996096 4.724025726318359
+INFO 2021-01-16 23:42:02,943 execute_solutions 13208 140158601996096 Simple problem 1 - done successfully.
+INFO 2021-01-16 23:42:02,977 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:02,978 execute_solutions 13208 140158601996096 4.327535629272461
+INFO 2021-01-16 23:42:02,981 execute_solutions 13208 140158601996096 Simple problem 2 - done successfully.
+INFO 2021-01-16 23:42:03,026 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:03,027 execute_solutions 13208 140158601996096 3.401517868041992
+INFO 2021-01-16 23:42:03,032 execute_solutions 13208 140158601996096 Simple problem 3 - done successfully.
+INFO 2021-01-16 23:42:03,074 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:03,074 execute_solutions 13208 140158601996096 9.870767593383789
+INFO 2021-01-16 23:42:03,082 execute_solutions 13208 140158601996096 Simple problem 4 - done successfully.
+INFO 2021-01-16 23:42:35,999 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:36,000 execute_solutions 13208 140158601996096 12.109756469726562
+INFO 2021-01-16 23:42:36,004 execute_solutions 13208 140158601996096 Simple problem 1 - done successfully.
+INFO 2021-01-16 23:42:36,049 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:36,050 execute_solutions 13208 140158601996096 10.931730270385742
+INFO 2021-01-16 23:42:36,061 execute_solutions 13208 140158601996096 Simple problem 2 - done successfully.
+INFO 2021-01-16 23:42:36,105 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:36,106 execute_solutions 13208 140158601996096 15.007495880126953
+INFO 2021-01-16 23:42:36,115 execute_solutions 13208 140158601996096 Simple problem 3 - done successfully.
+INFO 2021-01-16 23:42:36,153 execute_solutions 13208 140158601996096 57196
+INFO 2021-01-16 23:42:36,153 execute_solutions 13208 140158601996096 5.953550338745117
+INFO 2021-01-16 23:42:36,165 execute_solutions 13208 140158601996096 Simple problem 4 - done successfully.
+INFO 2021-01-16 23:54:40,798 execute_solutions 13445 140274131101504 2.635478973388672
+INFO 2021-01-16 23:54:40,800 execute_solutions 13445 140274131101504 13467
+INFO 2021-01-16 23:54:40,812 execute_solutions 13445 140274131101504 Simple problem 1 - done successfully.
+INFO 2021-01-16 23:54:40,845 execute_solutions 13445 140274131101504 2.2504329681396484
+INFO 2021-01-16 23:54:40,846 execute_solutions 13445 140274131101504 13468
+INFO 2021-01-16 23:54:40,850 execute_solutions 13445 140274131101504 Simple problem 2 - done successfully.
+INFO 2021-01-16 23:54:40,884 execute_solutions 13445 140274131101504 0.5655288696289062
+INFO 2021-01-16 23:54:40,885 execute_solutions 13445 140274131101504 13469
+INFO 2021-01-16 23:54:40,893 execute_solutions 13445 140274131101504 Simple problem 3 - done successfully.
+INFO 2021-01-16 23:54:40,936 execute_solutions 13445 140274131101504 1.8687248229980469
+INFO 2021-01-16 23:54:40,937 execute_solutions 13445 140274131101504 13470
+INFO 2021-01-16 23:54:40,947 execute_solutions 13445 140274131101504 Simple problem 4 - done successfully.
+INFO 2021-01-17 00:38:12,716 execute_solutions 13585 139634505725760 3.8514137268066406
+ERROR 2021-01-17 00:38:12,720 execute_solutions 13585 139634505725760 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/13614/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=13614)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 102, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 13614
+
+ERROR 2021-01-17 00:38:12,721 execute_solutions 13585 139634505725760 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 124, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-17 00:40:44,696 execute_solutions 13643 139739680261952 1.9648075103759766
+ERROR 2021-01-17 00:40:44,701 execute_solutions 13643 139739680261952 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/13665/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=13665)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 103, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 13665
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 106, in _execute
+    logger.error(f'{type(e)} {traceback.format_exc()}')
+UnboundLocalError: local variable 'e' referenced before assignment
+
+ERROR 2021-01-17 00:40:44,709 execute_solutions 13643 139739680261952 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 127, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-01-17 00:46:37,081 execute_solutions 13737 140594914793280 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/13759/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=13759)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 100, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 13759
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 103, in _execute
+    logger.error(f'{type(e)} {traceback.format_exc()}')
+UnboundLocalError: local variable 'e' referenced before assignment
+
+ERROR 2021-01-17 00:46:37,094 execute_solutions 13737 140594914793280 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 128, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-17 00:48:59,623 execute_solutions 13804 139639219992384 5.905389785766602
+INFO 2021-01-17 00:48:59,631 execute_solutions 13804 139639219992384 Simple problem 1 - done successfully.
+INFO 2021-01-17 00:48:59,670 execute_solutions 13804 139639219992384 2.4733543395996094
+INFO 2021-01-17 00:48:59,682 execute_solutions 13804 139639219992384 Simple problem 2 - done successfully.
+INFO 2021-01-17 00:48:59,732 execute_solutions 13804 139639219992384 14.197826385498047
+INFO 2021-01-17 00:48:59,736 execute_solutions 13804 139639219992384 Simple problem 3 - done successfully.
+INFO 2021-01-17 00:48:59,779 execute_solutions 13805 139639219992384 2.514362335205078
+INFO 2021-01-17 00:48:59,784 execute_solutions 13804 139639219992384 20.07770538330078
+INFO 2021-01-17 00:48:59,786 execute_solutions 13805 139639219992384 Simple problem 1 - done successfully.
+INFO 2021-01-17 00:48:59,789 execute_solutions 13804 139639219992384 Simple problem 4 - done successfully.
+INFO 2021-01-17 00:48:59,846 execute_solutions 13805 139639219992384 3.7717819213867188
+INFO 2021-01-17 00:48:59,850 execute_solutions 13805 139639219992384 Simple problem 2 - done successfully.
+INFO 2021-01-17 00:48:59,902 execute_solutions 13805 139639219992384 22.886037826538086
+INFO 2021-01-17 00:48:59,906 execute_solutions 13805 139639219992384 Simple problem 3 - done successfully.
+INFO 2021-01-17 00:48:59,938 execute_solutions 13805 139639219992384 5.887269973754883
+INFO 2021-01-17 00:48:59,948 execute_solutions 13805 139639219992384 Simple problem 4 - done successfully.
+INFO 2021-01-17 00:55:49,308 execute_solutions 13930 139805874587456 8.550882339477539
+ERROR 2021-01-17 00:55:49,311 execute_solutions 13930 139805874587456 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 107, in _execute
+    execution.terminate()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 271, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=13954)
+
+ERROR 2021-01-17 00:55:49,312 execute_solutions 13930 139805874587456 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 129, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-17 00:57:15,564 execute_solutions 13976 140434061387584 12.179851531982422
+ERROR 2021-01-17 00:57:15,568 execute_solutions 13976 140434061387584 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 107, in _execute
+    execution.terminate()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 271, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=13999)
+
+ERROR 2021-01-17 00:57:15,569 execute_solutions 13976 140434061387584 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 129, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-17 00:59:41,788 execute_solutions 14045 140716062365504 1.3942718505859375
+INFO 2021-01-17 00:59:41,802 execute_solutions 14045 140716062365504 Simple problem 1 - done successfully.
+INFO 2021-01-17 00:59:41,834 execute_solutions 14045 140716062365504 2.5186538696289062
+INFO 2021-01-17 00:59:41,840 execute_solutions 14045 140716062365504 Simple problem 2 - done successfully.
+INFO 2021-01-17 00:59:41,872 execute_solutions 14045 140716062365504 4.547595977783203
+INFO 2021-01-17 00:59:41,884 execute_solutions 14045 140716062365504 Simple problem 3 - done successfully.
+INFO 2021-01-17 00:59:41,921 execute_solutions 14045 140716062365504 6.612062454223633
+INFO 2021-01-17 00:59:41,929 execute_solutions 14045 140716062365504 Simple problem 4 - done successfully.
+INFO 2021-01-17 01:02:19,379 execute_solutions 14099 140599767283520 4.3926239013671875
+INFO 2021-01-17 01:02:19,384 execute_solutions 14099 140599767283520 Simple problem 1 - done successfully.
+INFO 2021-01-17 01:02:19,432 execute_solutions 14099 140599767283520 7.363557815551758
+INFO 2021-01-17 01:02:19,438 execute_solutions 14099 140599767283520 Simple problem 2 - done successfully.
+INFO 2021-01-17 01:02:19,476 execute_solutions 14099 140599767283520 9.90915298461914
+INFO 2021-01-17 01:02:19,481 execute_solutions 14099 140599767283520 Simple problem 3 - done successfully.
+INFO 2021-01-17 01:02:19,527 execute_solutions 14099 140599767283520 10.621070861816406
+INFO 2021-01-17 01:02:19,533 execute_solutions 14099 140599767283520 Simple problem 4 - done successfully.
+INFO 2021-01-18 14:33:17,591 execute_solutions 15185 139992842360640 2.9723644256591797
+INFO 2021-01-18 14:33:17,604 execute_solutions 15185 139992842360640 Simple problem 1 - done successfully.
+INFO 2021-01-18 14:33:17,654 execute_solutions 15185 139992842360640 2.7990341186523438
+INFO 2021-01-18 14:33:17,661 execute_solutions 15185 139992842360640 Simple problem 2 - done successfully.
+INFO 2021-01-18 14:33:17,700 execute_solutions 15185 139992842360640 2.8836727142333984
+INFO 2021-01-18 14:33:17,706 execute_solutions 15185 139992842360640 Simple problem 3 - done successfully.
+INFO 2021-01-18 14:33:17,786 execute_solutions 15185 139992842360640 51.27263069152832
+INFO 2021-01-18 14:33:17,800 execute_solutions 15185 139992842360640 Simple problem 4 - done successfully.
+INFO 2021-01-18 14:40:33,993 execute_solutions 15185 139992842360640 11.039972305297852
+INFO 2021-01-18 14:40:33,998 execute_solutions 15185 139992842360640 Simple problem 1 - done successfully.
+INFO 2021-01-18 14:40:34,048 execute_solutions 15185 139992842360640 20.84827423095703
+INFO 2021-01-18 14:40:34,052 execute_solutions 15185 139992842360640 Simple problem 2 - done successfully.
+INFO 2021-01-18 14:40:34,137 execute_solutions 15185 139992842360640 46.22936248779297
+INFO 2021-01-18 14:40:34,153 execute_solutions 15185 139992842360640 Simple problem 3 - done successfully.
+INFO 2021-01-18 14:40:34,198 execute_solutions 15185 139992842360640 1.558542251586914
+INFO 2021-01-18 14:40:34,227 execute_solutions 15185 139992842360640 Simple problem 4 - done successfully.

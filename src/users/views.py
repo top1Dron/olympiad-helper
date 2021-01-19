@@ -1,4 +1,4 @@
-from .forms import CustomUserCreationForm, LoginForm
+from .forms import CustomUserCreationForm, LoginForm, PasswordResetForm, PasswordResetConfirmForm
 from .service import get_and_activate_user, get_user_by_email
 from .tasks import task_send_email
 from .tokens import account_activation_token
@@ -65,16 +65,21 @@ def api_signup_user(request):
             )
             to_email = form.cleaned_data.get('email')
             task_send_email.delay(subject=mail_subject, message=message, to=[to_email])
-            messages.info(request, _('Please, confirm your email address to complete the registration and login from this page!'))
+            messages.info(request, _('Please, confirm your email address to complete the registration and login from this page! If you don\'t receive the email, check the spam folder!'))
             return redirect(reverse('users:login_or_signup'))
         else:
             login_form = LoginForm()
             return render(request, 'users/log.html', context={'signup_form': form, 'login_form': login_form, 'signup':True})
 
 
-def activate(request, uidb64, token):
+def api_activate_account(request, uidb64, token):
     if get_and_activate_user(urlsafe_base64_decode(uidb64), token):
         messages.success(request, _('Successfully account activation. Now you can login to your account!'))
     else:
         messages.error(request, _('Activation link is invalid!'))
     return api_get_login_and_register_user(request)
+
+
+# def api_password_reset(request):
+# TODO
+#     pass

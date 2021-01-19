@@ -28,3 +28,15 @@ class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = CustomUser
         fields = ('email',)
+
+
+class PasswordResetForm(forms.Form):
+    email = forms.CharField(label=_('Email'), max_length=200, required=True, widget=forms.EmailInput())
+
+
+class PasswordResetConfirmForm(UserCreationForm):
+    
+
+    class Meta(UserCreationForm):
+        model = CustomUser
+        fields = ('password1', 'password2')

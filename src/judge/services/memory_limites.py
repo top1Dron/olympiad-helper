@@ -15,13 +15,12 @@ class MemoryLimiter:
 
     def __init__(self, memory_limit=70368744.177664):
         '''
-        constructor to set problem memory limit
+        object initializator to set problem memory limit
         '''
 
         self.MAX_MEMORY_LIMIT = memory_limit
 
 
-    @classmethod
-    def limit_virtual_memory(cls):
+    def limit_virtual_memory(self):
         logger.info(f'{type(self.MAX_VIRTUAL_MEMORY)}: {self.MAX_VIRTUAL_MEMORY}')
         resource.setrlimit(resource.RLIMIT_AS, (self.MAX_VIRTUAL_MEMORY, resource.RLIM_INFINITY))

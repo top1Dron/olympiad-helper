@@ -8,6 +8,8 @@ from django.conf import settings
 
 import logging
 import os
+import psutil
+import resource
 import subprocess
 import time
 import traceback
@@ -93,9 +95,13 @@ def _execute(solution, tests, execute_line, time_limit, error=''):
 
                     start_time = time.time()
                     output = execution.communicate(timeout=time_limit)[0].decode('utf-8')
+                    # try:
+                    #     used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+                    #     logger.info(used_memory)
+                    # except:
+                    #     pass
                     end_time = time.time()
                     finish_time = end_time - start_time
-                    logger.info(finish_time*1000)
                     test_status = 'PD'
 
                     if test.output_data == output:

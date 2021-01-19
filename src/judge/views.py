@@ -1,23 +1,12 @@
-from django.conf import settings
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, Http404, redirect, reverse
 from django.utils.translation import ugettext_lazy as _
-from django.views.generic import CreateView, DetailView, ListView
-from datetime import datetime as dt
-from difflib import ndiff
+from django.views.generic import DetailView, ListView
 from judge.services import getter, execute_solutions
 from .forms import LanguageForm, SubmitSolutionForm
-from .memory_test import display_top
 from .models import Task, Solution
 from .tasks import task_submit_solution
  
- 
-import os
-import subprocess
-import functools
-import time
-import tracemalloc
 import logging
  
 
