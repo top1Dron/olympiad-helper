@@ -1,0 +1,13 @@
+#id_source_code {
+    width: 100%;
+    min-height: 30%;
+    /* http://i.imgur.com/2cOaJ.png ../../img/textarea_line_numbers.png*/
+    background: url(../../img/textarea_line_numbers.png) top -12px left / auto no-repeat, 
+                linear-gradient(#F1F1F1 50%, #F9F9F9 50%) top left / 100% 32px;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    padding: 0 0 0 30px;
+    resize: vertical;
+    line-height: 16px;
+    font-size: 13px;
+}

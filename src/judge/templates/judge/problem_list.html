@@ -1,0 +1,27 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Problems{% endblock title %}
+{% block main_content %}
+<div class="wrapper">
+    <h2>Problems</h2>
+    {% if problems %}
+        <div class='list'>
+            <table class="table">
+                {% for problem in problems %}
+                <tr>
+                    <td>
+                        {{ problem.number }}
+                    </td>
+                    <td>
+                        <a href="{% url 'judge:problem' problem.number %}">{{ problem.title }} </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+    {% else %}
+        <h3>Завдань не знайдено</h3>
+    {% endif %}
+</div>
+{% endblock main_content %}

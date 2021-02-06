@@ -1,0 +1,29 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Solution#{{object.pk}}{% endblock title %}
+
+{% block main_content %}
+    <div class="wrapper">
+        <h1>Solution#{{object.pk}}</h1>
+        <p>
+            {{ object.problem }}
+            {{ object.solving_date }}
+            {{ object.language }}</p>
+            {{ object.user }}</p>
+            {{ object.get_status_display }}
+        </p>
+        <hr>
+        {% for test in object.get_all_tests %}
+        <p>
+            {{ test.problem_test.test_number }}
+            {{ test.get_status_display }}
+            {{ test.time_usage }} ms
+        </p>
+        {% endfor %}
+        <hr>
+        {% if user == object.user %}
+            <p>{{object.program_code}}</p>
+        {% endif %}
+    </div>
+{% endblock main_content %}
