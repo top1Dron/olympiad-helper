@@ -1,5 +1,5 @@
 from judge.decorators import limit_permisions
-from judge.models import Task, Solution, SolutionTest, TaskTest, ProgrammingLanguage
+from judge.models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage
 from judge.services import getter
 from judge.services.memory_limites import MemoryLimiter
 from datetime import datetime
@@ -19,10 +19,10 @@ logger = logging.getLogger(__name__)
 # logging.disabled(logging.DEBUG)
 
 
-def create_solution(user, task_number, programming_language, source_code) -> int:
+def create_solution(user, problem_number, programming_language, source_code) -> int:
     solution = Solution.objects.create(
         user=user,
-        task=getter.get_task_by_number(task_number),
+        problem=getter.get_problem_by_number(problem_number),
         language=ProgrammingLanguage.objects.get(pk=programming_language),
         program_code=source_code,
         status='PD',
@@ -33,9 +33,9 @@ def create_solution(user, task_number, programming_language, source_code) -> int
     return solution.pk
 
 
-def submit_solution(task_number, programming_language, source_code, solution_id):
+def submit_solution(problem_number, programming_language, source_code, solution_id):
     '''
-    execution and testing user solution for task with task_number
+    execution and testing user solution for problem with problem_number
     '''
     
     language = ProgrammingLanguage.objects.get(pk=programming_language)
@@ -47,15 +47,15 @@ def submit_solution(task_number, programming_language, source_code, solution_id)
     with open(f'{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
         print(source_code, file=file, end='')
 
-    task = Task.objects.get(pk=task_number)
-    tests = TaskTest.objects.filter(task=task)
+    problem = Problem.objects.get(pk=problem_number)
+    tests = ProblemTest.objects.filter(problem=problem)
     error = ''
 
     if language.name in ('C++11', 'C++14', 'C++17'):
         error = _compile(language, code_file_name)
 
     execute_line = language.execute.replace('[codefilename]', code_file_name)
-    time_limit = float(task.time_limit)
+    time_limit = float(problem.time_limit)
     _execute(solution, tests, execute_line, time_limit, error)
     if os.path.isfile(code_file_name):
         os.remove(code_file_name)
@@ -70,9 +70,8 @@ def _compile(language, code_file_name:str) -> str:
     '''
 
     complile_string = language.compile.replace('[codefilename]', code_file_name)
-    compile = subprocess.Popen(complile_string.split(), stderr=subprocess.PIPE)
-    error = compile.communicate()[1]
-    return error.decode('utf-8')
+    compilation = subprocess.run(complile_string, stderr=subprocess.PIPE, text=True, shell=True)
+    return compilation.stderr
 
 
 @limit_permisions
@@ -87,36 +86,39 @@ def _execute(solution, tests, execute_line, time_limit, error=''):
                 solution_status = 'NT'
             for test in tests:
                 try:
-                    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stdin=subprocess.PIPE)
+                    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
                     execution.stdin.write(bytes(test.input_data, 'UTF-8'))
                     execution.stdin.flush()
                     
                     test.output_data = test.output_data.replace('\r', '')
 
                     start_time = time.time()
-                    output = execution.communicate(timeout=time_limit)[0].decode('utf-8')
+                    output, error_string = execution.communicate(timeout=time_limit)
+                    output = output.decode('utf-8')
+                    error_string = error_string.decode('utf-8')
                     # try:
-                    #     used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+                    #     logger.info(f'{execution.name()} - {execution.cpu_times()}') 
+                    #     used_memory = execution.memory_full_info().uss / float(1 << 20)
                     #     logger.info(used_memory)
-                    # except:
-                    #     pass
+                    # except Exception as e:
+                    #     logger.error(f'{type(e)} {traceback.format_exc()}')
                     end_time = time.time()
                     finish_time = end_time - start_time
                     test_status = 'PD'
 
                     if test.output_data == output:
-                        logger.info(f'{test.task} {test.test_number} - done successfully.')
+                        logger.info(f'{test.problem} {test.test_number} - done successfully.')
                         test_status = 'AC'
                     else:
-                        logger.info(f'{test.task} {test.test_number} - done failed')
+                        logger.info(f'{test.problem} {test.test_number} - done failed')
                         test_status = 'WA'
                 except subprocess.TimeoutExpired:
                     end_time = time.time()
                     finish_time = end_time - start_time
-                    logger.info(f'{test.task} {test.test_number} - timeout')
+                    logger.info(f'{test.problem} {test.test_number} - timeout')
                     test_status = 'TO'
                 except MemoryError as me:
-                    logger.error(f'{test.task} {test.test_number} - out of memory')
+                    logger.error(f'{test.problem} {test.test_number} - out of memory')
                     test_status = 'MO'
                 except Exception as e:
                     logger.error(f'{type(e)} {traceback.format_exc()}')
@@ -124,7 +126,7 @@ def _execute(solution, tests, execute_line, time_limit, error=''):
                     SolutionTest.objects.create(
                         status=test_status, 
                         solution=solution, 
-                        task_test=test, 
+                        problem_test=test, 
                         time_usage=str(round(finish_time*1000, 2)), 
                         memory_usage='1'
                     )

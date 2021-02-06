@@ -2386,3 +2386,1463 @@ INFO 2021-01-18 14:40:34,137 execute_solutions 15185 139992842360640 46.22936248
 INFO 2021-01-18 14:40:34,153 execute_solutions 15185 139992842360640 Simple problem 3 - done successfully.
 INFO 2021-01-18 14:40:34,198 execute_solutions 15185 139992842360640 1.558542251586914
 INFO 2021-01-18 14:40:34,227 execute_solutions 15185 139992842360640 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:25,533 execute_solutions 3333 140213657184064 Before compiling
+INFO 2021-01-27 18:57:25,550 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-27 18:57:27,538 execute_solutions 3334 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:27,586 execute_solutions 3334 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:27,610 execute_solutions 3333 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:27,629 execute_solutions 3334 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:27,677 execute_solutions 3333 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:27,680 execute_solutions 3334 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:27,717 execute_solutions 3333 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:27,765 execute_solutions 3333 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:27,847 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-27 18:57:27,908 execute_solutions 3333 140213657184064 Before compiling
+INFO 2021-01-27 18:57:30,140 execute_solutions 3334 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:30,221 execute_solutions 3334 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:30,281 execute_solutions 3334 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:30,322 execute_solutions 3334 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:30,516 execute_solutions 3333 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:30,528 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-27 18:57:30,571 execute_solutions 3333 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:30,611 execute_solutions 3333 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:30,728 execute_solutions 3333 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:30,872 execute_solutions 3333 140213657184064 Before compiling
+INFO 2021-01-27 18:57:32,142 execute_solutions 3334 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:32,224 execute_solutions 3334 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:32,294 execute_solutions 3334 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:32,364 execute_solutions 3334 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:32,581 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-27 18:57:32,633 execute_solutions 3333 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-27 18:57:32,687 execute_solutions 3333 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-27 18:57:32,751 execute_solutions 3333 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-27 18:57:32,845 execute_solutions 3333 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-27 18:57:33,055 execute_solutions 3333 140213657184064 Before compiling
+ERROR 2021-01-27 18:57:34,061 execute_solutions 3334 140213657184064 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-32-535_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-32-535_admin.cpp:9:10: error: expected ‘;’ before ‘}’ token
+ }return 0
+          ^
+          ;
+ }
+ ~         
+
+INFO 2021-01-27 18:57:34,220 execute_solutions 3334 140213657184064 Before compiling
+ERROR 2021-01-27 18:57:34,480 execute_solutions 3333 140213657184064 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-33-034_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-33-034_admin.cpp:9:10: error: expected ‘;’ before ‘}’ token
+ }return 0
+          ^
+          ;
+ }
+ ~         
+
+ERROR 2021-01-27 18:57:35,375 execute_solutions 3334 140213657184064 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-34-210_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-01-27--18-57-34-210_admin.cpp:9:10: error: expected ‘;’ before ‘}’ token
+ }return 0
+          ^
+          ;
+ }
+ ~         
+
+INFO 2021-01-28 15:31:03,885 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-28 15:31:05,833 execute_solutions 3334 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-28 15:31:05,864 execute_solutions 3334 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-28 15:31:05,895 execute_solutions 3334 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-28 15:31:05,932 execute_solutions 3334 140213657184064 Simple problem 4 - done successfully.
+INFO 2021-01-28 15:31:29,315 execute_solutions 3334 140213657184064 Before compiling
+ERROR 2021-01-28 15:31:30,636 execute_solutions 3334 140213657184064 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-28--15-31-29-279_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-01-28--15-31-29-279_admin.cpp:9:10: error: expected ‘;’ before ‘}’ token
+ }return 0
+          ^
+          ;
+ }
+ ~         
+
+INFO 2021-01-28 15:48:54,296 execute_solutions 3334 140213657184064 Before compiling
+ERROR 2021-01-28 15:48:55,888 execute_solutions 3334 140213657184064 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-01-28--15-48-54-270_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-01-28--15-48-54-270_admin.cpp:9:10: error: expected ‘;’ before ‘}’ token
+ }return 0
+          ^
+          ;
+ }
+ ~         
+
+INFO 2021-01-28 15:49:12,130 execute_solutions 3334 140213657184064 Before compiling
+INFO 2021-01-28 15:49:13,857 execute_solutions 3334 140213657184064 Simple problem 1 - done successfully.
+INFO 2021-01-28 15:49:13,922 execute_solutions 3334 140213657184064 Simple problem 2 - done successfully.
+INFO 2021-01-28 15:49:13,980 execute_solutions 3334 140213657184064 Simple problem 3 - done successfully.
+INFO 2021-01-28 15:49:14,035 execute_solutions 3334 140213657184064 Simple problem 4 - done successfully.
+ERROR 2021-01-28 15:50:06,964 execute_solutions 4104 139909242619712 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:51:59,813 execute_solutions 4104 139909242619712 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:52:24,109 execute_solutions 4104 139909242619712 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+INFO 2021-01-28 15:53:43,930 execute_solutions 4222 140005641615168 g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:53:44,042 execute_solutions 4222 140005641615168 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:54:48,026 execute_solutions 4273 140003382765376 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:55:07,836 execute_solutions 4273 140003382765376 status - CE, g++: fatal error: no input files
+compilation terminated.
+
+ERROR 2021-01-28 15:56:43,498 execute_solutions 4354 140276365907776 <class 'AttributeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 90, in _execute
+    execution.stdin.write(bytes(test.input_data, 'UTF-8'))
+AttributeError: 'CompletedProcess' object has no attribute 'stdin'
+
+ERROR 2021-01-28 15:56:43,504 execute_solutions 4354 140276365907776 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 124, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-01-28 15:58:03,992 execute_solutions 4410 139718569547584 Simple problem 1 - done successfully.
+INFO 2021-01-28 15:58:04,048 execute_solutions 4410 139718569547584 Simple problem 2 - done successfully.
+INFO 2021-01-28 15:58:04,098 execute_solutions 4410 139718569547584 Simple problem 3 - done successfully.
+INFO 2021-01-28 15:58:04,168 execute_solutions 4410 139718569547584 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:00:11,621 execute_solutions 4497 140113406400320 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4519/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4519)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4519
+
+INFO 2021-01-28 16:00:11,631 execute_solutions 4497 140113406400320 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:00:11,668 execute_solutions 4497 140113406400320 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4520/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4520)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4520
+
+INFO 2021-01-28 16:00:11,672 execute_solutions 4497 140113406400320 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:00:11,711 execute_solutions 4497 140113406400320 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4521/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4521)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4521
+
+INFO 2021-01-28 16:00:11,715 execute_solutions 4497 140113406400320 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:00:11,754 execute_solutions 4497 140113406400320 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4522/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4522)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4522
+
+INFO 2021-01-28 16:00:11,759 execute_solutions 4497 140113406400320 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:00:58,308 execute_solutions 4545 139975862310720 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4569/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4569)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid+1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4569
+
+INFO 2021-01-28 16:00:58,315 execute_solutions 4545 139975862310720 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:00:58,356 execute_solutions 4545 139975862310720 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4570/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4570)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid+1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4570
+
+INFO 2021-01-28 16:00:58,363 execute_solutions 4545 139975862310720 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:00:58,397 execute_solutions 4545 139975862310720 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4571/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4571)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid+1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4571
+
+INFO 2021-01-28 16:00:58,401 execute_solutions 4545 139975862310720 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:00:58,467 execute_solutions 4545 139975862310720 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4573/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4573)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid+1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4573
+
+INFO 2021-01-28 16:00:58,479 execute_solutions 4545 139975862310720 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:04:41,113 execute_solutions 4638 140476567287616 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4661/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4661)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4661
+
+INFO 2021-01-28 16:04:41,147 execute_solutions 4638 140476567287616 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:04:41,209 execute_solutions 4638 140476567287616 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4663/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4663)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4663
+
+INFO 2021-01-28 16:04:41,222 execute_solutions 4638 140476567287616 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:04:41,282 execute_solutions 4638 140476567287616 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4665/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4665)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4665
+
+INFO 2021-01-28 16:04:41,287 execute_solutions 4638 140476567287616 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:04:41,364 execute_solutions 4638 140476567287616 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4667/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4667)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4667
+
+INFO 2021-01-28 16:04:41,370 execute_solutions 4638 140476567287616 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:05:54,569 execute_solutions 4696 140080207619904 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4720/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4720)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid + 1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4720
+
+INFO 2021-01-28 16:05:54,588 execute_solutions 4696 140080207619904 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:05:54,652 execute_solutions 4696 140080207619904 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4722/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4722)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid + 1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4722
+
+INFO 2021-01-28 16:05:54,667 execute_solutions 4696 140080207619904 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:05:54,749 execute_solutions 4696 140080207619904 <class 'psutil.AccessDenied'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1655, in _read_smaps_file
+    with open_binary("%s/%s/smaps" % (self._procfs_path, self.pid),
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+PermissionError: [Errno 13] Permission denied: '/proc/4724/smaps'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid + 1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 1074, in memory_full_info
+    return self._proc.memory_full_info()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1839, in memory_full_info
+    smaps_data = self._read_smaps_file()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1578, in wrapper
+    raise AccessDenied(self.pid, self._name)
+psutil.AccessDenied: psutil.AccessDenied (pid=4724)
+
+INFO 2021-01-28 16:05:54,790 execute_solutions 4696 140080207619904 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:05:54,891 execute_solutions 4696 140080207619904 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4727/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4727)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid + 1).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4727
+
+INFO 2021-01-28 16:05:54,906 execute_solutions 4696 140080207619904 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:10:44,115 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4848/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4848)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4848
+
+INFO 2021-01-28 16:10:44,136 execute_solutions 4823 139655542904640 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:10:44,203 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4850/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4850)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4850
+
+INFO 2021-01-28 16:10:44,212 execute_solutions 4823 139655542904640 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:10:44,281 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4852/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4852)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4852
+
+INFO 2021-01-28 16:10:44,294 execute_solutions 4823 139655542904640 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:10:44,357 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4854/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4854)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = psutil.Process(execution.pid).memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4854
+
+INFO 2021-01-28 16:10:44,361 execute_solutions 4823 139655542904640 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:11:25,644 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4895/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4895)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = execution.memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4895
+
+INFO 2021-01-28 16:11:25,648 execute_solutions 4823 139655542904640 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:11:25,689 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4897/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4897)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = execution.memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4897
+
+INFO 2021-01-28 16:11:25,721 execute_solutions 4823 139655542904640 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:11:25,831 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4900/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4900)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = execution.memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4900
+
+INFO 2021-01-28 16:11:25,859 execute_solutions 4823 139655542904640 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:11:25,965 execute_solutions 4823 139655542904640 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/4902/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 354, in _init
+    self.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 710, in create_time
+    self._create_time = self._proc.create_time()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1788, in create_time
+    ctime = float(self._parse_stat_file()['create_time'])
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=4902)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    used_memory = execution.memory_full_info().uss / float(1 << 20)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 326, in __init__
+    self._init(pid)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 367, in _init
+    raise NoSuchProcess(pid, None, msg)
+psutil.NoSuchProcess: psutil.NoSuchProcess no process found with pid 4902
+
+INFO 2021-01-28 16:11:25,989 execute_solutions 4823 139655542904640 Simple problem 4 - done successfully.
+ERROR 2021-01-28 16:21:19,424 execute_solutions 5046 140103840745280 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/5074/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    logger.info(f'{execution.name()} - {execution.cpu_times()}')
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 617, in name
+    name = self._proc.name()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1671, in name
+    name = self._parse_stat_file()['name']
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=5074)
+
+INFO 2021-01-28 16:21:19,436 execute_solutions 5046 140103840745280 Simple problem 1 - done successfully.
+ERROR 2021-01-28 16:21:19,502 execute_solutions 5046 140103840745280 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/5076/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    logger.info(f'{execution.name()} - {execution.cpu_times()}')
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 617, in name
+    name = self._proc.name()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1671, in name
+    name = self._parse_stat_file()['name']
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=5076)
+
+INFO 2021-01-28 16:21:19,511 execute_solutions 5046 140103840745280 Simple problem 2 - done successfully.
+ERROR 2021-01-28 16:21:19,585 execute_solutions 5046 140103840745280 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/5078/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    logger.info(f'{execution.name()} - {execution.cpu_times()}')
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 617, in name
+    name = self._proc.name()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1671, in name
+    name = self._parse_stat_file()['name']
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=5078)
+
+INFO 2021-01-28 16:21:19,603 execute_solutions 5046 140103840745280 Simple problem 3 - done successfully.
+ERROR 2021-01-28 16:21:19,670 execute_solutions 5046 140103840745280 <class 'psutil.NoSuchProcess'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 447, in wrapper
+    ret = self._cache[fun]
+AttributeError: _cache
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 450, in wrapper
+    return fun(self)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1618, in _parse_stat_file
+    with open_binary("%s/%s/stat" % (self._procfs_path, self.pid)) as f:
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_common.py", line 711, in open_binary
+    return open(fname, "rb", **kwargs)
+FileNotFoundError: [Errno 2] No such file or directory: '/proc/5080/stat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 98, in _execute
+    logger.info(f'{execution.name()} - {execution.cpu_times()}')
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/__init__.py", line 617, in name
+    name = self._proc.name()
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1576, in wrapper
+    return fun(self, *args, **kwargs)
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1671, in name
+    name = self._parse_stat_file()['name']
+  File "/usr/projects/olympiad-helper/env/lib/python3.9/site-packages/psutil/_pslinux.py", line 1583, in wrapper
+    raise NoSuchProcess(self.pid, self._name)
+psutil.NoSuchProcess: psutil.NoSuchProcess process no longer exists (pid=5080)
+
+INFO 2021-01-28 16:21:19,683 execute_solutions 5046 140103840745280 Simple problem 4 - done successfully.
+INFO 2021-01-28 16:23:29,923 execute_solutions 5123 139695126583104 Simple problem 1 - done successfully.
+INFO 2021-01-28 16:23:29,991 execute_solutions 5123 139695126583104 Simple problem 2 - done successfully.
+INFO 2021-01-28 16:23:30,056 execute_solutions 5123 139695126583104 Simple problem 3 - done successfully.
+INFO 2021-01-28 16:23:30,111 execute_solutions 5123 139695126583104 Simple problem 4 - done successfully.
+INFO 2021-01-29 17:24:28,640 execute_solutions 13087 140160999884608 Simple problem 1 - done successfully.
+INFO 2021-01-29 17:24:28,693 execute_solutions 13087 140160999884608 Simple problem 2 - done successfully.
+INFO 2021-01-29 17:24:28,736 execute_solutions 13087 140160999884608 Simple problem 3 - done successfully.
+INFO 2021-01-29 17:24:28,779 execute_solutions 13087 140160999884608 Simple problem 4 - done successfully.
+INFO 2021-02-02 19:59:35,137 execute_solutions 8170 140638616921920 The area of a polygon 1 - done successfully.
+INFO 2021-02-02 20:07:14,162 execute_solutions 8333 139752088430400 The area of a polygon 1 - done failed
+INFO 2021-02-02 20:08:12,015 execute_solutions 8413 140077823829824 The area of a polygon 1 - done failed
+INFO 2021-02-02 20:08:48,421 execute_solutions 8452 139761130231616 The area of a polygon 1 - done failed
+INFO 2021-02-02 20:10:39,510 execute_solutions 8498 140642241754944 50.0 - unlimited
+
+INFO 2021-02-02 20:10:39,515 execute_solutions 8498 140642241754944 The area of a polygon 1 - done failed
+INFO 2021-02-02 20:12:27,380 execute_solutions 8573 140338243753792 The area of a polygon 1 - done successfully.
+INFO 2021-02-02 20:17:06,822 execute_solutions 8699 139915774580544 The area of a polygon 1 - done successfully.
+INFO 2021-02-02 20:17:15,606 execute_solutions 8699 139915774580544 The area of a polygon 1 - done successfully.
+INFO 2021-02-03 12:13:10,510 execute_solutions 8699 139915774580544 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:13:10,532 execute_solutions 8699 139915774580544 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:13:10,564 execute_solutions 8699 139915774580544 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:13:10,587 execute_solutions 8699 139915774580544 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:13:48,375 execute_solutions 8699 139915774580544 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:13:48,403 execute_solutions 8699 139915774580544 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:13:48,433 execute_solutions 8699 139915774580544 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:13:48,465 execute_solutions 8699 139915774580544 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:14:41,149 execute_solutions 8699 139915774580544 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:14:41,174 execute_solutions 8699 139915774580544 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:14:41,197 execute_solutions 8699 139915774580544 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:14:41,218 execute_solutions 8699 139915774580544 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:16:57,070 execute_solutions 8699 139915774580544 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:16:57,179 execute_solutions 8699 139915774580544 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:16:57,430 execute_solutions 8699 139915774580544 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:16:57,586 execute_solutions 8699 139915774580544 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:17:33,295 execute_solutions 8699 139915774580544 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:17:33,432 execute_solutions 8699 139915774580544 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:17:33,635 execute_solutions 8699 139915774580544 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:17:33,743 execute_solutions 8699 139915774580544 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:18:41,496 execute_solutions 10330 140418564675392 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:18:41,689 execute_solutions 10330 140418564675392 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:18:41,796 execute_solutions 10330 140418564675392 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:18:42,016 execute_solutions 10330 140418564675392 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:20:31,897 execute_solutions 10330 140418564675392 Simple problem 1 - done failed
+INFO 2021-02-03 12:20:32,007 execute_solutions 10330 140418564675392 Simple problem 2 - done failed
+INFO 2021-02-03 12:20:32,239 execute_solutions 10330 140418564675392 Simple problem 3 - done failed
+INFO 2021-02-03 12:20:32,379 execute_solutions 10330 140418564675392 Simple problem 4 - done failed
+ERROR 2021-02-03 12:21:15,656 execute_solutions 10330 140418564675392 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-02-03--12-21-15-570_admin.cpp: In function ‘int main()’:
+/usr/projects/olympiad-helper/src/config/media/2021-02-03--12-21-15-570_admin.cpp:3:9: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+ b[11] = "111";
+         ^~~~~
+
+INFO 2021-02-03 12:21:42,444 execute_solutions 10330 140418564675392 Simple problem 1 - done failed
+INFO 2021-02-03 12:21:42,470 execute_solutions 10330 140418564675392 Simple problem 2 - done failed
+INFO 2021-02-03 12:21:42,493 execute_solutions 10330 140418564675392 Simple problem 3 - done failed
+INFO 2021-02-03 12:21:42,530 execute_solutions 10330 140418564675392 Simple problem 4 - done failed
+INFO 2021-02-03 12:22:03,321 execute_solutions 10330 140418564675392 Simple problem 1 - done failed
+INFO 2021-02-03 12:22:03,389 execute_solutions 10330 140418564675392 Simple problem 2 - done failed
+ERROR 2021-02-03 12:22:03,431 execute_solutions 10330 140418564675392 <class 'BrokenPipeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    execution.stdin.flush()
+BrokenPipeError: [Errno 32] Broken pipe
+
+INFO 2021-02-03 12:22:03,477 execute_solutions 10330 140418564675392 Simple problem 4 - done failed
+INFO 2021-02-03 12:22:36,934 execute_solutions 10330 140418564675392 Simple problem 1 - done failed
+ERROR 2021-02-03 12:22:36,955 execute_solutions 10330 140418564675392 <class 'BrokenPipeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    execution.stdin.flush()
+BrokenPipeError: [Errno 32] Broken pipe
+
+INFO 2021-02-03 12:22:37,021 execute_solutions 10330 140418564675392 Simple problem 3 - done failed
+ERROR 2021-02-03 12:22:37,051 execute_solutions 10330 140418564675392 <class 'BrokenPipeError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    execution.stdin.flush()
+BrokenPipeError: [Errno 32] Broken pipe
+
+INFO 2021-02-03 12:23:19,025 execute_solutions 10330 140418564675392 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:23:19,056 execute_solutions 10330 140418564675392 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:23:19,091 execute_solutions 10330 140418564675392 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:23:19,124 execute_solutions 10330 140418564675392 Simple problem 4 - done successfully.
+INFO 2021-02-03 12:23:46,566 execute_solutions 10330 140418564675392 Simple problem 1 - done successfully.
+INFO 2021-02-03 12:23:46,590 execute_solutions 10330 140418564675392 Simple problem 2 - done successfully.
+INFO 2021-02-03 12:23:46,617 execute_solutions 10330 140418564675392 Simple problem 3 - done successfully.
+INFO 2021-02-03 12:23:46,641 execute_solutions 10330 140418564675392 Simple problem 4 - done successfully.
+ERROR 2021-02-03 12:26:22,286 execute_solutions 10809 140073479485248 <class 'ValueError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 96, in _execute
+    output, error_string = execution.communicate(timeout=time_limit)[0].decode('utf-8')
+ValueError: too many values to unpack (expected 2)
+
+ERROR 2021-02-03 12:26:22,287 execute_solutions 10809 140073479485248 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 126, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-02-03 12:27:30,308 execute_solutions 10872 139695909705536 <class 'ValueError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 96, in _execute
+    output, error_string = execution.communicate(timeout=time_limit)[0].decode('utf-8')
+ValueError: too many values to unpack (expected 2)
+
+ERROR 2021-02-03 12:27:30,309 execute_solutions 10872 139695909705536 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 126, in _execute
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-02-03 21:12:58,779 execute_solutions 10974 140041494411072 
+INFO 2021-02-03 21:12:58,784 execute_solutions 10974 140041494411072 Simple problem 1 - done successfully.
+ERROR 2021-02-03 21:12:58,810 execute_solutions 10974 140041494411072 
+INFO 2021-02-03 21:12:58,816 execute_solutions 10974 140041494411072 Simple problem 2 - done successfully.
+ERROR 2021-02-03 21:12:58,841 execute_solutions 10974 140041494411072 
+INFO 2021-02-03 21:12:58,846 execute_solutions 10974 140041494411072 Simple problem 3 - done successfully.
+ERROR 2021-02-03 21:12:58,868 execute_solutions 10974 140041494411072 
+INFO 2021-02-03 21:12:58,873 execute_solutions 10974 140041494411072 Simple problem 4 - done successfully.
+ERROR 2021-02-03 21:14:43,141 execute_solutions 10974 140041494411072   File "/usr/projects/olympiad-helper/src/config/media/2021-02-03--21-14-42-979_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-03 21:14:43,149 execute_solutions 10974 140041494411072 Simple problem 1 - done failed
+ERROR 2021-02-03 21:14:43,272 execute_solutions 10974 140041494411072   File "/usr/projects/olympiad-helper/src/config/media/2021-02-03--21-14-42-979_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-03 21:14:43,279 execute_solutions 10974 140041494411072 Simple problem 2 - done failed
+ERROR 2021-02-03 21:14:43,441 execute_solutions 10974 140041494411072   File "/usr/projects/olympiad-helper/src/config/media/2021-02-03--21-14-42-979_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-03 21:14:43,455 execute_solutions 10974 140041494411072 Simple problem 3 - done failed
+ERROR 2021-02-03 21:14:43,622 execute_solutions 10974 140041494411072   File "/usr/projects/olympiad-helper/src/config/media/2021-02-03--21-14-42-979_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-03 21:14:43,627 execute_solutions 10974 140041494411072 Simple problem 4 - done failed

@@ -14,7 +14,7 @@
                         {{ problem.number }}
                     </td>
                     <td>
-                        <a href="{% url 'judge:task' problem.number %}">{{ problem.title }} </a>
+                        <a href="{% url 'judge:problem' problem.number %}">{{ problem.title }} </a>
                     </td>
                 </tr>
                 {% endfor %}

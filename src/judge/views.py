@@ -4,7 +4,7 @@ from django.utils.translation import ugettext_lazy as _
 from django.views.generic import DetailView, ListView
 from judge.services import getter, execute_solutions
 from .forms import LanguageForm, SubmitSolutionForm
-from .models import Task, Solution
+from .models import Problem, Solution
 from .tasks import task_submit_solution
  
 import logging
@@ -21,22 +21,22 @@ def api_show_language_dropdown(request):
 
 
 class ProblemListView(ListView):
-    model = Task
+    model = Problem
     template_name = 'judge/problem_list.html'
-    queryset = getter.get_all_available_tasks()
+    queryset = getter.get_all_available_problems()
     context_object_name = 'problems'
     # paginate_by = 10
 
 
-class TaskDetailView(DetailView):
-    model = Task
+class ProblemDetailView(DetailView):
+    model = Problem
     slug_field = 'number'
-    template = 'judge/task_detail.html'
+    template = 'judge/problem_detail.html'
 
     def get_object(self, queryset=None):
         slug = self.kwargs.get(self.slug_url_kwarg, None)
         try:
-            return getter.get_task_by_number(slug)
+            return getter.get_problem_by_number(slug)
         except:
             raise Http404(_('Problem not found'))
 
@@ -47,12 +47,12 @@ def api_submit_solution(request, slug):
         if form.is_valid():
             solution_id = execute_solutions.create_solution(
                 user=request.user,
-                task_number=request.POST.get('task_number'),
+                problem_number=request.POST.get('problem_number'),
                 programming_language=request.POST.get('programming_language'),
                 source_code=request.POST.get('source_code')
             )
             task_submit_solution.delay(
-                task_number=request.POST.get('task_number'),
+                problem_number=request.POST.get('problem_number'),
                 programming_language=request.POST.get('programming_language'),
                 source_code=request.POST.get('source_code'),
                 solution_id=solution_id
@@ -60,7 +60,7 @@ def api_submit_solution(request, slug):
             return redirect(reverse('judge:solution_detail', kwargs={'id':solution_id}))
     else:
         form = SubmitSolutionForm()
-    return render(request, 'judge/submit_solution.html', {'form': form, 'task_number': slug})
+    return render(request, 'judge/submit_solution.html', {'form': form, 'problem_number': slug})
 
 
 class SolutionDetailView(DetailView):

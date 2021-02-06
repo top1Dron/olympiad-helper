@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Task, Solution, SolutionTest, TaskTest, ProgrammingLanguage, TaskSamples
+from .models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage, ProblemSamples
 
 admin.site.register(ProgrammingLanguage)
-admin.site.register(Task)
-admin.site.register(TaskSamples)
+admin.site.register(Problem)
+admin.site.register(ProblemSamples)
 admin.site.register(Solution)
 admin.site.register(SolutionTest)
-admin.site.register(TaskTest)
+admin.site.register(ProblemTest)

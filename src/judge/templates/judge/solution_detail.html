@@ -7,7 +7,7 @@
     <div class="wrapper">
         <h1>Solution#{{object.pk}}</h1>
         <p>
-            {{ object.task }}
+            {{ object.problem }}
             {{ object.solving_date }}
             {{ object.language }}</p>
             {{ object.user }}</p>
@@ -16,7 +16,7 @@
         <hr>
         {% for test in object.get_all_tests %}
         <p>
-            {{ test.task_test.test_number }}
+            {{ test.problem_test.test_number }}
             {{ test.get_status_display }}
             {{ test.time_usage }} ms
         </p>

@@ -31,11 +31,11 @@ class ProgrammingLanguage(models.Model):
         return self.name
 
 
-class Task(models.Model):
-    '''model that describes tasks olympiad tasks'''
+class Problem(models.Model):
+    '''model that describes olympiad problems'''
 
     DIFFICULTY = (
-    #    """enum of task difficulty"""
+    #    """enum of problem difficulty"""
 
         ('VE', _('Very easy')),
         ('EA', _('Easy')),
@@ -46,7 +46,7 @@ class Task(models.Model):
 
 
     CLASSIFICATION = (
-        # """enum of task classification"""
+        # """enum of problem classification"""
 
         ('CB', _('Combinatorics')),
     )
@@ -71,42 +71,42 @@ class Task(models.Model):
 
     @property
     def get_all_samples(self):
-        return TaskSamples.objects.filter(task=self.pk)
+        return ProblemSamples.objects.filter(problem=self.pk)
 
 
     @property
     def get_all_tests(self):
-        return TaskTest.objects.filter(task=self.id)
+        return ProblemTest.objects.filter(problem=self.pk)
 
 
-class TaskSamples(models.Model):
-    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+class ProblemSamples(models.Model):
+    problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     sample_input = models.TextField(_("Sample input #"))
     sample_output = models.TextField(_("Sample output #"))
 
 
     def __str__(self):
-        return self.task.title
+        return self.problem.title + '- sample'
 
 
-class TaskTest(models.Model):
-    '''model that describes task validation tests'''
+class ProblemTest(models.Model):
+    '''model that describes Problem validation tests'''
 
-    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+    problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     test_number = models.IntegerField()
     input_data = models.TextField()
     output_data = models.TextField()
 
 
     def __str__(self):
-        return f'{self.task.title} - {self.test_number}'
+        return f'{self.problem.title} - {self.test_number}'
 
 
 class Solution(models.Model):
-    """model that describes user submitted task solution"""
+    """model that describes user submitted problem solution"""
 
     user = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
-    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+    problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     language = models.ForeignKey(to=ProgrammingLanguage, on_delete=models.CASCADE)
     solving_date = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=2, choices=STATUS)
@@ -126,40 +126,23 @@ class Solution(models.Model):
 
 
 class SolutionTest(models.Model):
-    '''model that describes passing task validation tests in solution'''
+    '''model that describes passing problem validation tests in solution'''
 
     solution = models.ForeignKey(to=Solution, on_delete=models.CASCADE)
-    task_test = models.ForeignKey(to=TaskTest, on_delete=models.CASCADE)
+    problem_test = models.ForeignKey(to=ProblemTest, on_delete=models.CASCADE)
     memory_usage = models.CharField(max_length=30)
     time_usage = models.CharField(max_length=30)
     status = models.CharField(max_length=2, choices=STATUS)
 
 
     def __str__(self):
-        return f'{self.solution.id} - {self.task_test.test_number}'
+        return f'{self.solution.id} - {self.problem_test.test_number}'
 
 
-class TaskComment(models.Model):
-    '''model that describes comments from successfully passed task users for task'''
+class ProblemComment(models.Model):
+    '''model that describes comments from successfully passed Problem users for Problem'''
 
-    task = models.ForeignKey(to=Task, on_delete=models.CASCADE)
+    problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     author = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
     content = models.TextField()
     publication_date = models.DateTimeField(_("Publication date"), auto_now=True)
-    
-
-# class Text(models.Model):
- 
-#     text = models.TextField()
- 
-#     def get_absolute_url(self):
-#         return reverse('judge:create')
- 
- 
-# class CodeFile(models.Model):
- 
-#     file = models.FileField(upload_to=f'settings.MEDIA_ROOT')
- 
- 
-#     def get_absolute_url(self):
-#         return reverse('judge:create')
