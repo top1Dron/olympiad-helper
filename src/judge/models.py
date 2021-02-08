@@ -11,6 +11,7 @@ STATUS = (
     ('PD', _('Pending')),
     ('CE', _('Compilation error')),
     ('WA', _('Wrong answer')),
+    ('RE', _('Runtime error')),
     ('PA', _('Partially accepted')),
     ('TO', _('Timeout')),
     ('MO', _('Memory out')),

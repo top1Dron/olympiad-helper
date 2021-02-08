@@ -3846,3 +3846,51 @@ ERROR 2021-02-03 21:14:43,622 execute_solutions 10974 140041494411072   File "/u
 SyntaxError: invalid syntax
 
 INFO 2021-02-03 21:14:43,627 execute_solutions 10974 140041494411072 Simple problem 4 - done failed
+ERROR 2021-02-08 20:39:02,939 execute_solutions 7032 140387034588992 <class 'NameError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 104, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+NameError: name 'execute_line' is not defined
+
+ERROR 2021-02-08 20:39:02,942 execute_solutions 7032 140387034588992 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 88, in _execute
+    _test_execution(test, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 145, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+ERROR 2021-02-08 20:40:56,885 execute_solutions 7118 140268911621952 <class 'NameError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 112, in _test_execution
+    test_output = output.decode('utf-8')
+NameError: name 'output' is not defined
+
+ERROR 2021-02-08 20:40:56,886 execute_solutions 7118 140268911621952 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 88, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 145, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-02-08 20:41:57,070 execute_solutions 7161 140347963320128 Simple problem 1 - done successfully.
+INFO 2021-02-08 20:41:57,093 execute_solutions 7161 140347963320128 Simple problem 2 - done successfully.
+INFO 2021-02-08 20:41:57,117 execute_solutions 7161 140347963320128 Simple problem 3 - done successfully.
+INFO 2021-02-08 20:41:57,137 execute_solutions 7161 140347963320128 Simple problem 4 - done successfully.
+INFO 2021-02-08 20:43:24,392 execute_solutions 7161 140347963320128 Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-02-08--20-43-24-264_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-08 20:43:24,505 execute_solutions 7161 140347963320128 Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-02-08--20-43-24-264_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-08 20:43:24,724 execute_solutions 7161 140347963320128 Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-02-08--20-43-24-264_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-02-08 20:43:24,844 execute_solutions 7161 140347963320128 Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-02-08--20-43-24-264_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+

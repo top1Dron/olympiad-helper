@@ -75,68 +75,79 @@ def _compile(language, code_file_name:str) -> str:
 
 
 @limit_permisions
-def _execute(solution, tests, execute_line, time_limit, error=''):
+def _execute(solution, tests, execute_line, time_limit, compile_error=''):
     '''
     method for execution submitted code
     '''
     
     try:
-        if error == '':
+        if compile_error == '':
             if len(tests) == 0:
                 solution_status = 'NT'
             for test in tests:
-                try:
-                    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
-                    execution.stdin.write(bytes(test.input_data, 'UTF-8'))
-                    execution.stdin.flush()
-                    
-                    test.output_data = test.output_data.replace('\r', '')
-
-                    start_time = time.time()
-                    output, error_string = execution.communicate(timeout=time_limit)
-                    output = output.decode('utf-8')
-                    error_string = error_string.decode('utf-8')
-                    # try:
-                    #     logger.info(f'{execution.name()} - {execution.cpu_times()}') 
-                    #     used_memory = execution.memory_full_info().uss / float(1 << 20)
-                    #     logger.info(used_memory)
-                    # except Exception as e:
-                    #     logger.error(f'{type(e)} {traceback.format_exc()}')
-                    end_time = time.time()
-                    finish_time = end_time - start_time
-                    test_status = 'PD'
-
-                    if test.output_data == output:
-                        logger.info(f'{test.problem} {test.test_number} - done successfully.')
-                        test_status = 'AC'
-                    else:
-                        logger.info(f'{test.problem} {test.test_number} - done failed')
-                        test_status = 'WA'
-                except subprocess.TimeoutExpired:
-                    end_time = time.time()
-                    finish_time = end_time - start_time
-                    logger.info(f'{test.problem} {test.test_number} - timeout')
-                    test_status = 'TO'
-                except MemoryError as me:
-                    logger.error(f'{test.problem} {test.test_number} - out of memory')
-                    test_status = 'MO'
-                except Exception as e:
-                    logger.error(f'{type(e)} {traceback.format_exc()}')
-                finally:
-                    SolutionTest.objects.create(
-                        status=test_status, 
-                        solution=solution, 
-                        problem_test=test, 
-                        time_usage=str(round(finish_time*1000, 2)), 
-                        memory_usage='1'
-                    )
-                solution_status = _get_solution_tests_status_counts(SolutionTest.objects.filter(solution=solution))
+                _test_execution(test, execute_line, time_limit, solution)
+            solution_status = _get_solution_tests_status_counts(SolutionTest.objects.filter(solution=solution))
         else:
             solution_status = 'CE'
-            logger.error(f"status - {solution_status}, {error}")
+            logger.error(f"status - {solution_status}, {compile_error}")
         _final_update_solution_result(solution, solution_status)
     except Exception as e:
         logger.error(f'{type(e)} {traceback.format_exc()}')
+
+
+def _test_execution(test, execute_line, time_limit, solution):
+    '''
+    executes given test of given solution with given time_limit
+    TODO: realize memory_limit and memory calculation on executed test
+    '''
+    try:
+        execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+        execution.stdin.write(bytes(test.input_data, 'UTF-8'))
+        execution.stdin.flush()
+        
+        test.output_data = test.output_data.replace('\r', '')
+
+        start_time = time.time()
+        test_output, test_error_string = execution.communicate(timeout=time_limit)
+        test_output = test_output.decode('utf-8')
+        test_error_string = test_error_string.decode('utf-8')
+        # try:
+        #     logger.info(f'{execution.name()} - {execution.cpu_times()}') 
+        #     used_memory = execution.memory_full_info().uss / float(1 << 20)
+        #     logger.info(used_memory)
+        # except Exception as e:
+        #     logger.error(f'{type(e)} {traceback.format_exc()}')
+        end_time = time.time()
+        finish_time = end_time - start_time
+        test_status = 'PD'
+
+        if test_error_string != '':
+            logger.info(f'{test.problem} {test.test_number} - done failed. {test_error_string}')
+            test_status = 'RE'
+        elif test.output_data == test_output:
+            logger.info(f'{test.problem} {test.test_number} - done successfully.')
+            test_status = 'AC'
+        else:
+            logger.info(f'{test.problem} {test.test_number} - done failed')
+            test_status = 'WA'
+    except subprocess.TimeoutExpired:
+        end_time = time.time()
+        finish_time = end_time - start_time
+        logger.info(f'{test.problem} {test.test_number} - timeout')
+        test_status = 'TO'
+    except MemoryError as me:
+        logger.error(f'{test.problem} {test.test_number} - out of memory')
+        test_status = 'MO'
+    except Exception as e:
+        logger.error(f'{type(e)} {traceback.format_exc()}')
+    finally:
+        SolutionTest.objects.create(
+            status=test_status, 
+            solution=solution, 
+            problem_test=test, 
+            time_usage=str(round(finish_time*1000, 2)), 
+            memory_usage='1'
+        )
 
 
 def _get_solution_tests_status_counts(tests):
