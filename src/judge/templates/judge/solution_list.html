@@ -11,10 +11,13 @@
                 {% for solution in solutions %}
                 <tr>
                     <td>
-                        {{ solution.pk }}
+                        <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
                     </td>
                     <td>
                         {{ solution.problem }}
+                    </td>
+                    <td>
+                        {{ solution.user.username }}
                     </td>
                     <td>
                         {{ solution.language }}

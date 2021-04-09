@@ -3894,3 +3894,268 @@ INFO 2021-02-08 20:43:24,844 execute_solutions 7161 140347963320128 Simple probl
           ^
 SyntaxError: invalid syntax
 
+INFO 2021-03-11 18:36:44,327 views 19973 140289327281920 <QuerySet []>
+INFO 2021-03-12 12:26:43,087 views 21666 139938540541696 <QuerySet [<Competition: empty>, <Competition: user_comp>]>
+INFO 2021-03-12 12:28:16,980 views 21666 139938540541696 <QuerySet [<Competition: empty>, <Competition: user_comp>]>
+INFO 2021-03-12 12:28:19,124 views 21666 139938540541696 <QuerySet [<Competition: empty>, <Competition: user_comp>]>
+INFO 2021-03-12 12:30:20,420 views 21666 139938540541696 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:32:28,774 views 21666 139938548934400 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:32:30,553 views 21666 139938548934400 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:43:34,273 views 21666 139938557327104 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:50:05,875 views 22336 140123793913600 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:50:38,057 views 22396 140486946617088 <QuerySet [<Group: Test group>]>
+INFO 2021-03-12 12:52:07,764 views 22396 140486946617088 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-12 12:52:11,726 views 22396 140486946617088 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-12 12:52:13,414 views 22396 140486946617088 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:52:14,077 views 22396 140486946617088 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>]>
+INFO 2021-03-12 12:53:05,600 views 22517 139955414636288 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>]>
+INFO 2021-03-20 12:50:47,486 views 24468 140367047423744 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>]>
+INFO 2021-03-20 12:50:53,922 views 24468 140367047423744 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-20 12:51:23,038 views 24468 140367047423744 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-20 13:10:21,448 views 25035 140335297865472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-20 16:41:30,532 views 31347 140115671881472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-20 16:47:38,505 views 31462 139669003777792 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-20 18:01:34,030 views 1394 140529904592640 {'tab-data': '<form method="post" action=\'\'>    <input type="hidden" name="csrfmiddlewaretoken" value="qP0XPnf5ErqSSHtBCkFn60lFeSe9wLz50P3oKDzcfCieV0HlYVlDla6RYdoBH3lX">                <p>        </br>                </br></br>        </br>                </br></br>        </br>                </br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-20 18:05:11,048 views 1394 140529904592640 {'tab-data': '<form method="post" action=\'\'>    <input type="hidden" name="csrfmiddlewaretoken" value="atrJkMd0HOym2wqs3DeKBLcs2tXeKHByKtuaf2x7iZqI5PEcpeU0QVXEMO7GVZnq">                <p>        </br>                </br></br>        </br>                </br></br>        </br>                </br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-20 18:07:47,120 views 1620 140010129434368 {'tab-data': '<form method="post" action=\'\'>    <input type="hidden" name="csrfmiddlewaretoken" value="4ABSd4hHUsaOCjTj5oQJq2OGuqKTOPBYEAEj8kBOvD2aFC73rZwZFczSeLUlZ7nQ">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-20 18:09:08,693 views 1620 140010129434368 {'tab-data': '<form method="post" action=\'\'>    <input type="hidden" name="csrfmiddlewaretoken" value="W8RebxYbAlL618nI9toKiRtm5YnJdbEqw8UF6NiibwDs4rBsv440x1eyPjxbotqi">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-23 10:03:50,469 views 2436 139638945986304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-23 10:04:10,210 views 2436 139638945986304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-23 10:04:19,551 views 2436 139638945986304 {'tab-data': '<form method="post" action=/groups/6/competitions/create-competition data-create-competition=/groups/6/competitions/create-competition>    <input type="hidden" name="csrfmiddlewaretoken" value="zQGemd3h6VGo2knJbu8bCk1TWz5jg6EA9QJFhtnoH6yK5DBtx5OrRuM5GUfLroqs">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-23 10:04:40,134 views 2436 139638945986304 {'tab-data': '<form method="post" action=/groups/6/competitions/create-competition data-create-competition=/groups/6/competitions/create-competition>    <input type="hidden" name="csrfmiddlewaretoken" value="NL2M6wajdQhaqNToU9pKsdhupMwurHLtnL5d1MuqO19wt678gK50Hn2G97GWCZxl">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-23 10:05:16,002 views 2436 139638945986304 {'tab-data': '<form method="post" action=/groups/6/competitions/create-competition data-create-competition=/groups/6/competitions/create-competition>    <input type="hidden" name="csrfmiddlewaretoken" value="p5U25mWcFzDNOJnoFpnbX9KiF56ryQlZZ5Xt0CgjgKv9R2B8103rcjvupqgTJ87R">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-23 10:05:52,418 views 2436 139638945986304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-23 10:05:53,341 views 2436 139638945986304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-23 10:05:54,246 views 2436 139638945986304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-23 10:06:08,558 views 2436 139638945986304 {'tab-data': '<form method="post" action=/groups/6/competitions/create-competition data-create-competition=/groups/6/competitions/create-competition>    <input type="hidden" name="csrfmiddlewaretoken" value="zcjRV3UDE94B8fIJxYJq0kFCdFZaqpzg9cmiQjeKfkWXbyWtTzpGfuqOX09CBHl8">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-23 10:07:17,839 views 2548 140142896752384 {'tab-data': '<form method="post" action=/groups/6/competitions/create-competition data-create-competition=/groups/6/competitions/create-competition>    <input type="hidden" name="csrfmiddlewaretoken" value="BrugjftbgqyGKjrS8UPn0kzBjti4kYwQbrxHevNiRBq2NCFCuvvDfukN3OswvgiI">                <p>        <label for="id_title">Title:</label></br>                <input type="text" name="title" maxlength="100" placeholder="Competition title" required id="id_title"></br></br>        <label for="id_start_date">Start date:</label></br>                <input type="text" name="start_date" placeholder="Competition start date" required id="id_start_date"></br></br>        <label for="id_end_date">End date:</label></br>                <input type="text" name="end_date" placeholder="Competition end date" required id="id_end_date"></br></br>    </p>    <button type="submit">Create</button></form>'}
+INFO 2021-03-24 18:19:42,234 views 3818 140057103947520 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-24 18:19:51,172 views 3818 140057103947520 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>, <Competition: fdgdfg>, <Competition: test_competition>]>
+INFO 2021-03-24 18:20:01,434 views 3818 140057103947520 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-25 17:50:51,248 views 7886 140664433141504 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-25 18:05:27,123 views 8533 140420868732672 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-25 18:06:17,228 views 8533 140420868732672 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-26 18:41:48,239 views 8979 139818011154176 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>, <Competition: fdgdfg>, <Competition: test_competition>]>
+INFO 2021-03-27 13:57:01,357 views 11713 140512271005440 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>, <Competition: fdgdfg>, <Competition: test_competition>]>
+INFO 2021-03-27 14:37:44,060 views 13743 140371118999296 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>, <Competition: fdgdfg>, <Competition: test_competition>]>
+INFO 2021-03-27 15:48:58,107 execute_solutions 14815 140380120655680 Simple problem 1 - done successfully.
+INFO 2021-03-27 15:48:58,156 execute_solutions 14815 140380120655680 Simple problem 2 - done successfully.
+INFO 2021-03-27 15:48:58,212 execute_solutions 14815 140380120655680 Simple problem 3 - done successfully.
+INFO 2021-03-27 15:48:58,259 execute_solutions 14815 140380120655680 Simple problem 4 - done successfully.
+INFO 2021-03-27 15:52:40,472 execute_solutions 14924 140037830125376 Simple problem 1 - done successfully.
+INFO 2021-03-27 15:52:40,507 execute_solutions 14924 140037830125376 Simple problem 2 - done successfully.
+INFO 2021-03-27 15:52:40,553 execute_solutions 14924 140037830125376 Simple problem 3 - done successfully.
+INFO 2021-03-27 15:52:40,586 execute_solutions 14924 140037830125376 Simple problem 4 - done successfully.
+INFO 2021-03-27 15:53:27,627 execute_solutions 14924 140037830125376 Error protection queue 1 - done failed. Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/config/media/2021-03-27--15-53-27-357_admin.py", line 1, in <module>
+    dsad
+NameError: name 'dsad' is not defined
+
+INFO 2021-03-27 15:57:49,873 execute_solutions 14924 140037830125376 Error protection queue 1 - done failed. Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/config/media/2021-03-27--15-57-49-696_admin.py", line 1, in <module>
+    dsad
+NameError: name 'dsad' is not defined
+
+INFO 2021-03-27 15:58:12,263 execute_solutions 15097 139871428716352 Error protection queue 1 - done failed. Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/config/media/2021-03-27--15-58-11-880_admin.py", line 1, in <module>
+    dsad
+NameError: name 'dsad' is not defined
+
+INFO 2021-03-27 16:01:41,535 views 15148 140600384943872 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-27 16:01:44,215 views 15148 140600384943872 <QuerySet [<Competition: empty>, <Competition: user_comp>, <Competition: test2>, <Competition: tesst>, <Competition: fdgdfg>, <Competition: test_competition>]>
+INFO 2021-03-27 16:07:15,201 views 15280 140385067878144 <QuerySet []>
+INFO 2021-03-27 16:07:44,648 views 15280 140385067878144 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-27 16:08:05,063 views 15280 140385067878144 <QuerySet []>
+INFO 2021-03-27 16:09:06,172 views 15280 140385067878144 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-27 16:09:10,300 views 15280 140385067878144 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-27 16:13:43,680 views 15414 140141195532032 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-27 16:14:06,327 views 15414 140141195532032 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-27 16:16:14,098 views 15414 140141195532032 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-27 16:16:15,791 views 15414 140141195532032 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-27 16:16:26,705 views 15414 140141195532032 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-30 16:12:44,426 execute_solutions 2520 139876845647680 Simple problem 1 - done successfully.
+INFO 2021-03-30 16:12:44,503 execute_solutions 2520 139876845647680 Simple problem 2 - done successfully.
+INFO 2021-03-30 16:12:44,557 execute_solutions 2520 139876845647680 Simple problem 3 - done successfully.
+INFO 2021-03-30 16:12:44,625 execute_solutions 2520 139876845647680 Simple problem 4 - done successfully.
+INFO 2021-03-30 16:13:37,854 execute_solutions 2520 139876845647680 Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-03-30--16-13-37-534_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-03-30 16:13:38,161 execute_solutions 2520 139876845647680 Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-03-30--16-13-37-534_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-03-30 16:13:38,543 execute_solutions 2520 139876845647680 Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-03-30--16-13-37-534_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-03-30 16:13:38,885 execute_solutions 2520 139876845647680 Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-03-30--16-13-37-534_admin.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-03-30 16:15:26,347 views 2590 139856269412096 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-30 16:15:57,889 views 2590 139856269412096 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-30 16:17:24,503 views 2590 139856269412096 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-30 16:46:21,985 views 3160 140115559450368 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-30 16:46:35,526 views 3160 140115559450368 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-30 17:02:59,945 views 3492 139817492936448 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-30 17:03:23,176 views 3492 139817492936448 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-03-30 17:03:35,624 views 3492 139817492936448 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-03-30 17:03:40,170 views 3492 139817492936448 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:01:10,018 views 5608 139721274390272 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:13:16,264 views 5608 139721274390272 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:15:11,305 views 5608 139721274390272 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-06 16:17:12,431 views 6186 140123095738112 9
+INFO 2021-04-06 16:17:55,575 views 6216 140068936877824 9
+INFO 2021-04-06 16:18:21,875 views 6239 139982576510720 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:20:32,366 views 6301 139949827835648 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:25:52,178 views 6407 140154848933632 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-06 16:26:32,534 views 6407 140154848933632 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-06 16:26:53,766 views 6407 140154818246400 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:44:25,413 views 6730 140699200624384 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7ff715ee0e80>}
+INFO 2021-04-06 16:44:45,016 views 6730 140699200624384 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7ff715e44d60>}
+INFO 2021-04-06 16:45:52,949 views 6770 140098849154816 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f6b4e2a2370>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-06 16:46:36,730 views 6770 140098849154816 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f6b4e2e3ca0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-06 16:46:59,144 views 6770 140098849154816 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-06 16:48:22,170 views 6830 140689160279808 {'object': <Competition: spring contest 2021>, 'competition': <Competition: spring contest 2021>, 'view': <competitions.views.CompetitionDetailView object at 0x7ff4bf6e5a90>, 'is_competition_in_group': False, 'is_group_teacher': False}
+INFO 2021-04-06 16:48:28,984 views 6830 140689160279808 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-06 16:48:33,435 views 6830 140689160279808 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7ff4bedd35e0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-07 15:22:58,911 views 1371 139775141213952 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-07 15:23:07,258 views 1371 139775141213952 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1fee882b80>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-07 16:25:14,420 views 2952 140394897602304 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-07 16:25:16,703 views 2952 140394897602304 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-07 16:25:21,930 views 2952 140394897602304 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb0401614f0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-07 16:41:55,331 views 5220 140329686656768 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fa10d26ce50>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-07 16:42:05,591 views 5220 140329686656768 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-07 16:42:11,241 views 5220 140329686656768 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fa10c934af0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 10:57:02,388 views 5220 140329686656768 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fa10c92dc10>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 10:57:14,237 views 5220 140329686656768 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 10:57:18,819 views 5220 140329686656768 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fa10c8c9b20>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 10:59:04,429 views 5585 140026588129024 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f5a7b106ca0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 10:59:35,788 views 5585 140026588129024 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f5a7b18bf10>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 11:00:55,674 views 5662 139628111722240 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 11:00:59,693 views 5662 139628111722240 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7efdb87210a0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 11:03:35,540 views 5662 139628111722240 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 11:03:38,845 views 5662 139628111722240 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7efdb8721eb0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 17:28:24,653 views 6500 140128338286336 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 17:32:08,615 views 6558 140639492458240 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 17:32:12,800 views 6558 140639492458240 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fe92e609a30>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 17:34:16,113 views 6683 139750141388544 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 17:34:20,658 views 6683 139750141388544 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1a1cff2550>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 17:34:24,124 views 6683 139750141388544 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-08 17:34:25,588 views 6683 139750141388544 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 17:34:29,604 views 6683 139750141388544 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1a1d051fa0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 18:08:37,548 execute_solutions 7827 140205379618624 user_comp: Simple problem 1 - done successfully.
+INFO 2021-04-08 18:08:37,613 execute_solutions 7827 140205379618624 user_comp: Simple problem 2 - done successfully.
+INFO 2021-04-08 18:08:37,671 execute_solutions 7827 140205379618624 user_comp: Simple problem 3 - done successfully.
+INFO 2021-04-08 18:08:37,703 execute_solutions 7827 140205379618624 user_comp: Simple problem 4 - done successfully.
+INFO 2021-04-08 18:09:09,764 views 7822 140283191240448 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 18:09:16,685 views 7822 140283191240448 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f9639cfbdf0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 19:35:30,742 views 7822 140283191240448 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 19:35:35,231 views 7822 140283191240448 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f96393e7ee0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 19:52:00,389 views 8800 140178671269632 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f7de3edb040>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 19:52:03,658 views 8800 140178671269632 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-08 19:59:38,303 views 8864 140447562155776 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 19:59:42,708 views 8864 140447562155776 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fbc7e8d2d90>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:17:08,711 views 9093 139750381426432 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1a30071be0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:17:32,783 views 9093 139750381426432 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 20:17:36,507 views 9093 139750381426432 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1a2bdd0dc0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:18:10,697 views 9093 139750381426432 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 20:18:30,259 views 9093 139750381426432 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 20:31:37,934 views 9368 140694646228736 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7ff605e76910>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:37:42,186 views 9496 139825198532352 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f2b96bbc850>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:37:49,484 views 9496 139825198532352 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 20:37:54,904 views 9496 139825198532352 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f2b96c19910>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:38:23,432 views 9496 139825198532352 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f2b9c09f610>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 20:39:21,537 views 9496 139825198532352 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-08 23:52:09,168 views 9684 139716256081664 <QuerySet [<Group: Test group>]>
+INFO 2021-04-08 23:52:17,353 views 9684 139716256081664 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f12393f9340>, 'is_competition_in_group': True, 'is_group_teacher': False}
+INFO 2021-04-08 23:52:54,217 execute_solutions 9763 139668408620864 user_comp: Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-53-945_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:54,314 execute_solutions 9763 139668408620864 user_comp: Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-53-945_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:54,485 execute_solutions 9763 139668408620864 user_comp: Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-53-945_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:54,646 execute_solutions 9763 139668408620864 user_comp: Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-53-945_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:59,535 execute_solutions 9763 139668408620864 user_comp: Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-59-071_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:59,761 execute_solutions 9763 139668408620864 user_comp: Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-59-071_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:52:59,878 execute_solutions 9763 139668408620864 user_comp: Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-59-071_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:53:00,087 execute_solutions 9763 139668408620864 user_comp: Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-04-08--23-52-59-071_last1war.py", line 2
+    using namespace std;
+          ^
+SyntaxError: invalid syntax
+
+INFO 2021-04-08 23:53:11,954 execute_solutions 9763 139668408620864 user_comp: Simple problem 1 - done successfully.
+INFO 2021-04-08 23:53:12,000 execute_solutions 9763 139668408620864 user_comp: Simple problem 2 - done successfully.
+INFO 2021-04-08 23:53:12,045 execute_solutions 9763 139668408620864 user_comp: Simple problem 3 - done successfully.
+INFO 2021-04-08 23:53:12,090 execute_solutions 9763 139668408620864 user_comp: Simple problem 4 - done successfully.
+INFO 2021-04-08 23:53:21,964 views 9684 139716256081664 <QuerySet [<Group: Test group>]>
+INFO 2021-04-08 23:53:46,460 views 9684 139716256081664 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 23:53:51,031 views 9684 139716256081664 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1238c7d430>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 23:55:02,614 views 9684 139716256081664 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1238c41c70>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 23:56:28,524 views 9684 139716256081664 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1238c7da00>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-08 23:57:18,463 views 9684 139716256081664 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-08 23:57:24,874 views 9684 139716256081664 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f1238c46fa0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 16:45:39,092 views 10619 140287576073984 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f9744073400>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 16:46:53,636 views 10664 140115174921984 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:48:07,555 views 10698 140444397537024 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:48:53,981 views 10756 140476565657344 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:50:18,840 views 10789 140435278362368 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:50:34,893 views 10789 140435278362368 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:50:40,251 views 10789 140435278362368 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 16:51:22,856 views 10789 140435278362368 <QuerySet [<Group: Test group>]>
+INFO 2021-04-09 16:51:27,054 views 10789 140435278362368 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb9a25e4160>, 'is_competition_in_group': True, 'is_group_teacher': False}
+INFO 2021-04-09 17:15:34,026 views 10789 140435278362368 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-09 17:15:40,664 views 10789 140435278362368 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb9a25e4850>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 17:15:46,185 views 10789 140435278362368 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 17:15:52,166 views 10789 140435278362368 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 17:17:09,159 views 10789 140435278362368 <QuerySet [<Competition: spring contest 2021>]>
+INFO 2021-04-09 17:17:11,207 views 10789 140435278362368 {'object': <Competition: spring contest 2021>, 'competition': <Competition: spring contest 2021>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb9a2452100>, 'is_competition_in_group': False, 'is_group_teacher': False}
+INFO 2021-04-09 17:17:19,805 views 10789 140435278362368 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-09 17:17:24,665 views 10789 140435278362368 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb9a2069ca0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 17:17:30,892 views 10789 140435278362368 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-09 17:17:43,089 views 10789 140435278362368 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7fb9a2484550>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:28:04,520 views 11393 139708289861376 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-09 20:28:08,397 views 11393 139708289861376 {'object': <Competition: user_comp>, 'competition': <Competition: user_comp>, 'view': <competitions.views.CompetitionDetailView object at 0x7f105f0380a0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:30:34,749 views 11393 139708289861376 {'object': <Competition: test_group_competition_v2>, 'competition': <Competition: test_group_competition_v2>, 'view': <competitions.views.CompetitionDetailView object at 0x7f105e5e5130>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:37:29,165 views 11584 140070292027136 {'object': <Competition: test_group_competition_v2>, 'competition': <Competition: test_group_competition_v2>, 'view': <competitions.views.CompetitionDetailView object at 0x7f64a74711f0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:37:29,608 views 11584 140070292027136 {'object': <Competition: test_group_competition_v2>, 'competition': <Competition: test_group_competition_v2>, 'view': <competitions.views.CompetitionDetailView object at 0x7f64a754abb0>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:38:47,715 views 11765 139923855730432 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 20:38:49,288 execute_solutions 10088 140249079682880 test_group_competition_v2: Simple problem 1 - done successfully.
+INFO 2021-04-09 20:38:49,320 execute_solutions 10088 140249079682880 test_group_competition_v2: Simple problem 2 - done successfully.
+INFO 2021-04-09 20:38:49,392 execute_solutions 10088 140249079682880 test_group_competition_v2: Simple problem 3 - done successfully.
+INFO 2021-04-09 20:38:49,426 execute_solutions 10088 140249079682880 test_group_competition_v2: Simple problem 4 - done successfully.
+INFO 2021-04-09 20:38:49,506 execute_solutions 10088 140249079682880 test_group_competition_v2: Simple problem 5 - done successfully.
+INFO 2021-04-09 20:38:50,355 views 11765 139923855730432 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-09 20:38:56,767 views 11765 139923855730432 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-09 20:39:04,690 views 11765 139923855730432 {'object': <Competition: test_group_competition_v2>, 'competition': <Competition: test_group_competition_v2>, 'view': <competitions.views.CompetitionDetailView object at 0x7f428ef27b80>, 'is_competition_in_group': True, 'is_group_teacher': True}
+INFO 2021-04-09 20:39:09,026 views 11765 139923855730432 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>

@@ -1,0 +1,24 @@
+{% load static %}
+
+{% block tab_content %}
+{% if group_members %}
+    <div class='list'><table class="table">
+            {% for member in group_members %}
+            <tr>
+                <td>
+                    {{ member.user.username }}
+                </td>
+                <td>
+                    {{ member.get_role_display }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% else %}
+    <h3>No members in this group yet</h3>
+{% endif %}
+    {% if user_role == 'TE' %}
+        <a href={% url 'groups:create_invite_link_to_group' group_id%} >Create invite link to group</a>
+    {% endif %}
+{% endblock tab_content %}

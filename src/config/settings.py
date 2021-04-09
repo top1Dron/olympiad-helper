@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'judge',
     'users',
+    'groups',
+    'competitions',
     'widget_tweaks',
 ]
 
@@ -164,10 +166,6 @@ LOGGING = {
         },
     },
     'loggers': {
-        # 'django.db.backends': {
-        #     'level': 'DEBUG',
-        #     'handlers': ['file'],
-        # },
         'judge':{
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'handlers': ['file',],
@@ -175,7 +173,16 @@ LOGGING = {
         'users':{
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'handlers': ['file',],
+        },
+        'competitions':{
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['file',],
+        },
+        'groups':{
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['file',],
         }
+
     },
 }
 

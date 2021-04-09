@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}{{ user.username }}{% endblock title %}
+
+{% block main_content %}
+<div class="wrapper">
+    <h2>{{ user.username }}</h2>
+    <p>
+        {{ user.last_login }}
+        {{ user.date_joined }}
+        {{ user.get_quantity_of_solved_problems }}
+        {{ user.get_quantity_of_submissions }}
+        {{ user.get_quantity_of_accepted_submissions }}
+    </p>
+</div>
+{% endblock main_content %}

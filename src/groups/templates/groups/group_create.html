@@ -1,0 +1,44 @@
+{% extends 'base.html' %} 
+{% load widget_tweaks %}
+
+{% load static %}
+{% block title %}Create group{% endblock title %}
+{% block extra_head %}
+{% endblock extra_head %}>
+
+{% block main_content %}
+<div class="wrapper">
+    <form method="post" action=''>
+    {% csrf_token %}
+
+    {% if form.non_field_errors %}
+        <ul>
+        {% for error in form.non_field_errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    {% for hidden_field in form.hidden_fields %}
+        {% if hidden_field.errors %}
+        <ul>
+            {% for error in hidden_field.errors %}
+            <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {{ hidden_field }}
+    {% endfor %}
+    
+    <p>
+        {{ form.name.label_tag }}</br>
+        {{ form.name.errors }}
+        {% render_field form.name placeholder="Group name" %}</br></br>
+
+        {{ form.description.label_tag }}</br>
+        {{ form.description.errors }}
+        {% render_field form.description placeholder="Group description" %}</br></br>
+    </p>
+    <button type="submit">Create</button>
+    </form>
+</div>
+{% endblock main_content %}

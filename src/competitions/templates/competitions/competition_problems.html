@@ -1,0 +1,28 @@
+{% load static %}
+
+{% block tab_content %}
+<div class='list'>
+        {% for problem in problems %}
+        <table class="table">
+            <tr>
+                <td>
+                    {{ forloop.counter }}
+                </td>
+                <td>
+                    <a href={% url 'competitions:competition_problem_detail' competition_id problem.number %}>{{ problem.title }}</a>
+                </td>
+            </tr>
+        </table>
+        {% empty %}
+            <h3>No problems in this competition yet</h3>
+        {% endfor %}
+</div>
+
+<div class='list'>
+    {% if is_competition_in_group %}
+        {% if is_group_teacher %}
+            Add problem to competition
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock tab_content %}

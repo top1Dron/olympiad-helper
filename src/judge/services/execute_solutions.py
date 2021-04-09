@@ -1,5 +1,5 @@
 from judge.decorators import limit_permisions
-from judge.models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage
+from judge.models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage, UserProblemStatus
 from judge.services import getter
 from judge.services.memory_limites import MemoryLimiter
 from datetime import datetime
@@ -41,13 +41,15 @@ def submit_solution(problem_number, programming_language, source_code, solution_
     language = ProgrammingLanguage.objects.get(pk=programming_language)
     solution = getter.get_solution_by_id(solution_id)
     
-    code_file_name = os.path.join(settings.MEDIA_ROOT, f'{datetime.now().strftime("%Y-%m-%d--%H-%M-%S-%f")[:-3]}_{solution.user.username}')
+    code_file_name = os.path.join(
+        settings.MEDIA_ROOT, 
+        f'{datetime.now().strftime("%Y-%m-%d--%H-%M-%S-%f")[:-3]}_{solution.user.username}')
     
     # print user code to file with language extension
     with open(f'{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
         print(source_code, file=file, end='')
 
-    problem = Problem.objects.get(pk=problem_number)
+    problem = Problem.objects.get(number=problem_number)
     tests = ProblemTest.objects.filter(problem=problem)
     error = ''
 
@@ -91,6 +93,7 @@ def _execute(solution, tests, execute_line, time_limit, compile_error=''):
             solution_status = 'CE'
             logger.error(f"status - {solution_status}, {compile_error}")
         _final_update_solution_result(solution, solution_status)
+        _set_status_of_solving_problem_by_user(solution)
     except Exception as e:
         logger.error(f'{type(e)} {traceback.format_exc()}')
 
@@ -111,12 +114,6 @@ def _test_execution(test, execute_line, time_limit, solution):
         test_output, test_error_string = execution.communicate(timeout=time_limit)
         test_output = test_output.decode('utf-8')
         test_error_string = test_error_string.decode('utf-8')
-        # try:
-        #     logger.info(f'{execution.name()} - {execution.cpu_times()}') 
-        #     used_memory = execution.memory_full_info().uss / float(1 << 20)
-        #     logger.info(used_memory)
-        # except Exception as e:
-        #     logger.error(f'{type(e)} {traceback.format_exc()}')
         end_time = time.time()
         finish_time = end_time - start_time
         test_status = 'PD'
@@ -154,7 +151,7 @@ def _get_solution_tests_status_counts(tests):
     '''
     function to count test execution statuses for returning Solution status
     '''
-    judging = wrong_answers = timeout = memoryout = right_answers = 0
+    judging = wrong_answers = timeout = memoryout = right_answers = runtime_errors = 0
     for test in tests:
         if test.status == 'PD':
             judging += 1
@@ -164,14 +161,17 @@ def _get_solution_tests_status_counts(tests):
             timeout += 1
         elif test.status == 'MO':
             memoryout += 1
+        elif test.status == 'RE':
+            runtime_errors += 1
         elif test.status == 'AC':
             right_answers += 1
     return _get_solution_status({
         'judging': judging, 
         'wrong_answers': wrong_answers, 
         'timeout': timeout, 
-        'memoryout': memoryout, 
-        'right_answers': right_answers
+        'memoryout': memoryout,
+        'right_answers': right_answers,
+        'runtime_errors': runtime_errors
     }, len(tests))
 
 
@@ -182,6 +182,10 @@ def _get_solution_status(answers:dict, test_count:int) -> str:
     status = 'PD'
     if answers.get('judging') == test_count:
         status = 'PD'
+    elif answers.get('runtime_errors') > 0 and answers.get('right_answers') > 0:
+        status = 'PA'
+    elif answers.get('runtime_errors') > 0:
+        status = 'RE'
     elif answers.get('wrong_answers') > 0 and answers.get('right_answers') > 0:
         status = 'PA'
     elif answers.get('wrong_answers') > 0:
@@ -211,3 +215,27 @@ def _final_update_solution_result(solution, solution_status):
     if len(tests) > 0:
         solution.avg_time_usage = round(miliseconds / len(tests), 2)
     solution.save()
+
+
+def _set_status_of_solving_problem_by_user(solution):
+    
+    status_values = {
+        'PD': -1,
+        'CE': 0,
+        'RE': 1,
+        'TO': 2,
+        'MO': 2,
+        'WA': 3,
+        'PA': 4,
+        'AC': 5
+    }
+
+    try:
+        previous_status = UserProblemStatus.objects.get(problem=solution.problem, user=solution.user)
+    except:
+        UserProblemStatus.objects.create(problem=solution.problem, user=solution.user, status=solution.status)
+    else:
+        new_status = solution.status
+        if status_values[new_status] > status_values[previous_status.status]:
+            previous_status.status = new_status
+            previous_status.save()

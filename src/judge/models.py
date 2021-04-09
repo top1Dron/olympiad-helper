@@ -3,6 +3,7 @@ from django.db import models
 from django.shortcuts import reverse
 from django.utils.translation import ugettext_lazy as _
 from users.models import CustomUser
+import competitions.models
 
 
 STATUS = (
@@ -52,7 +53,7 @@ class Problem(models.Model):
         ('CB', _('Combinatorics')),
     )
 
-    number = models.SlugField(max_length=10, unique=True)
+    number = models.SlugField(max_length=1000, unique=True)
     title = models.CharField(max_length=100)
     description = models.TextField()
     description_photo = models.ImageField(null=True, blank=True)
@@ -64,10 +65,17 @@ class Problem(models.Model):
     memory_limit = models.CharField(max_length=30)
     time_limit = models.CharField(max_length=30)
     is_active = models.BooleanField(default=True)
+    competition = models.ForeignKey(
+        to=competitions.models.Competition, 
+        on_delete=models.CASCADE,
+        null=True,
+        blank=True,
+        default=None,
+        related_name='problems')
 
 
     def __str__(self):
-        return self.title
+        return f'{self.competition.title}: {self.title}' if self.competition else self.title
     
 
     @property
@@ -147,3 +155,11 @@ class ProblemComment(models.Model):
     author = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
     content = models.TextField()
     publication_date = models.DateTimeField(_("Publication date"), auto_now=True)
+
+
+class UserProblemStatus(models.Model):
+    '''model that describes status of solving the problem by user'''
+
+    problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
+    user = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
+    status = models.CharField(max_length=2, choices=STATUS)
