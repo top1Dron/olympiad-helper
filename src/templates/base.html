@@ -6,11 +6,11 @@
     <title>{% block title %}Base template{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/judge/base.css' %}">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    {% comment %} <script src="https://kit.fontawesome.com/a076d05399.js"></script> {% endcomment %}
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
-    <nav>
+    <nav class='main-menu-tabs'>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
@@ -19,8 +19,9 @@
         <ul>
             <li><a href="{% url 'judge:problem_list' %}" class='active'>Problems</a></li>
             <li><a href="{% url 'judge:solution_list' %}">Queue</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{% url 'competitions:competition_list' %}">Competitions</a></li>
             {% if user.is_authenticated %}
+                <li><a href="{% url 'groups:group_list' %}">Groups</a></li>
                 <li><a href="{% url 'users:logout' %}">{{user.username}}</a></li>
             {% else %}
                 <li><a href="{% url 'users:login_or_signup' %}">Sign in/Sign up</a></li>

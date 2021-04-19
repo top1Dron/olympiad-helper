@@ -1,0 +1,41 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}Find problem to competition{% endblock title %}
+
+{% block extra_head %}
+    <script src={% static 'js/competitions/search_and_add_problem_to_competition.js' %} type='module'></script>
+{% endblock extra_head %}
+
+{% block main_content %}
+<div class='wrapper'>
+    <form id='search_problem_form' method='post' action=''>
+        {% csrf_token %}
+        {% if form.non_field_errors %}
+            <ul>
+            {% for error in form.non_field_errors %}
+                <li>{{ error }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% for hidden_field in form.hidden_fields %}
+            {% if hidden_field.errors %}
+            <ul>
+                {% for error in hidden_field.errors %}
+                <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            {{ hidden_field }}
+        {% endfor %}
+        {% comment %} <label for='search_problem'>Search problem</label>
+        <input type='text' name='search_problem' id='search_problem' problems={% url 'competitions:search_problem' competition.pk %} placeholder='Type a problem'> {% endcomment %}
+        {{ search_form.problem_search_field.label_tag }}</br>
+        {{ search_form.problem_search_field.errors }}
+        {{ search_form.problem_search_field }}
+        <span id='if_problem_founded'></span></br>
+        <input type='submit' disabled='disabled' value='Add problem' id='add_problem_to_competition'>
+    </form>
+    Create problem
+</div>
+{% endblock main_content %}

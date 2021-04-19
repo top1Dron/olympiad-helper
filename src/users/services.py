@@ -2,6 +2,9 @@ from .models import CustomUser
 from .tokens import account_activation_token
 from django.conf import settings
 from django.core.mail import send_mail
+import logging
+
+logger = logging.getLogger(__name__)
 
 def send_email(subject:str, message:str, to:list):
     '''
@@ -35,6 +38,17 @@ def get_and_activate_user(uid, token) -> bool:
 def get_user_by_email(email):
     try:
         user = CustomUser.objects.get(email=email)
+    except(TypeError, ValueError, OverflowError, CustomUser.DoesNotExist):
+        user = None
+    if user is not None:
+        return user
+    else:
+        return None
+
+
+def get_user_by_username(username):
+    try:
+        user = CustomUser.objects.get(username=username)
     except(TypeError, ValueError, OverflowError, CustomUser.DoesNotExist):
         user = None
     if user is not None:

@@ -1,5 +1,5 @@
 from config.celery import app
-from .service import send_email
+from .services import send_email
 
 
 @app.task

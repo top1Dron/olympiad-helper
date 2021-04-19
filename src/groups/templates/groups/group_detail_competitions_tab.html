@@ -1,0 +1,25 @@
+{% load static %}
+
+{% block tab_content %}
+{% if competitions %}
+    <div class='list'><table class="table">
+            {% for competition in competitions %}
+            <tr>
+                <td>
+                    <a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a>
+                </td>
+                <td>
+                    {{ competition.start_date }}
+                </td>
+                <td>
+                    {{ competition.end_date }}
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% else %}
+    <h3>No competitions in this group yet</h3>
+{% endif %}
+<a data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_tab_selection('GET', document.getElementById('create-group-competition').getAttribute('data'))">Create competition</a>
+{% endblock tab_content %}

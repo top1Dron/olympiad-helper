@@ -1,5 +1,6 @@
 from django import forms
 from django.utils.translation import ugettext_lazy as _
+from django.urls import reverse_lazy
 from .models import ProgrammingLanguage, Problem
 
 
@@ -12,7 +13,7 @@ class LanguageForm(forms.ModelForm):
 
 
 class SubmitSolutionForm(forms.Form):
-    problem_number = forms.CharField(label=_('Problem number'), max_length=10)
+    problem_number = forms.CharField(label=_('Problem number'), max_length=1000)
     programming_language = forms.ModelChoiceField(label=_('Programming language'), widget=forms.Select, queryset=ProgrammingLanguage.objects.all(), empty_label='----')
     source_code = forms.CharField(
         max_length=1000000,
@@ -28,28 +29,23 @@ class SubmitSolutionForm(forms.Form):
         self.fields['source_code'].error_messages = {'required': _('You have to put your code! Solution can not be passed without it!')}
 
 
-    # def clean(self):
-    #     cleaned_data = super(SubmitSolutionForm, self).clean()
-    #     problem_number = cleaned_data.get('problem_number')
-    #     programming_language = cleaned_data.get('programming_language')
-    #     source_code = cleaned_data.get('source_code')
-    #     if not problem_number:
-    #         raise forms.ValidationError(_('You have to write problem number!'))
-    #     if not programming_language:
-    #         raise forms.ValidationError(_('You have to choose programming language!'))
-    #     if not source_code:
-    #         raise forms.ValidationError(_('You have to put your code! Solution can not be passed without it!'))
- 
- 
-# class TextForm(forms.ModelForm):
-#     class Meta:
-#         model = Text
-#         fields = ('text',)
-#         labels = {'Введите код на C++': 'text',}
- 
- 
-# class CodeFileForm(forms.ModelForm):
-#     class Meta:
-#         model = CodeFile
-#         fields = ('file',)
-#         labels = {'Завантажте файл': 'file',}
+class ProblemSearchForm(forms.Form):
+    problem_search_field = forms.CharField(
+        label=_('Search problem'), 
+        max_length=1000, 
+        required=False, 
+        widget=forms.widgets.Input(attrs={
+            'placeholder': 'Type a problem',
+            'name': 'search_problem',
+            'type': 'text',
+        })
+    )
+
+    def __init__(self, *args, **kwargs):
+        competition_id = kwargs.get('competition_id')
+        if competition_id != None:
+            kwargs.pop('competition_id')
+        super().__init__(*args, **kwargs)
+        if competition_id != None:
+            self.fields['problem_search_field'].widget.attrs.update({'problems':reverse_lazy('competitions:search_problem', kwargs={'pk':competition_id})})
+        

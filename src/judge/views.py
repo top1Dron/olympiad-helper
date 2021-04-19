@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, Http404, redirect, reverse
 from django.utils.translation import ugettext_lazy as _
 from django.views.generic import DetailView, ListView
+from groups.services import services as group_services
 from judge.services import getter, execute_solutions
 from .forms import LanguageForm, SubmitSolutionForm
 from .models import Problem, Solution
@@ -73,6 +74,19 @@ class SolutionDetailView(DetailView):
             return getter.get_solution_by_id(id)
         except:
             raise Http404(_('Solution not found'))
+
+
+    def get_context_data(self, **kwargs):
+        context = super(SolutionDetailView, self).get_context_data(**kwargs)
+        context['is_group_teacher'] = False
+        competition = self.object.problem.competition
+        if competition != None:
+            if competition.group != None:
+                logger.info(group_services.get_group_members(competition.group.id))
+                if self.request.user in (group_user.user for group_user in group_services.get_group_members(competition.group.id)):
+                    if group_services.get_user_role_in_group(competition.group.id, self.request.user) == 'TE':
+                        context['is_group_teacher'] = True
+        return context 
 
 
 class SolutionListView(ListView):
