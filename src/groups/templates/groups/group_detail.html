@@ -3,7 +3,7 @@
 
 {% block title %}{{group.name}}{% endblock title %}
 {% block extra_head %}
-    <script src={% static 'js/groups/group_details.js' %}></script>
+    <script src={% static 'js/groups/group_details.js' %} type='module'></script>
 {% endblock extra_head %}
 
 {% block main_content %}

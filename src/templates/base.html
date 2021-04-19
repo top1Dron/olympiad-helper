@@ -20,8 +20,8 @@
             <li><a href="{% url 'judge:problem_list' %}" class='active'>Problems</a></li>
             <li><a href="{% url 'judge:solution_list' %}">Queue</a></li>
             <li><a href="{% url 'competitions:competition_list' %}">Competitions</a></li>
-            <li><a href="{% url 'groups:group_list' %}">Groups</a></li>
             {% if user.is_authenticated %}
+                <li><a href="{% url 'groups:group_list' %}">Groups</a></li>
                 <li><a href="{% url 'users:logout' %}">{{user.username}}</a></li>
             {% else %}
                 <li><a href="{% url 'users:login_or_signup' %}">Sign in/Sign up</a></li>

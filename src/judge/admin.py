@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage, ProblemSamples
+from .models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage, ProblemSamples, UserProblemStatus
 
 
 class ProblemAdmin(admin.ModelAdmin):
@@ -14,3 +14,4 @@ admin.site.register(ProblemSamples)
 admin.site.register(Solution)
 admin.site.register(SolutionTest)
 admin.site.register(ProblemTest)
+admin.site.register(UserProblemStatus)

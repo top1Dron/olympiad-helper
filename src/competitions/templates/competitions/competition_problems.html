@@ -1,16 +1,20 @@
 {% load static %}
+{% load template_tags %}
+
+{% block extra_head %}
+
+{% endblock extra_head %}
+
 
 {% block tab_content %}
 <div class='list'>
         {% for problem in problems %}
         <table class="table">
             <tr>
-                <td>
-                    {{ forloop.counter }}
-                </td>
-                <td>
-                    <a href={% url 'competitions:competition_problem_detail' competition_id problem.number %}>{{ problem.title }}</a>
-                </td>
+                <td>{{ forloop.counter }}</td>
+                <td><a href={% url 'competitions:competition_problem_detail' competition_id problem.number %}>{{ problem.title }}</a></td>
+                {% get_user_problem_status problem user  as user_problem_status%}
+                <td><span id='user_problem_status'>{% status_display user_problem_status %}</span></td>
             </tr>
         </table>
         {% empty %}
@@ -21,7 +25,7 @@
 <div class='list'>
     {% if is_competition_in_group %}
         {% if is_group_teacher %}
-            Add problem to competition
+            <a href={% url 'competitions:add_or_find_problem' competition_id %} class='find_or_add_problem_link'>Add problem to competition</a>
         {% endif %}
     {% endif %}
 </div>

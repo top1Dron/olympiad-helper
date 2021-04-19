@@ -1,0 +1,33 @@
+{% load static %}
+
+
+{% block tab_content %}
+<div class='list'>
+    {% if  users_count%}
+        <table class='table'>
+            <thead>
+                <tr>
+                    <td>User</td>
+                    <td>Solved problems</td>
+                </tr>
+            </thead>
+            <tbody>
+    {% endif %}
+    {% for user, solved_problems in users_count %}
+        <tr>
+            <td>
+                {{ user.username }}
+            </td>
+            <td>
+                {{ solved_problems }}
+            </td>
+        </tr>
+    {% empty %}
+        <h3>Noone successfully solved at least 1 problem in competition yet</h3>
+    {% endfor %}
+    {% if  users_count%}
+        </tbody>
+        </table>
+    {% endif %}
+</div>
+{% endblock tab_content %}

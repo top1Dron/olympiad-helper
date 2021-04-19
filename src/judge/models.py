@@ -76,6 +76,13 @@ class Problem(models.Model):
 
     def __str__(self):
         return f'{self.competition.title}: {self.title}' if self.competition else self.title
+
+
+    def get_user_status(self, user):
+        try:
+            return UserProblemStatus.objects.get(user=user, problem=self).status
+        except UserProblemStatus.DoesNotExist:
+            return ''
     
 
     @property

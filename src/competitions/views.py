@@ -1,15 +1,17 @@
 from competitions.forms import CompetitionForm
 from competitions.models import Competition
 from competitions import services
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import JsonResponse
 from django.shortcuts import render, reverse, Http404, redirect
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext_lazy as _
 from django.views.generic import CreateView, ListView, DetailView
 from judge.models import Problem, Solution
 from judge.tasks import task_submit_solution
-from judge.forms import SubmitSolutionForm
+from judge.forms import SubmitSolutionForm, ProblemSearchForm
 from judge.services import execute_solutions, getter
 import logging
 
@@ -35,11 +37,10 @@ class CompetitionListView(ListView):
 
 
     def get_queryset(self, *args, **kwargs):
-        logger.info(services.get_all_available_competitions(user=self.request.user))
         return services.get_all_available_competitions(user=self.request.user)
 
 
-class CompetitionDetailView(DetailView):
+class CompetitionDetailView(LoginRequiredMixin, DetailView):
     model = Competition
     template = 'competitions/competition_detail.html'
 
@@ -55,10 +56,10 @@ class CompetitionDetailView(DetailView):
         context = super(CompetitionDetailView, self).get_context_data(**kwargs)
         context['is_competition_in_group'] = True if self.object.group != None else False
         context['is_group_teacher'] = False if not context.get('is_competition_in_group') else services.is_group_teacher(self.object, self.request.user)
-        logger.info(context)
         return context
 
 
+@login_required
 def get_competition_problems(request, pk):
     problems = services.get_competition_problems(pk)
     competition = services.get_competition_by_id(pk)
@@ -134,3 +135,59 @@ def api_submit_solution(request, pk, slug):
     else:
         form = SubmitSolutionForm()
     return render(request, 'competition_problems/submit_solution.html', {'form': form, 'problem_number': slug})
+
+
+@login_required
+def get_user_status_on_problems_in_competition(request, pk, problem_number):
+    data = services.get_user_status_on_problems_in_competition(problem_number)
+    return JsonResponse(data)
+
+
+@login_required
+def ajax_add_or_find_problem_to_competition(request, pk):
+    competition = services.get_competition_by_id(pk)
+
+    if request.method == 'POST':
+        logger.info(request.POST)
+        search_form = ProblemSearchForm(competition_id=pk, data=request.POST)
+        if search_form.is_valid():
+            problem_number = search_form.cleaned_data['problem_search_field'].split('.')[0]
+            result = services.add_problem_to_competition(
+                competition=competition, 
+                problem=getter.get_problem_by_number(problem_number))
+            if result:
+                messages.success(request, _('Problem added successfully!'))
+            else:
+                messages.error(request, _('This problem is already in competition!'))
+            return redirect(reverse('competitions:competition_detail', kwargs={'pk': pk}))
+    else:
+        search_form = ProblemSearchForm(competition_id=pk)
+    return render(request, 'competition_problems/search_problems_to_competition.html', {
+        'search_form': search_form,
+        'competition': competition,
+    })
+
+@login_required
+def problem_list_in_search(request, pk):
+    url_parameter = request.GET.get('search_text')
+    problem_titles = []
+    if url_parameter:
+        problems = getter.get_filtered_problems(url_parameter)
+        problem_titles = [f'{problem.number}. {problem.title}' for problem in problems]
+    else:
+        problems = getter.get_empty_problem_set()
+    return JsonResponse({'problems': problem_titles})
+
+
+def get_competition_leaderboard(request, pk):
+    
+    data = {
+        'tab-data': render_to_string(
+            'competitions/leaderboard.html',
+            {
+                'users_count': services.get_competition_leaderboard(competition_id=pk)
+            },
+            request
+        )
+    }
+    return JsonResponse(data)

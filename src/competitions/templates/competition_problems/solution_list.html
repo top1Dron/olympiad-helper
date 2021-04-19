@@ -3,8 +3,10 @@
 
 {% block tab_content %}
 <div class='list'>
+    {% if solutions %}
+        <table class='table'>
+    {% endif %}
     {% for solution in solutions %}
-    <table class='table'>
         <tr>
             <td>
                  <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
@@ -28,9 +30,11 @@
                 {{ solution.avg_time_usage }}
             </td>
         </tr>
-    </table>
     {% empty %}
         <h3>No submitted solutions in this competition yet</h3>
     {% endfor %}
+    {% if solutions %}
+        </table>
+    {% endif %}
 </div>
 {% endblock tab_content %}

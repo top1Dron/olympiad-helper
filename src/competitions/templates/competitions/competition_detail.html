@@ -3,7 +3,7 @@
 
 {% block title %}{{competition.name}}{% endblock title %}
 {% block extra_head %}
-    <script src={% static 'js/groups/group_details.js' %}></script>
+    <script src={% static 'js/competitions/competition_detail.js' %} type='module'></script>
 {% endblock extra_head %}
 
 {% block main_content %}
@@ -13,18 +13,31 @@
         <nav class='tabs'>
             <a class='tabs-tab tabs-tab-active'
                 data={% url 'competitions:competition_problems' competition.pk %}
+                tag='problems'
                 >Problems</a>
             <a class='tabs-tab'
-                {% comment %} data={% url 'competitions:get_competition_leaderboard' competition.pk %} {% endcomment %}
+                tag='leaderboard'
+                data={% url 'competitions:get_competition_leaderboard' competition.pk %}
                 >Leaderboard</a>
             {% if is_competition_in_group %}
                 {% if is_group_teacher %}
                     <a class='tabs-tab'
+                    tag='competition queue'
                     data={% url 'competitions:competition_solution_list' competition.pk %}
                     >Competition queue</a>
                 {% endif %}
             {% endif %}
         </nav>
+        {% if messages %}
+            <ul class='messages'>
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">
+                        {{ message|safe }}
+                        <a href="#" class="close">X</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
         <div id='tab-data'>{% block tab_content %}{% endblock tab_content %}</div>
     </div>
 </div>

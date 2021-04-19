@@ -2,6 +2,9 @@ from .models import CustomUser
 from .tokens import account_activation_token
 from django.conf import settings
 from django.core.mail import send_mail
+import logging
+
+logger = logging.getLogger(__name__)
 
 def send_email(subject:str, message:str, to:list):
     '''
