@@ -1,0 +1,35 @@
+{% extends 'base.html' %} 
+{% load static %}
+
+{% block title %}{{object.title}}{% endblock title %}
+
+{% block main_content %}
+    <div class="wrapper">
+        <h1>{{object.title}}</h1>
+        <p>{{object.description|safe}}</br>
+        {% if object.description_photo %}
+        <img src='{{object.description_photo.url}}'</p>
+        {% endif %}
+        <p>{{object.input_condition}}</p>
+        <p>{{object.output_condition}}</p>
+        <p>{% if object.special_warning %}{{ object.special_warning|safe }}{% endif %}</p>
+        <hr>
+        <p>
+        <span>Memory limit:{{object.memory_limit}} MiB</span></br>
+        <span>Time limit:{{object.time_limit}} seconds</span>
+        </p>
+        <hr>
+        {% for sample in object.get_all_samples %}
+            <div><strong>Input example #{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
+            <div><strong>Output example #{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
+            <hr>
+        {%empty%}
+            <span>No samples. Think by yourself.</span>
+            <hr>
+        {% endfor %}
+        {% if user.is_authenticated and is_active_for_submit %}
+            <span><a href="{% url 'competitions:submit_solution' competition.id object.number %}" >Submit solution</a></span>
+        {% endif %}
+        
+    </div>
+{% endblock main_content %}

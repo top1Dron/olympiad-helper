@@ -1,0 +1,40 @@
+{% load static %}
+
+
+{% block tab_content %}
+<div class='list'>
+    {% if solutions %}
+        <table class='table'>
+    {% endif %}
+    {% for solution in solutions %}
+        <tr>
+            <td>
+                 <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
+            </td>
+            <td>
+                {{ solution.problem }}
+            </td>
+            <td>
+                {{ solution.user.username }}
+            </td>
+            <td>
+                {{ solution.language }}
+            </td>
+            <td>
+                {{ solution.solving_date }}
+            </td>
+            <td>
+                {{ solution.get_status_display }}
+            </td>
+            <td>
+                {{ solution.avg_time_usage }}
+            </td>
+        </tr>
+    {% empty %}
+        <h3>No submitted solutions in this competition yet</h3>
+    {% endfor %}
+    {% if solutions %}
+        </table>
+    {% endif %}
+</div>
+{% endblock tab_content %}

@@ -1,9 +1,10 @@
 from .forms import CustomUserCreationForm, LoginForm, PasswordResetForm, PasswordResetConfirmForm
-from .service import get_and_activate_user, get_user_by_email
+from .services import get_and_activate_user, get_user_by_email, get_user_by_username
 from .tasks import task_send_email
 from .tokens import account_activation_token
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.shortcuts import render, redirect, reverse
 from django.template.loader import render_to_string
@@ -83,3 +84,8 @@ def api_activate_account(request, uidb64, token):
 # def api_password_reset(request):
 # TODO
 #     pass
+
+
+def user_profile(request, username):
+    user = get_user_by_username(username)
+    return render(request, 'users/profile.html', {'user': user})

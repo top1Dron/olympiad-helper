@@ -22,7 +22,7 @@
         </p>
         {% endfor %}
         <hr>
-        {% if user == object.user %}
+        {% if user == object.user or is_group_teacher%}
             <p>{{object.program_code}}</p>
         {% endif %}
     </div>

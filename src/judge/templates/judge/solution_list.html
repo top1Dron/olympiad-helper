@@ -11,10 +11,13 @@
                 {% for solution in solutions %}
                 <tr>
                     <td>
-                        {{ solution.pk }}
+                        <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
                     </td>
                     <td>
                         {{ solution.problem }}
+                    </td>
+                    <td>
+                        {{ solution.user.username }}
                     </td>
                     <td>
                         {{ solution.language }}
@@ -26,7 +29,7 @@
                         {{ solution.get_status_display }}
                     </td>
                     <td>
-                        {{ solution.avg_time_usage }}
+                        {{ solution.avg_time_usage }} ms
                     </td>
                 </tr>
                 {% endfor %}

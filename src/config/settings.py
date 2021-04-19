@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'judge',
     'users',
+    'groups',
+    'competitions',
     'widget_tweaks',
 ]
 
@@ -61,7 +63,7 @@ AUTH_USER_MODEL = 'users.CustomUser'
 
 LOGIN_URL = '/users/login_or_signup/'
 
-LOGIN_REDIRECT_URL = '/judge/problem/list/'
+# LOGIN_REDIRECT_URL = '/judge/problem/list/'
 
 TEMPLATES = [
     {
@@ -164,10 +166,6 @@ LOGGING = {
         },
     },
     'loggers': {
-        # 'django.db.backends': {
-        #     'level': 'DEBUG',
-        #     'handlers': ['file'],
-        # },
         'judge':{
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'handlers': ['file',],
@@ -175,17 +173,26 @@ LOGGING = {
         'users':{
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'handlers': ['file',],
+        },
+        'competitions':{
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['file',],
+        },
+        'groups':{
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['file',],
         }
+
     },
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 MAILER_EMAIL_BACKEND = EMAIL_BACKEND
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD = 'qwertyuio456'
-EMAIL_HOST_USER = 'olympiad2021helper@gmail.com'
-EMAIL_PORT = 465
-EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_HOST_PASSWORD = 'ltpefjirehtfwcbt'
+EMAIL_HOST_USER = 'olympiad2021helper@yahoo.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 # redis and celery related settings
