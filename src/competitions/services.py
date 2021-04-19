@@ -88,6 +88,20 @@ def add_problem_to_competition(*, competition, problem):
     
 
 def get_competition_leaderboard(competition_id):
+    '''
+    select  u.email, count(ju.id) as solved_problems
+    from users_customuser u
+    inner join judge_userproblemstatus ju on u.id = ju.user_id
+    inner join judge_problem jp on jp.id = ju.problem_id
+    inner join competitions_competition cc on cc.id = jp.competition_id 
+    where ju.status = 'AC' and cc.id = 10
+    group by u.email;
+
+
+    return leaderboard of gived competition
+    as tuple: ((user1, solved_problems_1), (user2, solved_problems_2), ... (user_n, solved_problems_n))
+    
+    '''
     competition = get_competition_by_id(competition_id)
     users, users_count = [], []
 
