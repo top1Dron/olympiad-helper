@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from competitions.models import Competition
 from django.db.models import Q, Count
 from django.utils import timezone
@@ -5,6 +6,9 @@ from groups.services import services as group_services
 from judge.models import Problem, UserProblemStatus
 from judge.services import getter as judge_getter
 from users.models import CustomUser
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 def get_all_available_competitions(*, user):
@@ -89,31 +93,15 @@ def add_problem_to_competition(*, competition, problem):
 
 def get_competition_leaderboard(competition_id):
     '''
-    select  u.email, count(ju.id) as solved_problems
-    from users_customuser u
-    inner join judge_userproblemstatus ju on u.id = ju.user_id
-    inner join judge_problem jp on jp.id = ju.problem_id
-    inner join competitions_competition cc on cc.id = jp.competition_id 
-    where ju.status = 'AC' and cc.id = 10
-    group by u.email;
-
-
     return leaderboard of gived competition
-    as tuple: ((user1, solved_problems_1), (user2, solved_problems_2), ... (user_n, solved_problems_n))
-    
+    as ordered dict with keys: user__username and solved_problems_count
     '''
+    users_count = OrderedDict()
     competition = get_competition_by_id(competition_id)
-    users, users_count = [], []
-
-    competition_problems = competition.problems.all()
-    for problem in competition_problems:
-        # selection of all users that successfully solved at least 1 problem in competition
-        users.extend(pus.user for pus in problem.userproblemstatus_set.filter(status='AC') if pus.user not in users)
-    for user in users:
-        users_count.append(
-            (user, UserProblemStatus.objects.filter(
-                user=user, 
-                problem__in=(problem.pk for problem in competition_problems), 
-                status='AC'
-            ).count()))
-    return tuple(users_count)
+    for ups in \
+        UserProblemStatus.objects.filter(problem__competition__pk=competition_id,
+            status='AC').values('user__username'
+                                ).annotate(solved_problems_count=Count('user__username'
+            )).order_by('-solved_problems_count'):
+        users_count[ups['user__username']] = ups['solved_problems_count']
+    return users_count

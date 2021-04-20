@@ -11,6 +11,11 @@
                 <td>
                     {{ member.get_role_display }}
                 </td>
+                {% if member.role == 'TE' %}
+                    <td>
+                        <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.delete_url)">X</button>
+                    </td>
+                {% endif %}
             </tr>
             {% endfor %}
         </table>

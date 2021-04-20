@@ -4158,3 +4158,25 @@ INFO 2021-04-18 09:50:24,089 views 3870 139731392263936 <QuerySet [<GroupUser: G
 INFO 2021-04-18 21:40:45,606 views 5020 140694077642496 <QueryDict: {'csrfmiddlewaretoken': ['DZe8sWr1nFLquc34Xu8sZ7CkyvoTU6zZCPWYyiYApFAIkyyEAygBZcEBkk0qE2hi'], 'problem_search_field': ['1. Simple problem']}>
 INFO 2021-04-18 21:42:59,062 views 5020 140694077642496 <QuerySet [<Group: Test group>, <Group: Test created group>]>
 INFO 2021-04-18 21:43:34,175 views 5020 140694077642496 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-20 17:47:09,713 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:47:18,554 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:47:20,334 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:47:47,873 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:47:49,712 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:47:50,129 execute_solutions 9641 139945564911424 test_group_competition_v2: Error protection queue 1 - done successfully.
+INFO 2021-04-20 17:47:56,167 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:48:57,614 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:48:58,935 execute_solutions 9641 139945564911424 test_group_competition_v2: Simple problem 1 - done successfully.
+INFO 2021-04-20 17:48:58,959 execute_solutions 9641 139945564911424 test_group_competition_v2: Simple problem 2 - done successfully.
+INFO 2021-04-20 17:48:58,981 execute_solutions 9641 139945564911424 test_group_competition_v2: Simple problem 3 - done successfully.
+INFO 2021-04-20 17:48:59,005 execute_solutions 9641 139945564911424 test_group_competition_v2: Simple problem 4 - done successfully.
+INFO 2021-04-20 17:48:59,711 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:49:51,329 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:49:52,110 execute_solutions 9641 139945564911424 test_group_competition_v2: The area of a polygon 1 - done successfully.
+INFO 2021-04-20 17:49:52,995 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:50:46,632 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 17:50:47,200 execute_solutions 9641 139945564911424 test_group_competition_v2: The area of a polygon 1 - done successfully.
+INFO 2021-04-20 17:50:48,191 views 9567 140583463032576 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-20 18:41:35,380 services 10388 140042012788480 OrderedDict([('admin', 3), ('last1war', 3)])
+INFO 2021-04-20 18:44:16,257 services 10458 140105883268864 admin
+INFO 2021-04-20 18:44:16,258 services 10458 140105883268864 last1war

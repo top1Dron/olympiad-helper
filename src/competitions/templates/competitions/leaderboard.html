@@ -13,10 +13,10 @@
             </thead>
             <tbody>
     {% endif %}
-    {% for user, solved_problems in users_count %}
+    {% for username, solved_problems in users_count.items %}
         <tr>
             <td>
-                {{ user.username }}
+                {{ username }}
             </td>
             <td>
                 {{ solved_problems }}
