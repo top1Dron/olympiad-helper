@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{group.name}}{% endblock title %}
 {% block extra_head %}
@@ -13,11 +13,11 @@
     <div class='nav-toolbar'>
         <nav class='tabs'>
             <a class='tabs-tab tabs-tab-active'
-                data={% url 'groups:get_group_info' group.pk %}>Group</a>
+                data={% url 'groups:get_group_info' group.pk %}>{% trans "Group" %}</a>
             <a class='tabs-tab'
-                data={% url 'groups:get_group_members' group.pk %}>Members</a>
+                data={% url 'groups:get_group_members' group.pk %}>{% trans "Members" %}</a>
             <a class='tabs-tab' 
-                data={% url 'groups:get_group_competitions' group.pk %}>Competitions</a>
+                data={% url 'groups:get_group_competitions' group.pk %}>{% trans "Competitions" %}</a>
         </nav>
         <div id='tab-data'>{% block tab_content %}{% endblock tab_content %}</div>
     </div>

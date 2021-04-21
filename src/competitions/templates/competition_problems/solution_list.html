@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 
 {% block tab_content %}
@@ -10,9 +10,6 @@
         <tr>
             <td>
                  <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
-            </td>
-            <td>
-                {{ solution.problem }}
             </td>
             <td>
                 {{ solution.user.username }}
@@ -31,7 +28,7 @@
             </td>
         </tr>
     {% empty %}
-        <h3>No submitted solutions in this competition yet</h3>
+        <h3>{% trans "No submitted solutions in this competition yet." %}</h3>
     {% endfor %}
     {% if solutions %}
         </table>

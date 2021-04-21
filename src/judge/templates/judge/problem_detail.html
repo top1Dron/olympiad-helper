@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{object.title}}{% endblock title %}
 
@@ -15,20 +15,20 @@
         <p>{% if object.special_warning %}{{ object.special_warning|safe }}{% endif %}</p>
         <hr>
         <p>
-        <span>Memory limit:{{object.memory_limit}} MiB</span></br>
-        <span>Time limit:{{object.time_limit}} seconds</span>
+        <span>{% trans "Memory limit" %}: {{object.memory_limit}} MiB</span></br>
+        <span>{% trans "Time limit" %}:{{object.time_limit}} {% trans "seconds" %}</span>
         </p>
         <hr>
         {% for sample in object.get_all_samples %}
-            <div><strong>Input example #{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
-            <div><strong>Output example #{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
+            <div><strong>{% trans "Input example " %}#{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
+            <div><strong>{% trans "Output example " %}#{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
             <hr>
         {%empty%}
-            <span>No samples. Think by yourself.</span>
+            <span>{% trans "No samples. Think by yourself." %}</span>
             <hr>
         {% endfor %}
         {% if user.is_authenticated %}
-            <span><a href="{% url 'judge:submit_solution' object.number %}" >Submit solution</a></span>
+            <span><a href="{% url 'judge:submit_solution' object.number %}" >{% trans "Submit solution" %}</a></span>
         {% endif %}
         
     </div>

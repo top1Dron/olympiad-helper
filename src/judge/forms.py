@@ -35,7 +35,7 @@ class ProblemSearchForm(forms.Form):
         max_length=1000, 
         required=False, 
         widget=forms.widgets.Input(attrs={
-            'placeholder': 'Type a problem',
+            'placeholder': _('Type a problem'),
             'name': 'search_problem',
             'type': 'text',
         })

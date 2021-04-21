@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 {% block tab_content %}
 {% if competitions %}
@@ -19,7 +19,7 @@
         </table>
     </div>
 {% else %}
-    <h3>No competitions in this group yet</h3>
+    <h3>{% trans "No competitions in this group yet" %}</h3>
 {% endif %}
-<a data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_tab_selection('GET', document.getElementById('create-group-competition').getAttribute('data'))">Create competition</a>
+<a data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_create_competition_page('GET', document.getElementById('create-group-competition').getAttribute('data'))">Create competition</a>
 {% endblock tab_content %}

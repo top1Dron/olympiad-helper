@@ -4180,3 +4180,16 @@ INFO 2021-04-20 17:50:48,191 views 9567 140583463032576 <QuerySet [<GroupUser: G
 INFO 2021-04-20 18:41:35,380 services 10388 140042012788480 OrderedDict([('admin', 3), ('last1war', 3)])
 INFO 2021-04-20 18:44:16,257 services 10458 140105883268864 admin
 INFO 2021-04-20 18:44:16,258 services 10458 140105883268864 last1war
+INFO 2021-04-21 14:14:50,133 views 12834 140081983203072 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 16:51:49,754 views 16244 140480379926272 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 17:04:46,172 views 16310 139649231095552 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 17:40:48,382 views 16988 140405144946432 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 18:04:58,612 views 17531 140587287889664 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 18:06:39,703 views 17531 140587287889664 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:32:50,587 views 19156 140685160253184 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:38:44,832 views 19333 139774794057472 <QueryDict: {'csrfmiddlewaretoken': ['3wAT1uCAEojl2Fp4oSs63ylcK7XgqK9CkPB2eXe5xnVQirXeA5PW9Nchs7xJhtbU'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-04-21 20:41:17,759 views 19333 139774794057472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:41:21,652 views 19333 139774794057472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:41:29,216 views 19333 139774794057472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:52:28,057 views 19333 139774794057472 <QuerySet [<Group: Test group>, <Group: Test created group>]>
+INFO 2021-04-21 20:53:48,447 views 19333 139774794057472 <QuerySet [<Group: Test group>, <Group: Test created group>]>

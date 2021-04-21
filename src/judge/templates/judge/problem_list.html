@@ -1,10 +1,10 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Problems{% endblock title %}
+{% block title %}{% trans "Problems" %}{% endblock title %}
 {% block main_content %}
 <div class="wrapper">
-    <h2>Problems</h2>
+    <h2>{% trans "Problems" %}</h2>
     {% if problems %}
         <div class='list'>
             <table class="table">
@@ -21,7 +21,7 @@
             </table>
         </div>
     {% else %}
-        <h3>Завдань не знайдено</h3>
+        <h3>{% trans "No problems founded" %}</h3>
     {% endif %}
 </div>
 {% endblock main_content %}

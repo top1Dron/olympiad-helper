@@ -54,7 +54,7 @@ def api_signup_user(request):
             user.is_active = False
             user.save()
             current_site = get_current_site(request)
-            mail_subject = _('Activate your judge account.')
+            mail_subject = _('Activate your account.')
             message = render_to_string(
                 'users/account_activate_email.html',
                 {

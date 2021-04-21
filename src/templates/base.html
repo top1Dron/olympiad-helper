@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,15 +18,33 @@
         </label>
         <label class="logo">Olympiad-helper</label>
         <ul>
-            <li><a href="{% url 'judge:problem_list' %}" class='active'>Problems</a></li>
-            <li><a href="{% url 'judge:solution_list' %}">Queue</a></li>
-            <li><a href="{% url 'competitions:competition_list' %}">Competitions</a></li>
+            <li><a href="{% url 'judge:problem_list' %}" class='active'>{% trans "Problems" %}</a></li>
+            <li><a href="{% url 'judge:solution_list' %}">{% trans "Queue" %}</a></li>
+            <li><a href="{% url 'competitions:competition_list' %}">{% trans "Competitions" %}</a></li>
             {% if user.is_authenticated %}
-                <li><a href="{% url 'groups:group_list' %}">Groups</a></li>
+                <li><a href="{% url 'groups:group_list' %}">{% trans "Groups" %}</a></li>
                 <li><a href="{% url 'users:logout' %}">{{user.username}}</a></li>
             {% else %}
-                <li><a href="{% url 'users:login_or_signup' %}">Sign in/Sign up</a></li>
+                <li><a href="{% url 'users:login_or_signup' %}">{% trans "Sign in/Sign up" %}</a></li>
             {% endif %}
+            <li>
+                <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ redirect_to }}">
+                    <select name="language">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
+                        {% for language in languages %}
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
+                                    selected{% endif %}>
+                                {{ language.name_local }} ({{ language.code }})
+                            </option>
+                        {% endfor %}
+                    </select>
+                    <input type="submit" value="Go">
+                </form>
+            </li>
         </ul>
     </nav>
     <div id="form_menu">

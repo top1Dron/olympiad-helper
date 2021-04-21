@@ -20,3 +20,22 @@ function delete_user_from_group(delete_url){
 
     }
 }
+
+
+function ajax_create_competition_page(type, url){
+    var request = new XMLHttpRequest();
+    request.open(type, url, true);
+
+    request.onload = function() {
+        if (this.status >= 200 && this.status < 400) {
+            var resp = JSON.parse(this.response);
+            document.getElementById('tab-data').innerHTML = resp['tab-data'];
+        }
+    };
+
+    request.onerror = function() {
+        alert('Something went wrong!');
+    };
+
+    request.send();
+}

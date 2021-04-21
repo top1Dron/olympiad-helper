@@ -124,7 +124,7 @@ class Solution(models.Model):
     user = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
     problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     language = models.ForeignKey(to=ProgrammingLanguage, on_delete=models.CASCADE)
-    solving_date = models.DateTimeField(auto_now=True)
+    solving_date = models.DateTimeField(verbose_name=_('Solving date'), auto_now=True)
     status = models.CharField(max_length=2, choices=STATUS)
     program_code = models.TextField()
     avg_memory_usage = models.CharField(max_length=30)

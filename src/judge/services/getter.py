@@ -12,7 +12,7 @@ def get_all_available_problems():
     '''
     returns querydict of all problems with is_active=True
     '''
-    return Problem.objects.filter(is_active=True, competition=None)
+    return Problem.objects.filter(is_active=True, competition=None).order_by('number')
 
 
 def get_all_submissions():

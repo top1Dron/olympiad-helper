@@ -1,11 +1,11 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Solution#{{object.pk}}{% endblock title %}
+{% block title %}{% trans "Solution" %}#{{object.pk}}{% endblock title %}
 
 {% block main_content %}
     <div class="wrapper">
-        <h1>Solution#{{object.pk}}</h1>
+        <h1>{% trans "Solution" %}#{{object.pk}}</h1>
         <p>
             {{ object.problem }}
             {{ object.solving_date }}
