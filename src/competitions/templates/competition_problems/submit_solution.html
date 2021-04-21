@@ -1,8 +1,8 @@
 {% extends 'base.html' %} 
 {% load widget_tweaks %}
 
-{% load static %}
-{% block title %}Solve task {{task_number}}{% endblock title %}
+{% load static i18n %}
+{% block title %}{% trans "Solve task " %}{{task_number}}{% endblock title %}
 {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/submit_solution.css' %}"
 {% endblock extra_head %}>
@@ -23,7 +23,7 @@
         {% if hidden_field.errors %}
         <ul>
             {% for error in hidden_field.errors %}
-            <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
+            <li>({% trans "Hidden field " %}{{ hidden_field.name }}) {{ error }}</li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -43,7 +43,7 @@
         {{ form.source_code.errors }}
         {% render_field form.source_code class='textarea-wrapper' rows='20' %}
     </p>
-    <button type="submit">Submit</button>
+    <button type="submit">{% trans "Submit" %}</button>
     </form>
 </div>
 {% endblock main_content %}

@@ -1,10 +1,10 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
-{% block title %}Groups{% endblock title %}
+{% block title %}{% trans "Groups" %}{% endblock title %}
 {% block main_content %}
 <div class="wrapper">
-    <h2>Groups</h2>
+    <h2>{% trans "Groups" %}</h2>
     {% if groups %}
         <div class='list'>
             <table class="table">
@@ -21,8 +21,8 @@
             </table>
         </div>
     {% else %}
-        <h3>No available groups yet</h3>
+        <h3>{% trans "No available groups yet" %}</h3>
     {% endif %}
-    <a href={% url 'groups:group_create' %}>Create group</a>
+    <a href={% url 'groups:group_create' %}>{% trans "Create group" %}</a>
 </div>
 {% endblock main_content %}

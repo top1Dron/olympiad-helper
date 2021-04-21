@@ -1,5 +1,6 @@
 import {ready, ajax_json_request} from '../services.js'
 
+
 ready(function(){
     var active_tab = document.querySelector('a.tabs-tab-active');
     ajax_json_request('GET', active_tab.getAttribute('data'), document.getElementById('tab-data'), "tab-data");

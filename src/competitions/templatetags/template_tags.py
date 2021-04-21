@@ -13,7 +13,7 @@ def get_user_problem_status(problem, user):
 @register.simple_tag
 def status_display(status):
     statuses = {
-        '': _(''),
+        '': '',
         'PD': _('Pending'),
         'CE': _('Compilation error'),
         'WA': _('Wrong answer'),

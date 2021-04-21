@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 {% load template_tags %}
 
 {% block extra_head %}
@@ -18,14 +18,14 @@
             </tr>
         </table>
         {% empty %}
-            <h3>No problems in this competition yet</h3>
+            <h3>{% trans "No problems in this competition yet." %}</h3>
         {% endfor %}
 </div>
 
 <div class='list'>
     {% if is_competition_in_group %}
         {% if is_group_teacher %}
-            <a href={% url 'competitions:add_or_find_problem' competition_id %} class='find_or_add_problem_link'>Add problem to competition</a>
+            <a href={% url 'competitions:add_or_find_problem' competition_id %} class='find_or_add_problem_link'>{% trans "Add problem to competition" %}</a>
         {% endif %}
     {% endif %}
 </div>

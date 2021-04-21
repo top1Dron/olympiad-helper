@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 
 {% block tab_content %}
@@ -7,23 +7,23 @@
         <table class='table'>
             <thead>
                 <tr>
-                    <td>User</td>
-                    <td>Solved problems</td>
+                    <td>{% trans "User" %}</td>
+                    <td>{% trans "Solved problems" %}</td>
                 </tr>
             </thead>
             <tbody>
     {% endif %}
-    {% for user, solved_problems in users_count %}
+    {% for username, solved_problems in users_count.items %}
         <tr>
             <td>
-                {{ user.username }}
+                {{ username }}
             </td>
             <td>
                 {{ solved_problems }}
             </td>
         </tr>
     {% empty %}
-        <h3>Noone successfully solved at least 1 problem in competition yet</h3>
+        <h3>{% trans "Noone successfully solved at least 1 problem in competition yet." %}</h3>
     {% endfor %}
     {% if  users_count%}
         </tbody>

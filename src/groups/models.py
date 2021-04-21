@@ -4,8 +4,8 @@ from users.models import CustomUser
 
 
 class Group(models.Model):
-    name = models.CharField(max_length=50)
-    description = models.TextField()
+    name = models.CharField(verbose_name=_('Group name'), max_length=50)
+    description = models.TextField(verbose_name=_('Group description'))
 
 
     def __str__(self):
@@ -24,4 +24,4 @@ class GroupUser(models.Model):
 
     group = models.ForeignKey(to=Group, on_delete=models.CASCADE)
     user = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
-    role = models.CharField(max_length=2, choices=ROLES)
+    role = models.CharField(verbose_name=_('Role'), max_length=2, choices=ROLES)

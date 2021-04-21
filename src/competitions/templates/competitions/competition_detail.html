@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{competition.name}}{% endblock title %}
 {% block extra_head %}
@@ -11,20 +11,11 @@
     <h2>{{competition.title}}</h2>
     <div class='nav-toolbar'>
         <nav class='tabs'>
-            <a class='tabs-tab tabs-tab-active'
-                data={% url 'competitions:competition_problems' competition.pk %}
-                tag='problems'
-                >Problems</a>
-            <a class='tabs-tab'
-                tag='leaderboard'
-                data={% url 'competitions:get_competition_leaderboard' competition.pk %}
-                >Leaderboard</a>
+            <a class='tabs-tab tabs-tab-active' data={% url 'competitions:competition_problems' competition.pk %} tag='problems'>{% trans "Problems" %}</a>
+            <a class='tabs-tab' tag='leaderboard' data={% url 'competitions:get_competition_leaderboard' competition.pk %}>{% trans "Leaderboard" %}</a>
             {% if is_competition_in_group %}
                 {% if is_group_teacher %}
-                    <a class='tabs-tab'
-                    tag='competition queue'
-                    data={% url 'competitions:competition_solution_list' competition.pk %}
-                    >Competition queue</a>
+                    <a class='tabs-tab' tag='competition queue' data={% url 'competitions:competition_solution_list' competition.pk %}>{% trans "Competition queue" %}</a>
                 {% endif %}
             {% endif %}
         </nav>

@@ -1,8 +1,8 @@
 {% extends 'base.html' %} 
 {% load widget_tweaks %}
 
-{% load static %}
-{% block title %}Create group{% endblock title %}
+{% load static i18n %}
+{% block title %}{% trans "Create group" %}{% endblock title %}
 {% block extra_head %}
 {% endblock extra_head %}>
 
@@ -22,7 +22,7 @@
         {% if hidden_field.errors %}
         <ul>
             {% for error in hidden_field.errors %}
-            <li>(Hidden field {{ hidden_field.name }}) {{ error }}</li>
+            <li>({% trans "Hidden field" %} {{ hidden_field.name }}) {{ error }}</li>
             {% endfor %}
         </ul>
         {% endif %}
@@ -32,13 +32,15 @@
     <p>
         {{ form.name.label_tag }}</br>
         {{ form.name.errors }}
-        {% render_field form.name placeholder="Group name" %}</br></br>
+        {% trans 'Group name' as group_name %}
+        {% render_field form.name placeholder=group_name %}</br></br>
 
         {{ form.description.label_tag }}</br>
         {{ form.description.errors }}
-        {% render_field form.description placeholder="Group description" %}</br></br>
+        {% trans 'Group description' as group_description %}
+        {% render_field form.description placeholder=group_description %}</br></br>
     </p>
-    <button type="submit">Create</button>
+    <button type="submit">{% trans "Create" %}</button>
     </form>
 </div>
 {% endblock main_content %}

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 {% block tab_content %}
 {% if group_members %}
@@ -11,14 +11,19 @@
                 <td>
                     {{ member.get_role_display }}
                 </td>
+                {% if member.role == 'TE' %}
+                    <td>
+                        <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.delete_url)">X</button>
+                    </td>
+                {% endif %}
             </tr>
             {% endfor %}
         </table>
     </div>
 {% else %}
-    <h3>No members in this group yet</h3>
+    <h3>{% trans "No members in this group yet" %}</h3>
 {% endif %}
     {% if user_role == 'TE' %}
-        <a href={% url 'groups:create_invite_link_to_group' group_id%} >Create invite link to group</a>
+        <a href={% url 'groups:create_invite_link_to_group' group_id%} >{% trans "Create invite link to group" %}</a>
     {% endif %}
 {% endblock tab_content %}

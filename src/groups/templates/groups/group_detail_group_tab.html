@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 
 {% block tab_content %}
 {{ group.description }}
@@ -7,7 +7,7 @@
             {% for competition in competitions %}
             <tr>
                 <td>
-                    {{ competition.title }}
+                    <a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a>
                 </td>
                 <td>
                     {{ competition.start_date }}
@@ -20,7 +20,7 @@
         </table>
     </div>
 {% else %}
-    <h3>No active competitions in this group yet</h3>
+    <h3>{% trans "No active competitions in this group yet" %}</h3>
 {% endif %}
-    <a href={% url 'groups:group_create' %} >Create group</a>
+    <a href={% url 'groups:group_create' %} >{% trans "Create group" %}</a>
 {% endblock tab_content %}
