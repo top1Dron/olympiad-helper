@@ -4217,3 +4217,12 @@ INFO 2021-04-24 14:25:12,777 execute_solutions 29732 140309034727232 Simple prob
 INFO 2021-04-24 14:25:12,871 execute_solutions 29732 140309034727232 Simple problem 4 - done successfully.
 INFO 2021-04-29 16:05:00,316 views 16702 140097111803648 favicon.ico
 INFO 2021-04-29 16:05:01,716 views 16702 140097101313792 favicon.ico
+INFO 2021-04-29 19:39:55,588 views 23409 139746949695232 <QueryDict: {'csrfmiddlewaretoken': ['j56hpYMgXPWPmWP59qiFzy4rlnPpICrqXD5JWtMuKAqw4K8UkSSu4vx5PdQqTFOg'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-04-29 19:40:53,196 views 23409 139746959398656 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-29 19:40:55,429 views 23409 139746959398656 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-29 19:40:57,200 views 23409 139746959398656 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-04-29 19:40:58,648 execute_solutions 2701 140301592328000 test_group_competition_v2:  1 - done successfully.
+INFO 2021-04-29 19:40:58,751 execute_solutions 2701 140301592328000 test_group_competition_v2:  2 - done successfully.
+INFO 2021-04-29 19:40:58,786 execute_solutions 2701 140301592328000 test_group_competition_v2:  3 - done successfully.
+INFO 2021-04-29 19:40:58,806 execute_solutions 2701 140301592328000 test_group_competition_v2:  4 - done successfully.
+INFO 2021-04-29 19:41:12,080 views 23409 139746959398656 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>

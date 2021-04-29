@@ -77,3 +77,8 @@ def get_filtered_problems(filter_parameter):
 
 def get_empty_problem_set():
     return Problem.objects.none()
+
+
+def delete_problem(problem_number:str):
+    problem = get_problem_by_number(problem_number)
+    problem.delete()

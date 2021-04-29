@@ -8,6 +8,7 @@ from django.http import JsonResponse
 from django.shortcuts import render, reverse, Http404, redirect
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
+from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView, ListView, DetailView
 from judge.models import Problem, Solution
 from judge.tasks import task_submit_solution
@@ -191,3 +192,12 @@ def get_competition_leaderboard(request, pk):
         )
     }
     return JsonResponse(data)
+
+
+@require_http_methods(['DELETE'])
+def delete_problem_from_competition(request, pk, slug):
+    try:
+        getter.delete_problem(slug)
+    except Problem.DoesNotExist:
+        raise Http404(_('Problem in this competition not found'))
+    return JsonResponse({'message': _('Problem deleted from competition')})

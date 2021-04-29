@@ -1,10 +1,6 @@
 {% load static i18n %}
 {% load template_tags %}
 
-{% block extra_head %}
-
-{% endblock extra_head %}
-
 
 {% block tab_content %}
 <div class='list'>
@@ -15,6 +11,12 @@
                 <td><a href={% url 'competitions:competition_problem_detail' competition_id problem.number %}>{{ problem.title }}</a></td>
                 {% get_user_problem_status problem user  as user_problem_status%}
                 <td><span id='user_problem_status'>{% status_display user_problem_status %}</span></td>
+                {% if is_group_teacher %}
+                    <td>
+                        {% csrf_token %}
+                        <button delete_url="{% url 'competitions:delete_problem_from_competition' competition_id problem.number %}" onclick="delete_problem_from_competition(this.getAttribute('delete_url'));">X</button>
+                    </td>
+                {% endif %}
             </tr>
         </table>
         {% empty %}
