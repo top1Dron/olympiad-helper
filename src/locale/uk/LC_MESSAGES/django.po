@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 20:58+0300\n"
+"POT-Creation-Date: 2021-04-22 12:30+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 "11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: competitions/models.py:8
+msgid "Description"
+msgstr "Деталі"
 
 #: competitions/templates/competition_problems/problem_detail.html:18
 #: judge/templates/judge/problem_detail.html:18
@@ -190,11 +194,11 @@ msgstr "Задачу додано успішно!"
 msgid "This problem is already in competition!"
 msgstr "Це завдання вже є у змаганні!"
 
-#: config/settings.py:140
+#: config/settings.py:141
 msgid "English"
 msgstr "Англійська"
 
-#: config/settings.py:141
+#: config/settings.py:142
 msgid "Ukrainian"
 msgstr "Українська"
 
@@ -279,6 +283,10 @@ msgstr "Поки нема доступних груп"
 msgid "Group not found"
 msgstr "Групу не знайдено"
 
+#: judge/admin.py:27
+msgid "Tests"
+msgstr "Тести"
+
 #: judge/forms.py:8 judge/forms.py:17 judge/models.py:27
 msgid "Programming language"
 msgstr "Мова програмування"
@@ -357,7 +365,7 @@ msgstr "Вихідні дані (приклад)"
 msgid "Solving date"
 msgstr "Дата відправки"
 
-#: judge/models.py:164
+#: judge/models.py:164 news/models.py:8
 msgid "Publication date"
 msgstr "Дата публікації"
 
@@ -386,6 +394,22 @@ msgstr "Розв'язати задачу"
 #: judge/views.py:76
 msgid "Solution not found"
 msgstr "Розв'язок не знайдений"
+
+#: news/models.py:6
+msgid "Title"
+msgstr "Заголовок"
+
+#: news/models.py:7
+msgid "Body"
+msgstr "Текст статті"
+
+#: news/models.py:16
+msgid "Article"
+msgstr "Стаття"
+
+#: news/models.py:17
+msgid "Articles"
+msgstr "Статті"
 
 #: templates/base.html:23
 msgid "Queue"
@@ -439,11 +463,11 @@ msgstr "Форма входу"
 msgid "Signup Form"
 msgstr "Реєстрація"
 
-#: users/templates/users/log.html:21 users/templates/users/log.html:46
+#: users/templates/users/log.html:21 users/templates/users/log.html:47
 msgid "Login"
 msgstr "Вхід"
 
-#: users/templates/users/log.html:22 users/templates/users/log.html:81
+#: users/templates/users/log.html:22 users/templates/users/log.html:83
 msgid "Signup"
 msgstr "Реєстрація"
 
@@ -455,35 +479,35 @@ msgstr "Email пошта"
 msgid "Forgot password?"
 msgstr "Забули пароль?"
 
-#: users/templates/users/log.html:51
+#: users/templates/users/log.html:52
 msgid "Not a member"
 msgstr "Ще не зареєстровані?"
 
-#: users/templates/users/log.html:51
+#: users/templates/users/log.html:52
 msgid "Signup now"
 msgstr "Зареєструватися зараз"
 
-#: users/templates/users/log.html:67
+#: users/templates/users/log.html:68
 msgid "Username"
 msgstr "Нікнейм"
 
-#: users/templates/users/log.html:76
+#: users/templates/users/log.html:77
 msgid "Confirm password"
 msgstr "Підтвердіть пароль"
 
-#: users/views.py:35
+#: users/views.py:38
 msgid "User is not active!"
 msgstr "Користувач заблокований!"
 
-#: users/views.py:37
+#: users/views.py:40
 msgid "User with inputed email and password is not exists!"
 msgstr "Користувача з введеними поштою та паролем не зареєстровано у системі!"
 
-#: users/views.py:57
+#: users/views.py:60
 msgid "Activate your account."
 msgstr "Активуйте свій аккаунт"
 
-#: users/views.py:69
+#: users/views.py:72
 msgid ""
 "Please, confirm your email address to complete the registration and login "
 "from this page! If you don't receive the email, check the spam folder!"
@@ -492,12 +516,12 @@ msgstr ""
 "авторизуйтесь із цієї сторінки! Якщо ви не отримали листа, перевірте папку "
 "зі спамом!"
 
-#: users/views.py:78
+#: users/views.py:81
 msgid "Successfully account activation. Now you can login to your account!"
 msgstr ""
 "Успішна активація аккаунту. Тепере ви можете увійти до вашого аккаунту!"
 
-#: users/views.py:80
+#: users/views.py:83
 msgid "Activation link is invalid!"
 msgstr "Посилання активації не дійсне!"
 

@@ -33,6 +33,11 @@ class ProgrammingLanguage(models.Model):
         return self.name
 
 
+    class Meta:
+        verbose_name = _('Programming language')
+        verbose_name_plural = _('Programming languages')
+
+
 class Problem(models.Model):
     '''model that describes olympiad problems'''
 
@@ -95,6 +100,11 @@ class Problem(models.Model):
         return ProblemTest.objects.filter(problem=self.pk)
 
 
+    class Meta:
+        verbose_name = _('Problem')
+        verbose_name_plural = _('Problems')
+
+
 class ProblemSamples(models.Model):
     problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     sample_input = models.TextField(_("Sample input #"))
@@ -103,6 +113,11 @@ class ProblemSamples(models.Model):
 
     def __str__(self):
         return self.problem.title + '- sample'
+
+
+    class Meta:
+        verbose_name = _('Problem samples')
+        verbose_name_plural = _('Problem samples')
 
 
 class ProblemTest(models.Model):
@@ -116,6 +131,11 @@ class ProblemTest(models.Model):
 
     def __str__(self):
         return f'{self.problem.title} - {self.test_number}'
+
+
+    class Meta:
+        verbose_name = _('Problem tests')
+        verbose_name_plural = _('Problem tests')
 
 
 class Solution(models.Model):
@@ -138,6 +158,11 @@ class Solution(models.Model):
 
     def __str__(self):
         return str(self.pk)
+
+
+    class Meta:
+        verbose_name = _('Solution')
+        verbose_name_plural = _('Solutions')
     
 
 
@@ -155,6 +180,12 @@ class SolutionTest(models.Model):
         return f'{self.solution.id} - {self.problem_test.test_number}'
 
 
+    class Meta:
+        verbose_name = _('Solution tests')
+        verbose_name_plural = _('Solution tests')
+        unique_together = ('solution', 'problem_test')
+
+
 class ProblemComment(models.Model):
     '''model that describes comments from successfully passed Problem users for Problem'''
 
@@ -170,3 +201,9 @@ class UserProblemStatus(models.Model):
     problem = models.ForeignKey(to=Problem, on_delete=models.CASCADE)
     user = models.ForeignKey(to=CustomUser, on_delete=models.CASCADE)
     status = models.CharField(max_length=2, choices=STATUS)
+
+
+    class Meta:
+        verbose_name = _('User problem status')
+        verbose_name_plural = _('User problem statuses')
+        unique_together = ('user', 'problem')

@@ -44,7 +44,9 @@ INSTALLED_APPS = [
     'users',
     'groups',
     'competitions',
+    'news',
     'widget_tweaks',
+    'urlshortening',
 ]
 
 MIDDLEWARE = [
@@ -211,3 +213,8 @@ CELERY_RESULT_BACKEND = f'redis://{REDIS_HOST}:{REDIS_PORT}/0'
 CELERY_ACCEPT_CONTENT = ['application/json'] 
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
+
+#url shortener settings
+INITIAL_URL_LEN = 6
+RETRY_COUNT = 1000
+REDIRECT_PREFIX = 'r'

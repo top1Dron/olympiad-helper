@@ -6,14 +6,18 @@ function delete_user_from_group(delete_url){
         request.onload = function() {
             if (this.status >= 200 && this.status < 400) {
                 var resp = JSON.parse(this.response);
-                fillingElement.innerHTML = resp[responseKey];
+                alert(resp['message']);
+                location.reload();
             }
         };
 
         request.onerror = function() {
             alert('Something went wrong!');
         };
-
+        data = {
+            'csrfmiddlewaretoken': getCookie('csrftoken'),
+        };
+        request.setRequestHeader('X-CSRFToken', getCookie('csrftoken'));
         request.send();
     }
     else {
@@ -21,6 +25,13 @@ function delete_user_from_group(delete_url){
     }
 }
 
+function getCookie(name) {
+
+    var matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ))
+    return matches ? decodeURIComponent(matches[1]) : undefined
+};
 
 function ajax_create_competition_page(type, url){
     var request = new XMLHttpRequest();
@@ -30,6 +41,10 @@ function ajax_create_competition_page(type, url){
         if (this.status >= 200 && this.status < 400) {
             var resp = JSON.parse(this.response);
             document.getElementById('tab-data').innerHTML = resp['tab-data'];
+            flatpickr(".js-flatpickr-dateTime", {
+                enableTime: true,
+                dateFormat: "d.m.Y H:i",
+            });
         }
     };
 

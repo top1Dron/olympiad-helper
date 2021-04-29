@@ -28,6 +28,9 @@ def api_login_user(request):
         user = authenticate(request, email=email, password=password)
         if user is not None:
             login(request, user)
+            redirect_to = request.POST.get('next')
+            if redirect_to:
+                return redirect(redirect_to)
             return redirect(reverse('judge:problem_list'))
         else:
             user = get_user_by_email(email)
@@ -54,6 +57,7 @@ def api_signup_user(request):
             user.is_active = False
             user.save()
             current_site = get_current_site(request)
+            logger.info(current_site.domain)
             mail_subject = _('Activate your account.')
             message = render_to_string(
                 'users/account_activate_email.html',

@@ -11,9 +11,10 @@
                 <td>
                     {{ member.get_role_display }}
                 </td>
-                {% if member.role == 'TE' %}
+                {% if user_role == 'TE' %}
                     <td>
-                        <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.delete_url)">X</button>
+                    {% csrf_token %}
+                    <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.getAttribute('delete_url'));">X</button>
                     </td>
                 {% endif %}
             </tr>
@@ -24,6 +25,7 @@
     <h3>{% trans "No members in this group yet" %}</h3>
 {% endif %}
     {% if user_role == 'TE' %}
-        <a href={% url 'groups:create_invite_link_to_group' group_id%} >{% trans "Create invite link to group" %}</a>
+        <label for='id_invite_link'>{% trans "Invite link" %}</label>
+        <input id='id_invite_link' type="text" disabled value="{{ invite_link }}">
     {% endif %}
 {% endblock tab_content %}

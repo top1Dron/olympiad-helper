@@ -69,7 +69,8 @@ def get_filtered_problems(filter_parameter):
     '''
 
     return get_all_available_problems().filter(
-        Q(title__icontains=filter_parameter) | 
+        Q(title_uk__icontains=filter_parameter) | 
+        Q(title_en__icontains=filter_parameter) |
         Q(number__icontains=filter_parameter)
     )
 

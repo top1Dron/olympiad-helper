@@ -27,4 +27,9 @@ class CustomUser(AbstractUser):
     def get_quantity_of_solved_problems(self):
         return judge_models.UserProblemStatus.objects.filter(user=self, status='AC').count()
 
+
+    class Meta:
+        verbose_name = _('User')
+        verbose_name_plural = _('Users')
+
         

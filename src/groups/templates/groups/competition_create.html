@@ -32,12 +32,12 @@
         {{ form.start_date.label_tag }}</br>
         {{ form.start_date.errors }}
         {% trans 'Competition start date' as comp_start_date %}
-        {% render_field form.start_date placeholder=comp_start_date %}</br></br>
+        {% render_field form.start_date placeholder=comp_start_date class='flatpickr js-flatpickr-dateTime' %}</br></br>
 
         {{ form.end_date.label_tag }}</br>
         {{ form.end_date.errors }}
         {% trans 'Competition end date' as comp_end_date %}
-        {% render_field form.end_date placeholder=comp_end_date %}</br></br>
+        {% render_field form.end_date placeholder=comp_end_date class='flatpickr js-flatpickr-dateTime' %}</br></br>
     </p>
     <button type="submit">{% trans "Create" %}</button>
 </form>

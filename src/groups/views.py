@@ -2,13 +2,17 @@ from competitions import services as competition_services
 from competitions.forms import CompetitionForm
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.sites.shortcuts import get_current_site
 from django.http import JsonResponse
 from django.shortcuts import render, reverse, Http404, redirect
 from django.template.loader import render_to_string
+from django.utils.translation import ugettext_lazy as _
+from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView, DetailView, ListView
 from groups.forms import GroupForm
-from groups.models import Group
+from groups.models import Group, GroupUser
 from groups.services import services
+from urlshortening.models import get_full_url
 import logging
 
 
@@ -50,7 +54,6 @@ class GroupListView(LoginRequiredMixin, ListView):
 
 
     def get_queryset(self, *args, **kwargs):
-        logger.info(services.get_user_groups(user=self.request.user))
         return services.get_user_groups(user=self.request.user)
 
 
@@ -101,17 +104,37 @@ def get_group_info(request, group_id:int):
 def get_group_members(request, group_id:int):
     group_members = services.get_group_members(group_id)
     user_role = services.get_user_role_in_group(group_id, request.user)
+    domain = get_current_site(request).domain
+    invite_link = services.get_group_invite_link(request.scheme, group_id, domain)
     data = {'tab-data': render_to_string(
         'groups/group_detail_members_tab.html', {
             'group_members': group_members,
             'group_id': group_id,
             'user_role': user_role,
+            'invite_link': invite_link,
         }, request).replace('\n', '')
     }
     return JsonResponse(data)
-
+    
 
 @login_required
-def create_invite_link_to_group(request, group_id):
-    pass
-    
+def confirm_user_joining_the_group(request, group_id):
+    services.add_user_to_group(
+        group=services.get_group_by_id(group_id), 
+        user=request.user, 
+        role='SD')
+    return redirect(reverse('groups:group_detail', kwargs={'group_id': group_id}))
+
+
+def redirect_to_full_url(request, short_id):
+    #TODO favicon.ico raises exception
+    return redirect(get_full_url(short_id).url)
+
+
+@require_http_methods(['DELETE'])
+def delete_user_from_group(request, group_id, group_user_id):
+    try:
+        services.delete_user_from_group(group_user_id)
+    except GroupUser.DoesNotExist:
+        raise Http404(_('User in this group not found'))
+    return JsonResponse({'message': _('User deleted from group')})

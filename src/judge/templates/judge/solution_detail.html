@@ -5,13 +5,13 @@
 
 {% block main_content %}
     <div class="wrapper">
-        <h1>{% trans "Solution" %}#{{object.pk}}</h1>
+        <h1>{% trans "Solution" %} #{{object.pk}}</h1>
         <p>
-            {{ object.problem }}
-            {{ object.solving_date }}
-            {{ object.language }}</p>
-            {{ object.user }}</p>
-            {{ object.get_status_display }}
+            {{ object.problem }}</br>
+            {{ object.solving_date }}</br>
+            {{ object.language }}</br>
+            {{ object.user.username }}</br>
+            {{ object.get_status_display }}</br>
         </p>
         <hr>
         {% for test in object.get_all_tests %}
@@ -23,7 +23,7 @@
         {% endfor %}
         <hr>
         {% if user == object.user or is_group_teacher%}
-            <p>{{object.program_code}}</p>
+            <p>{{ object.program_code|linebreaks }}</p>
         {% endif %}
     </div>
 {% endblock main_content %}

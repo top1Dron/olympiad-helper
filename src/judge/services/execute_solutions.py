@@ -112,9 +112,9 @@ def _test_execution(test, execute_line, time_limit, solution):
 
         start_time = time.time()
         test_output, test_error_string = execution.communicate(timeout=time_limit)
+        end_time = time.time()
         test_output = test_output.decode('utf-8')
         test_error_string = test_error_string.decode('utf-8')
-        end_time = time.time()
         finish_time = end_time - start_time
         test_status = 'PD'
 

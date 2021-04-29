@@ -21,5 +21,5 @@
 {% else %}
     <h3>{% trans "No competitions in this group yet" %}</h3>
 {% endif %}
-<a data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_create_competition_page('GET', document.getElementById('create-group-competition').getAttribute('data'))">Create competition</a>
+<a data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_create_competition_page('GET', document.getElementById('create-group-competition').getAttribute('data'))">{% trans "Create competition" %}</a>
 {% endblock tab_content %}
