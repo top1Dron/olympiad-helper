@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:30+0300\n"
+"POT-Creation-Date: 2021-05-01 16:37+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,18 @@ msgstr ""
 "11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
 "100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: competitions/forms.py:7 groups/templates/groups/competition_create.html:29
+msgid "Competition title"
+msgstr "Назва змагання"
+
+#: competitions/forms.py:9 groups/templates/groups/competition_create.html:34
+msgid "Competition start date"
+msgstr "Дата початку змагання"
+
+#: competitions/forms.py:13 groups/templates/groups/competition_create.html:39
+msgid "Competition end date"
+msgstr "Дата кінця змагання"
 
 #: competitions/models.py:8
 msgid "Description"
@@ -66,7 +78,7 @@ msgstr "Додати задачу до змагання"
 
 #: competitions/templates/competition_problems/search_problems_to_competition.html:25
 #: competitions/templates/competition_problems/submit_solution.html:26
-#: competitions/templates/competitions/competition_create.html:25
+#: competitions/templates/competitions/competition_create.html:27
 msgid "Hidden field "
 msgstr "Скрите поле "
 
@@ -74,10 +86,6 @@ msgstr "Скрите поле "
 #: judge/forms.py:38
 msgid "Type a problem"
 msgstr "Введіть номер або назву задачі"
-
-#: competitions/templates/competition_problems/search_problems_to_competition.html:37
-msgid "Create problem"
-msgstr "Створити задачу"
 
 #: competitions/templates/competition_problems/solution_list.html:31
 msgid "No submitted solutions in this competition yet."
@@ -93,32 +101,34 @@ msgid "Submit"
 msgstr "Відправити"
 
 #: competitions/templates/competitions/competition_create.html:5
+#: groups/templates/groups/group_detail_competitions_tab.html:24
 msgid "Create competition"
 msgstr "Створити змагання"
 
-#: competitions/templates/competitions/competition_create.html:45
+#: competitions/templates/competitions/competition_create.html:47
 #: groups/templates/groups/competition_create.html:42
 #: groups/templates/groups/group_create.html:43
 msgid "Create"
 msgstr "Створити"
 
-#: competitions/templates/competitions/competition_detail.html:14
-#: judge/templates/judge/problem_list.html:4
-#: judge/templates/judge/problem_list.html:7 templates/base.html:22
+#: competitions/templates/competitions/competition_detail.html:15
+#: judge/models.py:105 judge/templates/judge/problem_list.html:4
+#: judge/templates/judge/problem_list.html:7 templates/base.html:23
 msgid "Problems"
 msgstr "Задачі"
 
-#: competitions/templates/competitions/competition_detail.html:15
+#: competitions/templates/competitions/competition_detail.html:16
 msgid "Leaderboard"
 msgstr "Дошка лідерів"
 
-#: competitions/templates/competitions/competition_detail.html:18
+#: competitions/templates/competitions/competition_detail.html:19
 msgid "Competition queue"
 msgstr "Розв'язки задач змагання"
 
 #: competitions/templates/competitions/competition_list.html:4
 #: competitions/templates/competitions/competition_list.html:7
-#: groups/templates/groups/group_detail.html:20 templates/base.html:24
+#: groups/templates/groups/group_detail.html:22
+#: news/templates/news/index.html:14 templates/base.html:25
 msgid "Competitions"
 msgstr "Змагання"
 
@@ -126,15 +136,15 @@ msgstr "Змагання"
 msgid "No available competitions yet."
 msgstr "На даний момент немає доступних змагань."
 
-#: competitions/templates/competitions/competition_problems.html:21
+#: competitions/templates/competitions/competition_problems.html:23
 msgid "No problems in this competition yet."
 msgstr "У цьому змаганні поки немає задач для розв'язку."
 
-#: competitions/templates/competitions/competition_problems.html:28
+#: competitions/templates/competitions/competition_problems.html:30
 msgid "Add problem to competition"
 msgstr "Додати задачу до змагання"
 
-#: competitions/templates/competitions/leaderboard.html:10
+#: competitions/templates/competitions/leaderboard.html:10 users/models.py:32
 msgid "User"
 msgstr "Користувач"
 
@@ -178,47 +188,68 @@ msgstr "Вичерпано ліміт пам'яті"
 msgid "Accepted"
 msgstr "Зараховано"
 
-#: competitions/views.py:52
+#: competitions/views.py:53
 msgid "Competition not found"
 msgstr "Змагання не знайдено"
 
-#: competitions/views.py:107 judge/views.py:42
+#: competitions/views.py:108 judge/views.py:42
 msgid "Problem not found"
 msgstr "Задачу не знайдено"
 
-#: competitions/views.py:159
+#: competitions/views.py:160
 msgid "Problem added successfully!"
 msgstr "Задачу додано успішно!"
 
-#: competitions/views.py:161
+#: competitions/views.py:162
 msgid "This problem is already in competition!"
 msgstr "Це завдання вже є у змаганні!"
 
-#: config/settings.py:141
+#: competitions/views.py:202
+msgid "Problem in this competition not found"
+msgstr "У цьому змаганні поки немає задач для розв'язку."
+
+#: competitions/views.py:203
+msgid "Problem deleted from competition"
+msgstr "Задачу видалено зі змагання"
+
+#: config/settings.py:142
 msgid "English"
 msgstr "Англійська"
 
-#: config/settings.py:142
+#: config/settings.py:143
 msgid "Ukrainian"
 msgstr "Українська"
 
-#: groups/models.py:7 groups/templates/groups/group_create.html:35
+#: groups/apps.py:10
+msgid "User groups"
+msgstr "Групи"
+
+#: groups/models.py:8 groups/templates/groups/group_create.html:35
 msgid "Group name"
 msgstr "Назва групи"
 
-#: groups/models.py:8 groups/templates/groups/group_create.html:40
+#: groups/models.py:9 groups/templates/groups/group_create.html:40
 msgid "Group description"
 msgstr "Опис групи"
 
-#: groups/models.py:20
+#: groups/models.py:17 groups/templates/groups/group_detail.html:18
+msgid "Group"
+msgstr "Група"
+
+#: groups/models.py:18 groups/templates/groups/group_list.html:4
+#: groups/templates/groups/group_list.html:7 templates/base.html:27
+msgid "Groups"
+msgstr "Групи"
+
+#: groups/models.py:26
 msgid "Teacher"
 msgstr "Вчитель"
 
-#: groups/models.py:21
+#: groups/models.py:27
 msgid "Student"
 msgstr "Студент"
 
-#: groups/models.py:27
+#: groups/models.py:33
 msgid "Role"
 msgstr "Роль"
 
@@ -228,29 +259,12 @@ msgstr "Роль"
 msgid "Hidden field"
 msgstr "Скрите поле"
 
-#: groups/templates/groups/competition_create.html:29
-msgid "Competition title"
-msgstr "Назва змагання"
-
-#: groups/templates/groups/competition_create.html:34
-msgid "Competition start date"
-msgstr "Дата початку змагання"
-
-#: groups/templates/groups/competition_create.html:39
-msgid "Competition end date"
-msgstr "Дата кінця змагання"
-
 #: groups/templates/groups/group_create.html:5
-#: groups/templates/groups/group_detail_group_tab.html:25
 #: groups/templates/groups/group_list.html:26
 msgid "Create group"
 msgstr "Створити групу"
 
-#: groups/templates/groups/group_detail.html:16
-msgid "Group"
-msgstr "Група"
-
-#: groups/templates/groups/group_detail.html:18
+#: groups/templates/groups/group_detail.html:20
 msgid "Members"
 msgstr "Учасники"
 
@@ -262,32 +276,39 @@ msgstr "У цій групі поки не проводилися змаганн
 msgid "No active competitions in this group yet"
 msgstr "У цій групі на поточний час немає активних змагань"
 
-#: groups/templates/groups/group_detail_members_tab.html:24
+#: groups/templates/groups/group_detail_members_tab.html:25
 msgid "No members in this group yet"
 msgstr "У цій групі поки немає учасників"
 
-#: groups/templates/groups/group_detail_members_tab.html:27
-msgid "Create invite link to group"
-msgstr "Створити посилання на приєднання до групи"
-
-#: groups/templates/groups/group_list.html:4
-#: groups/templates/groups/group_list.html:7 templates/base.html:26
-msgid "Groups"
-msgstr "Групи"
+#: groups/templates/groups/group_detail_members_tab.html:28
+msgid "Invite link"
+msgstr "Посилання на вступ до групи"
 
 #: groups/templates/groups/group_list.html:24
 msgid "No available groups yet"
 msgstr "Поки нема доступних груп"
 
-#: groups/views.py:43
+#: groups/views.py:47
 msgid "Group not found"
 msgstr "Групу не знайдено"
 
-#: judge/admin.py:27
+#: groups/views.py:141
+msgid "User in this group not found"
+msgstr "Користувача у цій групі не знайдено"
+
+#: groups/views.py:142
+msgid "User deleted from group"
+msgstr "Користувача видалено із групи"
+
+#: judge/admin.py:28
 msgid "Tests"
 msgstr "Тести"
 
-#: judge/forms.py:8 judge/forms.py:17 judge/models.py:27
+#: judge/apps.py:9
+msgid "Judge"
+msgstr ""
+
+#: judge/forms.py:8 judge/forms.py:17 judge/models.py:27 judge/models.py:37
 msgid "Programming language"
 msgstr "Мова програмування"
 
@@ -317,71 +338,99 @@ msgstr ""
 msgid "Search problem"
 msgstr "Пошук задачі"
 
-#: judge/models.py:42
+#: judge/models.py:38
+msgid "Programming languages"
+msgstr "Мови програмування"
+
+#: judge/models.py:47
 msgid "Very easy"
 msgstr "Дуже проста"
 
-#: judge/models.py:43
+#: judge/models.py:48
 msgid "Easy"
 msgstr "Проста"
 
-#: judge/models.py:44
+#: judge/models.py:49
 msgid "Middle"
 msgstr "Середня"
 
-#: judge/models.py:45
+#: judge/models.py:50
 msgid "Hard"
 msgstr "Складна"
 
-#: judge/models.py:46
+#: judge/models.py:51
 msgid "Very hard"
 msgstr "Дуже складна"
 
-#: judge/models.py:53
+#: judge/models.py:58
 msgid "Combinatorics"
 msgstr "комбінаторика"
 
-#: judge/models.py:62
+#: judge/models.py:67
 msgid "Input"
 msgstr "Вхід"
 
-#: judge/models.py:63
+#: judge/models.py:68
 msgid "Output"
 msgstr "Вихід"
 
-#: judge/models.py:64
+#: judge/models.py:69
 msgid "Warning"
 msgstr "Попередження"
 
-#: judge/models.py:100
+#: judge/models.py:104
+msgid "Problem"
+msgstr "Задача"
+
+#: judge/models.py:110
 msgid "Sample input #"
 msgstr "Вхідні дані (приклад)"
 
-#: judge/models.py:101
+#: judge/models.py:111
 msgid "Sample output #"
 msgstr "Вихідні дані (приклад)"
 
-#: judge/models.py:127
+#: judge/models.py:119 judge/models.py:120
+msgid "Problem samples"
+msgstr "Приклади до задачі"
+
+#: judge/models.py:137 judge/models.py:138
+msgid "Problem tests"
+msgstr "Тести до задачі"
+
+#: judge/models.py:147
 msgid "Solving date"
 msgstr "Дата відправки"
 
-#: judge/models.py:164 news/models.py:8
-msgid "Publication date"
-msgstr "Дата публікації"
-
-#: judge/templates/judge/problem_list.html:24
-msgid "No problems founded"
-msgstr "Жодної задачі не знайдено"
-
-#: judge/templates/judge/solution_detail.html:4
+#: judge/models.py:164 judge/templates/judge/solution_detail.html:4
 #: judge/templates/judge/solution_detail.html:8
 msgid "Solution"
 msgstr "Розв'язкок"
 
-#: judge/templates/judge/solution_list.html:4
+#: judge/models.py:165 judge/templates/judge/solution_list.html:4
 #: judge/templates/judge/solution_list.html:7
 msgid "Solutions"
 msgstr "Розв'язки"
+
+#: judge/models.py:184 judge/models.py:185
+msgid "Solution tests"
+msgstr "Тести розв'язку"
+
+#: judge/models.py:195 news/models.py:8
+msgid "Publication date"
+msgstr "Дата публікації"
+
+#: judge/models.py:207
+msgid "User problem status"
+msgstr "Статус рішення задачі користувачем"
+
+#: judge/models.py:208
+msgid "User problem statuses"
+msgstr "Статуси рішення задач користувачами"
+
+#: judge/templates/judge/problem_list.html:24
+msgid "No problems founded"
+msgstr "Жодної задачі не знайдено"
 
 #: judge/templates/judge/solution_list.html:39
 msgid "No submitted solutions yet"
@@ -411,11 +460,15 @@ msgstr "Стаття"
 msgid "Articles"
 msgstr "Статті"
 
-#: templates/base.html:23
+#: news/templates/news/index.html:5 templates/base.html:22
+msgid "News"
+msgstr "Новини"
+
+#: templates/base.html:24
 msgid "Queue"
 msgstr "Черга"
 
-#: templates/base.html:29
+#: templates/base.html:30
 msgid "Sign in/Sign up"
 msgstr "Вхід/Реєстрація"
 
@@ -442,6 +495,10 @@ msgstr "Суперкористувач повинен мати is_superuser=True
 #: users/models.py:9
 msgid "email address"
 msgstr "Email пошта"
+
+#: users/models.py:33
+msgid "Users"
+msgstr "Користувачі"
 
 #: users/templates/users/account_activate_email.html:3
 msgid "Hi"
@@ -503,11 +560,11 @@ msgstr "Користувач заблокований!"
 msgid "User with inputed email and password is not exists!"
 msgstr "Користувача з введеними поштою та паролем не зареєстровано у системі!"
 
-#: users/views.py:60
+#: users/views.py:61
 msgid "Activate your account."
 msgstr "Активуйте свій аккаунт"
 
-#: users/views.py:72
+#: users/views.py:73
 msgid ""
 "Please, confirm your email address to complete the registration and login "
 "from this page! If you don't receive the email, check the spam folder!"
@@ -516,14 +573,20 @@ msgstr ""
 "авторизуйтесь із цієї сторінки! Якщо ви не отримали листа, перевірте папку "
 "зі спамом!"
 
-#: users/views.py:81
+#: users/views.py:82
 msgid "Successfully account activation. Now you can login to your account!"
 msgstr ""
 "Успішна активація аккаунту. Тепере ви можете увійти до вашого аккаунту!"
 
-#: users/views.py:83
+#: users/views.py:84
 msgid "Activation link is invalid!"
 msgstr "Посилання активації не дійсне!"
+
+#~ msgid "Create problem"
+#~ msgstr "Створити задачу"
+
+#~ msgid "Create invite link to group"
+#~ msgstr "Створити посилання на приєднання до групи"
 
 #~ msgid "Email має бути заданим"
 #~ msgstr "Email має бути заданим"

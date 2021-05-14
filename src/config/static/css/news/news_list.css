@@ -1,0 +1,39 @@
+.css-accordion {
+    border: 1px solid silver;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+.css-accordion dt {
+    background: silver;
+}
+.css-accordion dt a {
+    color: #000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.css-accordion dt:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.css-accordion dt:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+.css-accordion dt:target:last-of-type {
+    border-radius: 0;
+}
+.css-accordion dt:target + dd {
+    display: block;
+}
+.css-accordion dt:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.css-accordion dd {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+.css-accordion dd p {
+    margin: 0;
+    padding: 10px;
+}

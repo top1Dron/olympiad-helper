@@ -35,10 +35,15 @@ class CompetitionListView(ListView):
     model = Competition
     template_name = 'competitions/competition_list.html'
     context_object_name = 'competitions'
+    paginate_by = 10
 
 
     def get_queryset(self, *args, **kwargs):
         return services.get_all_available_competitions(user=self.request.user)
+
+
+    def get_context_data(self, **kwargs):
+        return getter.get_context_with_pagination_settings(context=super().get_context_data(**kwargs))
 
 
 class CompetitionDetailView(LoginRequiredMixin, DetailView):
@@ -69,7 +74,8 @@ def get_competition_problems(request, pk):
         'competition_id': pk,
         'problems': problems,
         'is_competition_in_group': True if competition.group != None else False,
-        'is_group_teacher': False
+        'is_group_teacher': False,
+        'is_active_for_edit': services.is_competition_active_for_edit_problems(pk)
     }
     if context['is_competition_in_group']:
         context['is_group_teacher'] = services.is_group_teacher(competition, request.user)

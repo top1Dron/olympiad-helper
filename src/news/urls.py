@@ -6,5 +6,5 @@ app_name = 'news'
 
 
 urlpatterns = [
-    # path('', views, name='index'),
+    path('', views.NewsListView.as_view(), name='index'),
 ]

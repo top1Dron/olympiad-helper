@@ -1,8 +1,10 @@
 {% extends 'base.html' %} 
 {% load static i18n %}
 
-{% block title %}{{competition.name}}{% endblock title %}
+{% block title %}{{competition.title}}{% endblock title %}
 {% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/ajax_tabs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
     <script src={% static 'js/competitions/competition_detail.js' %} type='module'></script>
     <script src={% static 'js/competitions/delete_problem_from_competition.js' %}></script>
 {% endblock extra_head %}
@@ -10,17 +12,29 @@
 {% block main_content %}
 <div class="wrapper">
     <h2>{{competition.title}}</h2>
-    <div class='nav-toolbar'>
-        <nav class='tabs'>
-            <a class='tabs-tab tabs-tab-active' data={% url 'competitions:competition_problems' competition.pk %} tag='problems'>{% trans "Problems" %}</a>
-            <a class='tabs-tab' tag='leaderboard' data={% url 'competitions:get_competition_leaderboard' competition.pk %}>{% trans "Leaderboard" %}</a>
-            {% if is_competition_in_group %}
-                {% if is_group_teacher %}
-                    <a class='tabs-tab' tag='competition queue' data={% url 'competitions:competition_solution_list' competition.pk %}>{% trans "Competition queue" %}</a>
-                {% endif %}
-            {% endif %}
-        </nav>
-        {% if messages %}
+        <div class="tab-wrap">
+            <input type="radio" name="tabs" id="problems" data={% url 'competitions:competition_problems' competition.pk %} group.pk %} checked>
+            <div class="tab-label-content">
+                <label for="problems">
+                    {% trans "Problems" %}
+                </label>
+            </div>
+
+            <input type="radio" name="tabs" id="leaderboard" data={% url 'competitions:get_competition_leaderboard' competition.pk %}>
+            <div class="tab-label-content">
+                <label for="leaderboard">
+                    {% trans "Leaderboard" %}
+                </label>
+            </div>
+
+            <input type="radio" name="tabs" id="competition-queue" data={% url 'competitions:competition_solution_list' competition.pk %}>
+            <div class="tab-label-content">
+                <label for="competition-queue">
+                    {% trans "Competition queue" %}
+                </label>
+            </div>
+            <div class="slide"></div>
+        </div></br>{% if messages %}
             <ul class='messages'>
                 {% for message in messages %}
                     <li class="{{ message.tags }}">

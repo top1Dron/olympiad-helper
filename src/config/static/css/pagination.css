@@ -1,0 +1,13 @@
+.pagination {
+    text-align:center;
+}
+.pagination a{
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active{
+    background-color: #ea6153;
+    color:white;
+}
+.pagination a:hover:not(.active) {background-color: #ddd;}

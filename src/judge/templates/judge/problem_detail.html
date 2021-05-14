@@ -8,10 +8,15 @@
         <h1>{{object.title}}</h1>
         <p>{{object.description|safe}}</br>
         {% if object.description_photo %}
-        <img src='{{object.description_photo.url}}'</p>
+        <img src='{{object.description_photo.url}}'></p>
         {% endif %}
-        <p>{{object.input_condition}}</p>
-        <p>{{object.output_condition}}</p>
+        
+        </br><strong>{% trans "Input" %}</strong></br>
+        <p>{{object.input_condition|safe}}</p>
+        
+        </br><strong>{% trans "Output" %}</strong></br>
+        <p>{{object.output_condition|safe}}</p>
+        
         <p>{% if object.special_warning %}{{ object.special_warning|safe }}{% endif %}</p>
         <hr>
         <p>

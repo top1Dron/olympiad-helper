@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% load static i18n %}
+
+{% block title %}{% trans "News" %}{% endblock title %}
+
+{% block extra_head %}
+    <link rel='stylesheet' href="{% static 'css/news/news_list.css' %}">
+    <link rel='stylesheet' href="{% static 'css/table.css' %}"
+{% endblock extra_head %}
+
+
+{% block main_content %}
+<div class='wrapper'>
+    {% if competitions %}<h2>{% trans "Competitions" %}</h2>{% endif %}</br>
+        <table class="table">
+            {% for competition in competitions %}
+                <div class="row">
+                    <div class="cell">
+                        <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                    </div>
+                    <div class="cell">
+                        <span>{{ competition.start_date }}</span>
+                    </div>
+                    <div class="cell">
+                        <span>{{ competition.end_date }}</span>
+                    </div>
+                    
+                    <div class="cell">
+                        {% if competition.group %}
+                            <span>{{ competition.group }}</span>
+                        {% else %}
+                            <span>-</span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </table>
+        {% if news %}<h2>{% trans "News" %}</h2>{% endif %}</br>
+        <dl class='css-accordion'>
+            {% for article in news %}
+            <dt id='id_{{ article.pk }}'>
+                <a href='#id_{{ article.pk }}'>{{ article.title }}</a>
+            </dt>
+            <dd>
+                <p>{{ article.body|safe }}</br></br> {{ article.publication_date }}</p>
+            </dd>
+            {% endfor %}
+        </dl>
+</div>
+{% endblock main_content %}

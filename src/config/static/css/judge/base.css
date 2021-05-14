@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: montserrat;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .main-menu-tabs{
     background: #0082e6;
@@ -100,8 +100,7 @@ a.active, a:hover{
 }
 
 .wrapper{
-    overflow: hidden;
-    max-width: 390px;
+    max-width: 800px;
     background: #fff;
     padding: 30px;
     border-radius: 5px;

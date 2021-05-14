@@ -2,27 +2,48 @@
 {% load static i18n %}
 
 {% block title %}{% trans "Groups" %}{% endblock title %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+    <link rel='stylesheet' href="{% static 'css/pagination.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+{% endblock extra_head %}
+
 {% block main_content %}
 <div class="wrapper">
     <h2>{% trans "Groups" %}</h2>
     {% if groups %}
         <div class='list'>
-            <table class="table">
-                {% for group in groups %}
-                <tr>
-                    <td>
-                        <a href={% url 'groups:group_detail' group.id %}>{{ group.name }}</a>
-                    </td>
-                    <td>
-                        {{ group.description }}
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
+            <ul>
+                <li>{% trans "Title" %}</li>
+                <li>{% trans "Description" %}</li>
+            </ul>            
+            {% for group in groups %}
+                <ul>
+                    <li data-label="{% trans 'Title' %}"><a href={% url 'groups:group_detail' group.id %}>{{ group.name }}</a></li>
+                    <li data-label="{% trans 'Description' %}"><p>{{ group.description }}</p></li>
+                </ul>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+            {% endif %}
+            {% for i in pages %}
+                {% if page_obj.number == i %}
+                    <a href="?page={{i}}" class="active">{{i}}</a>
+                {% else %}
+                    <a href="?page={{i}}">{{i}}</a>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+            {% endif %}
         </div>
     {% else %}
         <h3>{% trans "No available groups yet" %}</h3>
     {% endif %}
-    <a href={% url 'groups:group_create' %}>{% trans "Create group" %}</a>
+    <a class="create-button" href={% url 'groups:group_create' %}>{% trans "Create group" %}</a>
 </div>
 {% endblock main_content %}

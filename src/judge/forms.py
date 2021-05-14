@@ -48,4 +48,24 @@ class ProblemSearchForm(forms.Form):
         super().__init__(*args, **kwargs)
         if competition_id != None:
             self.fields['problem_search_field'].widget.attrs.update({'problems':reverse_lazy('competitions:search_problem', kwargs={'pk':competition_id})})
-        
+
+
+class ProblemFilterForm(forms.ModelForm):
+    difficulty_choices = list(Problem.DIFFICULTY)
+    difficulty_choices.insert(0, ('', _('All problems')))
+    difficulty = forms.ChoiceField(choices=tuple(difficulty_choices), label=_('Complexity'))
+    
+    classification_choices = list(Problem.CLASSIFICATION)
+    classification_choices.insert(0, ('', _('All problems')))
+    classification = forms.ChoiceField(choices=tuple(classification_choices), label=_('Classification'))
+
+    class Meta:
+        model = Problem
+        fields = ['number', 'difficulty', 'classification']
+        # widgets = {'classification': forms.Select()}
+
+    # def __init__(self, *args, **kwargs):
+    #     super(ProblemFilterForm, self).__init__(*args, **kwargs)
+    #     # for field in ('difficulty', 'classification'):
+    #     self.fields['difficulty'].empty_label = 'All problems'
+        # self.fields['difficulty'].choices.append(('', _('All problems')))

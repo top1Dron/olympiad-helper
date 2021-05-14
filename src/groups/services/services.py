@@ -16,7 +16,10 @@ def add_user_to_group(*, group, user, role):
 
 
 def get_user_groups(*, user):
-    return Group.objects.filter(pk__in=(user_group.group.id for user_group in GroupUser.objects.filter(user=user)))
+    return Group.objects.filter(pk__in=(
+        user_group.group.id for user_group in 
+            GroupUser.objects.filter(user=user).select_related('group', 'user'))
+    )
 
 
 def get_group_by_id(id):
@@ -24,7 +27,7 @@ def get_group_by_id(id):
 
 
 def get_group_members(group_id):
-    return GroupUser.objects.filter(group=get_group_by_id(group_id))
+    return GroupUser.objects.filter(group=get_group_by_id(group_id)).select_related('group', 'user')
 
 
 def get_user_role_in_group(group_id, user):

@@ -6,23 +6,40 @@
     <script src={% static 'js/groups/group_details.js' %} type='module'></script>
     <script src={% static 'js/groups/delete_user_from_group.js' %}></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ajax_tabs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 {% endblock extra_head %}
 
 {% block main_content %}
+
 <div class="wrapper">
-    <h2>{{group.name}}</h2>
-    <div class='nav-toolbar'>
-        <nav class='tabs'>
-            <a class='tabs-tab tabs-tab-active info-tab'
-                data={% url 'groups:get_group_info' group.pk %}>{% trans "Group" %}</a>
-            <a class='tabs-tab members-tab'
-                data={% url 'groups:get_group_members' group.pk %}>{% trans "Members" %}</a>
-            <a class='tabs-tab competition-tab' 
-                data={% url 'groups:get_group_competitions' group.pk %}>{% trans "Competitions" %}</a>
-        </nav>
-        <div id='tab-data'>{% block tab_content %}{% endblock tab_content %}</div>
-    </div>
+    <h2>{{group.name}}</h2></br>
+    <div class="tab-wrap">
+        <input type="radio" name="tabs" id="info-tab" data={% url 'groups:get_group_info' group.pk %} checked>
+        <div class="tab-label-content">
+            <label for="info-tab">
+                {% trans "Group" %}
+            </label>
+        </div>
+
+        <input type="radio" name="tabs" id="members-tab" data={% url 'groups:get_group_members' group.pk %}>
+        <div class="tab-label-content">
+            <label for="members-tab">
+                {% trans "Members" %}
+            </label>
+        </div>
+
+        <input type="radio" name="tabs" id="competition-tab" data={% url 'groups:get_group_competitions' group.pk %}>
+        <div class="tab-label-content">
+            <label for="competition-tab">
+                {% trans "Competitions" %}
+            </label>
+        </div>
+        <div class="slide"></div>
+    </div></br>
+    <div id='tab-data'><p>{% block tab_content %}{% endblock tab_content %}</p></div>
 </div>
 <script>
 flatpickr(".js-flatpickr-dateTime", {

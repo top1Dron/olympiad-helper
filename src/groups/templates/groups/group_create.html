@@ -4,7 +4,8 @@
 {% load static i18n %}
 {% block title %}{% trans "Create group" %}{% endblock title %}
 {% block extra_head %}
-{% endblock extra_head %}>
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+{% endblock extra_head %}
 
 {% block main_content %}
 <div class="wrapper">
@@ -40,7 +41,7 @@
         {% trans 'Group description' as group_description %}
         {% render_field form.description placeholder=group_description %}</br></br>
     </p>
-    <button type="submit">{% trans "Create" %}</button>
+    <button class="create-button" type="submit">{% trans "Create" %}</button>
     </form>
 </div>
 {% endblock main_content %}

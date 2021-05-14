@@ -7,7 +7,7 @@
     <div class="wrapper">
         <h1>{% trans "Solution" %} #{{object.pk}}</h1>
         <p>
-            {{ object.problem }}</br>
+            <a href="{% url 'judge:problem' object.problem.number %}">{{ object.problem }}</a></br>
             {{ object.solving_date }}</br>
             {{ object.language }}</br>
             {{ object.user.username }}</br>
@@ -16,7 +16,7 @@
         <hr>
         {% for test in object.get_all_tests %}
         <p>
-            {{ test.problem_test.test_number }}
+            {{ test.test_number }}
             {{ test.get_status_display }}
             {{ test.time_usage }} ms
         </p>

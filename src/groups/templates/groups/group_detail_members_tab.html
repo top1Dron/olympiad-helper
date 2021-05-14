@@ -8,14 +8,19 @@
                 <td>
                     {{ member.user.username }}
                 </td>
-                <td>
-                    {{ member.get_role_display }}
-                </td>
                 {% if user_role == 'TE' %}
+                    <td>
+                        {{ member.get_role_display }}
+                    </td>
                     <td>
                     {% csrf_token %}
                     <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.getAttribute('delete_url'));">X</button>
                     </td>
+                    {% if member.role == 'SD' %}
+                        <td>
+                            Update to teacher
+                        </td>
+                    {% endif %}
                 {% endif %}
             </tr>
             {% endfor %}

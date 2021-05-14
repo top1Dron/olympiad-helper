@@ -1,0 +1,82 @@
+{% extends 'admin/base_site.html' %}
+
+{% load static i18n %}
+
+{% block title %}{% trans "Statistics" %}{% endblock title %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <link rel='stylesheet' href="{% static 'css/table.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+    <div class='wrapper'>
+        <h3>{% trans "Most unsolvable problems" %}</h3>
+        <div class="table">
+            <div class="row header">
+                <div class="cell">
+                    <span>{% trans "Problem number" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Problem title" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Solved count" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Persent of resolve" %}</span>
+                </div>
+            </div>
+            {% for problem_number, problem_title, solved_count, persent_of_resolve in unsolvable_problems %}
+                <div class="row">
+                    <div class="cell" data-title="{% trans 'Problem number' %}">
+                        <span>{{ problem_number }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Problem title' %}">
+                        <span>{{ problem_title }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Solved count' %}">
+                        <span>{{ solved_count }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Persent of resolve' %}">
+                        <span>{{ persent_of_resolve }}%</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        
+        <h3>{% trans "Most solvable problems" %}</h3>
+        <div class="table">
+            <div class="row header green">
+                <div class="cell">
+                    <span>{% trans "Problem number" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Problem title" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Solved count" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Persent of resolve" %}</span>
+                </div>
+            </div>
+            {% for problem_number, problem_title, solved_count, persent_of_resolve in solvable_problems %}
+                <div class="row">
+                    <div class="cell" data-title="{% trans 'Problem number' %}">
+                        <span>{{ problem_number }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Problem title' %}">
+                        <span>{{ problem_title }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Solved count' %}">
+                        <span>{{ solved_count }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Persent of resolve' %}">
+                        <span>{{ persent_of_resolve }}%</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

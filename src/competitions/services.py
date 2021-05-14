@@ -1,6 +1,6 @@
 from collections import OrderedDict
 from competitions.models import Competition
-from django.db.models import Q, Count
+from django.db.models import Q, Count, F
 from django.utils import timezone
 from groups.services import services as group_services
 from judge.models import Problem, UserProblemStatus
@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 def get_all_available_competitions(*, user):
-    not_in_group_competitions = get_competitions_which_is_not_in_group()
+    not_in_group_competitions = get_competitions_which_is_not_in_group().select_related('group')
     if str(user) == 'AnonymousUser':
         return not_in_group_competitions
     else:
@@ -65,6 +65,14 @@ def is_competition_active(id):
     return False
 
 
+def is_competition_active_for_edit_problems(id):
+    competition = get_competition_by_id(id)
+    current_time = timezone.now()
+    if competition.start_date > current_time:
+        return True
+    return False
+
+
 def get_user_status_on_problems_in_competition(problem_number, user):
     problem = judge_getter.get_problem_by_number(problem_number)
     try:
@@ -105,3 +113,8 @@ def get_competition_leaderboard(competition_id):
             )).order_by('-solved_problems_count'):
         users_count[ups['user__username']] = ups['solved_problems_count']
     return users_count
+
+
+def get_five_ending_soon_competitions(*, user):
+    end_date = F('end_date')
+    return get_all_available_competitions(user=user).order_by(end_date)[:5]

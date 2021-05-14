@@ -2,38 +2,81 @@
 {% load static i18n %}
 
 {% block title %}{% trans "Solutions" %}{% endblock title %}
+
+{% block extra_head %}
+    <link rel='stylesheet' href="{% static 'css/table.css' %}">
+    <link rel='stylesheet' href="{% static 'css/pagination.css' %}">
+    <link rel='stylesheet' href="{% static 'css/judge/solution_list.css' %}">
+{% endblock extra_head %}
+
 {% block main_content %}
 <div class="wrapper">
     <h2>{% trans "Solutions" %}</h2>
     {% if solutions %}
-        <div class='list'>
-            <table class="table">
-                {% for solution in solutions %}
-                <tr>
-                    <td>
-                        <a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
-                    </td>
-                    <td>
-                        {{ solution.problem }}
-                    </td>
-                    <td>
-                        {{ solution.user.username }}
-                    </td>
-                    <td>
-                        {{ solution.language }}
-                    </td>
-                    <td>
-                        {{ solution.solving_date }}
-                    </td>
-                    <td>
-                        {{ solution.get_status_display }}
-                    </td>
-                    <td>
-                        {{ solution.avg_time_usage }} ms
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
+        <div class="table">
+            <div class="row header">
+                <div class="cell">
+                    <span>#</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Problem title" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Author" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Programming language" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Solving date" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Status" %}</span>
+                </div>
+                <div class="cell">
+                    <span>{% trans "Time usage" %}</span>
+                </div>
+            </div>
+            {% for solution in solutions %}
+                <div class="row">
+                    <div class="cell" data-title="#">
+                        <span><a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a></span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Problem title' %}">
+                        <span>{{ solution.problem }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Author' %}">
+                        <span>{{ solution.user.username }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Programming language' %}">
+                        <span>{{ solution.language }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Solving date' %}">
+                        <span>{{ solution.solving_date }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Status' %}">
+                        <span>{{ solution.get_status_display }}</span>
+                    </div>
+                    <div class="cell" data-title="{% trans 'Time usage' %}">
+                        <span>{{ solution.avg_time_usage }} ms</span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+            {% endif %}
+            {% for i in pages %}
+                {% if page_obj.number == i %}
+                    <a href="?page={{i}}" class="active">{{i}}</a>
+                {% else %}
+                    <a href="?page={{i}}">{{i}}</a>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+            {% endif %}
         </div>
     {% else %}
         <h3>{% trans "No submitted solutions yet" %}</h3>

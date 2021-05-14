@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'news',
     'widget_tweaks',
     'urlshortening',
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -190,8 +192,11 @@ LOGGING = {
         'groups':{
             'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
             'handlers': ['file',],
-        }
-
+        },
+        'news':{
+            'level': os.getenv('DJANGO_LOG_LEVEL', 'DEBUG'),
+            'handlers': ['file',],
+        },
     },
 }
 
@@ -218,3 +223,9 @@ CELERY_RESULT_SERIALIZER = 'json'
 INITIAL_URL_LEN = 6
 RETRY_COUNT = 1000
 REDIRECT_PREFIX = 'r'
+
+# MODELTRANSLATION_DEFAULT_LANGUAGE = 'uk'
+
+INTERNAL_IPS = [
+    '127.0.0.1',
+]

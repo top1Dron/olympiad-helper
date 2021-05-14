@@ -51,6 +51,7 @@ class GroupListView(LoginRequiredMixin, ListView):
     model = Group
     template_name = 'groups/group_list.html'
     context_object_name = 'groups'
+    paginate_by = 20
 
 
     def get_queryset(self, *args, **kwargs):
@@ -128,6 +129,10 @@ def confirm_user_joining_the_group(request, group_id):
 
 def redirect_to_full_url(request, short_id):
     #TODO favicon.ico raises exception
+    if short_id in ('uk', 'en'):
+        return redirect(reverse('news:index'))
+    if short_id == 'admin':
+        return redirect(reverse('admin:index'))
     return redirect(get_full_url(short_id).url)
 
 

@@ -7,7 +7,8 @@
     <title>{% block title %}Base template{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/judge/base.css' %}">
-    {% comment %} <script src="https://kit.fontawesome.com/a076d05399.js"></script> {% endcomment %}
+    <link rel="short icon" href="{% static 'favicon.ico' %}">
+    <script src="{% static 'js/base.js' %}" type="module"></script>
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
@@ -18,7 +19,8 @@
         </label>
         <label class="logo">Olympiad-helper</label>
         <ul>
-            <li><a href="{% url 'judge:problem_list' %}" class='active'>{% trans "Problems" %}</a></li>
+            <li><a href="{% url 'news:index' %}">{% trans "News" %}</a></li>
+            <li><a href="{% url 'judge:problem_list' %}">{% trans "Problems" %}</a></li>
             <li><a href="{% url 'judge:solution_list' %}">{% trans "Queue" %}</a></li>
             <li><a href="{% url 'competitions:competition_list' %}">{% trans "Competitions" %}</a></li>
             {% if user.is_authenticated %}

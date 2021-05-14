@@ -2,29 +2,53 @@
 {% load static i18n %}
 
 {% block title %}{% trans "Competitions" %}{% endblock title %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/table.css' %}">
+    <link rel="stylesheet" href="{% static 'css/pagination.css' %}">
+{% endblock extra_head %}
+
 {% block main_content %}
 <div class="wrapper">
-    <h2>{% trans "Competitions" %}</h2>
+    <h2>{% trans "Competitions" %}</h2></br>
     {% if competitions %}
-        <div class='list'>
-            <table class="table">
-                {% for competition in competitions %}
-                <tr>
-                    <td>
-                        <a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a>
-                    </td>
-                    <td>
-                        {{ competition.start_date }}
-                    </td>
-                    <td>
-                        {{ competition.end_date }}
-                    </td>
-                    <td>
-                        {{ competition.group }}
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
+        <div class="table">
+            {% for competition in competitions %}
+                <div class="row">
+                    <div class="cell">
+                        <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                    </div>
+                    <div class="cell">
+                        <span>{{ competition.start_date }}</span>
+                    </div>
+                    <div class="cell">
+                        <span>{{ competition.end_date }}</span>
+                    </div>
+                    
+                    <div class="cell">
+                        {% if competition.group %}
+                            <span>{{ competition.group }}</span>
+                        {% else %}
+                            <span>-</span>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="pagination">
+            {% if page_obj.has_previous %}
+                <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+            {% endif %}
+            {% for i in pages %}
+                {% if page_obj.number == i %}
+                    <a href="?page={{i}}" class="active">{{i}}</a>
+                {% else %}
+                    <a href="?page={{i}}">{{i}}</a>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+            {% endif %}
         </div>
     {% else %}
         <h3>{% trans "No available competitions yet." %}</h3>

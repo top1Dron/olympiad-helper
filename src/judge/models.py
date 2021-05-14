@@ -56,6 +56,7 @@ class Problem(models.Model):
         # """enum of problem classification"""
 
         ('CB', _('Combinatorics')),
+        ('BS', _('Breadth-first-search')),
     )
 
     number = models.SlugField(max_length=1000, unique=True)
@@ -97,7 +98,7 @@ class Problem(models.Model):
 
     @property
     def get_all_tests(self):
-        return ProblemTest.objects.filter(problem=self.pk)
+        return ProblemTest.objects.filter(problem=self.pk).select_related('problem')
 
 
     class Meta:
@@ -163,6 +164,7 @@ class Solution(models.Model):
     class Meta:
         verbose_name = _('Solution')
         verbose_name_plural = _('Solutions')
+        ordering = ('-solving_date', )
     
 
 

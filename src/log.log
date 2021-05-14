@@ -4225,4 +4225,466 @@ INFO 2021-04-29 19:40:58,648 execute_solutions 2701 140301592328000 test_group_c
 INFO 2021-04-29 19:40:58,751 execute_solutions 2701 140301592328000 test_group_competition_v2:  2 - done successfully.
 INFO 2021-04-29 19:40:58,786 execute_solutions 2701 140301592328000 test_group_competition_v2:  3 - done successfully.
 INFO 2021-04-29 19:40:58,806 execute_solutions 2701 140301592328000 test_group_competition_v2:  4 - done successfully.
-INFO 2021-04-29 19:41:12,080 views 23409 139746959398656 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-05-01 17:53:57,146 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46004886d0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46004afd30>}
+INFO 2021-05-01 18:00:54,923 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003a5070>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003a5b50>}
+INFO 2021-05-01 18:00:57,826 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600343d00>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600346c40>}
+INFO 2021-05-01 18:01:14,899 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003b0730>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003b00a0>}
+INFO 2021-05-01 18:01:17,456 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003a0a90>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600240f70>}
+INFO 2021-05-01 18:02:49,090 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003a2100>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003d69a0>}
+INFO 2021-05-01 18:02:51,568 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003a06a0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003a0fa0>}
+INFO 2021-05-01 18:02:54,003 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003b89a0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003b8580>}
+INFO 2021-05-01 18:02:55,151 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600209670>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600209100>}
+INFO 2021-05-01 18:02:56,126 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003b7f70>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003b7730>}
+INFO 2021-05-01 18:02:57,080 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003fd040>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003fda60>}
+INFO 2021-05-01 18:02:58,149 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600346070>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600232100>}
+INFO 2021-05-01 18:03:01,495 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46001db820>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003a5100>}
+INFO 2021-05-01 18:04:05,804 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600343c10>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600349670>}
+INFO 2021-05-01 18:04:07,770 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600239c10>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003b0040>}
+INFO 2021-05-01 18:04:09,955 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600240d90>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46002400a0>}
+INFO 2021-05-01 18:04:11,887 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46003a2f10>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46003a2850>}
+INFO 2021-05-01 18:04:13,473 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600210c10>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600240280>}
+INFO 2021-05-01 18:04:14,687 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46001fbb80>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46001fb850>}
+INFO 2021-05-01 18:06:38,231 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600254160>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600254730>}
+INFO 2021-05-01 18:06:40,043 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46001fb130>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>, <Solution: 161>]>, 'solutions': <QuerySet [<Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>, <Solution: 161>]>, 'view': <judge.views.SolutionListView object at 0x7f46001fb3d0>}
+INFO 2021-05-01 18:06:41,733 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46001dbbe0>, 'page_obj': <Page 3 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>, <Solution: 154>]>, 'solutions': <QuerySet [<Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>, <Solution: 154>]>, 'view': <judge.views.SolutionListView object at 0x7f46001dbd30>}
+INFO 2021-05-01 18:06:42,762 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46002548b0>, 'page_obj': <Page 4 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>, <Solution: 149>]>, 'solutions': <QuerySet [<Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>, <Solution: 149>]>, 'view': <judge.views.SolutionListView object at 0x7f46002545b0>}
+INFO 2021-05-01 18:06:43,723 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46001ab640>, 'page_obj': <Page 5 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 148>, <Solution: 147>, <Solution: 146>, <Solution: 145>, <Solution: 144>]>, 'solutions': <QuerySet [<Solution: 148>, <Solution: 147>, <Solution: 146>, <Solution: 145>, <Solution: 144>]>, 'view': <judge.views.SolutionListView object at 0x7f46001db5e0>}
+INFO 2021-05-01 18:06:45,215 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46002849d0>, 'page_obj': <Page 4 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>, <Solution: 149>]>, 'solutions': <QuerySet [<Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>, <Solution: 149>]>, 'view': <judge.views.SolutionListView object at 0x7f46003c7b50>}
+INFO 2021-05-01 18:06:45,901 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f460019c2e0>, 'page_obj': <Page 3 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>, <Solution: 154>]>, 'solutions': <QuerySet [<Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>, <Solution: 154>]>, 'view': <judge.views.SolutionListView object at 0x7f460033a190>}
+INFO 2021-05-01 18:06:46,496 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f460039d880>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>, <Solution: 161>]>, 'solutions': <QuerySet [<Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>, <Solution: 161>]>, 'view': <judge.views.SolutionListView object at 0x7f460039d850>}
+INFO 2021-05-01 18:06:46,944 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f46002c76d0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f46001fb160>}
+INFO 2021-05-01 18:08:25,138 views 29636 139938557327104 {'paginator': <django.core.paginator.Paginator object at 0x7f4600240f40>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f4600343040>}
+INFO 2021-05-01 18:10:43,854 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411c0cee20>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f411c0ceee0>}
+INFO 2021-05-01 18:10:47,896 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411c07d8b0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'solutions': <QuerySet [<Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>, <Solution: 171>]>, 'view': <judge.views.SolutionListView object at 0x7f41165a2220>}
+INFO 2021-05-01 18:11:51,036 execute_solutions 2701 140301592328000 Simple problem 1 - done successfully.
+INFO 2021-05-01 18:11:51,056 execute_solutions 2701 140301592328000 Simple problem 2 - done successfully.
+INFO 2021-05-01 18:11:51,073 execute_solutions 2701 140301592328000 Simple problem 3 - done successfully.
+INFO 2021-05-01 18:11:51,091 execute_solutions 2701 140301592328000 Simple problem 4 - done successfully.
+INFO 2021-05-01 18:12:13,253 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f4116584fa0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'solutions': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'view': <judge.views.SolutionListView object at 0x7f411c01c940>}
+INFO 2021-05-01 18:12:21,025 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411656f6d0>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411656fe20>}
+INFO 2021-05-01 18:12:22,855 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411615b9a0>, 'page_obj': <Page 3 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'solutions': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'view': <judge.views.SolutionListView object at 0x7f4116319490>}
+INFO 2021-05-01 18:12:24,320 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411c07dca0>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411614e850>}
+INFO 2021-05-01 18:12:25,261 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411c082460>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'solutions': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'view': <judge.views.SolutionListView object at 0x7f411c0826d0>}
+INFO 2021-05-01 18:30:03,159 views 29892 139917519734528 {'paginator': <django.core.paginator.Paginator object at 0x7f4116356400>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'solutions': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'view': <judge.views.SolutionListView object at 0x7f411c07d910>}
+INFO 2021-05-01 18:30:04,860 views 29892 139917519734528 {'paginator': <django.core.paginator.Paginator object at 0x7f411652fe80>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411c0111c0>}
+INFO 2021-05-01 18:30:05,153 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411c0ffc10>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411c0ff6a0>}
+INFO 2021-05-01 18:30:05,343 views 29892 139917511341824 {'paginator': <django.core.paginator.Paginator object at 0x7f411612ca00>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411612c7c0>}
+INFO 2021-05-01 18:30:05,612 views 29892 139917519734528 {'paginator': <django.core.paginator.Paginator object at 0x7f41150c2c10>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f411c6027c0>}
+INFO 2021-05-01 18:30:05,807 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f41150c2a60>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f41150c2820>}
+INFO 2021-05-01 18:30:07,357 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f4116591d00>, 'page_obj': <Page 3 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'solutions': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'view': <judge.views.SolutionListView object at 0x7f4116591430>}
+INFO 2021-05-01 18:30:08,431 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411612cd00>, 'page_obj': <Page 4 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 154>, <Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>]>, 'solutions': <QuerySet [<Solution: 154>, <Solution: 153>, <Solution: 152>, <Solution: 151>, <Solution: 150>]>, 'view': <judge.views.SolutionListView object at 0x7f411612c250>}
+INFO 2021-05-01 18:30:10,202 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f411614e7f0>, 'page_obj': <Page 3 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'solutions': <QuerySet [<Solution: 161>, <Solution: 160>, <Solution: 157>, <Solution: 156>, <Solution: 155>]>, 'view': <judge.views.SolutionListView object at 0x7f411c07d730>}
+INFO 2021-05-01 18:30:11,033 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f4116301d00>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7f4116356bb0>}
+INFO 2021-05-01 18:30:11,672 views 29892 139917533476608 {'paginator': <django.core.paginator.Paginator object at 0x7f41165a2280>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'solutions': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'view': <judge.views.SolutionListView object at 0x7f4116591b50>}
+INFO 2021-05-01 18:31:14,010 views 29892 139917533476608 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-05-01 18:31:43,833 views 29892 139917519734528 <QuerySet [<GroupUser: GroupUser object (2)>, <GroupUser: GroupUser object (5)>]>
+INFO 2021-05-01 18:32:05,728 views 29892 139917519734528 <QueryDict: {'csrfmiddlewaretoken': ['B4IucIpUj8944AEzOZk4AkRKlJfzS71ltOdOYAedMvCgrUIa5z8QLe3USq4Q7gUg'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-01 19:04:26,774 views 30668 139677080282880 <QueryDict: {'csrfmiddlewaretoken': ['mPlKDvv9L0I6F7EHY3lnPcpkSmFlT7oNjv1zUgbK11gE14teff0dIdzK4LiDYGNC'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-05-01 19:04:38,142 views 30668 139677080282880 <QueryDict: {'csrfmiddlewaretoken': ['dziHJMxz4bEnUoiAObzZsTKrUW9qPNoLafYw0xdakccVgl775nePlUUR6lMIUmNA'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-05-01 19:04:46,327 views 30668 139677080282880 <QueryDict: {'csrfmiddlewaretoken': ['4xpjccgYlxB0kGkRWsx3IwBBEiYttSfD1d58tXWzBy9yGD9odEcTBxL1QHBLyrEs'], 'problem_search_field': ['3. Площа многокутника']}>
+INFO 2021-05-01 19:04:53,841 views 30668 139677080282880 <QueryDict: {'csrfmiddlewaretoken': ['cj3B3hbdgmoH1yXjTUaaGZz1DPA3WQLK9ZJqk2ROwnWfnvMQa6P0z0JrPedl1paz'], 'problem_search_field': ['2. Черга з захистом від помилок']}>
+INFO 2021-05-01 19:05:06,159 views 30668 139677080282880 <QueryDict: {'csrfmiddlewaretoken': ['x0J1ckXsjAPCsTdQ7qshQz5F2pjXlSEVuGpQt5D3zBnaOQ2noC77JAf5eOWfqr3K'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-05-01 19:42:41,102 views 31194 140412144580352 {'paginator': <django.core.paginator.Paginator object at 0x7fb4442addf0>, 'page_obj': <Page 1 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'solutions': <QuerySet [<Solution: 197>, <Solution: 195>, <Solution: 194>, <Solution: 193>, <Solution: 172>]>, 'view': <judge.views.SolutionListView object at 0x7fb4442ad910>}
+INFO 2021-05-01 19:42:44,189 views 31194 140412144580352 {'paginator': <django.core.paginator.Paginator object at 0x7fb444bd1d30>, 'page_obj': <Page 2 of 25>, 'is_paginated': True, 'object_list': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'solutions': <QuerySet [<Solution: 171>, <Solution: 170>, <Solution: 167>, <Solution: 166>, <Solution: 164>]>, 'view': <judge.views.SolutionListView object at 0x7fb444bd1340>}
+INFO 2021-05-01 20:42:36,224 execute_solutions 2701 140301592328000 Error protection queue 1 - done successfully.
+INFO 2021-05-01 20:43:14,958 execute_solutions 2701 140301592328000 Error protection queue 1 - done successfully.
+INFO 2021-05-02 11:05:30,235 views 3429 139989236328192 127.0.0.1:8080
+INFO 2021-05-02 12:41:59,888 views 5522 139825546000128 <QueryDict: {'csrfmiddlewaretoken': ['TaVi0WQzNKq4n5jm2j7ESdP8WzB0Hf2utsVGaSI8ObVZL7tNxaqKi8eLNbnXUeHa'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-05-02 12:56:58,198 execute_solutions 2701 140301592328000 Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-05-02--12-56-57-865_admin.py", line 2
+    (s[0] s[1])
+          ^
+SyntaxError: f-string: invalid syntax
+
+INFO 2021-05-02 12:56:58,326 execute_solutions 2701 140301592328000 Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-05-02--12-56-57-865_admin.py", line 2
+    (s[0] s[1])
+          ^
+SyntaxError: f-string: invalid syntax
+
+INFO 2021-05-02 12:56:58,372 execute_solutions 2701 140301592328000 Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-05-02--12-56-57-865_admin.py", line 2
+    (s[0] s[1])
+          ^
+SyntaxError: f-string: invalid syntax
+
+INFO 2021-05-02 12:56:58,419 execute_solutions 2701 140301592328000 Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-05-02--12-56-57-865_admin.py", line 2
+    (s[0] s[1])
+          ^
+SyntaxError: f-string: invalid syntax
+
+INFO 2021-05-02 12:57:33,964 execute_solutions 2701 140301592328000 Simple problem 1 - done successfully.
+INFO 2021-05-02 12:57:34,083 execute_solutions 2701 140301592328000 Simple problem 2 - done successfully.
+INFO 2021-05-02 12:57:34,211 execute_solutions 2701 140301592328000 Simple problem 3 - done successfully.
+INFO 2021-05-02 12:57:34,269 execute_solutions 2701 140301592328000 Simple problem 4 - done successfully.
+INFO 2021-05-02 12:59:05,213 execute_solutions 2701 140301592328000 Simple problem 1 - timeout
+INFO 2021-05-02 12:59:06,236 execute_solutions 2701 140301592328000 Simple problem 2 - timeout
+INFO 2021-05-02 12:59:07,285 execute_solutions 2701 140301592328000 Simple problem 3 - timeout
+INFO 2021-05-02 12:59:08,333 execute_solutions 2701 140301592328000 Simple problem 4 - timeout
+INFO 2021-05-03 00:31:11,724 execute_solutions 2701 140301592328000 Simple problem 1 - done failed
+INFO 2021-05-03 00:31:11,920 execute_solutions 2701 140301592328000 Simple problem 2 - done failed
+INFO 2021-05-03 00:31:12,064 execute_solutions 2701 140301592328000 Simple problem 3 - done failed
+INFO 2021-05-03 00:31:12,186 execute_solutions 2701 140301592328000 Simple problem 4 - done failed
+INFO 2021-05-03 00:31:40,632 execute_solutions 2701 140301592328000 Simple problem 1 - done failed
+INFO 2021-05-03 00:31:40,945 execute_solutions 2701 140301592328000 Simple problem 2 - done failed
+INFO 2021-05-03 00:31:41,048 execute_solutions 2701 140301592328000 Simple problem 3 - done failed
+INFO 2021-05-03 00:31:41,171 execute_solutions 2701 140301592328000 Simple problem 4 - done failed
+INFO 2021-05-03 00:32:22,402 execute_solutions 2701 140301592328000 Simple problem 1 - done failed
+INFO 2021-05-03 00:32:22,652 execute_solutions 2701 140301592328000 Simple problem 2 - done failed
+INFO 2021-05-03 00:32:22,808 execute_solutions 2701 140301592328000 Simple problem 3 - done failed
+INFO 2021-05-03 00:32:22,956 execute_solutions 2701 140301592328000 Simple problem 4 - done failed
+INFO 2021-05-03 00:34:11,542 execute_solutions 2701 140301592328000 Simple problem 1 - done successfully.
+INFO 2021-05-03 00:34:11,807 execute_solutions 2701 140301592328000 Simple problem 2 - done successfully.
+INFO 2021-05-03 00:34:11,958 execute_solutions 2701 140301592328000 Simple problem 3 - done successfully.
+INFO 2021-05-03 00:34:12,095 execute_solutions 2701 140301592328000 Simple problem 4 - done successfully.
+INFO 2021-05-03 11:09:42,607 execute_solutions 2701 140301592328000 Error protection queue 1 - done successfully.
+INFO 2021-05-03 11:38:00,705 execute_solutions 2701 140301592328000 may_contest:  1 - done successfully.
+INFO 2021-05-03 11:38:00,764 execute_solutions 2701 140301592328000 may_contest:  2 - done successfully.
+INFO 2021-05-03 11:38:00,818 execute_solutions 2701 140301592328000 may_contest:  3 - done successfully.
+INFO 2021-05-03 11:38:00,895 execute_solutions 2701 140301592328000 may_contest:  4 - done successfully.
+INFO 2021-05-03 16:30:50,701 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 1 - done successfully.
+INFO 2021-05-03 16:30:51,005 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 2 - done successfully.
+INFO 2021-05-03 16:30:51,154 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 3 - done successfully.
+INFO 2021-05-03 16:30:51,303 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 4 - done successfully.
+INFO 2021-05-03 16:33:28,417 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 1 - done successfully.
+INFO 2021-05-03 16:33:28,627 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 2 - done successfully.
+INFO 2021-05-03 16:33:28,794 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 3 - done successfully.
+INFO 2021-05-03 16:33:28,956 execute_solutions 2701 140301592328000 may_contest_v2: Simple problem 4 - done successfully.
+INFO 2021-05-03 16:48:06,099 views 23439 139845191681792 127.0.0.1:8080
+INFO 2021-05-03 16:52:04,875 views 23676 139836538533632 127.0.0.1:8080
+INFO 2021-05-13 14:45:47,332 views 5097 140577027802880 querying
+INFO 2021-05-13 14:45:49,755 views 5097 140577027802880 querying
+INFO 2021-05-13 14:45:49,760 views 5097 140577027802880 querying difficulty
+INFO 2021-05-13 14:45:52,793 views 5097 140577027802880 querying
+INFO 2021-05-13 14:45:52,800 views 5097 140577027802880 querying classification
+INFO 2021-05-13 14:47:12,672 views 5097 140577027802880 querying
+INFO 2021-05-13 14:48:13,017 views 5097 140577027802880 querying
+INFO 2021-05-13 14:48:16,019 views 5097 140577027802880 querying
+INFO 2021-05-13 14:48:16,020 views 5097 140577027802880 querying difficulty
+INFO 2021-05-13 14:52:20,054 views 5097 140577027802880 querying
+INFO 2021-05-13 14:52:59,033 views 5097 140577027802880 querying
+INFO 2021-05-13 14:53:01,527 views 5097 140577027802880 querying
+INFO 2021-05-13 14:53:01,529 views 5097 140577027802880 querying difficulty
+INFO 2021-05-13 14:53:09,449 views 5097 140577027802880 querying
+INFO 2021-05-13 14:53:09,453 views 5097 140577027802880 querying difficulty
+INFO 2021-05-13 14:53:11,856 views 5097 140577027802880 querying
+INFO 2021-05-13 14:53:11,857 views 5097 140577027802880 querying classification
+INFO 2021-05-13 14:54:04,438 views 5371 140261782411008 querying
+INFO 2021-05-13 14:54:04,439 views 5371 140261782411008 querying classification
+INFO 2021-05-13 14:54:04,441 views 5371 140261782411008 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:54:07,974 views 5371 140261782411008 querying
+INFO 2021-05-13 14:54:07,976 views 5371 140261782411008 querying difficulty
+INFO 2021-05-13 14:54:11,018 views 5371 140261782411008 querying
+INFO 2021-05-13 14:54:11,022 views 5371 140261782411008 querying classification
+INFO 2021-05-13 14:54:11,031 views 5371 140261782411008 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:55:10,972 views 5439 140662997513984 querying
+INFO 2021-05-13 14:55:10,976 views 5439 140662997513984 querying classification
+INFO 2021-05-13 14:55:10,990 views 5439 140662997513984 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:55:14,896 views 5439 140662997513984 querying
+INFO 2021-05-13 14:55:14,898 views 5439 140662997513984 querying difficulty
+INFO 2021-05-13 14:55:20,427 views 5439 140662997513984 querying
+INFO 2021-05-13 14:55:20,428 views 5439 140662997513984 querying classification
+INFO 2021-05-13 14:55:20,429 views 5439 140662997513984 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:56:47,000 views 5492 140002235787008 querying
+INFO 2021-05-13 14:56:47,006 views 5492 140002235787008 querying classification
+INFO 2021-05-13 14:56:47,006 views 5492 140002235787008 CB
+INFO 2021-05-13 14:56:47,008 views 5492 140002235787008 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:56:50,573 views 5492 140002235787008 querying
+INFO 2021-05-13 14:56:50,574 views 5492 140002235787008 querying difficulty
+INFO 2021-05-13 14:56:52,573 views 5492 140002235787008 querying
+INFO 2021-05-13 14:56:52,573 views 5492 140002235787008 querying classification
+INFO 2021-05-13 14:56:52,573 views 5492 140002235787008 CB
+INFO 2021-05-13 14:56:52,574 views 5492 140002235787008 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:58:07,541 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:07,542 views 5545 139886069028608 querying classification
+INFO 2021-05-13 14:58:07,542 views 5545 139886069028608 CB
+INFO 2021-05-13 14:58:07,543 views 5545 139886069028608 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:58:13,124 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:13,125 views 5545 139886069028608 querying difficulty
+INFO 2021-05-13 14:58:18,906 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:18,907 views 5545 139886069028608 querying difficulty
+INFO 2021-05-13 14:58:21,484 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:21,486 views 5545 139886069028608 querying difficulty
+INFO 2021-05-13 14:58:23,973 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:23,973 views 5545 139886069028608 querying classification
+INFO 2021-05-13 14:58:23,973 views 5545 139886069028608 CB
+INFO 2021-05-13 14:58:23,974 views 5545 139886069028608 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 14:58:37,694 views 5545 139886069028608 querying
+INFO 2021-05-13 14:58:37,695 views 5545 139886069028608 querying classification
+INFO 2021-05-13 14:58:37,695 views 5545 139886069028608 CB
+INFO 2021-05-13 14:58:37,696 views 5545 139886069028608 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 15:01:20,097 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:20,101 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:01:20,101 views 5631 139820630624000 CB
+INFO 2021-05-13 15:01:20,103 views 5631 139820630624000 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 15:01:23,339 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:23,343 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:01:23,346 views 5631 139820630624000 BS
+INFO 2021-05-13 15:01:23,347 views 5631 139820630624000 <MultilingualQuerySet []>
+INFO 2021-05-13 15:01:26,189 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:26,191 views 5631 139820630624000 querying difficulty
+INFO 2021-05-13 15:01:28,932 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:28,934 views 5631 139820630624000 querying difficulty
+INFO 2021-05-13 15:01:32,683 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:32,684 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:01:32,684 views 5631 139820630624000 CB
+INFO 2021-05-13 15:01:32,684 views 5631 139820630624000 <MultilingualQuerySet [<Problem: Проста задача>, <Problem: Черга з захистом від помилок>, <Problem: Площа многокутника>]>
+INFO 2021-05-13 15:01:35,156 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:35,159 views 5631 139820630624000 querying difficulty
+INFO 2021-05-13 15:01:37,480 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:37,481 views 5631 139820630624000 querying difficulty
+INFO 2021-05-13 15:01:41,029 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:41,031 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:01:41,034 views 5631 139820630624000 BS
+INFO 2021-05-13 15:01:41,037 views 5631 139820630624000 <MultilingualQuerySet []>
+INFO 2021-05-13 15:01:45,250 views 5631 139820630624000 querying
+INFO 2021-05-13 15:01:45,251 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:01:45,252 views 5631 139820630624000 BS
+INFO 2021-05-13 15:01:45,256 views 5631 139820630624000 <MultilingualQuerySet []>
+INFO 2021-05-13 15:02:11,627 views 5631 139820630624000 querying
+INFO 2021-05-13 15:02:11,629 views 5631 139820630624000 querying classification
+INFO 2021-05-13 15:02:11,631 views 5631 139820630624000 BS
+INFO 2021-05-13 15:02:11,640 views 5631 139820630624000 <MultilingualQuerySet []>
+INFO 2021-05-13 15:02:15,240 views 5631 139820630624000 querying
+INFO 2021-05-13 16:09:50,055 views 6631 140046687991552 EA
+INFO 2021-05-13 16:10:37,449 views 6699 139897529374464 <django.forms.fields.ChoiceField object at 0x7f3c6e8f4400>
+INFO 2021-05-13 16:10:40,778 views 6699 139897529374464 <django.forms.fields.ChoiceField object at 0x7f3c6e900eb0>
+INFO 2021-05-13 16:10:43,692 views 6699 139897529374464 <django.forms.fields.ChoiceField object at 0x7f3c6dd34a60>
+INFO 2021-05-13 17:06:50,189 views 7883 140565152790272 <QueryDict: {'classification': ['CB=difficulty=EA==']}>
+INFO 2021-05-13 17:06:56,290 views 7883 140565152790272 <QueryDict: {'classification': ['=difficulty=EA==']}>
+INFO 2021-05-13 17:07:03,808 views 7883 140565152790272 <QueryDict: {'classification': ['=difficulty=EA==']}>
+INFO 2021-05-13 17:07:05,754 views 7883 140565152790272 <QueryDict: {'classification': ['=difficulty=VE==']}>
+INFO 2021-05-13 17:08:46,089 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 17:08:49,117 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:08:53,460 views 7883 140565152790272 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:08:55,828 views 7883 140565152790272 <QueryDict: {'difficulty': ['VE=']}>
+INFO 2021-05-13 17:09:02,203 views 7883 140565152790272 <QueryDict: {'difficulty': ['=']}>
+INFO 2021-05-13 17:09:06,608 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 17:09:10,494 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 17:09:13,367 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:09:17,475 views 7883 140565152790272 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:11:08,518 views 7883 140565152790272 <QueryDict: {'difficulty': ['MD=']}>
+INFO 2021-05-13 17:11:31,924 views 7883 140565152790272 <QueryDict: {'difficulty': ['MD=']}>
+INFO 2021-05-13 17:11:36,401 views 7883 140565152790272 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:11:40,722 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:11:45,549 views 7883 140565152790272 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:11:50,288 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:12:15,212 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:12:24,512 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:12:31,061 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:12:52,151 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:12:56,017 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:13:05,114 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:14:12,456 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:14:15,878 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:14:23,045 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:14:27,758 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:16:30,920 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:16:36,104 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:16:56,180 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:17:08,021 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:17:14,121 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:17:43,632 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:17:50,451 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:18:13,323 views 7883 140565104535296 <QueryDict: {'difficulty': ['MD=']}>
+INFO 2021-05-13 17:22:27,228 views 7883 140565104535296 <QueryDict: {'difficulty': ['MD=']}>
+INFO 2021-05-13 17:22:30,675 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:22:43,755 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:23:03,839 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA=']}>
+INFO 2021-05-13 17:23:09,596 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:23:27,161 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:23:36,540 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:23:45,123 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:23:56,426 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:24:15,739 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:24:24,143 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:25:02,499 views 7883 140565104535296 <QueryDict: {}>
+INFO 2021-05-13 17:25:08,940 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:25:16,344 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:25:24,420 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:27:23,992 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:27:32,037 views 7883 140565104535296 <QueryDict: {}>
+INFO 2021-05-13 17:27:40,215 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:27:51,401 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:28:06,874 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:28:34,484 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:28:39,833 views 7883 140565104535296 <QueryDict: {}>
+INFO 2021-05-13 17:28:45,709 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:28:52,198 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:29:00,199 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:29:20,365 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:29:25,775 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:29:37,998 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:30:11,772 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:30:18,019 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:31:01,448 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:31:10,217 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:31:30,099 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:31:38,677 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:33:10,897 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:33:15,369 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:33:21,375 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 17:33:27,935 views 7883 140565104535296 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 17:33:43,736 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['']}>
+INFO 2021-05-13 17:33:52,808 views 7883 140565104535296 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 17:34:02,162 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 17:34:11,077 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:34:19,242 views 7883 140565104535296 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 17:34:25,982 views 7883 140565104535296 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 17:34:50,274 views 7883 140565104535296 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 17:34:56,380 views 7883 140565104535296 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:35:05,299 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 17:35:12,398 views 7883 140565104535296 <QueryDict: {'classification': ['BS'], 'difficulty': ['']}>
+INFO 2021-05-13 17:35:17,845 views 7883 140565104535296 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 17:35:21,007 views 7883 140565104535296 <QueryDict: {}>
+INFO 2021-05-13 17:35:27,475 views 7883 140565104535296 <QueryDict: {'classification': ['BS']}>
+INFO 2021-05-13 17:35:33,669 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-13 17:35:39,548 views 7883 140565104535296 <QueryDict: {'difficulty': [''], 'classification': ['BS']}>
+INFO 2021-05-13 17:35:46,459 views 7883 140565104535296 <QueryDict: {'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-13 17:35:52,157 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['']}>
+INFO 2021-05-13 17:35:58,392 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-13 17:36:52,051 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-13 17:36:56,775 views 7883 140565104535296 <QueryDict: {'difficulty': ['MD'], 'classification': ['CB']}>
+INFO 2021-05-13 17:36:59,812 views 7883 140565104535296 <QueryDict: {'difficulty': ['VE'], 'classification': ['CB']}>
+INFO 2021-05-13 17:37:01,326 views 7883 140565104535296 <QueryDict: {'difficulty': [''], 'classification': ['CB']}>
+INFO 2021-05-13 17:37:04,376 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-13 17:37:06,419 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-13 17:37:07,970 views 7883 140565104535296 <QueryDict: {'difficulty': ['EA'], 'classification': ['']}>
+INFO 2021-05-13 17:37:09,732 views 7883 140565104535296 <QueryDict: {'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-13 18:09:26,844 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 20:15:30,454 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 20:17:49,505 views 7883 140565152790272 <QueryDict: {}>
+INFO 2021-05-13 20:18:02,556 views 7883 140565152790272 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 20:18:06,584 views 7883 140565152790272 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 20:18:08,985 views 7883 140565152790272 <QueryDict: {'difficulty': ['HD']}>
+INFO 2021-05-13 20:18:11,556 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['HD']}>
+INFO 2021-05-13 20:18:13,137 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['']}>
+INFO 2021-05-13 20:18:18,295 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:18:20,952 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:18:47,176 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:18:50,396 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:18:52,231 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:20:17,864 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:20:40,216 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:20:49,778 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:06,484 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:11,756 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:17,812 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:23,319 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:33,475 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:21:39,421 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:22:29,085 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:22:33,477 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:22:36,075 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:22:39,444 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:23:38,197 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:23:41,351 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:23:42,923 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:23:45,145 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:23:47,408 views 7883 140565152790272 <QueryDict: {'classification': ['BS'], 'difficulty': ['']}>
+INFO 2021-05-13 20:23:49,451 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:23:59,006 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:24:46,051 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:24:48,781 views 7883 140565152790272 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:24:50,830 views 7883 140565152790272 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:27:11,715 views 11206 139972360140544 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:27:14,377 views 11206 139972360140544 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:27:17,149 views 11206 139972360140544 <QueryDict: {'classification': [''], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:27:19,164 views 11206 139972360140544 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:27:20,948 views 11206 139972360140544 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:27:23,031 views 11206 139972360140544 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:27:24,875 views 11206 139972360140544 <QueryDict: {'classification': ['BS'], 'difficulty': ['']}>
+INFO 2021-05-13 20:27:26,587 views 11206 139972360140544 <QueryDict: {'classification': ['BS'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:27:28,292 views 11206 139972360140544 <QueryDict: {'classification': [''], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:27:32,222 views 11206 139972360140544 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:27:36,563 views 11206 139972360140544 <QueryDict: {'classification': ['BS'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:27:38,938 views 11206 139972360140544 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:29:30,855 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:29:34,447 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:29:36,889 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:29:38,779 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:29:42,878 views 11300 140680403044096 <QueryDict: {}>
+INFO 2021-05-13 20:29:50,364 views 11300 140680403044096 <QueryDict: {}>
+INFO 2021-05-13 20:29:53,132 views 11300 140680403044096 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 20:29:55,702 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:29:57,423 views 11300 140680403044096 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:30:31,417 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:30:31,417 views 11360 140310662743808 here
+INFO 2021-05-13 20:34:49,573 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:34:49,573 views 11360 140310662743808 here
+INFO 2021-05-13 20:34:55,228 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:35:07,338 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:35:11,637 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:35:17,449 views 11360 140310662743808 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:35:21,257 views 11360 140310662743808 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:35:29,815 views 11360 140310662743808 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:35:29,816 views 11360 140310662743808 here
+INFO 2021-05-13 20:36:31,461 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:36:35,258 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:37:23,988 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:37:33,984 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:37:43,352 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:38:07,731 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:43:27,824 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:43:44,929 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:43:53,214 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 20:44:02,537 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:44:04,639 views 11510 140482562230016 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:44:07,666 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:16,364 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:31,079 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:37,237 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:42,572 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:53,140 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:45:59,809 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:46:16,732 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:46:29,588 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:46:56,285 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:47:08,557 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:47:14,181 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:54:35,880 views 11510 140482562230016 <QueryDict: {'classification': [''], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:54:38,713 views 11510 140482474669824 <QueryDict: {'classification': ['CB'], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:54:40,607 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:54:43,730 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:55:00,202 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:55:04,356 views 11510 140482474669824 <QueryDict: {'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-13 20:55:06,297 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 20:55:07,947 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['VE']}>
+INFO 2021-05-13 20:55:10,485 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:55:42,207 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:56:16,764 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 20:56:23,410 views 11510 140482474669824 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 21:09:58,182 views 12193 140508360865536 <QueryDict: {'classification': [''], 'difficulty': ['MD']}>
+INFO 2021-05-13 21:10:16,864 views 12193 140508360865536 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 21:10:29,157 views 12193 140508360865536 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 21:11:30,676 views 12193 140508331386624 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 21:11:55,401 views 12193 140508331386624 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 21:12:00,114 views 12193 140508331386624 <QueryDict: {'classification': [''], 'difficulty': ['']}>
+INFO 2021-05-13 21:12:02,776 views 12193 140508331386624 <QueryDict: {'number': ['1']}>
+INFO 2021-05-13 21:12:08,942 views 12193 140508331386624 <QueryDict: {'number': ['simple']}>
+INFO 2021-05-13 21:12:12,774 views 12193 140508331386624 <QueryDict: {'number': ['area']}>
+INFO 2021-05-13 21:12:28,246 views 12193 140508331386624 <QueryDict: {'number': ['error']}>
+INFO 2021-05-13 21:12:38,498 views 12193 140508331386624 <QueryDict: {'number': ['прос']}>
+INFO 2021-05-13 21:14:59,848 views 12193 140508348172032 <QueryDict: {}>
+INFO 2021-05-13 21:15:02,920 views 12193 140508348172032 <QueryDict: {'number': ['пр']}>
+INFO 2021-05-13 21:15:10,603 views 12193 140508348172032 <QueryDict: {'number': ['п']}>
+INFO 2021-05-13 21:15:17,290 views 12193 140508348172032 <QueryDict: {'number': ['за']}>
+INFO 2021-05-13 21:15:25,815 views 12193 140508348172032 <QueryDict: {'number': ['по']}>
+INFO 2021-05-13 21:15:35,963 views 12193 140508348172032 <QueryDict: {'number': ['er']}>
+INFO 2021-05-13 21:15:40,663 views 12193 140508348172032 <QueryDict: {'number': ['s']}>
+INFO 2021-05-13 21:15:47,116 views 12193 140508348172032 <QueryDict: {'number': ['s']}>
+INFO 2021-05-13 21:15:52,315 views 12193 140508348172032 <QueryDict: {'difficulty': ['VE'], 'number': ['s']}>
+INFO 2021-05-13 21:15:53,940 views 12193 140508348172032 <QueryDict: {'difficulty': ['MD'], 'number': ['s']}>
+INFO 2021-05-13 21:15:55,872 views 12193 140508348172032 <QueryDict: {'difficulty': ['EA'], 'number': ['s']}>
+INFO 2021-05-13 21:16:02,612 views 12193 140508348172032 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 21:16:11,349 views 12193 140508348172032 <QueryDict: {'difficulty': ['']}>
+INFO 2021-05-13 21:16:18,944 views 12193 140508348172032 <QueryDict: {'difficulty': ['r']}>
+INFO 2021-05-13 21:16:28,054 views 12193 140508348172032 <QueryDict: {'number': ['r']}>
+INFO 2021-05-13 21:16:53,616 views 12193 140508348172032 <QueryDict: {'number': ['on']}>
+INFO 2021-05-13 21:16:59,157 views 12193 140508348172032 <QueryDict: {'number': ['2']}>
+INFO 2021-05-13 21:17:01,970 views 12193 140508348172032 <QueryDict: {'number': ['3']}>
+INFO 2021-05-13 21:17:09,896 views 12193 140508348172032 <QueryDict: {}>
+INFO 2021-05-13 21:34:30,418 views 12193 140508348172032 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-13 21:34:37,448 views 12193 140508348172032 <QueryDict: {'classification': ['CB'], 'difficulty': ['EA']}>
+INFO 2021-05-13 21:45:45,676 views 13125 140073092204288 <QueryDict: {'number': ['12']}>
+INFO 2021-05-14 10:04:20,758 views 13125 140073092204288 <QueryDict: {'number': ['12']}>
+INFO 2021-05-14 10:04:24,420 views 13125 140073071904512 <QueryDict: {'number': ['12'], 'difficulty': ['MD']}>
+INFO 2021-05-14 10:04:26,854 views 13125 140073071904512 <QueryDict: {'difficulty': ['MD'], 'number': ['']}>
+INFO 2021-05-14 10:04:31,926 views 13125 140073071904512 <QueryDict: {'difficulty': ['MD'], 'number': [''], 'classification': ['CB']}>

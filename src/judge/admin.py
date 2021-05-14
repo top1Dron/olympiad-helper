@@ -6,6 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 
 from .models import Problem, Solution, SolutionTest, ProblemTest, ProgrammingLanguage, ProblemSamples, UserProblemStatus
+from .services import getter
 
 
 @admin.register(Problem)
