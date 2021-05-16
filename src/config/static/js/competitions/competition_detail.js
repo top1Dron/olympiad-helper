@@ -15,6 +15,15 @@ ready(function(){
             }, true);
         }
     );
+
+    var elems = document.querySelectorAll('.close');
+    elems.forEach(
+        function(elem){
+            elem.addEventListener('click', function(e){
+                elem.parentElement.parentElement.innerHTML = '';
+            }, true);
+        }
+    )
     
 })
 

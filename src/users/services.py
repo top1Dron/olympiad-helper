@@ -40,10 +40,7 @@ def get_user_by_email(email):
         user = CustomUser.objects.get(email=email)
     except(TypeError, ValueError, OverflowError, CustomUser.DoesNotExist):
         user = None
-    if user is not None:
-        return user
-    else:
-        return None
+    return user
 
 
 def get_user_by_username(username):

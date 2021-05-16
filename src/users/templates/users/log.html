@@ -40,7 +40,7 @@
                 {% trans 'Password' as password %}
                 {% render_field login_form.password placeholder=password required="required" id="id_login_password" %}
             </div>
-            <div class="pass-link"><a href="#">{% trans "Forgot password?" %}</a></div>
+            <div class="pass-link"><a href="{% url 'users:password_reset' %}">{% trans "Forgot password?" %}</a></div>
             <input type="hidden" name="next" value="{{ request.GET.next }}">
             <div class="field btn">
                 <div class="btn-layer"></div>
@@ -107,6 +107,3 @@
         {% if signup %}signupBtn.click();{% endif %}
     </script>
 {% endblock main_content %}
-        
-    </body>
-</html>

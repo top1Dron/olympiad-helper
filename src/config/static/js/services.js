@@ -47,7 +47,11 @@ export function updateURLParameter(url, param, paramVal)
     if(TheAnchor)
         paramVal += "#" + TheAnchor;
 
-    var rows_txt = temp + "" + param + "=" + paramVal;
+    var rows_txt = "";
+    if (paramVal){
+        rows_txt += temp + "" + param + "=" + paramVal;
+    }
+    
     return baseURL + "?" + newAdditionalURL + rows_txt;
 }
 

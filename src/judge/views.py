@@ -41,6 +41,8 @@ class ProblemListView(ListView):
 
     def get_queryset(self):
         queryset = getter.get_all_available_problems()
+        if 'number' in self.request.GET:
+            queryset = getter.get_filtered_problems(self.request.GET.get('number'))
         if 'difficulty' in self.request.GET:
             queryset = getter.get_problems_by_difficulty(
                 problems=queryset, 
@@ -49,8 +51,6 @@ class ProblemListView(ListView):
             queryset = getter.get_problems_by_classification(
                 problems=queryset, 
                 classification=self.request.GET.get('classification'))
-        if 'number' in self.request.GET:
-            queryset = getter.get_filtered_problems(self.request.GET.get('number'))
         return queryset
     
 

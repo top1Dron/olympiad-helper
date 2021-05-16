@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static i18n widget_tweaks %}
+{% load static i18n widget_tweaks template_tags %}
 
 {% block title %}{% trans "Problems" %}{% endblock title %}
 
@@ -24,20 +24,39 @@
         </div>
     </section>
     {% if problems %}
-        <div class='list'>
-            <table class="table">
-                {% for problem in problems %}
+        <table class="problem-table">
+            <thead>
                 <tr>
-                    <td>
-                        {{ problem.number }}
-                    </td>
-                    <td>
-                        <a href="{% url 'judge:problem' problem.number %}">{{ problem.title }} </a>
-                    </td>
+                    {% if user.is_authenticated %}<th class='table-header table-header-1'>{% trans "Status" %}</th>{% endif %}
+                    <th class='table-header table-header-2'>{% trans "Number" %}</th>
+                    <th class='table-header table-header-3'>{% trans "Title" %}
                 </tr>
-                {% endfor %}
-            </table>
-        </div>
+            </thead>
+            <tbody>
+            {% for problem in problems %}
+            <tr>
+                {% if user.is_authenticated %}
+                <td class="problem-status">
+                    {% get_user_problem_status problem user  as user_problem_status %}
+                    {% if user_problem_status == 'AC' %}
+                        <span class="tick tick-success problem-status">&#10004;</span>
+                    {% elif user_problem_status == '' %}
+                        <span class="tick"></span>
+                    {% else %}
+                        <span class="tick tick-partial">&#10060;</span>
+                    {% endif %}
+                </td>
+                {% endif %}
+                <td class="problem-number">
+                    <span class="txt"><a href="{% url 'judge:problem' problem.number %}">{{ problem.number }}</a></span>
+                </td>
+                <td class="problem-title">
+                     <span class="txt"><a href="{% url 'judge:problem' problem.number %}">{{ problem.title }}</a></span>
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
         <div class="pagination">
             {% if page_obj.has_previous %}
                 <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>

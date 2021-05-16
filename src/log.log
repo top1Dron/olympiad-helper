@@ -4688,3 +4688,171 @@ INFO 2021-05-14 10:04:20,758 views 13125 140073092204288 <QueryDict: {'number': 
 INFO 2021-05-14 10:04:24,420 views 13125 140073071904512 <QueryDict: {'number': ['12'], 'difficulty': ['MD']}>
 INFO 2021-05-14 10:04:26,854 views 13125 140073071904512 <QueryDict: {'difficulty': ['MD'], 'number': ['']}>
 INFO 2021-05-14 10:04:31,926 views 13125 140073071904512 <QueryDict: {'difficulty': ['MD'], 'number': [''], 'classification': ['CB']}>
+INFO 2021-05-14 10:07:53,211 views 13391 139854528124672 <QueryDict: {'difficulty': ['MD'], 'number': [''], 'classification': ['CB']}>
+INFO 2021-05-14 10:07:56,114 views 13391 139854528124672 <QueryDict: {'number': [''], 'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-14 10:07:58,156 views 13391 139854528124672 <QueryDict: {'number': [''], 'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-14 10:08:02,578 views 13391 139854528124672 <QueryDict: {'difficulty': [''], 'classification': [''], 'number': ['1']}>
+INFO 2021-05-14 10:08:05,909 views 13391 139854528124672 <QueryDict: {'difficulty': [''], 'classification': [''], 'number': ['si']}>
+INFO 2021-05-14 10:08:09,100 views 13391 139854528124672 <QueryDict: {'difficulty': [''], 'classification': [''], 'number': ['on']}>
+INFO 2021-05-14 10:08:15,325 views 13391 139854528124672 <QueryDict: {'classification': [''], 'number': ['on'], 'difficulty': ['EA']}>
+INFO 2021-05-14 10:08:17,591 views 13391 139854528124672 <QueryDict: {'number': ['on'], 'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:08:23,425 views 13391 139854528124672 <QueryDict: {'number': ['on'], 'classification': ['CB'], 'difficulty': ['']}>
+INFO 2021-05-14 10:08:24,960 views 13391 139854528124672 <QueryDict: {'number': ['on'], 'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-14 10:11:38,794 views 13391 139854528124672 <QueryDict: {'number': ['on'], 'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-14 10:11:44,796 views 13391 139854528124672 <QueryDict: {'difficulty': [''], 'classification': ['']}>
+INFO 2021-05-14 10:11:50,100 views 13391 139854528124672 <QueryDict: {'classification': [''], 'difficulty': ['EA']}>
+INFO 2021-05-14 10:11:55,485 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:12:01,869 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-14 10:12:50,818 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-14 10:12:56,948 views 13391 139854528124672 <QueryDict: {}>
+INFO 2021-05-14 10:12:59,758 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-14 10:13:04,987 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:13:08,235 views 13391 139854528124672 <QueryDict: {'classification': ['CB']}>
+INFO 2021-05-14 10:13:14,242 views 13391 139854528124672 <QueryDict: {'classification': ['CB'], 'number': ['1']}>
+INFO 2021-05-14 10:13:18,338 views 13391 139854528124672 <QueryDict: {'number': ['1']}>
+INFO 2021-05-14 10:13:21,074 views 13391 139854528124672 <QueryDict: {'number': ['1'], 'difficulty': ['EA']}>
+INFO 2021-05-14 10:13:23,340 views 13391 139854528124672 <QueryDict: {'number': ['1'], 'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:13:26,371 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:13:30,372 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-14 10:13:33,475 views 13391 139854528124672 <QueryDict: {'classification': ['BS']}>
+INFO 2021-05-14 10:14:28,326 views 13391 139854528124672 <QueryDict: {}>
+INFO 2021-05-14 10:14:34,756 views 13391 139854528124672 <QueryDict: {'difficulty': ['VE']}>
+INFO 2021-05-14 10:14:36,804 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-14 10:14:38,571 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-14 10:14:44,043 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB'], 'number': ['on']}>
+INFO 2021-05-14 10:14:46,897 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'number': ['on'], 'classification': ['BS']}>
+INFO 2021-05-14 10:15:02,064 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'number': ['on'], 'classification': ['CB']}>
+INFO 2021-05-14 10:15:03,999 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'number': ['on']}>
+INFO 2021-05-14 10:15:08,872 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'number': ['on'], 'classification': ['BS']}>
+INFO 2021-05-14 10:15:12,880 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-14 10:15:19,817 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS'], 'number': ['14']}>
+INFO 2021-05-14 10:15:25,287 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-14 10:15:28,526 views 13391 139854528124672 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS'], 'number': ['on']}>
+INFO 2021-05-14 10:16:56,046 views 13715 140624040556288 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS'], 'number': ['on']}>
+INFO 2021-05-14 10:17:00,707 views 13715 140624040556288 <QueryDict: {'difficulty': ['EA'], 'number': ['on']}>
+INFO 2021-05-14 10:17:02,779 views 13715 140624040556288 <QueryDict: {'difficulty': ['EA'], 'number': ['on'], 'classification': ['CB']}>
+INFO 2021-05-14 10:17:04,768 views 13715 140624040556288 <QueryDict: {'difficulty': ['EA'], 'number': ['on']}>
+INFO 2021-05-14 10:17:07,621 views 13715 140624040556288 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-14 10:17:09,983 views 13715 140624040556288 <QueryDict: {'difficulty': ['HD']}>
+INFO 2021-05-14 10:17:11,780 views 13715 140624040556288 <QueryDict: {'difficulty': ['HD'], 'classification': ['BS']}>
+INFO 2021-05-14 10:17:13,138 views 13715 140624040556288 <QueryDict: {'difficulty': ['HD'], 'classification': ['CB']}>
+INFO 2021-05-14 10:17:16,121 views 13715 140624040556288 <QueryDict: {'difficulty': ['HD'], 'classification': ['CB'], 'number': ['on']}>
+INFO 2021-05-14 10:17:19,173 views 13715 140624040556288 <QueryDict: {'classification': ['CB'], 'number': ['on'], 'difficulty': ['EA']}>
+INFO 2021-05-14 10:19:17,338 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:21:57,793 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:23:39,307 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:24:07,864 execute_solutions 1324 140565533939520 The area of a polygon 1 - done failed
+INFO 2021-05-14 10:24:15,585 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:26:05,172 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:26:56,561 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:29:41,190 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:29:50,380 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:29:56,877 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:34:44,394 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:35:13,289 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:35:22,798 views 13715 140624040556288 <QueryDict: {}>
+INFO 2021-05-14 10:38:04,742 views 14176 140022774720256 <QueryDict: {}>
+INFO 2021-05-14 16:41:37,751 views 18706 140399863658240 {'use_https': False, 'token_generator': <django.contrib.auth.tokens.PasswordResetTokenGenerator object at 0x7fb16aef0bb0>, 'from_email': None, 'email_template_name': 'users/password_reset_email.html', 'subject_template_name': 'registration/password_reset_subject.txt', 'request': <WSGIRequest: POST '/en/users/password-reset/'>, 'html_email_template_name': None, 'extra_email_context': None}
+INFO 2021-05-14 17:21:09,668 forms 19908 140275170023168 here
+INFO 2021-05-14 17:28:31,954 forms 20160 140252075046656 <bound method PasswordResetForm.send_mail of <CustomPasswordResetForm bound=True, valid=True, fields=(email)>>
+INFO 2021-05-14 17:49:24,583 tasks 20766 140698963425088 Settings({'deprecated_settings': {'CELERY_RESULT_SERIALIZER', 'CELERY_TASK_SERIALIZER', 'CELERY_RESULT_BACKEND', 'CELERY_ACCEPT_CONTENT'}, 'beat_schedule': {}, 'include': ('judge.tasks', 'celery.app.builtins', 'users.tasks')}, <celery.utils.collections.DictAttribute object at 0x7ff705dd0850>, {'accept_content': ['json'], 'result_accept_content': None, 'enable_utc': True, 'imports': (), 'include': (), 'timezone': None, 'beat_max_loop_interval': 0, 'beat_schedule': {}, 'beat_scheduler': 'celery.beat:PersistentScheduler', 'beat_schedule_filename': 'celerybeat-schedule', 'beat_sync_every': 0, 'broker_url': None, 'broker_read_url': None, 'broker_write_url': None, 'broker_transport': None, 'broker_transport_options': {}, 'broker_connection_timeout': 4, 'broker_connection_retry': True, 'broker_connection_max_retries': 100, 'broker_failover_strategy': None, 'broker_heartbeat': 120, 'broker_heartbeat_checkrate': 3.0, 'broker_login_method': None, 'broker_pool_limit': 10, 'broker_use_ssl': False, 'broker_host': None, 'broker_port': None, 'broker_user': None, 'broker_password': None, 'broker_vhost': None, 'cache_backend': None, 'cache_backend_options': {}, 'cassandra_entry_ttl': None, 'cassandra_keyspace': None, 'cassandra_port': None, 'cassandra_read_consistency': None, 'cassandra_servers': None, 'cassandra_table': None, 'cassandra_write_consistency': None, 'cassandra_auth_provider': None, 'cassandra_auth_kwargs': None, 'cassandra_options': {}, 's3_access_key_id': None, 's3_secret_access_key': None, 's3_bucket': None, 's3_base_path': None, 's3_endpoint_url': None, 's3_region': None, 'azureblockblob_container_name': 'celery', 'azureblockblob_retry_initial_backoff_sec': 2, 'azureblockblob_retry_increment_base': 2, 'azureblockblob_retry_max_attempts': 3, 'control_queue_ttl': 300.0, 'control_queue_expires': 10.0, 'control_exchange': 'celery', 'couchbase_backend_settings': None, 'arangodb_backend_settings': None, 'mongodb_backend_settings': None, 'cosmosdbsql_database_name': 'celerydb', 'cosmosdbsql_collection_name': 'celerycol', 'cosmosdbsql_consistency_level': 'Session', 'cosmosdbsql_max_retry_attempts': 9, 'cosmosdbsql_max_retry_wait_time': 30, 'event_queue_expires': 60.0, 'event_queue_ttl': 5.0, 'event_queue_prefix': 'celeryev', 'event_serializer': 'json', 'event_exchange': 'celeryev', 'redis_backend_use_ssl': None, 'redis_db': None, 'redis_host': None, 'redis_max_connections': None, 'redis_password': None, 'redis_port': None, 'redis_socket_timeout': 120.0, 'redis_socket_connect_timeout': None, 'redis_retry_on_timeout': False, 'redis_socket_keepalive': False, 'result_backend': None, 'result_cache_max': -1, 'result_compression': None, 'result_exchange': 'celeryresults', 'result_exchange_type': 'direct', 'result_expires': datetime.timedelta(days=1), 'result_persistent': None, 'result_extended': False, 'result_serializer': 'json', 'result_backend_transport_options': {}, 'result_chord_retry_interval': 1.0, 'result_chord_join_timeout': 3.0, 'result_backend_max_sleep_between_retries_ms': 10000, 'result_backend_max_retries': inf, 'result_backend_base_sleep_between_retries_ms': 10, 'result_backend_always_retry': False, 'elasticsearch_retry_on_timeout': None, 'elasticsearch_max_retries': None, 'elasticsearch_timeout': None, 'elasticsearch_save_meta_as_text': True, 'security_certificate': None, 'security_cert_store': None, 'security_key': None, 'security_digest': 'sha256', 'database_url': None, 'database_engine_options': None, 'database_short_lived_sessions': False, 'database_table_schemas': None, 'database_table_names': None, 'task_acks_late': False, 'task_acks_on_failure_or_timeout': True, 'task_always_eager': False, 'task_annotations': None, 'task_compression': None, 'task_create_missing_queues': True, 'task_inherit_parent_priority': False, 'task_default_delivery_mode': 2, 'task_default_queue': 'celery', 'task_default_exchange': None, 'task_default_exchange_type': 'direct', 'task_default_routing_key': None, 'task_default_rate_limit': None, 'task_default_priority': None, 'task_eager_propagates': False, 'task_ignore_result': False, 'task_protocol': 2, 'task_publish_retry': True, 'task_publish_retry_policy': {'max_retries': 3, 'interval_start': 0, 'interval_max': 1, 'interval_step': 0.2}, 'task_queues': None, 'task_queue_max_priority': None, 'task_reject_on_worker_lost': None, 'task_remote_tracebacks': False, 'task_routes': None, 'task_send_sent_event': False, 'task_serializer': 'json', 'task_soft_time_limit': None, 'task_time_limit': None, 'task_store_errors_even_if_ignored': False, 'task_track_started': False, 'worker_agent': None, 'worker_autoscaler': 'celery.worker.autoscale:Autoscaler', 'worker_concurrency': 0, 'worker_consumer': 'celery.worker.consumer:Consumer', 'worker_direct': False, 'worker_disable_rate_limits': False, 'worker_enable_remote_control': True, 'worker_hijack_root_logger': True, 'worker_log_color': None, 'worker_log_format': '[%(asctime)s: %(levelname)s/%(processName)s] %(message)s', 'worker_lost_wait': 10.0, 'worker_max_memory_per_child': None, 'worker_max_tasks_per_child': None, 'worker_pool': 'prefork', 'worker_pool_putlocks': True, 'worker_pool_restarts': False, 'worker_proc_alive_timeout': 4.0, 'worker_prefetch_multiplier': 4, 'worker_redirect_stdouts': True, 'worker_redirect_stdouts_level': 'WARNING', 'worker_send_task_events': False, 'worker_state_db': None, 'worker_task_log_format': '[%(asctime)s: %(levelname)s/%(processName)s] %(task_name)s[%(task_id)s]: %(message)s', 'worker_timer': None, 'worker_timer_precision': 1.0, 'deprecated_settings': None})
+INFO 2021-05-14 19:57:02,805 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-14 19:57:10,808 views 23122 140003009246976 <QueryDict: {}>
+INFO 2021-05-14 19:58:10,751 views 23122 140003009246976 <QueryDict: {}>
+INFO 2021-05-14 20:00:58,901 views 23122 140003009246976 <QueryDict: {}>
+INFO 2021-05-14 20:01:37,364 views 23122 140003009246976 <QueryDict: {}>
+INFO 2021-05-14 23:46:27,910 views 23122 140003009246976 <QueryDict: {}>
+INFO 2021-05-15 00:01:35,534 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:02:41,415 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:03:25,055 views 23122 140002780509952 <QueryDict: {'difficulty': ['VE']}>
+INFO 2021-05-15 00:03:27,930 views 23122 140002780509952 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-15 00:03:31,060 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:03:34,474 views 23122 140002780509952 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-15 00:03:37,275 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:09:57,201 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:10:21,536 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:10:38,085 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:11:37,050 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:11:52,793 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:12:31,686 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:12:35,739 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:13:21,242 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:13:33,472 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:13:39,449 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:13:43,445 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:15:04,142 views 23122 140002997184256 <QueryDict: {}>
+INFO 2021-05-15 00:15:20,569 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:15:26,288 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:15:35,603 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:16:41,377 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:17:48,634 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:18:40,551 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:18:52,365 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:19:54,613 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:23:50,659 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:24:11,144 views 23122 140002780509952 <QueryDict: {}>
+INFO 2021-05-15 00:24:29,668 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:24:49,173 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:25:18,719 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:26:19,867 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:26:27,851 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:27:07,320 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:28:14,780 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:28:38,347 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 00:28:58,111 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:30:09,391 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:30:53,268 views 23122 140003031381760 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-15 00:30:59,398 views 23122 140003031381760 <QueryDict: {'difficulty': ['EA'], 'classification': ['CB']}>
+INFO 2021-05-15 00:31:03,564 views 23122 140003031381760 <QueryDict: {'difficulty': ['EA'], 'classification': ['BS']}>
+INFO 2021-05-15 00:31:05,985 views 23122 140003031381760 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-15 00:31:09,010 views 23122 140003031381760 <QueryDict: {'difficulty': ['VE']}>
+INFO 2021-05-15 00:31:11,305 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:32:14,978 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:33:12,879 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:33:52,691 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:34:48,838 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:36:10,742 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:36:15,240 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:37:05,231 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:37:11,272 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:37:51,643 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:38:05,879 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 00:39:34,348 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 16:12:45,530 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-15 16:13:44,348 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:17:14,457 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:17:26,772 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:21:31,236 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:21:53,676 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:22:09,796 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:22:41,482 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:23:05,666 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:24:27,277 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:24:51,194 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:26:32,068 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:28:18,692 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:28:35,893 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:28:59,745 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:29:54,806 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:31:04,325 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:31:15,160 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:31:28,380 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:33:29,535 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:33:46,119 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-15 16:45:40,259 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-17 00:05:24,474 views 23122 140002763724544 <QueryDict: {}>
+INFO 2021-05-17 00:06:00,805 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-17 00:06:40,363 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-17 00:06:52,107 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-17 00:16:59,124 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-17 00:21:16,397 views 23122 140002755331840 <QueryDict: {'csrfmiddlewaretoken': ['cZeoasLSN5ZHqf4na5edi6XogCfNfsXFIlIOpQbxibBUxw7D65I6nEE3gcuxxdxP'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-17 00:24:57,553 views 23122 140003031381760 <QueryDict: {}>
+INFO 2021-05-17 00:29:00,120 views 23122 140003031381760 <QueryDict: {'csrfmiddlewaretoken': ['ZjGU7TCIyObHCVkytXYpXEjlKKmL1WTKvFakmh2n3UNUJcnOpXsi2c00KkBvjHtU'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-17 00:31:15,147 views 23122 140003031381760 <QueryDict: {'csrfmiddlewaretoken': ['kpVsW8HeYn6yQ7LPAjIojZGA8LxvJf5vQLpSbw7TttILXoO5wjchoxnf8lMf10FF'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-17 00:36:23,659 views 23122 140002780509952 <QueryDict: {'csrfmiddlewaretoken': ['kGKNkbtetp9QvJBkXoHbD88dusdDNS5iQ2edzzTTYvL3C0EATob4IGPSu2sn5DFs'], 'problem_search_field': ['2. Error protection queue']}>
+INFO 2021-05-17 00:37:52,930 views 23122 140002997184256 <QueryDict: {'csrfmiddlewaretoken': ['JT4ry4whsftDTk8066kvEnVVfcQZHqZeffyRNsWWXl5Q0Bbg26OoJVCAfM5JZbzo'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-17 00:39:55,364 views 23122 140002997184256 <QueryDict: {'csrfmiddlewaretoken': ['fuHSqp3XmhZKlI55cnUdTv8sOsAJM7N7LQbiFNtCRnBXsZ8l8no6Y3P7O2Pt4Snh'], 'problem_search_field': ['3. The area of a polygon']}>
+INFO 2021-05-17 00:44:32,852 views 23122 140002997184256 <QueryDict: {'csrfmiddlewaretoken': ['anlmpmSlPEBAHL04OHWJ8asrpfmdNEfcGJPMEKi0kKdNO23kKHqCdI96pPBX5pPm'], 'problem_search_field': ['1. Simple problem']}>
+INFO 2021-05-17 00:48:36,473 views 23122 140002780509952 <QueryDict: {'csrfmiddlewaretoken': ['8Wfre25gMRxMcYGO3DlTkeDUhi1AU4GZEiJRtqvVhX9ZjfJ4ZDPMpMkzhSgkcPg9'], 'problem_search_field': ['2. Error protection queue']}>
+INFO 2021-05-17 00:49:31,541 views 23122 140002755331840 <QueryDict: {'csrfmiddlewaretoken': ['3HtybgUYq9I4leSL8GIG13K0gtLs2iI4z3XYqEkDVfkhsvV14Gcz6BrFg30ck3ie'], 'problem_search_field': ['2. Error protection queue']}>
+INFO 2021-05-17 00:50:15,716 views 23122 140002780509952 <QueryDict: {}>

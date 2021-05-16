@@ -1,0 +1,73 @@
+.problem-table{
+    margin: 0 0 40px 0;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    display: table;
+    background: #000;
+    border: 1px solid #000;
+}
+
+@media screen and (max-width: 580px) {
+    .problem-table {
+        display: block;
+   }
+}
+
+.table-header {
+    /* border: 1px solid #ddd; */
+    font-size: 18px;
+    background: #fff;
+    height: 40px;
+    /* color: #999; */
+}
+
+.table-header-1 {
+    width: 10%;
+}
+.table-header-2 {
+    width: 10%;
+}
+.table-header-3 {
+    width: 80%;
+}
+.tick {
+    font-size: 18px;
+}
+
+.tick-success {
+    color: #2ca01c;
+}
+
+.problem-table > tbody > tr {
+    height: 40px;
+    display: table-row;
+    background: #fff;
+}
+
+.message {
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px 0px rgba(50, 50, 50, 0.75);
+	color: white;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	text-align: center;
+	width: 80%;
+}
+ 
+/*
+ * Give the various message types the correct colors
+ */
+.message.success {
+	background-color: green;
+}
+ 
+.message.error {
+	background-color: red;
+}
+
+/* .problem-table > tbody > td {
+    border: 1px solid #ddd;
+} */

@@ -1,13 +1,14 @@
-from .forms import CustomUserCreationForm, LoginForm, PasswordResetForm, PasswordResetConfirmForm
+from .forms import CustomUserCreationForm, LoginForm, CustomPasswordResetForm, PasswordResetConfirmForm
 from .services import get_and_activate_user, get_user_by_email, get_user_by_username
 from .tasks import task_send_email
 from .tokens import account_activation_token
 from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth import authenticate, login, logout, views as auth_views
 from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.shortcuts import render, redirect, reverse
 from django.template.loader import render_to_string
+from django.urls import reverse_lazy
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.translation import ugettext_lazy as _
@@ -94,3 +95,23 @@ def api_activate_account(request, uidb64, token):
 def user_profile(request, username):
     user = get_user_by_username(username)
     return render(request, 'users/profile.html', {'user': user})
+
+
+class CustomPasswordResetView(auth_views.PasswordResetView):
+    email_template_name='users/password_reset_email.html'
+    success_url=reverse_lazy('users:password_reset_done')
+    template_name = 'users/password_reset.html'
+    form_class = CustomPasswordResetForm
+    
+
+class CustomPasswordResetDoneView(auth_views.PasswordResetDoneView):
+    template_name = 'users/password_reset_done.html'
+
+
+class CustomPasswordResetConfirmView(auth_views.PasswordResetConfirmView):
+    template_name = 'users/password_reset_confirm.html'
+    success_url = reverse_lazy('users:password_reset_complete')
+
+
+class CustomPasswordResetCompleteView(auth_views.PasswordResetCompleteView):
+    template_name = 'users/password_reset_complete.html'
