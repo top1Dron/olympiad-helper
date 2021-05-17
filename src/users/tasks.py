@@ -14,9 +14,4 @@ def task_send_email(subject:str, message:str, to:list):
 
 @app.task(serializer='pickle')
 def task_call_function(function: bytes, *args: list[Any], **kwargs: dict) -> Any:
-    # function = pickle.loads(dumped_function)
-    # args = [pickle.loads(arg) for arg in dumped_args]
-    # kwargs = {key: pickle.loads(value) for key, value in dumped_kwargs.items()}
-    # logger.info(args)
-    # logger.info(kwargs)
     return function(*args, **kwargs)
