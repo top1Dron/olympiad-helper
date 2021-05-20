@@ -53,7 +53,7 @@ def submit_solution(problem_number, programming_language, source_code, solution_
     tests = ProblemTest.objects.filter(problem=problem)
     error = ''
 
-    if language.name in ('C++11', 'C++14', 'C++17'):
+    if language.name in ('C++11', 'C++14', 'C++17', 'Go 1.16.4'):
         error = _compile(language, code_file_name)
 
     execute_line = language.execute.replace('[codefilename]', code_file_name)
@@ -73,6 +73,7 @@ def _compile(language, code_file_name:str) -> str:
 
     complile_string = language.compile.replace('[codefilename]', code_file_name)
     compilation = subprocess.run(complile_string, stderr=subprocess.PIPE, text=True, shell=True)
+    logger.info(complile_string)
     return compilation.stderr
 
 
@@ -113,7 +114,7 @@ def _test_execution(test, execute_line, time_limit, solution):
         start_time = time.time()
         test_output, test_error_string = execution.communicate(timeout=time_limit)
         end_time = time.time()
-        test_output = test_output.decode('utf-8')
+        test_output = str(test_output.decode('utf-8'))
         test_error_string = test_error_string.decode('utf-8')
         finish_time = end_time - start_time
         test_status = 'PD'
@@ -121,7 +122,7 @@ def _test_execution(test, execute_line, time_limit, solution):
         if test_error_string != '':
             logger.info(f'{test.problem} {test.test_number} - done failed. {test_error_string}')
             test_status = 'RE'
-        elif test.output_data == test_output:
+        elif test.output_data == test_output.removesuffix('\n'):
             logger.info(f'{test.problem} {test.test_number} - done successfully.')
             test_status = 'AC'
         else:

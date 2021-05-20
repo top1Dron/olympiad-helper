@@ -4948,3 +4948,113 @@ INFO 2021-05-20 16:13:29,665 views 16300 140363268273920 <QueryDict: {}>
 INFO 2021-05-20 16:17:01,571 views 16300 140363268273920 <QueryDict: {}>
 INFO 2021-05-20 16:17:15,914 views 16300 140363268273920 <QueryDict: {}>
 INFO 2021-05-20 16:17:20,057 views 16300 140363268273920 <QueryDict: {}>
+INFO 2021-05-20 17:32:30,194 views 2804 139628054320896 <QueryDict: {}>
+ERROR 2021-05-20 17:36:05,455 execute_solutions 3353 140055698388800 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 107, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-36-05-319_admin'
+
+ERROR 2021-05-20 17:36:05,457 execute_solutions 3353 140055698388800 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 90, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 142, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-05-20 17:39:07,989 views 2804 139628054320896 <QueryDict: {}>
+ERROR 2021-05-20 17:40:05,864 execute_solutions 3467 140580627121984 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 107, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-40-04-244_admin'
+
+ERROR 2021-05-20 17:40:05,866 execute_solutions 3467 140580627121984 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 90, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 142, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-05-20 17:41:37,716 execute_solutions 3564 139894803310400 go build /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-41-35-801_admin.go
+ERROR 2021-05-20 17:41:37,854 execute_solutions 3564 139894803310400 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 108, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-41-35-801_admin'
+
+ERROR 2021-05-20 17:41:37,864 execute_solutions 3564 139894803310400 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 143, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-05-20 17:44:31,680 execute_solutions 3564 139894803310400 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-44-29-774_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-44-29-774_admin.go
+ERROR 2021-05-20 17:44:31,833 execute_solutions 3564 139894803310400 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 108, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-44-29-774_admin'
+
+ERROR 2021-05-20 17:44:31,850 execute_solutions 3564 139894803310400 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 143, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-05-20 17:45:25,036 execute_solutions 3859 139761571190592 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-45-23-316_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-45-23-316_admin.go
+ERROR 2021-05-20 17:45:25,211 execute_solutions 3859 139761571190592 <class 'FileNotFoundError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 108, in _test_execution
+    execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
+  File "/usr/local/lib/python3.9/subprocess.py", line 947, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/local/lib/python3.9/subprocess.py", line 1819, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: './/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-45-23-316_admin'
+
+ERROR 2021-05-20 17:45:25,216 execute_solutions 3859 139761571190592 <class 'UnboundLocalError'> Traceback (most recent call last):
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 91, in _execute
+    _test_execution(test, execute_line, time_limit, solution)
+  File "/usr/projects/olympiad-helper/src/judge/services/execute_solutions.py", line 143, in _test_execution
+    status=test_status,
+UnboundLocalError: local variable 'test_status' referenced before assignment
+
+INFO 2021-05-20 17:46:05,431 execute_solutions 3859 139761571190592 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-46-04-401_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-46-04-401_admin.go
+INFO 2021-05-20 17:46:05,508 execute_solutions 3859 139761571190592 Simple problem 1 - done failed
+INFO 2021-05-20 17:46:05,564 execute_solutions 3859 139761571190592 Simple problem 2 - done failed
+INFO 2021-05-20 17:46:05,617 execute_solutions 3859 139761571190592 Simple problem 3 - done failed
+INFO 2021-05-20 17:46:05,682 execute_solutions 3859 139761571190592 Simple problem 4 - done failed
+INFO 2021-05-20 17:46:26,289 execute_solutions 3859 139761571190592 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-46-25-362_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-46-25-362_admin.go
+INFO 2021-05-20 17:46:26,399 execute_solutions 3859 139761571190592 Simple problem 1 - done successfully.
+INFO 2021-05-20 17:46:26,505 execute_solutions 3859 139761571190592 Simple problem 2 - done successfully.
+INFO 2021-05-20 17:46:26,559 execute_solutions 3859 139761571190592 Simple problem 3 - done successfully.
+INFO 2021-05-20 17:46:26,611 execute_solutions 3859 139761571190592 Simple problem 4 - done successfully.
+INFO 2021-05-20 17:50:23,238 execute_solutions 3859 139761571190592 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-22-190_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-22-190_admin.go
+INFO 2021-05-20 17:50:23,388 execute_solutions 3859 139761571190592 Simple problem 1 - done failed
+INFO 2021-05-20 17:50:23,454 execute_solutions 3859 139761571190592 Simple problem 2 - done failed
+INFO 2021-05-20 17:50:23,511 execute_solutions 3859 139761571190592 Simple problem 3 - done failed
+INFO 2021-05-20 17:50:23,639 execute_solutions 3859 139761571190592 Simple problem 4 - done failed
+INFO 2021-05-20 17:50:41,405 execute_solutions 4219 140354503210816 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-40-099_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-40-099_admin.go
+INFO 2021-05-20 17:50:41,467 execute_solutions 4219 140354503210816 Simple problem 1 - done successfully.
+INFO 2021-05-20 17:50:41,506 execute_solutions 4219 140354503210816 Simple problem 2 - done successfully.
+INFO 2021-05-20 17:50:41,613 execute_solutions 4219 140354503210816 Simple problem 3 - done successfully.
+INFO 2021-05-20 17:50:41,670 execute_solutions 4219 140354503210816 Simple problem 4 - done successfully.
+INFO 2021-05-20 17:50:58,059 execute_solutions 4219 140354503210816 go build -o /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-57-109_admin /usr/projects/olympiad-helper/src/config/media/2021-05-20--17-50-57-109_admin.go
+INFO 2021-05-20 17:50:58,131 execute_solutions 4219 140354503210816 Simple problem 1 - done successfully.
+INFO 2021-05-20 17:50:58,160 execute_solutions 4219 140354503210816 Simple problem 2 - done successfully.
+INFO 2021-05-20 17:50:58,192 execute_solutions 4219 140354503210816 Simple problem 3 - done successfully.
+INFO 2021-05-20 17:50:58,228 execute_solutions 4219 140354503210816 Simple problem 4 - done successfully.

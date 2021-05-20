@@ -2,3 +2,4 @@
 env/
 src/config/media/
 src/judge/aurora.py
+**/__pycache__
