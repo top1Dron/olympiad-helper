@@ -2,7 +2,6 @@
 {% load static i18n %}
 
 {% block title %}{{object.title}}{% endblock title %}
-
 {% block main_content %}
     <div class="wrapper">
         <h1>{{object.title}}</h1>
@@ -28,7 +27,7 @@
             <hr>
         {% endfor %}
         {% if user.is_authenticated and is_active_for_submit %}
-            <span><a href="{% url 'competitions:submit_solution' competition.id object.number %}" >{% trans "Submit solution" %}</a></span>
+            <span><a href="{% url 'competitions:submit_solution' competition.id object.number %}">{% trans "Submit solution" %}</a></span>
         {% endif %}
         
     </div>

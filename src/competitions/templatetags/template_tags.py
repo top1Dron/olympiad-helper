@@ -25,3 +25,8 @@ def status_display(status):
     }
     return statuses[status]
 
+
+@register.simple_tag
+def concat_strings(*args):
+    return ''.join(map(str, args))
+

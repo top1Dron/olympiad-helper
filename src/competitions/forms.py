@@ -16,4 +16,4 @@ class CompetitionForm(forms.ModelForm):
 
     class Meta:
         model = Competition
-        fields = ('title', 'start_date', 'end_date')
+        fields = ('title', 'start_date', 'end_date', 'description')

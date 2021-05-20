@@ -13,9 +13,19 @@
 <div class="wrapper">
     <h2>{% trans "Problems" %}</h2>
     <section class="container">
+        <div class="dropdown-label">
+            {% render_field filter_form.difficulty.label_tag %}
+        </div>
+        <div class="dropdown-label">
+            {% render_field filter_form.classification.label_tag %}
+        </div>
+        <div class="dropdown-label">
+            {% render_field filter_form.number.label_tag %}
+        </div></br>
         <div class="dropdown">
             {% render_field filter_form.difficulty class='dropdown-select' %}
         </div>
+        
         <div class="dropdown">
             {% render_field filter_form.classification class='dropdown-select' %}
         </div>

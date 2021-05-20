@@ -5,6 +5,7 @@
 {% block title %}{% trans "Solve task" %} {{problem_number}}{% endblock title %}
 {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/submit_solution.css' %}">
+    <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
 {% endblock extra_head %}
 
 {% block main_content %}
@@ -43,7 +44,7 @@
         {{ form.source_code.errors }}
         {% render_field form.source_code class='textarea-wrapper' rows='20' %}
     </p>
-    <button type="submit">{% trans "Submit" %}</button>
+    <button class="create-button" type="submit">{% trans "Submit" %}</button>
     </form>
 </div>
 {% endblock main_content %}

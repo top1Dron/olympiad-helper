@@ -1,4 +1,5 @@
 import {ready, ajax_json_request} from '../services.js'
+// import {initModal} from './show_member_detail.js'
 
 
 ready(function(){
@@ -12,6 +13,7 @@ ready(function(){
                 var elems_copy = Array.from(elems);
                 elems_copy.forEach(el => el.removeAttribute('checked'));
                 elem.setAttribute('checked', 'true');
+                // initModal();
                 ajax_json_request('GET', elem.getAttribute('data'), document.getElementById('tab-data'), "tab-data");
             }, true);
         }

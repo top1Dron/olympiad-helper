@@ -15,7 +15,6 @@ class ProblemAdmin(TranslationAdmin):
     list_display_links = ('title_uk',)
     search_fields = ('title', )
 
-
     def view_tests_link(self, obj):
         count = obj.get_all_tests.count()
         url = (
@@ -24,9 +23,12 @@ class ProblemAdmin(TranslationAdmin):
             + urlencode({'problem__id': f'obj.id'})
         )
         return format_html('<a href="{}">{} tests</a>', url, count)
-
     
     view_tests_link.short_description = _('Tests')
+
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related('competition')
 
 
 @admin.register(ProgrammingLanguage)
@@ -38,9 +40,25 @@ class ProgrammingLanguageAdmin(admin.ModelAdmin):
 @admin.register(ProblemSamples)
 class ProblemSamplesAdmin(TranslationAdmin):
     list_display = ('problem', 'sample_input', 'sample_output')
+    
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related('problem')
+
+
+@admin.register(SolutionTest)
+class SolutionTestAdmin(admin.ModelAdmin):
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related('problem_test', 'solution')
+
+
+@admin.register(ProblemTest)
+class ProblemTestAdmin(admin.ModelAdmin):
+    def get_queryset(self, request):
+        qs = super().get_queryset(request)
+        return qs.select_related('problem')
 
 
 admin.site.register(Solution)
-admin.site.register(SolutionTest)
-admin.site.register(ProblemTest)
 admin.site.register(UserProblemStatus)

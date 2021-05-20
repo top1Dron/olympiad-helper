@@ -1,23 +1,33 @@
 {% load static i18n %}
 
 {% block tab_content %}
-{{ group.description }}
+<span id='group-description'>{{ group.description }}</span>
 {% if competitions %}
-    <div class='list'><table class="table">
-            {% for competition in competitions %}
-            <tr>
-                <td>
-                    <a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a>
-                </td>
-                <td>
-                    {{ competition.start_date }}
-                </td>
-                <td>
-                    {{ competition.end_date }}
-                </td>
-            </tr>
-            {% endfor %}
-        </table>
+    <div class="table">
+        <div class="row header">
+            <div class="cell">
+                <span>{% trans "Title" %}</span>
+            </div>
+            <div class="cell">
+                <span>{% trans "Start date" %}</span>
+            </div>
+            <div class="cell">
+                <span>{% trans "End date" %}</span>
+            </div>
+        </div>
+        {% for competition in competitions %}
+        <div class="row">
+            <div class="cell">
+                <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+            </div>
+            <div class="cell">
+                <span>{{ competition.start_date }}</span>
+            </div>
+            <div class="cell">
+                <span>{{ competition.end_date }}</span>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 {% else %}
     <h3>{% trans "No active competitions in this group yet" %}</h3>

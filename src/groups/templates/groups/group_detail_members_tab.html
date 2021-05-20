@@ -1,30 +1,57 @@
-{% load static i18n %}
+{% load static i18n widget_tweaks template_tags %}
 
 {% block tab_content %}
-{% if group_members %}
-    <div class='list'><table class="table">
-            {% for member in group_members %}
-            <tr>
-                <td>
-                    {{ member.user.username }}
+{% if zip_group_members_with_forms %}
+    <div class="table">
+        {% for member, member_form in zip_group_members_with_forms %}
+        <div class="row">
+            <div class="cell">
+                {{ member.user.username }}
+            </div>
+            {% if user_role == 'TE' %}
+                <div class="cell">
+                    <button data-modal-trigger="sample-modal" class="demo__btn demo__btn--secondary"
+                        onclick="showModal('sample-modal-{{ member.user.username }}')">{{ member.get_role_display }}</button>
+                </div>
+            {% else %}
+                <span>{{ member.get_role_display }}</span>
+                {% comment %} <td>
+                {% csrf_token %}
+                <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.getAttribute('delete_url'));">X</button>
                 </td>
-                {% if user_role == 'TE' %}
+                {% if member.role == 'SD' %}
                     <td>
-                        {{ member.get_role_display }}
+                        Update to teacher
                     </td>
-                    <td>
-                    {% csrf_token %}
-                    <button delete_url='{{ member.get_delete_url }}' onclick="delete_user_from_group(this.getAttribute('delete_url'));">X</button>
-                    </td>
-                    {% if member.role == 'SD' %}
-                        <td>
-                            Update to teacher
-                        </td>
-                    {% endif %}
-                {% endif %}
-            </tr>
-            {% endfor %}
-        </table>
+                {% endif %} {% endcomment %}
+            {% endif %}
+            <div class="modal" data-modal-name="sample-modal-{{member.user.username}}">
+                <div class="modal__dialog">
+                    <button class="modal__close" data-modal-dismiss onclick="hideModal()">×</button>
+                    <header class="modal__header">
+                        <h3 class="modal__title">{{ member.user.username }}</h3>
+                    </header>
+                    <div class="modal__content">
+                    <form>
+                        {% csrf_token %}
+                        <p>{{ member.user.username }}</p>
+                        {% concat_strings "id_role" member.pk as role_id%}
+                        <p>{% render_field member_form.role member_id=member.pk id=role_id %}</p>
+                    </form>
+                    </div>
+                    <footer class="modal__footer">
+                    <button  data-modal-dismiss onclick="hideModal()" class="demo__btn demo__btn__cancel">Cancel</button>
+                        <button  change_role_url='{{ member.change_role_url }}'
+                            onclick="change_user_role_in_group(this.getAttribute('change_role_url'), {{ member.pk }})"
+                            data-modal-dismiss class="demo__btn demo__btn__save">Save</button>
+                        <button  delete_url='{{ member.get_delete_url }}' 
+                            onclick="delete_user_from_group(this.getAttribute('delete_url'))" 
+                            data-modal-dismiss class="demo__btn demo__btn__delete">Delete</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
     </div>
 {% else %}
     <h3>{% trans "No members in this group yet" %}</h3>
@@ -34,3 +61,8 @@
         <input id='id_invite_link' type="text" disabled value="{{ invite_link }}">
     {% endif %}
 {% endblock tab_content %}
+
+<script type="text/javascript">
+console.log(1);
+    ready(function(){initModal();})
+</script>

@@ -151,15 +151,12 @@ class Solution(models.Model):
     avg_memory_usage = models.CharField(max_length=30)
     avg_time_usage = models.CharField(max_length=30)
 
-
     @property
     def get_all_tests(self):
-        return SolutionTest.objects.filter(solution=self.id)
-
+        return SolutionTest.objects.filter(solution=self.id).select_related('solution', 'problem_test')
 
     def __str__(self):
         return str(self.pk)
-
 
     class Meta:
         verbose_name = _('Solution')
@@ -177,10 +174,12 @@ class SolutionTest(models.Model):
     time_usage = models.CharField(max_length=30)
     status = models.CharField(max_length=2, choices=STATUS)
 
-
     def __str__(self):
         return f'{self.solution.id} - {self.problem_test.test_number}'
 
+    @property
+    def test_number(self):
+        return self.problem_test.test_number
 
     class Meta:
         verbose_name = _('Solution tests')

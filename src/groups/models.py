@@ -36,8 +36,13 @@ class GroupUser(models.Model):
 
     class Meta:
         unique_together = ('group', 'user')
-
+        verbose_name = _('User group')
+        verbose_name_plural = _('User groups')
 
     @property
     def get_delete_url(self):
         return reverse('groups:delete_user_from_group', kwargs={'group_id': self.group.pk, 'group_user_id':self.pk})
+
+    @property
+    def change_role_url(self):
+        return reverse('groups:change_user_role', kwargs={'group_id': self.group.pk, 'group_user_id':self.pk})

@@ -9,10 +9,11 @@ from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
 from django.views.decorators.http import require_http_methods
 from django.views.generic import CreateView, DetailView, ListView
-from groups.forms import GroupForm
+from groups.forms import GroupForm, GroupUserForm
 from groups.models import Group, GroupUser
 from groups.services import services
 from urlshortening.models import get_full_url
+import json
 import logging
 
 
@@ -104,12 +105,15 @@ def get_group_info(request, group_id:int):
 @login_required
 def get_group_members(request, group_id:int):
     group_members = services.get_group_members(group_id)
+    group_members_forms = [GroupUserForm(instance=member) for member in group_members]
+    zip_group_members_with_forms = zip(group_members, group_members_forms)
     user_role = services.get_user_role_in_group(group_id, request.user)
     domain = get_current_site(request).domain
     invite_link = services.get_group_invite_link(request.scheme, group_id, domain)
     data = {'tab-data': render_to_string(
         'groups/group_detail_members_tab.html', {
             'group_members': group_members,
+            'zip_group_members_with_forms': list(zip_group_members_with_forms),
             'group_id': group_id,
             'user_role': user_role,
             'invite_link': invite_link,
@@ -143,3 +147,12 @@ def delete_user_from_group(request, group_id, group_user_id):
     except GroupUser.DoesNotExist:
         raise Http404(_('User in this group not found'))
     return JsonResponse({'message': _('User deleted from group')})
+
+
+@require_http_methods(['POST'])
+def change_user_role(request, group_id, group_user_id):
+    post_data = json.loads(request.body)
+    member = GroupUser.objects.get(pk=post_data.get('member_id'))
+    member.role = post_data.get('member_role')
+    member.save()
+    return JsonResponse({})

@@ -17,3 +17,5 @@ class Competition(models.Model):
 
     class Meta:
         ordering = ('id', )
+        verbose_name = _('Competition')
+        verbose_name_plural = _('Competitions')

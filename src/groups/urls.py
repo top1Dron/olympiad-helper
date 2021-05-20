@@ -9,6 +9,7 @@ urlpatterns = [
     path('<int:group_id>/info/', views.get_group_info, name='get_group_info'),
     # path('<int:group_id>/members/create-invite-link-to-group/', views.create_invite_link_to_group, name='create_invite_link_to_group'),
     path('<int:group_id>/members/<int:group_user_id>/delete/', views.delete_user_from_group, name='delete_user_from_group'),
+    path('<int:group_id>/members/<int:group_user_id>/change-role/', views.change_user_role, name='change_user_role'),
     path('<int:group_id>/members/', views.get_group_members, name='get_group_members'),
     path('<int:group_id>/confirm_joining/', views.confirm_user_joining_the_group, name='group_join_confirm'),
     path('<int:group_id>/competitions/create-competition/', views.create_group_competition, name='create_competition'),

@@ -4,30 +4,27 @@
 {% block tab_content %}
 <div class='list'>
     {% if  users_count%}
-        <table class='table'>
-            <thead>
-                <tr>
-                    <td>{% trans "User" %}</td>
-                    <td>{% trans "Solved problems" %}</td>
-                </tr>
-            </thead>
-            <tbody>
+        <div class="table">
+            <div class="row header">
+                <div class="cell"><span>{% trans "User" %}</span></div>
+                <div class="cell"><span>{% trans "Solved problems" %}</span></div>
+            </div>
     {% endif %}
     {% for username, solved_problems in users_count.items %}
-        <tr>
-            <td>
-                {{ username }}
-            </td>
-            <td>
-                {{ solved_problems }}
-            </td>
-        </tr>
+        <div class="row">
+            <div class="cell" data-title="User">
+                <span>{{ username }}</span>
+            </div>
+            <div class="cell" data-title="Solved problems">
+                <span>{{ solved_problems }}</span>
+            </div></td>
+        </div>
     {% empty %}
         <h3>{% trans "Noone successfully solved at least 1 problem in competition yet." %}</h3>
     {% endfor %}
     {% if  users_count%}
         </tbody>
-        </table>
+        </div>
     {% endif %}
 </div>
 {% endblock tab_content %}

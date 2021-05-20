@@ -9,6 +9,14 @@
     vertical-align: top;
 }
 
+.dropdown-label {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 28px;
+    width: 200px;
+}
+
 .dropdown {
     display: inline-block;
     position: relative;

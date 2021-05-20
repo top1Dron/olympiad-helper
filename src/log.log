@@ -4859,3 +4859,92 @@ INFO 2021-05-17 00:50:15,716 views 23122 140002780509952 <QueryDict: {}>
 INFO 2021-05-17 00:55:40,282 views 27817 140152076998400 <QueryDict: {}>
 INFO 2021-05-17 14:53:18,376 views 28089 140535512086272 <QueryDict: {}>
 INFO 2021-05-17 14:54:46,538 views 28089 140535512086272 <QueryDict: {}>
+INFO 2021-05-17 15:00:58,867 views 31317 140254448649984 <QueryDict: {}>
+INFO 2021-05-17 15:01:30,894 views 31317 140254448649984 <QueryDict: {}>
+INFO 2021-05-17 15:01:50,963 views 31317 140254448649984 <QueryDict: {}>
+INFO 2021-05-17 15:02:08,415 views 31317 140254448649984 <QueryDict: {}>
+INFO 2021-05-17 15:02:31,024 views 31317 140254448649984 <QueryDict: {}>
+INFO 2021-05-17 15:02:41,720 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:03:52,582 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:04:22,220 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:05:21,026 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:05:44,610 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:06:08,268 views 31317 140254448649984 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:06:38,994 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:06:55,487 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:07:19,813 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:07:34,170 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:07:45,465 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:08:12,202 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:08:22,199 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:08:47,195 views 31317 140254340695808 <QueryDict: {}>
+INFO 2021-05-17 15:11:31,209 views 31317 140254340695808 <QueryDict: {}>
+INFO 2021-05-17 15:12:33,654 views 31317 140254340695808 <QueryDict: {'classification': ['CB']}>
+INFO 2021-05-17 15:12:39,380 views 31317 140254340695808 <QueryDict: {}>
+INFO 2021-05-17 15:12:47,800 views 31317 140254340695808 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 15:15:05,278 views 31804 140479641118464 <QueryDict: {'difficulty': ['EA']}>
+INFO 2021-05-17 16:07:04,462 views 31804 140479379269376 <QueryDict: {}>
+INFO 2021-05-17 16:12:29,162 views 31804 140479379269376 <QueryDict: {}>
+INFO 2021-05-17 16:19:41,958 views 31804 140479379269376 <QueryDict: {}>
+INFO 2021-05-17 16:51:23,768 execute_solutions 21657 140454451541824 The area of a polygon 1 - done successfully.
+INFO 2021-05-17 19:06:50,405 execute_solutions 1359 140432384153408 middle of may contest: The area of a polygon 1 - done successfully.
+INFO 2021-05-17 19:07:28,521 execute_solutions 1359 140432384153408 middle of may contest: Simple problem 1 - done successfully.
+INFO 2021-05-17 19:07:28,574 execute_solutions 1359 140432384153408 middle of may contest: Simple problem 2 - done successfully.
+INFO 2021-05-17 19:07:28,607 execute_solutions 1359 140432384153408 middle of may contest: Simple problem 3 - done successfully.
+INFO 2021-05-17 19:07:28,635 execute_solutions 1359 140432384153408 middle of may contest: Simple problem 4 - done successfully.
+INFO 2021-05-17 19:08:27,827 execute_solutions 1359 140432384153408 middle of may contest: Error protection queue 1 - done successfully.
+INFO 2021-05-17 19:12:59,886 views 2278 139986934425344 <QueryDict: {}>
+INFO 2021-05-17 19:13:16,739 views 2278 139986934425344 <QueryDict: {}>
+INFO 2021-05-17 19:13:44,922 execute_solutions 1359 140432384153408 middle of may contest: Error protection queue 1 - done successfully.
+INFO 2021-05-17 19:13:50,057 views 2278 139986934425344 <QueryDict: {}>
+INFO 2021-05-17 19:14:06,830 views 2278 139986934425344 <QueryDict: {}>
+INFO 2021-05-19 12:06:19,877 views 5262 139860397647616 <QueryDict: {}>
+INFO 2021-05-19 12:06:36,456 views 5262 139860397647616 <QueryDict: {}>
+INFO 2021-05-20 12:52:12,865 views 7995 140400296175360 <QueryDict: {}>
+INFO 2021-05-20 12:53:30,930 views 7995 140400312960768 <QueryDict: {}>
+INFO 2021-05-20 12:53:48,660 views 7995 140400312960768 <QueryDict: {}>
+INFO 2021-05-20 13:18:42,787 views 10404 140447523759872 <QueryDict: {}>
+INFO 2021-05-20 13:21:02,171 views 10591 139814673577728 [(<GroupUser: GroupUser object (2)>, <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>), (<GroupUser: GroupUser object (20)>, <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>)]
+INFO 2021-05-20 13:21:53,491 views 10635 140302394074880 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:23:35,030 views 10635 140302394074880 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:24:14,547 views 10713 139844845229824 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:25:40,589 views 10713 139844845229824 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:26:27,086 views 10847 140392181024512 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:26:36,434 views 10847 140392181024512 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:26:50,932 views 10847 140392181024512 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:27:25,182 views 10913 140083137181440 {<GroupUser: GroupUser object (2)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>, <GroupUser: GroupUser object (20)>: <GroupUserForm bound=False, valid=Unknown, fields=(role;user)>}
+INFO 2021-05-20 13:43:56,159 views 11433 140604870485760 <QueryDict: {}>
+INFO 2021-05-20 13:44:24,495 views 11433 140604870485760 <QueryDict: {}>
+INFO 2021-05-20 13:44:43,786 views 11433 140604870485760 <QueryDict: {}>
+INFO 2021-05-20 13:56:31,221 views 11433 140604878878464 <QueryDict: {}>
+INFO 2021-05-20 13:57:12,828 views 11433 140604878878464 <QueryDict: {}>
+INFO 2021-05-20 13:57:29,752 views 11433 140604878878464 <QueryDict: {}>
+INFO 2021-05-20 14:46:46,920 views 13446 140164974241536 <QueryDict: {}>
+INFO 2021-05-20 14:47:08,888 views 13446 140164965586688 <QueryDict: {}>
+INFO 2021-05-20 14:47:12,958 views 13446 140164965586688 <QueryDict: {}>
+INFO 2021-05-20 14:47:31,342 views 13446 140164965586688 <QueryDict: {}>
+INFO 2021-05-20 14:59:49,391 views 14211 139751886583552 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:00:41,880 views 14211 139751875307264 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:02:06,659 views 14211 139751875307264 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:02:21,611 views 14211 139751875307264 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:06:49,426 views 14606 140216186697472 b'[object Object]'
+INFO 2021-05-20 15:12:39,656 views 14810 139751165028096 <QueryDict: {}>
+INFO 2021-05-20 15:13:06,168 views 14810 139751165028096 <QueryDict: {}>
+INFO 2021-05-20 15:17:33,450 views 14810 139751153489664 <QueryDict: {}>
+INFO 2021-05-20 15:17:44,208 views 14810 139751153489664 <QueryDict: {}>
+INFO 2021-05-20 15:18:27,835 views 14810 139751153489664 <QueryDict: {}>
+INFO 2021-05-20 15:19:46,138 views 14810 139751153489664 <QueryDict: {}>
+INFO 2021-05-20 15:20:31,872 views 14810 139751165028096 <QueryDict: {}>
+INFO 2021-05-20 15:21:19,897 views 14810 139751165028096 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:21:27,756 views 14810 139751165028096 <QueryDict: {'[object Object]': ['']}>
+INFO 2021-05-20 15:33:16,272 views 15748 139993961473792 <QueryDict: {}>
+INFO 2021-05-20 15:33:16,274 views 15748 139993961473792 1
+INFO 2021-05-20 15:34:58,566 views 15748 139993961473792 <QueryDict: {}>
+INFO 2021-05-20 15:34:58,567 views 15748 139993961473792 1
+INFO 2021-05-20 15:34:58,567 views 15748 139993961473792 {'csrfmiddlewaretoken': 'GmSBiF8oDbd2sm1knS2MuOcToGiG7LwPxqGPAAuGpQfp4EeWH7jjoWvs6dvnrFfg', 'member_id': '2', 'member_role': 'TE'}
+INFO 2021-05-20 15:38:23,981 views 15836 140147997026048 <QueryDict: {}>
+INFO 2021-05-20 15:38:58,018 views 15836 140147997026048 <QueryDict: {}>
+INFO 2021-05-20 16:13:29,665 views 16300 140363268273920 <QueryDict: {}>
+INFO 2021-05-20 16:17:01,571 views 16300 140363268273920 <QueryDict: {}>
+INFO 2021-05-20 16:17:15,914 views 16300 140363268273920 <QueryDict: {}>
+INFO 2021-05-20 16:17:20,057 views 16300 140363268273920 <QueryDict: {}>
