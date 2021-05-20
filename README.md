@@ -6,9 +6,11 @@ Online judge sytem for helping students to prepare for olympiads in computer sci
     
     - python3 (tested with 3.9.0), 
     
-    -g++ 8.3.0 or later, 
+    - g++ 8.3.0 or later, 
     
     - go (tested with 1.16.4)
+    
+    - java (tested with openjdk 11.0.11
 
 2) Linux user judge
 

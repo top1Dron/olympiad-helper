@@ -45,33 +45,58 @@ def submit_solution(problem_number, programming_language, source_code, solution_
         settings.MEDIA_ROOT, 
         f'{datetime.now().strftime("%Y-%m-%d--%H-%M-%S-%f")[:-3]}_{solution.user.username}')
     
+    code_file_folder = ''
+    check_source_code = ''
+    class_word_index = -2
+
     # print user code to file with language extension
-    with open(f'{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
-        print(source_code, file=file, end='')
+    if language.name == 'Java (openjdk 11.0.11)':
+        code_file_folder = code_file_name
+        
+        check_source_code = source_code.split()
+        class_word_index = check_source_code.index('class')
+        code_file_name = check_source_code[class_word_index+1]
+        if not os.path.isdir(code_file_folder):
+            os.mkdir(code_file_folder)
+        with open(f'{code_file_folder}/{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
+            print(source_code, file=file, end='')
+    else:
+        with open(f'{code_file_name}.{language.extension}', 'w', encoding='utf-8') as file:
+            print(source_code, file=file, end='')
 
     problem = Problem.objects.get(number=problem_number)
     tests = ProblemTest.objects.filter(problem=problem)
     error = ''
 
-    if language.name in ('C++11', 'C++14', 'C++17', 'Go 1.16.4'):
-        error = _compile(language, code_file_name)
+    if language.name in ('C++11', 'C++14', 'C++17', 'Go 1.16.4', 'Java (openjdk 11.0.11)'):
+        error = _compile(language, code_file_name, code_file_folder)
 
     execute_line = language.execute.replace('[codefilename]', code_file_name)
+    if code_file_folder:
+        execute_line = execute_line.replace('[codefilefolder]', code_file_folder)
     time_limit = float(problem.time_limit)
     _execute(solution, tests, execute_line, time_limit, error)
     if os.path.isfile(code_file_name):
         os.remove(code_file_name)
     if os.path.isfile(code_file_name + '.' + language.extension):
         os.remove(code_file_name + '.' + language.extension)
+    if language.extension == 'java':
+        if os.path.isfile(code_file_folder + '/' + code_file_name + '.class'):
+            os.remove(code_file_folder + '/' + code_file_name + '.class')
+        if os.path.isfile(code_file_folder + '/' + code_file_name + '.' + language.extension):
+            os.remove(code_file_folder + '/' + code_file_name + '.' + language.extension)
+            os.removedirs(code_file_folder)
 
 
-def _compile(language, code_file_name:str) -> str:
+def _compile(language, code_file_name:str, code_file_folder:str) -> str:
     '''
     method for compile submitted code, 
     used only for compiled languages
     '''
-
+    
     complile_string = language.compile.replace('[codefilename]', code_file_name)
+    if code_file_folder:
+        complile_string = complile_string.replace('[codefilefolder]', code_file_folder)
     compilation = subprocess.run(complile_string, stderr=subprocess.PIPE, text=True, shell=True)
     logger.info(complile_string)
     return compilation.stderr
@@ -108,15 +133,14 @@ def _test_execution(test, execute_line, time_limit, solution):
         execution = subprocess.Popen(execute_line.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE, shell=False)
         execution.stdin.write(bytes(test.input_data, 'UTF-8'))
         execution.stdin.flush()
-        
-        test.output_data = test.output_data.replace('\r', '')
 
         start_time = time.time()
         test_output, test_error_string = execution.communicate(timeout=time_limit)
         end_time = time.time()
+        finish_time = end_time - start_time
         test_output = str(test_output.decode('utf-8'))
         test_error_string = test_error_string.decode('utf-8')
-        finish_time = end_time - start_time
+        test.output_data = test.output_data.replace('\r', '')
         test_status = 'PD'
 
         if test_error_string != '':

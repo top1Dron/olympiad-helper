@@ -5058,3 +5058,218 @@ INFO 2021-05-20 17:50:58,131 execute_solutions 4219 140354503210816 Simple probl
 INFO 2021-05-20 17:50:58,160 execute_solutions 4219 140354503210816 Simple problem 2 - done successfully.
 INFO 2021-05-20 17:50:58,192 execute_solutions 4219 140354503210816 Simple problem 3 - done successfully.
 INFO 2021-05-20 17:50:58,228 execute_solutions 4219 140354503210816 Simple problem 4 - done successfully.
+INFO 2021-05-20 17:59:15,574 execute_solutions 4219 140354503210816 Simple problem 1 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-59-15-468_admin.py", line 2, in <module>
+    print s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-05-20 17:59:15,685 execute_solutions 4219 140354503210816 Simple problem 2 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-59-15-468_admin.py", line 2, in <module>
+    print s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-05-20 17:59:15,761 execute_solutions 4219 140354503210816 Simple problem 3 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-59-15-468_admin.py", line 2, in <module>
+    print s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-05-20 17:59:15,830 execute_solutions 4219 140354503210816 Simple problem 4 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-05-20--17-59-15-468_admin.py", line 2, in <module>
+    print s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-05-20 18:00:02,109 execute_solutions 4219 140354503210816 Simple problem 1 - done successfully.
+INFO 2021-05-20 18:00:02,171 execute_solutions 4219 140354503210816 Simple problem 2 - done successfully.
+INFO 2021-05-20 18:00:02,232 execute_solutions 4219 140354503210816 Simple problem 3 - done successfully.
+INFO 2021-05-20 18:00:02,288 execute_solutions 4219 140354503210816 Simple problem 4 - done successfully.
+INFO 2021-05-20 18:00:18,442 views 4132 140583461447424 <QueryDict: {}>
+INFO 2021-05-20 18:00:57,558 execute_solutions 4219 140354503210816 Simple problem 1 - done failed
+INFO 2021-05-20 18:00:57,605 execute_solutions 4219 140354503210816 Simple problem 2 - done failed
+INFO 2021-05-20 18:00:57,650 execute_solutions 4219 140354503210816 Simple problem 3 - done failed
+INFO 2021-05-20 18:00:57,699 execute_solutions 4219 140354503210816 Simple problem 4 - done failed
+INFO 2021-05-20 18:01:35,684 execute_solutions 4219 140354503210816 Simple problem 1 - done successfully.
+INFO 2021-05-20 18:01:35,789 execute_solutions 4219 140354503210816 Simple problem 2 - done successfully.
+INFO 2021-05-20 18:01:35,926 execute_solutions 4219 140354503210816 Simple problem 3 - done successfully.
+INFO 2021-05-20 18:01:36,051 execute_solutions 4219 140354503210816 Simple problem 4 - done successfully.
+INFO 2021-05-20 18:02:19,143 execute_solutions 4724 139873308301120 Simple problem 1 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-02-18-967_admin
+
+INFO 2021-05-20 18:02:19,269 execute_solutions 4724 139873308301120 Simple problem 2 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-02-18-967_admin
+
+INFO 2021-05-20 18:02:19,424 execute_solutions 4724 139873308301120 Simple problem 3 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-02-18-967_admin
+
+INFO 2021-05-20 18:02:19,548 execute_solutions 4724 139873308301120 Simple problem 4 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-02-18-967_admin
+
+INFO 2021-05-20 18:04:11,488 execute_solutions 4724 139873308301120 Simple problem 1 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-04-11-313_admin
+
+INFO 2021-05-20 18:04:11,681 execute_solutions 4724 139873308301120 Simple problem 2 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-04-11-313_admin
+
+INFO 2021-05-20 18:04:11,849 execute_solutions 4724 139873308301120 Simple problem 3 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-04-11-313_admin
+
+INFO 2021-05-20 18:04:12,021 execute_solutions 4724 139873308301120 Simple problem 4 - done failed. /usr/projects/olympiad-helper/env/bin/python3: No module named /usr/projects/olympiad-helper/src/config/media/2021-05-20--18-04-11-313_admin
+
+INFO 2021-05-20 18:08:58,068 execute_solutions 4724 139873308301120 Simple problem 1 - done successfully.
+INFO 2021-05-20 18:08:58,163 execute_solutions 4724 139873308301120 Simple problem 2 - done successfully.
+INFO 2021-05-20 18:08:58,291 execute_solutions 4724 139873308301120 Simple problem 3 - done successfully.
+INFO 2021-05-20 18:08:58,357 execute_solutions 4724 139873308301120 Simple problem 4 - done successfully.
+INFO 2021-05-20 18:09:30,788 execute_solutions 4724 139873308301120 Simple problem 1 - done successfully.
+INFO 2021-05-20 18:09:30,845 execute_solutions 4724 139873308301120 Simple problem 2 - done successfully.
+INFO 2021-05-20 18:09:30,907 execute_solutions 4724 139873308301120 Simple problem 3 - done successfully.
+INFO 2021-05-20 18:09:30,987 execute_solutions 4724 139873308301120 Simple problem 4 - done successfully.
+INFO 2021-05-20 22:29:25,762 execute_solutions 3415 140200592328512 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-29-23-965_admin.java
+ERROR 2021-05-20 22:29:25,811 execute_solutions 3415 140200592328512 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-29-23-965_admin.java:3: error: class Main is public, should be declared in a file named Main.java
+public class Main {
+       ^
+1 error
+
+INFO 2021-05-20 22:34:31,390 execute_solutions 3522 139738404513600 import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+        System.out.printf("%d %d\n", number/10, number%10);
+    }
+}
+INFO 2021-05-20 22:34:34,613 execute_solutions 3522 139738404513600 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-34-31-383_admin.java
+ERROR 2021-05-20 22:34:34,633 execute_solutions 3522 139738404513600 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-34-31-383_admin.java:3: error: class Main is public, should be declared in a file named Main.java
+public class Main {
+       ^
+1 error
+
+INFO 2021-05-20 22:37:38,533 execute_solutions 3522 139738404513600 import java.util.Scanner;
+
+public class VVV {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int number = in.nextInt();
+        System.out.printf("%d %d\n", number/10, number%10);
+    }
+}
+INFO 2021-05-20 22:37:42,474 execute_solutions 3522 139738404513600 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-37-38-518_admin.java
+ERROR 2021-05-20 22:37:42,529 execute_solutions 3522 139738404513600 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-37-38-518_admin.java:3: error: class VVV is public, should be declared in a file named VVV.java
+public class VVV {
+       ^
+1 error
+
+INFO 2021-05-20 22:39:34,814 execute_solutions 3666 140215493769024 ['import', 'java.util.Scanner;', 'public', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 22:39:37,490 execute_solutions 3666 140215493769024 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-39-34-810_admin.java
+ERROR 2021-05-20 22:39:37,520 execute_solutions 3666 140215493769024 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-39-34-810_admin.java:3: error: class VVV is public, should be declared in a file named VVV.java
+public class VVV {
+       ^
+1 error
+
+INFO 2021-05-20 22:40:37,413 execute_solutions 3666 140215493769024 ['import', 'java.util.Scanner;', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 22:40:40,192 execute_solutions 3666 140215493769024 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-40-37-402_admin.java
+INFO 2021-05-20 22:40:40,362 execute_solutions 3666 140215493769024 Simple problem 1 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--22-40-37-402_admin
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-40-37-402_admin
+
+INFO 2021-05-20 22:40:40,521 execute_solutions 3666 140215493769024 Simple problem 2 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--22-40-37-402_admin
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-40-37-402_admin
+
+INFO 2021-05-20 22:40:40,770 execute_solutions 3666 140215493769024 Simple problem 3 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--22-40-37-402_admin
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-40-37-402_admin
+
+INFO 2021-05-20 22:40:41,066 execute_solutions 3666 140215493769024 Simple problem 4 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--22-40-37-402_admin
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--22-40-37-402_admin
+
+INFO 2021-05-20 22:53:31,794 execute_solutions 3952 140590286939968 javac [codefilefolder]//usr/projects/olympiad-helper/src/config/media/2021-05-20--22-53-30-939_admin.java
+ERROR 2021-05-20 22:53:31,858 execute_solutions 3952 140590286939968 status - CE, error: file not found: [codefilefolder]/usr/projects/olympiad-helper/src/config/media/2021-05-20--22-53-30-939_admin.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+INFO 2021-05-20 23:05:03,485 execute_solutions 4118 140013897410368 javac [codefilefolder]//usr/projects/olympiad-helper/src/config/media/2021-05-20--23-05-02-521_admin.java
+ERROR 2021-05-20 23:05:03,521 execute_solutions 4118 140013897410368 status - CE, error: file not found: [codefilefolder]/usr/projects/olympiad-helper/src/config/media/2021-05-20--23-05-02-521_admin.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+INFO 2021-05-20 23:06:39,397 execute_solutions 4181 140694149646144 javac [codefilefolder]//usr/projects/olympiad-helper/src/config/media/2021-05-20--23-06-38-433_admin.java
+ERROR 2021-05-20 23:06:39,422 execute_solutions 4181 140694149646144 status - CE, error: file not found: [codefilefolder]/usr/projects/olympiad-helper/src/config/media/2021-05-20--23-06-38-433_admin.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+INFO 2021-05-20 23:08:26,101 execute_solutions 4181 140694149646144 javac [codefilefolder]//usr/projects/olympiad-helper/src/config/media/2021-05-20--23-08-25-174_admin.java
+ERROR 2021-05-20 23:08:26,148 execute_solutions 4181 140694149646144 status - CE, error: file not found: [codefilefolder]/usr/projects/olympiad-helper/src/config/media/2021-05-20--23-08-25-174_admin.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+INFO 2021-05-20 23:08:56,683 execute_solutions 4293 140154291046208 ['import', 'java.util.Scanner;', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 23:08:56,684 execute_solutions 4293 140154291046208 2
+INFO 2021-05-20 23:08:56,692 execute_solutions 4293 140154291046208 VVV
+INFO 2021-05-20 23:13:38,813 execute_solutions 4349 139706779465536 ['import', 'java.util.Scanner;', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 23:13:38,814 execute_solutions 4349 139706779465536 2
+INFO 2021-05-20 23:13:38,814 execute_solutions 4349 139706779465536 VVV
+INFO 2021-05-20 23:13:39,928 execute_solutions 4349 139706779465536 javac [codefilefolder]/VVV.java
+ERROR 2021-05-20 23:13:39,965 execute_solutions 4349 139706779465536 status - CE, error: file not found: [codefilefolder]/VVV.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+INFO 2021-05-20 23:17:49,357 execute_solutions 4442 139971473332032 ['import', 'java.util.Scanner;', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 23:17:49,358 execute_solutions 4442 139971473332032 2
+INFO 2021-05-20 23:17:49,358 execute_solutions 4442 139971473332032 VVV
+INFO 2021-05-20 23:17:52,720 execute_solutions 4442 139971473332032 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-17-49-351_admin/VVV.java
+INFO 2021-05-20 23:17:53,124 execute_solutions 4442 139971473332032 Simple problem 1 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--23-17-49-351_admin.VVV
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-17-49-351_admin/VVV
+
+INFO 2021-05-20 23:17:53,604 execute_solutions 4442 139971473332032 Simple problem 2 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--23-17-49-351_admin.VVV
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-17-49-351_admin/VVV
+
+INFO 2021-05-20 23:17:53,956 execute_solutions 4442 139971473332032 Simple problem 3 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--23-17-49-351_admin.VVV
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-17-49-351_admin/VVV
+
+INFO 2021-05-20 23:17:54,309 execute_solutions 4442 139971473332032 Simple problem 4 - done failed. Error: Could not find or load main class .usr.projects.olympiad-helper.src.config.media.2021-05-20--23-17-49-351_admin.VVV
+Caused by: java.lang.ClassNotFoundException: /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-17-49-351_admin/VVV
+
+INFO 2021-05-20 23:28:53,226 execute_solutions 4798 140382126798656 ['import', 'java.util.Scanner;', 'class', 'VVV', '{', 'public', 'static', 'void', 'main(String[]', 'args)', '{', 'Scanner', 'in', '=', 'new', 'Scanner(System.in);', 'int', 'number', '=', 'in.nextInt();', 'System.out.printf("%d', '%d\\n",', 'number/10,', 'number%10);', '}', '}']
+INFO 2021-05-20 23:28:53,228 execute_solutions 4798 140382126798656 2
+INFO 2021-05-20 23:28:53,228 execute_solutions 4798 140382126798656 VVV
+INFO 2021-05-20 23:28:58,304 execute_solutions 4798 140382126798656 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-28-53-215_admin/VVV.java
+INFO 2021-05-20 23:28:58,995 execute_solutions 4798 140382126798656 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:28:59,274 execute_solutions 4798 140382126798656 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:28:59,602 execute_solutions 4798 140382126798656 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:29:00,171 execute_solutions 4798 140382126798656 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:32:26,250 execute_solutions 4948 140471633209152 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-32-23-360_admin/VVV.java
+INFO 2021-05-20 23:32:26,477 execute_solutions 4948 140471633209152 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:32:26,670 execute_solutions 4948 140471633209152 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:32:26,875 execute_solutions 4948 140471633209152 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:32:27,068 execute_solutions 4948 140471633209152 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:34:54,256 execute_solutions 5083 139833727764288 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-34-51-236_admin/VVV.java
+INFO 2021-05-20 23:34:54,863 execute_solutions 5083 139833727764288 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:34:55,337 execute_solutions 5083 139833727764288 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:34:55,839 execute_solutions 5083 139833727764288 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:34:56,168 execute_solutions 5083 139833727764288 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:36:02,997 execute_solutions 5211 140230729414464 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-35-59-876_admin/VVV.java
+INFO 2021-05-20 23:36:03,445 execute_solutions 5211 140230729414464 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:36:04,175 execute_solutions 5211 140230729414464 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:36:04,715 execute_solutions 5211 140230729414464 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:36:04,931 execute_solutions 5211 140230729414464 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:36:47,628 execute_solutions 5331 140624488056640 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-36-43-846_admin/VVV.java
+INFO 2021-05-20 23:36:48,049 execute_solutions 5331 140624488056640 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:36:48,600 execute_solutions 5331 140624488056640 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:36:48,954 execute_solutions 5331 140624488056640 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:36:49,154 execute_solutions 5331 140624488056640 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:37:49,625 execute_solutions 5448 140540063577920 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-37-46-315_admin/VVV.java
+INFO 2021-05-20 23:37:50,289 execute_solutions 5448 140540063577920 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:37:50,784 execute_solutions 5448 140540063577920 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:37:51,226 execute_solutions 5448 140540063577920 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:37:51,442 execute_solutions 5448 140540063577920 Simple problem 4 - done successfully.
+INFO 2021-05-20 23:38:15,777 execute_solutions 5448 140540063577920 javac /usr/projects/olympiad-helper/src/config/media/2021-05-20--23-38-12-938_admin/VVV.java
+INFO 2021-05-20 23:38:16,387 execute_solutions 5448 140540063577920 Simple problem 1 - done successfully.
+INFO 2021-05-20 23:38:16,895 execute_solutions 5448 140540063577920 Simple problem 2 - done successfully.
+INFO 2021-05-20 23:38:17,445 execute_solutions 5448 140540063577920 Simple problem 3 - done successfully.
+INFO 2021-05-20 23:38:17,733 execute_solutions 5448 140540063577920 Simple problem 4 - done successfully.
