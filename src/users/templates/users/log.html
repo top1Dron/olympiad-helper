@@ -9,82 +9,91 @@
 {% endblock extra_head %}
 
 {% block main_content %}
-    <div class="main-title">
-            <div class="title-text">
-            <div class="title login">{% trans "Login Form" %}</div>
-            <div class="title signup">{% trans "Signup Form" %}</div>
-    </div>
-    <div class="form-container">
-        <div class="slide-controls">
-            <input type="radio" name="slide" id="login" checked>
-            <input type="radio" name="slide" id="signup">
-            <label for="login" class="slide login">{% trans "Login" %}</label>
-            <label for="signup" class="slide signup">{% trans "Signup" %}</label>
-            <div class="slider-tab"></div>
-    </div>
-    <div class="form-inner">
-        <form action="{% url 'users:login' %}" class="login" method='post'>
-        {% csrf_token %}
-        {{ login_form.non_field_errors }}
-        {% for hidden_field in login_form.hidden_fields %}
-            {{ hidden_field.errors }}
-            {{ hidden_field }}
-        {% endfor %}
-            <div class="field">
-                {{ login_form.email.errors }}
-                {% trans 'Email Address' as email_address%}
-                {% render_field login_form.email placeholder=email_address required="required" id="id_login_email" %}
-            </div>
-            <div class="field">
-                {{ login_form.password.errors }}
-                {% trans 'Password' as password %}
-                {% render_field login_form.password placeholder=password required="required" id="id_login_password" %}
-            </div>
-            <div class="pass-link"><a href="{% url 'users:password_reset' %}">{% trans "Forgot password?" %}</a></div>
-            <input type="hidden" name="next" value="{{ request.GET.next }}">
-            <div class="field btn">
-                <div class="btn-layer"></div>
-                <input type="submit" value="{% trans 'Login' %}">
-            </div>
-            {% for message in messages %}
-                <p class='messages'>{{ message }}</p>
+    <div class="form-menu">
+        <div class="main-title">
+                <div class="title-text">
+                <div class="title login">{% trans "Login Form" %}</div>
+                <div class="title signup">{% trans "Signup Form" %}</div>
+        </div>
+        <div class="form-container">
+            <div class="slide-controls">
+                <input type="radio" name="slide" id="login" checked>
+                <input type="radio" name="slide" id="signup">
+                <label for="login" class="slide login">{% trans "Login" %}</label>
+                <label for="signup" class="slide signup">{% trans "Signup" %}</label>
+                <div class="slider-tab"></div>
+        </div>
+        <div class="form-inner">
+            <form action="{% url 'users:login' %}" class="login" method='post'>
+            {% csrf_token %}
+            {{ login_form.non_field_errors }}
+            {% for hidden_field in login_form.hidden_fields %}
+                {{ hidden_field.errors }}
+                {{ hidden_field }}
             {% endfor %}
-            <div class="signup-link">{% trans "Not a member" %}? <a href="">{% trans "Signup now" %}</a></div>
-        </form>
-        <form action="{% url 'users:signup' %}" class="signup" method="post">
-        {% csrf_token %}
-        {{ signup_form.non_field_errors }}
-        {% for hidden_field in signup_form.hidden_fields %}
-            {{ hidden_field.errors }}
-            {{ hidden_field }}
-        {% endfor %}
-            <div class="field">
-                {{ signup_form.email.errors }}
-                
-                {% render_field signup_form.email placeholder=email_address required="required" id="id_signup_email"%}
-            </div>
-            <div class="field">
-                {{ signup_form.username.errors }}
-                {% trans 'Username' as username %}
-                {% render_field signup_form.username placeholder=username required="required" id="id_signup_username" %}
-            </div>
-            <div class="field">
-                {{ signup_form.password1.errors }}
-                {% render_field signup_form.password1 placeholder=password required="required" id="id_signup_password1" %}
-            </div>
-            <div class="field">
-                {{ signup_form.password2.errors }}
-                {% trans 'Confirm password' as confirm_password %}
-                {% render_field signup_form.password2 placeholder=confirm_password required="required" id="id_signup_password2" %}
-            </div>
-            <input type="hidden" name="next" value="{{ request.GET.next }}">
-            <div class="field btn">
-                <div class="btn-layer"></div>
-                <input type="submit" value="{% trans 'Signup' %}">
-            </div>
-        </form>
-    </div>
-    </div>
+                <div class="field">
+                    {% comment %} {{ login_form.email.errors }} {% endcomment %}
+                    {% trans 'Email Address' as email_address%}
+                    {% render_field login_form.email placeholder=email_address required="required" id="id_login_email" %}
+                </div>
+                <div class="field">
+                    {{ login_form.password.errors }}
+                    {% trans 'Password' as password %}
+                    {% render_field login_form.password placeholder=password required="required" id="id_login_password" %}
+                </div>
+                <div class="pass-link"><a href="{% url 'users:password_reset' %}">{% trans "Forgot password?" %}</a></div>
+                <input type="hidden" name="next" value="{{ request.GET.next }}">
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="{% trans 'Login' %}">
+                </div>
+                {% for message in messages %}
+                    <p class='messages'>{{ message }}</p>
+                {% endfor %}
+                <div class="signup-link">{% trans "Not a member" %}? <a href="">{% trans "Signup now" %}</a></div>
+            </form>
+            <form action="{% url 'users:signup' %}" class="signup" method="post">
+            {% csrf_token %}
+            {{ signup_form.non_field_errors }}
+            {% for hidden_field in signup_form.hidden_fields %}
+                {{ hidden_field.errors }}
+                {{ hidden_field }}
+            {% endfor %}
+            {% for key, value in signup_form.errors.items %}
+                    <div class="alert alert-error">
+                        <div class="alert alert-danger" role="alert">
+                            {{value.as_text}}<button type="button" class="close" data-bs-dismiss="alert">×</button>
+                        </div>
+                    </div>
+            {% endfor %}
+                <div class="field">
+                    {% comment %} {{ signup_form.email.errors }} {% endcomment %}
+                    
+                    {% render_field signup_form.email placeholder=email_address required="required" id="id_signup_email"%}
+                </div>
+                <div class="field">
+                    {% comment %} {{ signup_form.username.errors }} {% endcomment %}
+                    {% trans 'Username' as username %}
+                    {% render_field signup_form.username placeholder=username required="required" id="id_signup_username" %}
+                </div>
+                <div class="field">
+                    {% comment %} {{ signup_form.password1.errors }} {% endcomment %}
+                    {% render_field signup_form.password1 placeholder=password required="required" id="id_signup_password1" %}
+                </div>
+                <div class="field">
+                    {% comment %} {{ signup_form.password2.errors }} {% endcomment %}
+                    {% trans 'Confirm password' as confirm_password %}
+                    {% render_field signup_form.password2 placeholder=confirm_password required="required" id="id_signup_password2" %}
+                </div>
+                <input type="hidden" name="next" value="{{ request.GET.next }}">
+                <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="{% trans 'Signup' %}">
+                </div>
+            </form>
+        </div>
+        </div>
+        </div>
     </div>
     <script>
         const loginText = document.querySelector(".title-text .login");

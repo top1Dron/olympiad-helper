@@ -100,7 +100,8 @@ a.active, a:hover{
 }
 
 .wrapper{
-    max-width: 800px;
+    margin-top: 3em;
+    width: 100%;
     background: #fff;
     padding: 30px;
     border-radius: 5px;

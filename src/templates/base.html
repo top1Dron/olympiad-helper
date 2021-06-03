@@ -39,16 +39,9 @@
 </head>
 <body>
 
-<main>
-    {% comment %} <h1 class="visually-hidden">Olympiad-helper</h1> {% endcomment %}
-
-    {% comment %} <header class="p-3 bg-dark text-white"> {% endcomment %}
-    {% comment %} <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> {% endcomment %}
+<main class="mb-5">
     <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-        {% comment %} <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-            <span class="fs-4">Olympiad-helper</span>
-        </a> {% endcomment %}
         <a href="#" class="navbar-brand">Olympiad-helper</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
             aria-controls="navbarContent" aria-expanded="false">
@@ -72,9 +65,9 @@
               <div class="dropdown text-md-end">
                 <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#" id="dropdownUser">{{user.username}}</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownUser">
-                  <li><a href="{% url 'users:profile' user.username %}" class="dropdown-item">Profile</a></li>
+                  <li><a href="{% url 'users:profile' user.username %}" class="dropdown-item">{% trans "Profile" %}</a></li>
                   <div class="dropdown-divider"></div>
-                  <li><a href="{% url 'users:logout' %}" class="dropdown-item">Logout</a></li>
+                  <li><a href="{% url 'users:logout' %}" class="dropdown-item">{% trans "Logout" %}</a></li>
                 </ul>
               </div>
             {% else %}
@@ -88,31 +81,9 @@
   {% comment %} </header> {% endcomment %}
 
 </main>
-{% block main_content %}{% endblock main_content %}
+<div class="main_content" style="background-image: url('{% static "img/background.jpg" %}');">{% block main_content %}{% endblock main_content %}</div>
 <footer class="pt-4 pt-md-5 my-md-5 border-top text-center">
     <div class="row">
-        <div class="col-6 col-md">
-            <h5>Dron dev</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Dron dev</h5>
-            <ul class="list-unstyled text-small">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-            </ul>
-        </div>
         <div class="col-6 col-md">
             <h5>Dron dev</h5>
             <ul class="list-unstyled text-small">
