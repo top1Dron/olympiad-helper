@@ -2,5 +2,5 @@
 env/
 src/config/media/
 src/judge/aurora.py
-**/__pycache_
+**/__pycache__
 Blog.drawio
