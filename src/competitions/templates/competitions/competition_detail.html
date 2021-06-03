@@ -2,14 +2,14 @@
 {% load static i18n %}
 
 {% block title %}{{competition.title}}{% endblock title %}
-{% block extra_head %}
+{% comment %} {% block extra_head %}
     <link rel="stylesheet" href="{% static 'css/ajax_tabs.css' %}">
     <link rel="stylesheet" href="{% static 'css/table.css' %}">
     <link rel="stylesheet" href="{% static 'css/buttons.css' %}">
     <link rel="stylesheet" href="{% static 'css/competitions/competition_problems.css' %}">
     <script src={% static 'js/competitions/competition_detail.js' %} type='module'></script>
     <script src={% static 'js/competitions/delete_problem_from_competition.js' %}></script>
-{% endblock extra_head %}
+{% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
 <div class="wrapper">

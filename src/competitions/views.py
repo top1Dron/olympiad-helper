@@ -146,7 +146,7 @@ def api_submit_solution(request, pk, slug):
 
 @login_required
 def get_user_status_on_problems_in_competition(request, pk, slug):
-    data = services.get_user_status_on_problems_in_competition(problem_number)
+    data = services.get_user_status_on_problems_in_competition(slug)
     return JsonResponse(data)
 
 

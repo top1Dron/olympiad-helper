@@ -6,53 +6,174 @@
     <meta charset="utf-8">
     <title>{% block title %}Base template{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/judge/base.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/judge/base.css' %}"> {% endcomment %}
+    <link href="{% static 'assets/dist/css/bootstrap.css' %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      {% comment %} .navbar-nav > .active > a {
+        color: aqua;
+        background-color: chartreuse;
+      }
+      .nav-item > a:hover {
+        color: aqua;
+      } {% endcomment %}
+    </style>
+
     <link rel="short icon" href="{% static 'favicon.ico' %}">
-    <script src="{% static 'js/base.js' %}" type="module"></script>
+    {% comment %} <script src="{% static 'js/base.js' %}" type="module"></script> {% endcomment %}
+    {% comment %} <link href="{% static 'css/headers.css' %}" rel="stylesheet"> {% endcomment %}
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
-    <nav class='main-menu-tabs'>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Olympiad-helper</label>
-        <ul>
-            <li><a href="{% url 'news:index' %}">{% trans "News" %}</a></li>
-            <li><a href="{% url 'judge:problem_list' %}">{% trans "Problems" %}</a></li>
-            <li><a href="{% url 'judge:solution_list' %}">{% trans "Queue" %}</a></li>
-            <li><a href="{% url 'competitions:competition_list' %}">{% trans "Competitions" %}</a></li>
-            {% if user.is_authenticated %}
-                <li><a href="{% url 'groups:group_list' %}">{% trans "Groups" %}</a></li>
-                <li><a href="{% url 'users:logout' %}">{{user.username}}</a></li>
-            {% else %}
-                <li><a href="{% url 'users:login_or_signup' %}">{% trans "Sign in/Sign up" %}</a></li>
-            {% endif %}
-            <li>
-                <form action="{% url 'set_language' %}" method="post">
-                    {% csrf_token %}
-                    <input name="next" type="hidden" value="{{ redirect_to }}">
-                    <select name="language">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% get_available_languages as LANGUAGES %}
-                        {% get_language_info_list for LANGUAGES as languages %}
-                        {% for language in languages %}
-                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %}
-                                    selected{% endif %}>
-                                {{ language.name_local }} ({{ language.code }})
-                            </option>
-                        {% endfor %}
-                    </select>
-                    <input type="submit" value="Go">
-                </form>
-            </li>
-        </ul>
-    </nav>
-    <div id="form_menu">
-        {% block main_content %}
 
-        {% endblock main_content %}
+<main>
+    {% comment %} <h1 class="visually-hidden">Olympiad-helper</h1> {% endcomment %}
+
+    {% comment %} <header class="p-3 bg-dark text-white"> {% endcomment %}
+    {% comment %} <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> {% endcomment %}
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+        {% comment %} <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <span class="fs-4">Olympiad-helper</span>
+        </a> {% endcomment %}
+        <a href="#" class="navbar-brand">Olympiad-helper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul id="navbarContent" class="navbar-nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li class="nav-item"><a href="{% url 'news:index' %}" class="nav-link px-2 active text-white">{% trans "News" %}</a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url 'judge:problem_list' %}">{% trans "Problems" %}</a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url 'judge:solution_list' %}">{% trans "Queue" %}</a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url 'competitions:competition_list' %}">{% trans "Competitions" %}</a></li>
+                {% if user.is_authenticated %}
+                    <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url 'groups:group_list' %}">{% trans "Groups" %}</a></li>
+                {% endif %}
+                <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url "set_language_from_url" redirect_to=request.get_full_path|slice:'3:' user_language="en" %}"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIyMTBtbSIgaWQ9InN2ZzYzMzYiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDIxMCAyMTAiIHdpZHRoPSIyMTBtbSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnMgaWQ9ImRlZnM2MzMwIi8+PHBhdGggZD0iTSA2Ni44ODY3MTkgMjIuNDM1NTQ3IEMgNDMuMzMwODA1IDIyLjQzNTU0NyAyNC4zNjcxODggNDEuMzk5MTY4IDI0LjM2NzE4OCA2NC45NTUwNzggTCAyNC4zNjcxODggNzI3LjQ2NjggQyAyNC4zNjcxODggNzUxLjAyMjcgNDMuMzMwODA1IDc2OS45ODYzMyA2Ni44ODY3MTkgNzY5Ljk4NjMzIEwgNDAwLjQwODIgNzY5Ljk4NjMzIEwgNzI5LjM5ODQ0IDc2OS45ODYzMyBDIDc1Mi45NTQzNCA3NjkuOTg2MzMgNzcxLjkxNzk3IDc1MS4wMjI3IDc3MS45MTc5NyA3MjcuNDY2OCBMIDc3MS45MTc5NyA2NC45NTUwNzggQyA3NzEuOTE3OTcgNDEuMzk5MTY4IDc1Mi45NTQzNCAyMi40MzU1NDcgNzI5LjM5ODQ0IDIyLjQzNTU0NyBMIDQwMC40MDgyIDIyLjQzNTU0NyBMIDY2Ljg4NjcxOSAyMi40MzU1NDcgeiAiIGlkPSJyZWN0Njg4MyIgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiMwMDI0N2Q7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjEuMDAxNTc0NzU7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MSIgdHJhbnNmb3JtPSJzY2FsZSgwLjI2NDU4MzMzKSIvPjxwYXRoIGQ9Ik0gMjQuMzY3MTg4IDE0Ny44NzMwNSBMIDI0LjM2NzE4OCAyMTIuOTQ3MjcgTCAzNDEuNzg3MTEgMzk2LjIxMDk0IEwgMjQuMzY3MTg4IDU3OS40NzQ2MSBMIDI0LjM2NzE4OCA2NDQuNTQ2ODggTCAzOTguMTQyNTggNDI4Ljc0NjA5IEwgNzcxLjkxNzk3IDY0NC41NDY4OCBMIDc3MS45MTc5NyA1NzkuNDc0NjEgTCA0NTQuNDk4MDUgMzk2LjIxMDk0IEwgNzcxLjkxNzk3IDIxMi45NDcyNyBMIDc3MS45MTc5NyAxNDcuODczMDUgTCAzOTguMTQyNTggMzYzLjY3MzgzIEwgMjQuMzY3MTg4IDE0Ny44NzMwNSB6ICIgaWQ9InBhdGg0NTg5IiBzdHlsZT0ib3BhY2l0eToxO2ZpbGw6I2NmMTQyYjtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6bm9uemVybztzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MjU7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6NDtzdHJva2UtZGFzaGFycmF5Om5vbmU7c3Ryb2tlLWRhc2hvZmZzZXQ6MDtzdHJva2Utb3BhY2l0eToxO3BhaW50LW9yZGVyOm1hcmtlcnMgZmlsbCBzdHJva2UiIHRyYW5zZm9ybT0ic2NhbGUoMC4yNjQ1ODMzMykiLz48cGF0aCBkPSJNIDMzMy44NTkzOCAyMi40MzU1NDcgTCAzMzMuODU5MzggMzMxLjkyNzczIEwgMjQuMzY3MTg4IDMzMS45Mjc3MyBMIDI0LjM2NzE4OCA0NjAuNDkyMTkgTCAzMzMuODU5MzggNDYwLjQ5MjE5IEwgMzMzLjg1OTM4IDc2OS45ODYzMyBMIDQwMC40MDgyIDc2OS45ODYzMyBMIDQ2Mi40MjU3OCA3NjkuOTg2MzMgTCA0NjIuNDI1NzggNDYwLjQ5MjE5IEwgNzcxLjkxNzk3IDQ2MC40OTIxOSBMIDc3MS45MTc5NyAzMzEuOTI3NzMgTCA0NjIuNDI1NzggMzMxLjkyNzczIEwgNDYyLjQyNTc4IDIyLjQzNTU0NyBMIDQwMC40MDgyIDIyLjQzNTU0NyBMIDMzMy44NTkzOCAyMi40MzU1NDcgeiAiIGlkPSJwYXRoNDU4NyIgc3R5bGU9Im9wYWNpdHk6MTtmaWxsOiNjZjE0MmI7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOm5vbnplcm87c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjI1O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1taXRlcmxpbWl0OjQ7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1kYXNob2Zmc2V0OjA7c3Ryb2tlLW9wYWNpdHk6MTtwYWludC1vcmRlcjptYXJrZXJzIGZpbGwgc3Ryb2tlIiB0cmFuc2Zvcm09InNjYWxlKDAuMjY0NTgzMzMpIi8+PHBhdGggZD0iTSAzMjEuMzU5MzgsMjIuNDM1NTQ3IFYgMzA0LjkxMDE2IEwgMjQuMzY3MTg4LDEzMy40Mzk0NSB2IDI4Ljg2OTE0IEwgMjk2LjUwNTg2LDMxOS40Mjc3MyBIIDIzMy43OTg4MyBMIDI0LjM2NzE4OCwxOTguNTExNzIgdiAyOC44NzEwOSBMIDE4My43OTQ5MiwzMTkuNDI3NzMgSCAyNC4zNjcxODggdiAyNSBoIDIwMi43MzA0NzIgNTAuMDAxOTUgMjUuOTk4MDUgYyAxNy4wMTg2NywwIDI3LjQ0MzM3LC0wLjcxMDA5IDQzLjI2MTcyLC0wLjcxMDA5IFYgMzE5LjM0Mzc1IDIyLjQzNTU0NyBaIG0gMTI4LjU2NjQsMCB2IDI5Ni45MDgyMDMgMjUuMTkwNDkgYyAxNS4yNTYzOSwwIDI5LjQ4Mjc4LC0wLjEwNjUxIDQzLjI2MTcyLC0wLjEwNjUxIGggMjUuOTk4MDUgNTAuMDAxOTUgMjAyLjczMDQ3IHYgLTI1IEggNjEyLjQ5MDIzIEwgNzcxLjkxNzk3LDIyNy4zODI4MSBWIDE5OC41MTE3MiBMIDU2Mi40ODYzMywzMTkuNDI3NzMgSCA0OTkuNzc5MyBMIDc3MS45MTc5NywxNjIuMzA4NTkgViAxMzMuNDM5NDUgTCA0NzQuOTI1NzgsMzA0LjkxMDE2IFYgMjIuNDM1NTQ3IFogTSAzNDYuMzU5MzgsNDQ4LjI5Mzk4IGMgLTE0LjQxMTk5LDAgLTI5LjQ4NTc3LC0wLjMwMTc5IC00My4yNjU2MywtMC4zMDE3OSBIIDI3Ny4wOTc2NiAyMjcuMDkzNzUgMjQuMzY3MTg4IHYgMjUgSCAxODMuNzkyOTcgTCAyNC4zNjcxODgsNTY1LjAzNzExIFYgNTkzLjkwODIgTCAyMzMuNzk2ODgsNDcyLjk5MjE5IGggNjIuNzA4OTggTCAyNC4zNjcxODgsNjMwLjExMTMzIHYgMjguODY5MTQgTCAzMjEuMzU5MzgsNDg3LjUwOTc3IHYgMjgyLjQ3NjU2IGggMjUgViA0NzMuMDc2MTcgWiBtIDEwMy41NjY0LDAgdiAyNC43ODIxOSAyOTYuOTEwMTYgaCAyNSBWIDQ4Ny41MDk3NyBsIDI5Ni45OTIxOSwxNzEuNDcwNyBWIDYzMC4xMTEzMyBMIDQ5OS43NzkzLDQ3Mi45OTIxOSBoIDYyLjcwODk4IEwgNzcxLjkxNzk3LDU5My45MDgyIFYgNTY1LjAzNzExIEwgNjEyLjQ5MjE5LDQ3Mi45OTIxOSBoIDE1OS40MjU3OCB2IC0yNSBIIDU2OS4xOTE0MSA1MTkuMTg3NSA0OTMuMTkxNDEgYyAtMTUuODA3OTUsMCAtNDMuMjY1NjMsMC4zMDE3OSAtNDMuMjY1NjMsMC4zMDE3OSB6IiBpZD0icmVjdDQ1NzIiIHN0eWxlPSJjb2xvcjojMDAwMDAwO2ZvbnQtc3R5bGU6bm9ybWFsO2ZvbnQtdmFyaWFudDpub3JtYWw7Zm9udC13ZWlnaHQ6bm9ybWFsO2ZvbnQtc3RyZXRjaDpub3JtYWw7Zm9udC1zaXplOm1lZGl1bTtsaW5lLWhlaWdodDpub3JtYWw7Zm9udC1mYW1pbHk6c2Fucy1zZXJpZjtmb250LXZhcmlhbnQtbGlnYXR1cmVzOm5vcm1hbDtmb250LXZhcmlhbnQtcG9zaXRpb246bm9ybWFsO2ZvbnQtdmFyaWFudC1jYXBzOm5vcm1hbDtmb250LXZhcmlhbnQtbnVtZXJpYzpub3JtYWw7Zm9udC12YXJpYW50LWFsdGVybmF0ZXM6bm9ybWFsO2ZvbnQtZmVhdHVyZS1zZXR0aW5nczpub3JtYWw7dGV4dC1pbmRlbnQ6MDt0ZXh0LWFsaWduOnN0YXJ0O3RleHQtZGVjb3JhdGlvbjpub25lO3RleHQtZGVjb3JhdGlvbi1saW5lOm5vbmU7dGV4dC1kZWNvcmF0aW9uLXN0eWxlOnNvbGlkO3RleHQtZGVjb3JhdGlvbi1jb2xvcjojMDAwMDAwO2xldHRlci1zcGFjaW5nOm5vcm1hbDt3b3JkLXNwYWNpbmc6bm9ybWFsO3RleHQtdHJhbnNmb3JtOm5vbmU7d3JpdGluZy1tb2RlOmxyLXRiO2RpcmVjdGlvbjpsdHI7dGV4dC1vcmllbnRhdGlvbjptaXhlZDtkb21pbmFudC1iYXNlbGluZTphdXRvO2Jhc2VsaW5lLXNoaWZ0OmJhc2VsaW5lO3RleHQtYW5jaG9yOnN0YXJ0O3doaXRlLXNwYWNlOm5vcm1hbDtzaGFwZS1wYWRkaW5nOjA7Y2xpcC1ydWxlOm5vbnplcm87ZGlzcGxheTppbmxpbmU7b3ZlcmZsb3c6dmlzaWJsZTt2aXNpYmlsaXR5OnZpc2libGU7b3BhY2l0eToxO2lzb2xhdGlvbjphdXRvO21peC1ibGVuZC1tb2RlOm5vcm1hbDtjb2xvci1pbnRlcnBvbGF0aW9uOnNSR0I7Y29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzOmxpbmVhclJHQjtzb2xpZC1jb2xvcjojMDAwMDAwO3NvbGlkLW9wYWNpdHk6MTt2ZWN0b3ItZWZmZWN0Om5vbmU7ZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpub256ZXJvO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoyNTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2UtZGFzaG9mZnNldDowO3N0cm9rZS1vcGFjaXR5OjE7cGFpbnQtb3JkZXI6bWFya2VycyBmaWxsIHN0cm9rZTtjb2xvci1yZW5kZXJpbmc6YXV0bztpbWFnZS1yZW5kZXJpbmc6YXV0bztzaGFwZS1yZW5kZXJpbmc6YXV0bzt0ZXh0LXJlbmRlcmluZzphdXRvO2VuYWJsZS1iYWNrZ3JvdW5kOmFjY3VtdWxhdGUiIHRyYW5zZm9ybT0ic2NhbGUoMC4yNjQ1ODMzMykiLz48L3N2Zz4=" style="width:25px;height:25px;" alt="ukrainian"></a></a></li>
+                <li class="nav-item"><a class="nav-link px-2 text-white" href="{% url "set_language_from_url" redirect_to=request.get_full_path|slice:'3:' user_language="uk" %}"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaWQ9IkxheWVyXzEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiM0RDcyQzA7fQoJLnN0MXtmaWxsOiNGMkREMzA7fQo8L3N0eWxlPjxnPjxyZWN0IGNsYXNzPSJzdDAiIGhlaWdodD0iMjk4LjciIHdpZHRoPSI1MTIiIHg9IjAiIHk9IjEwNi43Ii8+PHJlY3QgY2xhc3M9InN0MSIgaGVpZ2h0PSIxNDkuNCIgd2lkdGg9IjUxMiIgeD0iMCIgeT0iMjU2Ii8+PC9nPjwvc3ZnPg==" style="width:25px;height:25px;" alt="ukrainian"></a></li>
+            </ul>
+            
+            {% if user.is_authenticated %}
+              <div class="dropdown text-md-end">
+                <a type="button" class="dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#" id="dropdownUser">{{user.username}}</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownUser">
+                  <li><a href="{% url 'users:profile' user.username %}" class="dropdown-item">Profile</a></li>
+                  <div class="dropdown-divider"></div>
+                  <li><a href="{% url 'users:logout' %}" class="dropdown-item">Logout</a></li>
+                </ul>
+              </div>
+            {% else %}
+              <div class="text-md-end">
+                <a type="button" class="btn btn-outline-light text-white" href="{% url 'users:login_or_signup' %}">{% trans "Sign in/Sign up" %}</a></li>
+              </div>
+            {% endif %}
+        </div>
+      </div>
+    </nav>
+  {% comment %} </header> {% endcomment %}
+
+</main>
+{% block main_content %}{% endblock main_content %}
+<footer class="pt-4 pt-md-5 my-md-5 border-top text-center">
+    <div class="row">
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md">
+            <h5>Dron dev</h5>
+            <ul class="list-unstyled text-small">
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary">Blog</a></li>
+            </ul>
+        </div>
     </div>
+</footer>
+
+<script src="{% static 'assets/dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+<script>
+{% comment %} $(document).ready(function() {
+  "use strict";
+
+  $('ul.navbar-nav > li').click(function(e) {
+    e.preventDefault();
+    $('ul.navbar-nav > li').removeClass('active');
+    $(this).addClass('active');
+  });
+}); {% endcomment %}
+</script>
+{% block extra_js %}{% endblock extra_js %} 
+
 </body>
 </html>

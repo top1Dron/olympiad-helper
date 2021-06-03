@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.conf.urls import url
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
@@ -15,6 +16,7 @@ admin.site.index_title = _("Welcome to Olympiad-helper administration zone")
 
 urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
+    path('set_language/<path:redirect_to>/<str:user_language>/', group_views.set_language_from_url, name="set_language_from_url"),
     path('<str:short_id>/', group_views.redirect_to_full_url),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

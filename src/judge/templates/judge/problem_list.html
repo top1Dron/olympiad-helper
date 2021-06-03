@@ -3,11 +3,11 @@
 
 {% block title %}{% trans "Problems" %}{% endblock title %}
 
-{% block extra_head %}
+{% comment %} {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/problem_list.css' %}">
     <link rel='stylesheet' href="{% static 'css/pagination.css' %}">
     <script src="{% static 'js/judge/problem_list.js' %}" type="module"></script>
-{% endblock extra_head %}
+{% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
 <div class="wrapper">

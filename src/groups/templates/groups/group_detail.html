@@ -2,7 +2,7 @@
 {% load static i18n %}
 
 {% block title %}{{group.name}}{% endblock title %}
-{% block extra_head %}
+{% comment %} {% block extra_head %}
     <script src={% static 'js/groups/group_details.js' %} type='module'></script>
     <script src={% static 'js/groups/delete_user_from_group.js' %}></script>
     <script src={% static 'js/groups/show_member_detail.js' %}></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static 'css/groups/group_detail.css' %}">
     <link rel="stylesheet" href="{% static 'css/groups/show_member_detail.css' %}">
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-{% endblock extra_head %}
+{% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
 
