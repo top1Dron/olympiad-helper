@@ -5525,3 +5525,12 @@ INFO 2021-06-03 14:37:34,661 views 153 /competitions/list/
 INFO 2021-06-03 14:37:34,664 views 154 en
 INFO 2021-06-03 14:37:37,192 views 153 /news/
 INFO 2021-06-03 14:37:37,192 views 154 uk
+INFO 2021-06-03 16:22:44,693 views 33 <QueryDict: {}>
+INFO 2021-06-03 17:16:38,005 views 153 /competitions/list/
+INFO 2021-06-03 17:16:38,006 views 154 en
+INFO 2021-06-03 19:18:56,455 views 153 /competitions/list/
+INFO 2021-06-03 19:18:56,456 views 154 uk
+INFO 2021-06-03 21:15:15,850 views 153 /judge/problem/2/
+INFO 2021-06-03 21:15:15,852 views 154 en
+INFO 2021-06-03 21:15:59,146 views 153 /judge/problem/2/
+INFO 2021-06-03 21:15:59,147 views 154 uk

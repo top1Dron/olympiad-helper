@@ -6,46 +6,96 @@
 
 {% comment %} {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/news/news_list.css' %}">
-    <link rel='stylesheet' href="{% static 'css/table.css' %}"
+    <link rel='stylesheet' href="{% static 'css/table.css' %}">
 {% endblock extra_head %} {% endcomment %}
 
 
 {% block main_content %}
-<div class='wrapper'>
-    {% if competitions %}<h2>{% trans "Competitions" %}</h2>{% endif %}</br>
-        <table class="table">
-            {% for competition in competitions %}
-                <div class="row">
-                    <div class="cell">
-                        <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
-                    </div>
-                    <div class="cell">
-                        <span>{{ competition.start_date }}</span>
-                    </div>
-                    <div class="cell">
-                        <span>{{ competition.end_date }}</span>
-                    </div>
-                    
-                    <div class="cell">
-                        {% if competition.group %}
-                            <span>{{ competition.group }}</span>
-                        {% else %}
-                            <span>-</span>
-                        {% endif %}
-                    </div>
-                </div>
-            {% endfor %}
-        </table>
-        {% if news %}<h2>{% trans "News" %}</h2>{% endif %}</br>
-        <dl class='css-accordion'>
-            {% for article in news %}
-            <dt id='id_{{ article.pk }}'>
-                <a href='#id_{{ article.pk }}'>{{ article.title }}</a>
-            </dt>
-            <dd>
-                <p>{{ article.body|safe }}</br></br> {{ article.publication_date }}</p>
-            </dd>
-            {% endfor %}
-        </dl>
+<div class='container' style="padding-top:50px; padding-bottom:50px;">
+    {% if competitions %}
+        <div class="card mb-5">
+            <div class="card-header">
+                <h3>{% trans "Competitions" %}</h3>
+            </div>
+            <div class="card-body">
+                <table class="table align-middle table-bordered">
+                    <thead class="table-primary">
+                        <td class="cell">
+                            <span>#</span>
+                        </td>
+                        <td class="cell">
+                            <span>{% trans "Competition title" %}</span>
+                        </td>
+                        <td class="cell">
+                            <span>{% trans "Start date" %}</span>
+                        </td>
+                        <td class="cell">
+                            <span>{% trans "End date" %}</span>
+                        </td>
+                        <td class="cell">
+                            <span>{% trans "Group" %}</span>
+                        </td>
+                    </thead>
+                    <tbody>
+                    {% for competition in competitions %}
+                        <tr>
+                            <td><span>{{forloop.counter}}</span></td>
+                            <td class="cell">
+                                <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                            </td>
+                            <td class="cell">
+                                <span>{{ competition.start_date }}</span>
+                            </td>
+                            <td class="cell">
+                                <span>{{ competition.end_date }}</span>
+                            </td>
+                            
+                            <td class="cell">
+                                {% if competition.group %}
+                                    <span>{{ competition.group }}</span>
+                                {% else %}
+                                    <span>-</span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    {% endif %}
+    {% if news %}
+        <div class="card my-2 mb-md-0">
+            <h3 class="card-header">{% trans "News" %}</h3>
+            <div class="card-body">
+                <ul class="list-group">
+                    {% for article in news %}
+                        <li class="list-group-item" id='id_{{ article.pk }}'>
+                            <a href='#id_{{ article.pk }}' class="text-decoration-none">{{ article.title }}</a>
+                        </li>
+                        <p style="display:none" id="id_{{article.pk}}_body">{{ article.body|safe }}</br></br> {{ article.publication_date }}</p>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    {% endif %}
 </div>
 {% endblock main_content %}
+
+{% block extra_js %}
+<script>
+    $(document).ready(function(e){
+        {% for article in news %}
+        $('#id_{{ article.pk }}').on('click', function(e){
+            var display = $('#id_{{article.pk}}_body').css('display');
+            if(display == 'none'){
+                $('#id_{{article.pk}}_body').show();
+            }
+            else {
+                $('#id_{{article.pk}}_body').hide();
+            }
+        })
+        {% endfor %}
+    })
+</script>
+{% endblock extra_js %}

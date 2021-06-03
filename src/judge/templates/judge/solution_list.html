@@ -5,14 +5,100 @@
 
 {% comment %} {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/table.css' %}">
-    <link rel='stylesheet' href="{% static 'css/pagination.css' %}">
+    
     <link rel='stylesheet' href="{% static 'css/judge/solution_list.css' %}">
 {% endblock extra_head %} {% endcomment %}
+{% block extra_css %}<link rel='stylesheet' href="{% static 'css/pagination.css' %}">{% endblock extra_css %}
 
 {% block main_content %}
-<div class="wrapper">
-    <h2>{% trans "Solutions" %}</h2>
-    {% if solutions %}
+<div class="container" style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+        <div class="card-header"><h3>{% trans "Solutions" %}</h3></div>
+        <div class="card-body">
+            <table class="table align-middle table-bordered">
+                <thead class="table-danger">
+                    <tr>
+                        <th class="text-center">
+                            <span>#</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Problem title" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Author" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Programming language" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Solving date" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Status" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Time usage" %}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for solution in solutions %}
+                    <tr>
+                        <td>
+                            <a class="text-decoration-none text-center" href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Problem title' %}">
+                            <span>{{ solution.problem }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Author' %}">
+                            <a href="{% url 'users:profile' solution.user.username %}" class="text-decoration-none">{{ solution.user.username }}</a>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Programming language' %}">
+                            <span>{{ solution.language }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Solving date' %}">
+                            <span>{{ solution.solving_date }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Status' %}">
+                            {% if solution.status == 'AC' %}
+                                <span class="text-success">{{ solution.get_status_display }}</span>
+                            {% elif solution.status == 'CE' %}
+                                <span class="text-danger">{{ solution.get_status_display }}</span>
+                            {% elif solution.status == '' %}
+                                <span>{{ solution.get_status_display }}</span>
+                            {% else%}
+                                <span class="text-warning">{{ solution.get_status_display }}</span>
+                            {% endif %}
+                                
+                        </td>
+                        <td class="cell" data-title="{% trans 'Time usage' %}">
+                            <span>{{ solution.avg_time_usage }} ms</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            <div class="pagination justify-content-center">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+                {% endif %}
+                {% for i in pages %}
+                    {% if page_obj.number == i %}
+                        <a href="?page={{i}}" class="active">{{i}}</a>
+                    {% else %}
+                        <a href="?page={{i}}">{{i}}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    {% comment %} {% if solutions %}
         <div class="table">
             <div class="row header">
                 <div class="cell">
@@ -80,6 +166,6 @@
         </div>
     {% else %}
         <h3>{% trans "No submitted solutions yet" %}</h3>
-    {% endif %}
+    {% endif %} {% endcomment %}
 </div>
 {% endblock main_content %}

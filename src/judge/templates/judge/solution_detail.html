@@ -4,26 +4,62 @@
 {% block title %}{% trans "Solution" %}#{{object.pk}}{% endblock title %}
 
 {% block main_content %}
-    <div class="wrapper">
-        <h1>{% trans "Solution" %} #{{object.pk}}</h1>
-        <p>
-            <a href="{% url 'judge:problem' object.problem.number %}">{{ object.problem }}</a></br>
-            {{ object.solving_date }}</br>
-            {{ object.language }}</br>
-            {{ object.user.username }}</br>
-            {{ object.get_status_display }}</br>
-        </p>
-        <hr>
-        {% for test in object.get_all_tests %}
-        <p>
-            {{ test.test_number }}
-            {{ test.get_status_display }}
-            {{ test.time_usage }} ms
-        </p>
-        {% endfor %}
-        <hr>
-        {% if user == object.user or is_group_teacher%}
-            <p>{{ object.program_code|linebreaks }}</p>
-        {% endif %}
+    <div class="container" style="padding-top:50px; padding-bottom:50px;">
+        <div class="card">
+            <div class="card-header"><h3>{% trans "Solution" %} #{{object.pk}}</h3></div>
+            <div class="card-body">
+                <p>
+                    <div class="d-md-flex flex-sm-row">
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Problem" %}</strong></div>
+                                <div class="col-5 col-md-12"><a href="{% url 'judge:problem' object.problem.number %}">{{ object.problem }}</a></div>
+                            </div>
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Solving date" %}</strong></div>
+                                <div class="col-5 col-md-12">{{ object.solving_date }}</div>
+                            </div>
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Programming language" %}</strong></div>
+                                <div class="col-5 col-md-12">{{ object.language }}</div>
+                            </div>
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Author" %}</strong></div>
+                                <div class="col-5 col-md-12">{{ object.user.username }}</div>
+                            </div>
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Status" %}</strong></div>
+                                <div class="col-5 col-md-12">{{ object.get_status_display }}</div>
+                            </div>
+                            <div class="flex-fill">
+                                <div class="col-5 col-md-12"><strong>{% trans "Avg time usage" %}</strong></div>
+                                <div class="col-5 col-md-12">{{ object.avg_time_usage }} ms</div>
+                            </div>
+                    </div>
+                </p>
+                <hr>
+                <table class="table align-middle table-bordered">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th class="text-center">{% trans "Test" %} #</th>
+                            <th class="text-center">{% trans "Status" %}</th>
+                            <th class="text-center">{% trans "Time usage" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for test in object.get_all_tests %}
+                        <tr>
+                            <td class="text-center">{{ test.test_number }}</td>
+                            <td class="text-center">{{ test.get_status_display }}</td>
+                            <td class="text-center">{{ test.time_usage }} ms</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <hr>
+                {% if user == object.user or is_group_teacher%}
+                    <p>{{ object.program_code|linebreaks }}</p>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock main_content %}

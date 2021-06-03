@@ -30,7 +30,6 @@ class ProblemListView(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['filter_form'] = ProblemFilterForm()
-        logger.info(self.request.GET)
         if 'difficulty' in self.request.GET:
             context['filter_form'].fields['difficulty'].initial = self.request.GET.get('difficulty')
         if 'classification' in self.request.GET:

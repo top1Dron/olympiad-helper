@@ -6,84 +6,105 @@
 {% comment %} {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/problem_list.css' %}">
     <link rel='stylesheet' href="{% static 'css/pagination.css' %}">
-    <script src="{% static 'js/judge/problem_list.js' %}" type="module"></script>
+    
 {% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
-<div class="wrapper">
-    <h2>{% trans "Problems" %}</h2>
-    <section class="container">
-        <div class="dropdown-label">
-            {% render_field filter_form.difficulty.label_tag %}
+<div class="container"  style="padding-top:50px; padding-bottom:50px;">
+    <div class="card mb-5">
+        {% comment %} <h3 class="card-header">{% trans "Problems" %}</h3> {% endcomment %}
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2 dropdown-label flex-column">
+                    {% render_field filter_form.difficulty.label_tag %}
+                    {% render_field filter_form.difficulty class='form-select' %}
+                </div>
+                <div class="col-md-2 dropdown-label">
+                    {% render_field filter_form.classification.label_tag %}
+                    {% render_field filter_form.classification class='form-select' %}
+                </div>
+                <div class="col-md-2 ms-auto me-5 dropdown-label">
+                    {% render_field filter_form.number.label_tag %}
+                    {% render_field filter_form.number  class="form-control"%}
+                </div>
+            </div>
         </div>
-        <div class="dropdown-label">
-            {% render_field filter_form.classification.label_tag %}
-        </div>
-        <div class="dropdown-label">
-            {% render_field filter_form.number.label_tag %}
-        </div></br>
-        <div class="dropdown">
-            {% render_field filter_form.difficulty class='dropdown-select' %}
-        </div>
-        
-        <div class="dropdown">
-            {% render_field filter_form.classification class='dropdown-select' %}
-        </div>
-        <div class="input">
-            {% render_field filter_form.number %}
-        </div>
-    </section>
-    {% if problems %}
-        <table class="problem-table">
-            <thead>
-                <tr>
-                    {% if user.is_authenticated %}<th class='table-header table-header-1'>{% trans "Status" %}</th>{% endif %}
-                    <th class='table-header table-header-2'>{% trans "Number" %}</th>
-                    <th class='table-header table-header-3'>{% trans "Title" %}
-                </tr>
-            </thead>
-            <tbody>
-            {% for problem in problems %}
-            <tr>
-                {% if user.is_authenticated %}
-                <td class="problem-status">
-                    {% get_user_problem_status problem user  as user_problem_status %}
-                    {% if user_problem_status == 'AC' %}
-                        <span class="tick tick-success problem-status">&#10004;</span>
-                    {% elif user_problem_status == '' %}
-                        <span class="tick"></span>
-                    {% else %}
-                        <span class="tick tick-partial">&#10060;</span>
+    </div>
+    <div class="card">
+        <div class="card-header"><h3>{% trans "Problems" %}</h3></div>
+        <div class="card-body">
+            {% if problems %}
+                <table class="table align-middle table-bordered">
+                    <thead class="table-danger">
+                        <tr>
+                            {% if user.is_authenticated %}<th class='text-center'>{% trans "Status" %}</th>{% endif %}
+                            <th class='table-header table-header-2 text-center'>{% trans "Number" %}</th>
+                            <th class='table-header table-header-3'>{% trans "Title" %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for problem in problems %}
+                    <tr>
+                        {% if user.is_authenticated %}
+                        <td class="problem-status text-center">
+                            {% get_user_problem_status problem user  as user_problem_status %}
+                            {% if user_problem_status == 'AC' %}
+                                <span>&#10004;</span>
+                            {% elif user_problem_status == '' %}
+                                <span></span>
+                            {% elif user_problem_status == 'CE' %}
+                                <span class="text-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </span>
+                            {% else %}
+                                <span>&#10060;</span>
+                            {% endif %}
+                        </td>
+                        {% endif %}
+                        <td class="problem-number text-center">
+                             {% if user_problem_status == 'AC' %}
+                                <a href="{% url 'judge:problem' problem.number %}" class="text-decoration-none text-success text-center">{{ problem.number }}</a>
+                            {% elif user_problem_status == '' %}
+                                <a href="{% url 'judge:problem' problem.number %}" class="text-decoration-none text-center">{{ problem.number }}</a>
+                            {% elif user_problem_status == 'CE' %}
+                                <a href="{% url 'judge:problem' problem.number %}" class="text-decoration-none text-danger text-center">{{ problem.number }}</a>
+                            {% else %}
+                                <a href="{% url 'judge:problem' problem.number %}" class="text-decoration-none text-warning text-center">{{ problem.number }}</a>
+                            {% endif %}
+                            
+                        </td>
+                        <td class="problem-title">
+                            <a href="{% url 'judge:problem' problem.number %}" class="text-decoration-none">{{ problem.title }}</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
                     {% endif %}
-                </td>
-                {% endif %}
-                <td class="problem-number">
-                    <span class="txt"><a href="{% url 'judge:problem' problem.number %}">{{ problem.number }}</a></span>
-                </td>
-                <td class="problem-title">
-                     <span class="txt"><a href="{% url 'judge:problem' problem.number %}">{{ problem.title }}</a></span>
-                </td>
-            </tr>
-            {% endfor %}
-            </tbody>
-        </table>
-        <div class="pagination">
-            {% if page_obj.has_previous %}
-                <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
-            {% endif %}
-            {% for i in pages %}
-                {% if page_obj.number == i %}
-                    <a href="?page={{i}}" class="active">{{i}}</a>
-                {% else %}
-                    <a href="?page={{i}}">{{i}}</a>
-                {% endif %}
-            {% endfor %}
-            {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+                    {% for i in pages %}
+                        {% if page_obj.number == i %}
+                            <a href="?page={{i}}" class="active">{{i}}</a>
+                        {% else %}
+                            <a href="?page={{i}}">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+                    {% endif %}
+                </div>
+            {% else %}
+                <h5>{% trans "No problems founded" %}</h5>
             {% endif %}
         </div>
-    {% else %}
-        <h3>{% trans "No problems founded" %}</h3>
-    {% endif %}
+    </div>
 </div>
 {% endblock main_content %}
+
+{% block extra_js %}
+    <script src="{% static 'js/judge/problem_list.js' %}" type="module"></script>
+{% endblock extra_js %}
