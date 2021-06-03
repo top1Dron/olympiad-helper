@@ -1,6 +1,14 @@
 import {ready, ajax_json_fill_array} from '../services.js'
 
-function autocomplete(inp, arr) {
+var loadProblems = (search_problem_url) => {
+  return new Promise(async (resolve, reject) => {
+      let response = await fetch(search_problem_url);
+      let json = await response.json();
+      resolve(json);
+  })
+}
+
+async function autocomplete(inp) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
@@ -11,6 +19,20 @@ function autocomplete(inp, arr) {
         closeAllLists();
         if (!val) { return false;}
         currentFocus = -1;
+        var search_problem_url = inp.getAttribute('problems') + '?search_text=' + inp.value;
+
+        var arr = [];
+        try {
+          loadProblems(search_problem_url).then(function(val){
+            for (i = 0; i < val['problems'].length; i++){
+              arr.push(val['problems'][i]);
+            }
+          });
+        }
+        catch(err){
+          throw Error(err);
+        }
+        // ajax_json_fill_array('GET', search_problem_url, arr, 'problems');
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
@@ -18,44 +40,47 @@ function autocomplete(inp, arr) {
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
-        for (i = 0; i < arr.length; i++) {
-          /*check if the item starts with the same letters as the text field value:*/
-        
-            /*create a DIV element for each matching element:*/
-            b = document.createElement("DIV");
-            /*make the matching letters bold:*/
-            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
-                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
-                b.innerHTML += arr[i].substr(val.length);
-            }
-            else {
-                b.innerHTML = arr[i].substr(0, val.length) + arr[i].substr(val.length);
-            }
-            /*insert a input field that will hold the current array item's value:*/
-            b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
-            /*execute a function when someone clicks on the item value (DIV element):*/
-            b.addEventListener("click", function(e) {
-            /*insert the value for the autocomplete text field:*/
-                inp.value = this.getElementsByTagName("input")[0].value;
-                inp.setAttribute('disabled', 'disabled');
-                document.getElementById('add_problem_to_competition').removeAttribute('disabled');
-                var clearInp = document.createElement("input");
-                clearInp.setAttribute("id", this.getElementsByTagName("input")[0].id + "_reset");
-                clearInp.setAttribute("type", "reset");
-                clearInp.setAttribute("value", "Clear");
-                clearInp.addEventListener('click', function(e){
-                    inp.value = '';
-                    document.getElementById('add_problem_to_competition').setAttribute('disabled', 'disabled');
-                    inp.removeAttribute('disabled');
-                    document.getElementById('if_problem_founded').removeChild(clearInp);
-                });
-                document.getElementById('if_problem_founded').appendChild(clearInp);
-                /*close the list of autocompleted values,
-                (or any other open lists of autocompleted values:*/
-                closeAllLists();
-            });
-            a.appendChild(b);
-        }
+        setTimeout(() => {
+          console.log(arr);
+          for (i = 0; i < arr.length; i++) {
+            /*check if the item starts with the same letters as the text field value:*/
+          
+              /*create a DIV element for each matching element:*/
+              b = document.createElement("DIV");
+              /*make the matching letters bold:*/
+              if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                  b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                  b.innerHTML += arr[i].substr(val.length);
+              }
+              else {
+                  b.innerHTML = arr[i].substr(0, val.length) + arr[i].substr(val.length);
+              }
+              /*insert a input field that will hold the current array item's value:*/
+              b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+              /*execute a function when someone clicks on the item value (DIV element):*/
+              b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+                  inp.value = this.getElementsByTagName("input")[0].value;
+                  inp.setAttribute('disabled', 'disabled');
+                  document.getElementById('add_problem_to_competition').removeAttribute('disabled');
+                  var clearInp = document.createElement("input");
+                  clearInp.setAttribute("id", this.getElementsByTagName("input")[0].id + "_reset");
+                  clearInp.setAttribute("type", "reset");
+                  clearInp.setAttribute("value", "Clear");
+                  clearInp.addEventListener('click', function(e){
+                      inp.value = '';
+                      document.getElementById('add_problem_to_competition').setAttribute('disabled', 'disabled');
+                      inp.removeAttribute('disabled');
+                      document.getElementById('if_problem_founded').removeChild(clearInp);
+                  });
+                  document.getElementById('if_problem_founded').appendChild(clearInp);
+                  /*close the list of autocompleted values,
+                  (or any other open lists of autocompleted values:*/
+                  closeAllLists();
+              });
+              a.appendChild(b);
+          }
+        }, 275);
     });
     document.getElementById('add_problem_to_competition').addEventListener('click', function(e){
         inp.removeAttribute('disabled');
@@ -118,11 +143,5 @@ function autocomplete(inp, arr) {
 }
 
 ready(function(){
-    document.getElementById('id_problem_search_field').addEventListener('input', function(){
-        var search_problem_input = document.getElementById('id_problem_search_field');
-        var search_problem_url = search_problem_input.getAttribute('problems') + '?search_text=' + search_problem_input.value;
-        var problemList = [];
-        ajax_json_fill_array('GET', search_problem_url, problemList, 'problems');
-        autocomplete(document.getElementById('id_problem_search_field'), problemList);
-    })
+    autocomplete(document.getElementById('id_problem_search_field'));
 })

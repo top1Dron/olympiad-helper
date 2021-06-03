@@ -5273,3 +5273,12 @@ INFO 2021-05-20 23:38:16,387 execute_solutions 5448 140540063577920 Simple probl
 INFO 2021-05-20 23:38:16,895 execute_solutions 5448 140540063577920 Simple problem 2 - done successfully.
 INFO 2021-05-20 23:38:17,445 execute_solutions 5448 140540063577920 Simple problem 3 - done successfully.
 INFO 2021-05-20 23:38:17,733 execute_solutions 5448 140540063577920 Simple problem 4 - done successfully.
+INFO 2021-06-02 15:46:57,684 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-02 15:47:06,793 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-02 15:47:18,432 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-02 15:47:44,211 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-02 15:47:49,178 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-02 15:47:53,957 views 3754 139770189805312 <QueryDict: {}>
+INFO 2021-06-03 06:41:38,267 views 3955 140313240434432 <QueryDict: {}>
+INFO 2021-06-03 06:41:45,357 views 3955 140313269020416 <QueryDict: {}>
+INFO 2021-06-03 07:14:00,722 views 3955 140313269020416 <QueryDict: {'csrfmiddlewaretoken': ['23EKMUHubxN56bn4GWOroDrBP7DZJ8vxmnnB4CRxqzXuBbZxnOnB3l7zVlSvAJRs'], 'problem_search_field': ['3. The area of a polygon']}>
