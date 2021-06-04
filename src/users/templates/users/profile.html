@@ -1,18 +1,56 @@
 {% extends 'base.html' %}
 
-{% load static %}
+{% load static i18n %}
 
 {% block title %}{{ user.username }}{% endblock title %}
 
 {% block main_content %}
-<div class="wrapper">
-    <h2>{{ user.username }}</h2>
-    <p>
-        {{ user.last_login }}
-        {{ user.date_joined }}
-        {{ user.get_quantity_of_solved_problems }}
-        {{ user.get_quantity_of_submissions }}
-        {{ user.get_quantity_of_accepted_submissions }}
-    </p>
+<div class="container" style="padding-top:50px;padding-bottom:50px;">
+    <div class="card">
+        <div class="card-header"><h4>{{ user.username }}</h4></div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-auto">
+                    <img src="{% static 'img/default-image.jpg' %}" alt="default" height="200px" width="200px">
+                </div>
+                <div class="col-md-auto">
+                    <div class="d-flex flex-column mt-5">
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                            </svg>
+                            {% trans "Last visit at" %}: {{ user.last_login }}
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+                                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                            {% trans "Joined at" %}: {{ user.date_joined }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="dropdown-divider">
+            <div class="row">
+                <div class="col-md-3">
+                    <h6 class="text-secondary">{% trans "Solved problems" %}</h6>
+                    <div class="fs-3">{{ user.get_quantity_of_solved_problems }}</div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-secondary">{% trans "Total submissions" %}</h6>
+                    <div class="fs-3">{{ user.get_quantity_of_submissions }}</div>
+                </div>
+                <div class="col-md-3">
+                    <h6 class="text-secondary">{% trans "Accepted submits" %}</h6>
+                    <div class="fs-3">{{ user.get_quantity_of_accepted_submissions }}</div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
 </div>
 {% endblock main_content %}

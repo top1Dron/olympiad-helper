@@ -17,7 +17,7 @@
                     {% for member, member_form in zip_group_members_with_forms %}
                         <tr>
                             <td>{{forloop.counter}}</td>
-                            <td>{{ member.user.username }}</td>
+                            <td><a href="{% url 'users:profile' member.user.username %}" class="text-decoration-none">{{ member.user.username }}</a></td>
                             {% if user_role == 'TE' %}
                                 <td>
                                     <button data-modal-trigger="sample-modal" class="btn btn-outline-primary"
@@ -32,7 +32,7 @@
                                         <div class="modal__content">
                                         <form>
                                             {% csrf_token %}
-                                            {% trans "Member" %}: {{ member.user.username }}
+                                            {% trans "Member" %}: <a href="{% url 'users:profile' member.user.username %}" class="text-dark">{{ member.user.username }}</a>
                                             {% concat_strings "id_role" member.pk as role_id%}
                                             <p>{% render_field member_form.role member_id=member.pk id=role_id class="form-select my-2" %}</p>
                                         </form>

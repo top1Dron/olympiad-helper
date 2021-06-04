@@ -20,7 +20,7 @@
                             <tr>
                         {% endif %}
                             <td data-title="{% trans 'User' %}">
-                                {{ username }}
+                                <a href="{% url 'users:profile' username %}" class="text-decoration-none">{{ username }}</a>
                             </td>
                             <td data-title="{% trans 'Solved problems' %}">
                                 {{ solved_problems }}
