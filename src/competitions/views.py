@@ -141,7 +141,12 @@ def api_submit_solution(request, pk, slug):
             return redirect(reverse('judge:solution_detail', kwargs={'id':solution_id}))
     else:
         form = SubmitSolutionForm()
-    return render(request, 'competition_problems/submit_solution.html', {'form': form, 'problem_number': slug})
+    return render(request, 'competition_problems/submit_solution.html', {
+        'form': form, 
+        'problem_number': slug,
+        'competition': services.get_competition_by_id(pk),
+        'problem_title': getter.get_problem_by_number(slug).title
+    })
 
 
 @login_required

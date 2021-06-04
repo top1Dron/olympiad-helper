@@ -20,37 +20,41 @@
             <div class="card-body">
                 <table class="table align-middle table-bordered">
                     <thead class="table-primary">
-                        <td class="cell">
+                        <th>
                             <span>#</span>
-                        </td>
-                        <td class="cell">
+                        </th>
+                        <th>
                             <span>{% trans "Competition title" %}</span>
-                        </td>
-                        <td class="cell">
+                        </th>
+                        <th>
                             <span>{% trans "Start date" %}</span>
-                        </td>
-                        <td class="cell">
+                        </th>
+                        <th>
                             <span>{% trans "End date" %}</span>
-                        </td>
-                        <td class="cell">
+                        </th>
+                        <th>
                             <span>{% trans "Group" %}</span>
-                        </td>
+                        </th>
                     </thead>
                     <tbody>
                     {% for competition in competitions %}
-                        <tr>
+                       {% if forloop.counter|divisibleby:2 %}
+                            <tr class="table-secondary">
+                        {% else %}
+                            <tr>
+                        {% endif %}
                             <td><span>{{forloop.counter}}</span></td>
-                            <td class="cell">
-                                <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                            <td>
+                                <span><a class="text-decoration-none" href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
                             </td>
-                            <td class="cell">
+                            <td>
                                 <span>{{ competition.start_date }}</span>
                             </td>
-                            <td class="cell">
+                            <td>
                                 <span>{{ competition.end_date }}</span>
                             </td>
                             
-                            <td class="cell">
+                            <td>
                                 {% if competition.group %}
                                     <span>{{ competition.group }}</span>
                                 {% else %}

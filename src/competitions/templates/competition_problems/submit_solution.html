@@ -2,50 +2,67 @@
 {% load widget_tweaks %}
 
 {% load static i18n %}
-{% block title %}{% trans "Solve task " %}{{task_number}}{% endblock title %}
+{% block title %}{% trans "Solve competition problem" %} {{problem_number}}{% endblock title %}
 {% comment %} {% block extra_head %}
     <link rel='stylesheet' href="{% static 'css/judge/submit_solution.css' %}">
     <link rel='stylesheet' href="{% static 'css/buttons.css' %}">
 {% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
-<div class="wrapper">
-    <form method="post" action=''>
-    {% csrf_token %}
+<div class="container" style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+            <div class="card-body">
+                <nav style="--bs-breadcrumb-divider: '>'; mb-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'competitions:competition_list' %}" class="text-decoration-none">{% trans "Competitions" %}</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'competitions:competition_detail' competition.id %}" class="text-decoration-none">{{competition.title}}</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'competitions:competition_problem_detail' competition.id problem_number %}" class="text-decoration-none">{{problem_title}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{% trans "Submit solution" %}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    <div class="card">
+        <div class="card-header"><h3>{% trans "Submit solution" %}</h3></div>
+        <div class="card-body">
+            <form method="post" action=''>
+                {% csrf_token %}
 
-    {% if form.non_field_errors %}
-        <ul>
-        {% for error in form.non_field_errors %}
-            <li>{{ error }}</li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-    {% for hidden_field in form.hidden_fields %}
-        {% if hidden_field.errors %}
-        <ul>
-            {% for error in hidden_field.errors %}
-            <li>({% trans "Hidden field " %}{{ hidden_field.name }}) {{ error }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {{ hidden_field }}
-    {% endfor %}
-    
-    <p>
-        {{ form.problem_number.label_tag }}</br>
-        {{ form.problem_number.errors }}
-        {% render_field form.problem_number value=problem_number %}</br></br>
+                {% if form.non_field_errors %}
+                    <ul>
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                {% for hidden_field in form.hidden_fields %}
+                    {% if hidden_field.errors %}
+                    <ul>
+                        {% for error in hidden_field.errors %}
+                        <li>({% trans "Hidden field" %} {{ hidden_field.name }}) {{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {{ hidden_field }}
+                {% endfor %}
+                
+                <p>
+                    {{ form.problem_number.label_tag }}</br>
+                    {{ form.problem_number.errors }}
+                    {% render_field form.problem_number value=problem_number class="form-control disabled" %}</br></br>
 
-        {{ form.programming_language.label_tag }}</br>
-        {{ form.programming_language.errors }}
-        {% render_field form.programming_language %}</br></br>
+                    {{ form.programming_language.label_tag }}</br>
+                    {{ form.programming_language.errors }}
+                    {% render_field form.programming_language class="form-select" %}</br></br>
 
-        {{ form.source_code.label_tag }}</br>
-        {{ form.source_code.errors }}
-        {% render_field form.source_code class='textarea-wrapper' rows='20' %}
-    </p>
-    <button type="submit" class="create-button">{% trans "Submit" %}</button>
-    </form>
+                    {{ form.source_code.label_tag }}</br>
+                    {{ form.source_code.errors }}
+                    {% render_field form.source_code class='w-100' rows='20' %}
+                </p>
+                <button class="btn btn-primary" type="submit">{% trans "Submit" %}</button>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock main_content %}
 

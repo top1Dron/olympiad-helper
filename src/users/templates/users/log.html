@@ -67,21 +67,16 @@
                     </div>
             {% endfor %}
                 <div class="field">
-                    {% comment %} {{ signup_form.email.errors }} {% endcomment %}
-                    
                     {% render_field signup_form.email placeholder=email_address required="required" id="id_signup_email"%}
                 </div>
                 <div class="field">
-                    {% comment %} {{ signup_form.username.errors }} {% endcomment %}
                     {% trans 'Username' as username %}
                     {% render_field signup_form.username placeholder=username required="required" id="id_signup_username" %}
                 </div>
                 <div class="field">
-                    {% comment %} {{ signup_form.password1.errors }} {% endcomment %}
                     {% render_field signup_form.password1 placeholder=password required="required" id="id_signup_password1" %}
                 </div>
                 <div class="field">
-                    {% comment %} {{ signup_form.password2.errors }} {% endcomment %}
                     {% trans 'Confirm password' as confirm_password %}
                     {% render_field signup_form.password2 placeholder=confirm_password required="required" id="id_signup_password2" %}
                 </div>

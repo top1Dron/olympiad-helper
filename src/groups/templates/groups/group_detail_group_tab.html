@@ -1,34 +1,52 @@
 {% load static i18n %}
 
 {% block tab_content %}
-<span id='group-description'>{{ group.description }}</span>
+<div class="fs-5 my-2">{{ group.description }}</div>
 {% if competitions %}
-    <div class="table">
-        <div class="row header">
-            <div class="cell">
-                <span>{% trans "Title" %}</span>
-            </div>
-            <div class="cell">
-                <span>{% trans "Start date" %}</span>
-            </div>
-            <div class="cell">
-                <span>{% trans "End date" %}</span>
-            </div>
+    <div class="card">
+        <div class="card-header"><h4>{% trans "Active competitions" %}</h4></div>
+        <div class="card-body bg-light">
+            <table class="table align-middle table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>
+                            <span>#</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Title" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Start date" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "End date" %}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for competition in competitions %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr class="table-secondary">
+                    {% else %}
+                        <tr>
+                    {% endif %}
+                        <td><span>{{forloop.counter}}</span></td>
+                        <td>
+                            <span><a class="text-decoration-none" href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                        </td>
+                        <td>
+                            <span>{{ competition.start_date }}</span>
+                        </td>
+                        <td>
+                            <span>{{ competition.end_date }}</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
         </div>
-        {% for competition in competitions %}
-        <div class="row">
-            <div class="cell">
-                <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
-            </div>
-            <div class="cell">
-                <span>{{ competition.start_date }}</span>
-            </div>
-            <div class="cell">
-                <span>{{ competition.end_date }}</span>
-            </div>
-        </div>
-        {% endfor %}
     </div>
+    
 {% else %}
     <h3>{% trans "No active competitions in this group yet" %}</h3>
 {% endif %}

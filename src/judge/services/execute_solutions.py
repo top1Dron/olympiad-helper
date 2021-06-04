@@ -10,6 +10,7 @@ import logging
 import os
 import psutil
 import resource
+import shutil
 import subprocess
 import time
 import traceback
@@ -81,11 +82,7 @@ def submit_solution(problem_number, programming_language, source_code, solution_
     if os.path.isfile(code_file_name + '.' + language.extension):
         os.remove(code_file_name + '.' + language.extension)
     if language.extension == 'java':
-        if os.path.isfile(code_file_folder + '/' + code_file_name + '.class'):
-            os.remove(code_file_folder + '/' + code_file_name + '.class')
-        if os.path.isfile(code_file_folder + '/' + code_file_name + '.' + language.extension):
-            os.remove(code_file_folder + '/' + code_file_name + '.' + language.extension)
-            os.removedirs(code_file_folder)
+        shutil.rmtree(code_file_folder)
 
 
 def _compile(language, code_file_name:str, code_file_folder:str) -> str:

@@ -2,23 +2,51 @@
 
 {% block tab_content %}
 {% if competitions %}
-    <div class="table">
-        {% for competition in competitions %}
-            <div class="row">
-                <div class="cell">
-                    <span><a href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
-                </div>
-                <div class="cell">
-                    <span>{{ competition.start_date }}</span>
-                </div>
-                <div class="cell">
-                    <span>{{ competition.end_date }}</span>
-                </div>
-            </div>
-        {% endfor %}
+    <div class="card my-2">
+        <div class="card-header"><h4>{% trans "Group competitions" %}</h4></div>
+        <div class="card-body bg-light">
+            <table class="table align-middle table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>
+                            <span>#</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Title" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Start date" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "End date" %}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for competition in competitions %}
+                    {% if forloop.counter|divisibleby:2 %}
+                        <tr class="table-secondary">
+                    {% else %}
+                        <tr>
+                    {% endif %}
+                        <td><span>{{forloop.counter}}</span></td>
+                        <td>
+                            <span><a class="text-decoration-none" href={% url 'competitions:competition_detail' competition.pk %}>{{ competition.title }}</a></span>
+                        </td>
+                        <td>
+                            <span>{{ competition.start_date }}</span>
+                        </td>
+                        <td>
+                            <span>{{ competition.end_date }}</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
     </div>
 {% else %}
     <h3>{% trans "No competitions in this group yet" %}</h3>
 {% endif %}
-<a class="create-button" data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_create_competition_page('GET', document.getElementById('create-group-competition').getAttribute('data'))">{% trans "Create competition" %}</a>
+<a class="btn btn-primary" data={% url 'groups:create_competition' group_id%} id='create-group-competition' onclick="ajax_create_competition_page('GET', document.getElementById('create-group-competition').getAttribute('data'))">{% trans "Create competition" %}</a>
 {% endblock tab_content %}

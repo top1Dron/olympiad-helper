@@ -1,4 +1,5 @@
 function showModal(el){
+    console.log(1);
     _targettedModal = document.querySelector('[data-modal-name="'+ el + '"]');
     _targettedModal.classList.add(modalActiveClass);
 }

@@ -3,57 +3,73 @@
 
 {% block tab_content %}
     {% if solutions %}
-        <div class="table">
-            <div class="row header">
-                <div class="cell">
-                    <span>#</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Problem title" %}</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Author" %}</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Programming language" %}</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Solving date" %}</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Status" %}</span>
-                </div>
-                <div class="cell">
-                    <span>{% trans "Time usage" %}</span>
-                </div>
-            </div>
-            {% for solution in solutions %}
-                <div class="row">
-                    <div class="cell" data-title="#">
-                        <span><a href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a></span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Problem title' %}">
-                        <span>{{ solution.problem }}</span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Author' %}">
-                        <span>{{ solution.user.username }}</span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Programming language' %}">
-                        <span>{{ solution.language }}</span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Solving date' %}">
-                        <span>{{ solution.solving_date }}</span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Status' %}">
-                        <span>{{ solution.get_status_display }}</span>
-                    </div>
-                    <div class="cell" data-title="{% trans 'Time usage' %}">
-                        <span>{{ solution.avg_time_usage }} ms</span>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="pagination">
+        <div class="card">
+        <div class="card-header"><h3>{% trans "Solutions" %}</h3></div>
+        <div class="card-body">
+            <table class="table align-middle table-bordered">
+                <thead class="table-danger">
+                    <tr>
+                        <th class="text-center">
+                            <span>#</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Problem title" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Author" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Programming language" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Solving date" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Status" %}</span>
+                        </th>
+                        <th class="text-center">
+                            <span>{% trans "Time usage" %}</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for solution in solutions %}
+                    <tr>
+                        <td>
+                            <a class="text-decoration-none text-center" href={% url 'judge:solution_detail' solution.pk %}>{{ solution.pk }}</a>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Problem title' %}">
+                            <span>{{ solution.problem }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Author' %}">
+                            <a href="{% url 'users:profile' solution.user.username %}" class="text-decoration-none">{{ solution.user.username }}</a>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Programming language' %}">
+                            <span>{{ solution.language }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Solving date' %}">
+                            <span>{{ solution.solving_date }}</span>
+                        </td>
+                        <td class="cell" data-title="{% trans 'Status' %}">
+                            {% if solution.status == 'AC' %}
+                                <span class="text-success">{{ solution.get_status_display }}</span>
+                            {% elif solution.status == 'CE' %}
+                                <span class="text-danger">{{ solution.get_status_display }}</span>
+                            {% elif solution.status == '' %}
+                                <span>{{ solution.get_status_display }}</span>
+                            {% else%}
+                                <span class="text-warning">{{ solution.get_status_display }}</span>
+                            {% endif %}
+                                
+                        </td>
+                        <td class="cell" data-title="{% trans 'Time usage' %}">
+                            <span>{{ solution.avg_time_usage }} ms</span>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        <div class="pagination justify-content-center">
             {% if page_obj.has_previous %}
                 <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
             {% endif %}

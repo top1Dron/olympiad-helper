@@ -34,7 +34,7 @@ def get_competition_submissions(competition_id: int):
         ).order_by('-solving_date').select_related('user', 'problem', 'language')
 
 
-def get_problem_by_number(number: str):
+def get_problem_by_number(number: str) -> Problem:
     '''
     returns problem by unique number
     '''

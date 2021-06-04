@@ -5534,3 +5534,179 @@ INFO 2021-06-03 21:15:15,850 views 153 /judge/problem/2/
 INFO 2021-06-03 21:15:15,852 views 154 en
 INFO 2021-06-03 21:15:59,146 views 153 /judge/problem/2/
 INFO 2021-06-03 21:15:59,147 views 154 uk
+INFO 2021-06-04 02:34:51,810 views 153 /news/
+INFO 2021-06-04 02:34:51,812 views 154 uk
+INFO 2021-06-04 18:34:52,786 forms 28 {'title': '213', 'start_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 2, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:37:01,727 forms 28 {'title': 'r543', 'start_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 2, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:38:22,039 forms 28 {'title': 'asddasd', 'start_date': datetime.datetime(2021, 6, 18, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 18, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:38:55,637 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 3, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:46:30,652 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 10, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'sadasdasd'}
+INFO 2021-06-04 18:46:58,529 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 3, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:52:20,492 forms 28 {'title': 'sadas', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 3, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'dasdasd'}
+INFO 2021-06-04 18:53:07,543 forms 28 {'title': 'sadasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:53:49,709 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:54:53,646 forms 28 {'title': 'dasdasd', 'start_date': datetime.datetime(2021, 6, 17, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 18:55:32,737 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 18:55:57,389 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 18:57:16,174 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 10, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 18:58:17,114 forms 28 {'title': 'asdsad', 'start_date': datetime.datetime(2021, 6, 16, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 3, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 18:58:38,704 forms 28 {'title': 'asdasdas', 'start_date': datetime.datetime(2021, 6, 18, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'dasdasd'}
+INFO 2021-06-04 18:59:18,634 forms 28 {'title': 'sadasd', 'start_date': datetime.datetime(2021, 6, 18, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 19:03:42,823 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 19:04:37,748 forms 28 {'title': 'dasdasd', 'start_date': datetime.datetime(2021, 6, 30, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdas'}
+INFO 2021-06-04 19:05:27,965 forms 28 {'title': 'dasdasd', 'start_date': datetime.datetime(2021, 6, 24, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 19:06:29,344 forms 28 {'title': 'saefrswdf', 'start_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 1, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'sdfsdfsdf'}
+INFO 2021-06-04 19:07:19,789 forms 28 {'title': 'sdfsdf', 'start_date': datetime.datetime(2021, 6, 24, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'sdfsdf'}
+INFO 2021-06-04 19:07:49,726 forms 28 {'title': 'sadasd', 'start_date': datetime.datetime(2021, 6, 23, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasd'}
+INFO 2021-06-04 19:08:24,242 forms 28 {'title': 'asdas', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'dasd'}
+INFO 2021-06-04 19:08:45,838 forms 28 {'title': 'fsdsdf', 'start_date': datetime.datetime(2021, 6, 18, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'sdfsdfsdf'}
+INFO 2021-06-04 19:12:38,450 forms 28 {'title': 'sadasdas', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'dasdasd'}
+INFO 2021-06-04 19:14:52,770 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 11, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 19:15:49,945 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 26, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 19:17:09,021 forms 28 {'title': 'asdasd', 'start_date': datetime.datetime(2021, 6, 17, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 4, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'asdasdasd'}
+INFO 2021-06-04 19:51:51,838 execute_solutions 101 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-51-43-593_admin/VVV.java
+INFO 2021-06-04 19:51:52,596 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:51:53,447 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:51:54,433 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:51:55,103 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:54:04,184 execute_solutions 101 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-03-053_admin /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-03-053_admin.cpp
+INFO 2021-06-04 19:54:04,280 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:54:04,318 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:54:04,364 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:54:04,401 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:54:31,012 execute_solutions 101 /usr/bin/g++  -std=c++17 -o /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-30-554_admin /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-30-554_admin.cpp
+INFO 2021-06-04 19:54:31,168 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:54:31,248 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:54:31,344 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:54:31,414 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:54:50,445 execute_solutions 101 /usr/bin/g++  -std=c++14 -o /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-50-056_admin /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-54-50-056_admin.cpp
+INFO 2021-06-04 19:54:50,576 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:54:50,644 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:54:50,675 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:54:50,728 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:55:28,100 execute_solutions 153 Simple problem 1 - done failed
+INFO 2021-06-04 19:55:28,221 execute_solutions 153 Simple problem 2 - done failed
+INFO 2021-06-04 19:55:28,371 execute_solutions 153 Simple problem 3 - done failed
+INFO 2021-06-04 19:55:28,508 execute_solutions 153 Simple problem 4 - done failed
+INFO 2021-06-04 19:56:32,573 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:56:32,706 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:56:32,858 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:56:32,986 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:56:59,143 execute_solutions 153 Simple problem 1 - done failed
+INFO 2021-06-04 19:56:59,295 execute_solutions 153 Simple problem 2 - done failed
+INFO 2021-06-04 19:56:59,378 execute_solutions 153 Simple problem 3 - done failed
+INFO 2021-06-04 19:56:59,478 execute_solutions 153 Simple problem 4 - done failed
+INFO 2021-06-04 19:57:47,464 execute_solutions 147 Simple problem 1 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-57-47-346_admin.py", line 3
+    print s
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(s)?
+
+INFO 2021-06-04 19:57:47,529 execute_solutions 147 Simple problem 2 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-57-47-346_admin.py", line 3
+    print s
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(s)?
+
+INFO 2021-06-04 19:57:47,602 execute_solutions 147 Simple problem 3 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-57-47-346_admin.py", line 3
+    print s
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(s)?
+
+INFO 2021-06-04 19:57:47,675 execute_solutions 147 Simple problem 4 - done failed.   File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-57-47-346_admin.py", line 3
+    print s
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(s)?
+
+INFO 2021-06-04 19:58:17,204 execute_solutions 147 Simple problem 1 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-58-16-913_admin.py", line 2, in <module>
+    s = s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-06-04 19:58:17,308 execute_solutions 147 Simple problem 2 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-58-16-913_admin.py", line 2, in <module>
+    s = s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-06-04 19:58:17,400 execute_solutions 147 Simple problem 3 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-58-16-913_admin.py", line 2, in <module>
+    s = s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-06-04 19:58:17,565 execute_solutions 147 Simple problem 4 - done failed. Traceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/projects/olympiad-helper/src/config/media/2021-06-04--19-58-16-913_admin.py", line 2, in <module>
+    s = s[0] + ' ' + s[1]
+TypeError: 'int' object has no attribute '__getitem__'
+
+INFO 2021-06-04 19:58:47,023 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:58:47,130 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:58:47,235 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:58:47,362 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 19:59:32,846 execute_solutions 101 go build -o /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-59-28-877_admin /usr/projects/olympiad-helper/src/config/media/2021-06-04--19-59-28-877_admin.go
+INFO 2021-06-04 19:59:32,915 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 19:59:32,941 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 19:59:32,962 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 19:59:32,989 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:00:14,728 execute_solutions 101 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-00-09-789_admin/Main.java
+INFO 2021-06-04 20:00:14,981 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:00:15,246 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:00:15,469 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:00:15,740 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:02:50,294 execute_solutions 101 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-02-44-534_admin/Main.java
+INFO 2021-06-04 20:02:50,539 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:02:50,778 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:02:51,014 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:02:51,260 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:04:41,309 execute_solutions 103 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-04-36-061_admin/Main.java
+INFO 2021-06-04 20:04:41,578 execute_solutions 152 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:04:41,806 execute_solutions 152 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:04:42,069 execute_solutions 152 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:04:42,311 execute_solutions 152 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:04:42,362 execute_solutions 84 /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-04-36-061_admin
+INFO 2021-06-04 20:04:42,363 execute_solutions 85 Main
+INFO 2021-06-04 20:11:13,146 execute_solutions 103 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-11-07-626_admin/Main.java
+INFO 2021-06-04 20:11:13,423 execute_solutions 152 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:11:13,659 execute_solutions 152 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:11:13,934 execute_solutions 152 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:11:14,211 execute_solutions 152 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:11:14,391 execute_solutions 84 /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-11-07-626_admin
+INFO 2021-06-04 20:11:14,395 execute_solutions 85 Main
+INFO 2021-06-04 20:12:00,543 execute_solutions 98 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-11-55-729_admin/Main.java
+INFO 2021-06-04 20:12:00,952 execute_solutions 147 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:12:01,675 execute_solutions 147 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:12:02,514 execute_solutions 147 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:12:03,315 execute_solutions 147 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:12:36,364 execute_solutions 98 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-12-31-068_admin/Main.java
+INFO 2021-06-04 20:12:36,727 execute_solutions 147 Simple problem 1 - done successfully.
+INFO 2021-06-04 20:12:37,033 execute_solutions 147 Simple problem 2 - done successfully.
+INFO 2021-06-04 20:12:37,324 execute_solutions 147 Simple problem 3 - done successfully.
+INFO 2021-06-04 20:12:37,625 execute_solutions 147 Simple problem 4 - done successfully.
+INFO 2021-06-04 20:14:13,859 execute_solutions 98 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-14-09-526_admin/Main.java
+ERROR 2021-06-04 20:14:13,891 execute_solutions 117 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-14-09-526_admin/Main.java:1: error: class, interface, or enum expected
+mport java.util.Scanner;
+^
+1 error
+
+INFO 2021-06-04 20:15:09,488 execute_solutions 98 javac /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-15-05-061_admin/Main.java
+INFO 2021-06-04 20:15:09,745 execute_solutions 150 summer test 2021: The area of a polygon 1 - done failed
+INFO 2021-06-04 20:19:42,881 execute_solutions 98 /usr/bin/g++  -std=c++14 -o /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-19-41-407_admin /usr/projects/olympiad-helper/src/config/media/2021-06-04--20-19-41-407_admin.cpp
+INFO 2021-06-04 20:19:42,954 execute_solutions 147 summer test 2021: The area of a polygon 1 - done successfully.
+INFO 2021-06-05 00:18:12,242 forms 28 {'title': 'sample', 'start_date': datetime.datetime(2021, 6, 6, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 6, 13, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'sample competition body'}
+INFO 2021-06-05 00:44:23,263 views 163 <QueryDict: {'csrfmiddlewaretoken': ['nZc60DnR0hLOqyhaMmsDuOdx5Dc0AjdeRZwtIc0hX92GdzPmcgN0fDH5IeVRWRMo'], 'problem_search_field': ['2. Черга з захистом від помилок']}>
+INFO 2021-06-05 00:45:35,692 views 163 <QueryDict: {'csrfmiddlewaretoken': ['r8pcu0YGrCu40zKqTpYRCXBeX23tyaNbV8JzczB6ouLWNAiCjjjenM5MADMkUIml'], 'problem_search_field': ['3. Площа многокутника']}>
+INFO 2021-06-05 00:46:14,629 views 159 /news/
+INFO 2021-06-05 00:46:14,629 views 160 en

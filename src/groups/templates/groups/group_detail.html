@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static i18n %}
+{% load static i18n widget_tweaks %}
 
 {% block title %}{{group.name}}{% endblock title %}
 {% comment %} {% block extra_head %}
@@ -15,10 +15,77 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 {% endblock extra_head %} {% endcomment %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/groups/show_member_detail.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="{% static 'css/ajax_tabs.css' %}">
+{% endblock extra_css %}
+
 {% block main_content %}
 
-<div class="wrapper">
-    <h2>{{group.name}}</h2></br>
+<div class="container"   style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+        <div class="card-body">
+            <nav style="--bs-breadcrumb-divider: '>'; mb-2" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'groups:group_list' %}" class="text-decoration-none">{% trans "Groups" %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{group.name}}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header"><h3>{{group.name}}</h3></div>
+        <div class="card-body">
+            {% if messages %}
+            <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    <div class="alert alert-danger" role="alert">
+                        <p>{{ message.message }}<button type="button" class="close" data-bs-dismiss="alert">×</button></p>
+                    </div>
+                </div>
+                {% endfor %}
+                </div>
+
+            </div>
+            {% endif %}
+            {% comment %} {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    <div class="alert alert-danger w-50" role="alert">
+                        {{message.message}}
+                    </div>
+                </div>
+            {% endfor %} {% endcomment %}
+            <div class="tab-wrap">
+                <input type="radio" name="tabs" id="info-tab" data={% url 'groups:get_group_info' group.pk %} checked>
+                <div class="tab-label-content">
+                    <label for="info-tab">
+                        {% trans "Group" %}
+                    </label>
+                </div>
+
+                <input type="radio" name="tabs" id="members-tab" data={% url 'groups:get_group_members' group.pk %}>
+                <div class="tab-label-content">
+                    <label for="members-tab">
+                        {% trans "Members" %}
+                    </label>
+                </div>
+
+                <input type="radio" name="tabs" id="competition-tab" data={% url 'groups:get_group_competitions' group.pk %}>
+                <div class="tab-label-content">
+                    <label for="competition-tab">
+                        {% trans "Competitions" %}
+                    </label>
+                </div>
+                <div class="slide"></div>
+            </div>
+            <div id='tab-data'><p>{% block tab_content %}{% endblock tab_content %}</p></div>
+        </div>
+    </div>
+
+    {% comment %} <h2>{{group.name}}</h2></br>
     <div class="tab-wrap">
         <input type="radio" name="tabs" id="info-tab" data={% url 'groups:get_group_info' group.pk %} checked>
         <div class="tab-label-content">
@@ -41,13 +108,22 @@
             </label>
         </div>
         <div class="slide"></div>
-    </div></br>
-    <div id='tab-data'><p>{% block tab_content %}{% endblock tab_content %}</p></div>
+    </div></br> {% endcomment %}
+    {% comment %} <div id='tab-data'><p>{% block tab_content %}{% endblock tab_content %}</p></div> {% endcomment %}
 </div>
-<script>
-flatpickr(".js-flatpickr-dateTime", {
-    enableTime: true,
-    dateFormat: "d.m.Y H:i",
-})
-</script>
+
+{% block extra_js %}
+    <script src={% static 'js/groups/group_details.js' %} type='module'></script>
+    <script src={% static 'js/groups/delete_user_from_group.js' %}></script>
+    <script src={% static 'js/groups/show_member_detail.js' %}></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        flatpickr(".js-flatpickr-dateTime", {
+            enableTime: true,
+            dateFormat: "d.m.Y H:i",
+        })
+    </script>
+{% endblock extra_js %}
+
+
 {% endblock main_content %}

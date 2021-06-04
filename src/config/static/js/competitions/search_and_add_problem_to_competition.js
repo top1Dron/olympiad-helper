@@ -34,9 +34,9 @@ async function autocomplete(inp) {
         }
         // ajax_json_fill_array('GET', search_problem_url, arr, 'problems');
         /*create a DIV element that will contain the items (values):*/
-        a = document.createElement("DIV");
+        a = document.createElement("ul");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items");
+        a.setAttribute("class", "autocomplete-items list-group");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
@@ -46,7 +46,8 @@ async function autocomplete(inp) {
             /*check if the item starts with the same letters as the text field value:*/
           
               /*create a DIV element for each matching element:*/
-              b = document.createElement("DIV");
+              b = document.createElement("li");
+              b.setAttribute("class", "list-group-item list-group-item-action");
               /*make the matching letters bold:*/
               if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
                   b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
@@ -61,12 +62,13 @@ async function autocomplete(inp) {
               b.addEventListener("click", function(e) {
               /*insert the value for the autocomplete text field:*/
                   inp.value = this.getElementsByTagName("input")[0].value;
-                  inp.setAttribute('disabled', 'disabled');
+                  inp.setAttribute('disabled', true);
                   document.getElementById('add_problem_to_competition').removeAttribute('disabled');
                   var clearInp = document.createElement("input");
                   clearInp.setAttribute("id", this.getElementsByTagName("input")[0].id + "_reset");
                   clearInp.setAttribute("type", "reset");
                   clearInp.setAttribute("value", "Clear");
+                  clearInp.setAttribute("class", "btn btn-outline-danger");
                   clearInp.addEventListener('click', function(e){
                       inp.value = '';
                       document.getElementById('add_problem_to_competition').setAttribute('disabled', 'disabled');
@@ -80,7 +82,7 @@ async function autocomplete(inp) {
               });
               a.appendChild(b);
           }
-        }, 275);
+        }, 255);
     });
     document.getElementById('add_problem_to_competition').addEventListener('click', function(e){
         inp.removeAttribute('disabled');
@@ -88,7 +90,7 @@ async function autocomplete(inp) {
     /*execute a function presses a key on the keyboard:*/
     inp.addEventListener("keydown", function(e) {
         var x = document.getElementById(this.id + "autocomplete-list");
-        if (x) x = x.getElementsByTagName("div");
+        if (x) x = x.getElementsByTagName("li");
         if (e.keyCode == 40) {
           /*If the arrow DOWN key is pressed,
           increase the currentFocus variable:*/
@@ -118,12 +120,14 @@ async function autocomplete(inp) {
       if (currentFocus >= x.length) currentFocus = 0;
       if (currentFocus < 0) currentFocus = (x.length - 1);
       /*add class "autocomplete-active":*/
-      x[currentFocus].classList.add("autocomplete-active");
+      x[currentFocus].classList.add("active");
+      x[currentFocus].setAttribute("aria-current", true);
     }
     function removeActive(x) {
       /*a function to remove the "active" class from all autocomplete items:*/
       for (var i = 0; i < x.length; i++) {
-        x[i].classList.remove("autocomplete-active");
+        x[i].classList.remove("active");
+        x[i].setAttribute("aria-current", false);
       }
     }
     function closeAllLists(elmnt) {

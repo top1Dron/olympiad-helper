@@ -1,6 +1,11 @@
+import logging
+
 from competitions.models import Competition
 from django import forms
 from django.utils.translation import ugettext_lazy as _
+
+
+logger = logging.getLogger(__name__)
 
 
 class CompetitionForm(forms.ModelForm):
@@ -17,3 +22,10 @@ class CompetitionForm(forms.ModelForm):
     class Meta:
         model = Competition
         fields = ('title', 'start_date', 'end_date', 'description')
+
+    def clean(self):
+        data = self.cleaned_data
+        logger.info(data)
+        if data['end_date'] <= data['start_date']:
+            raise forms.ValidationError(_('Start date have to go after start_date'))
+        return super().clean()

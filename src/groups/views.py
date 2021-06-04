@@ -1,6 +1,8 @@
+from django.contrib.messages.api import error
 from django.utils.regex_helper import contains
 from competitions import services as competition_services
 from competitions.forms import CompetitionForm
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.sites.shortcuts import get_current_site
@@ -69,7 +71,11 @@ def create_group_competition(request, group_id:int):
             form.save(commit=False)
             form.instance.group = services.get_group_by_id(group_id)
             form.save()
-            return redirect(reverse('groups:group_detail', kwargs={'group_id':group_id}))
+            
+        else:
+            for error in form.errors.values():
+                messages.error(request, error)
+        return redirect(reverse('groups:group_detail', kwargs={'group_id':group_id}))
     else:
         form = CompetitionForm()
     data = {'tab-data': render_to_string(

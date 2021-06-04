@@ -10,40 +10,47 @@
 {% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
-<div class="wrapper">
-    <h2>{% trans "Groups" %}</h2>
-    {% if groups %}
-        <div class='list'>
-            <ul>
-                <li>{% trans "Title" %}</li>
-                <li>{% trans "Description" %}</li>
-            </ul>            
-            {% for group in groups %}
-                <ul>
-                    <li data-label="{% trans 'Title' %}"><a href={% url 'groups:group_detail' group.id %}>{{ group.name }}</a></li>
-                    <li data-label="{% trans 'Description' %}"><p>{{ group.description }}</p></li>
-                </ul>
-            {% endfor %}
-            </ul>
-        </div>
-        <div class="pagination">
-            {% if page_obj.has_previous %}
-                <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+<div class="container" style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+        <div class="card-header"><h3>{% trans "Groups" %}</h3></div>
+        <div class="card-body">
+            {% if groups %}
+                <table class="table align-middle table-bordered">
+                    <thead class="table-dark">
+                        <tr>
+                            <th class="text-center">{% trans "Title" %}</th>
+                            <th>{% trans "Description" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>           
+                        {% for group in groups %}
+                            <tr>
+                                <td data-label="{% trans 'Title' %}" class="text-center"><a class="text-decoration-none" href={% url 'groups:group_detail' group.id %}>{{ group.name }}</a></td>
+                                <td data-label="{% trans 'Description' %}">{{ group.description }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    {% if page_obj.has_previous %}
+                        <a href="?page={{ page_obj.previous_page_number }}">&laquo;</a>
+                    {% endif %}
+                    {% for i in pages %}
+                        {% if page_obj.number == i %}
+                            <a href="?page={{i}}" class="active">{{i}}</a>
+                        {% else %}
+                            <a href="?page={{i}}">{{i}}</a>
+                        {% endif %}
+                    {% endfor %}
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
+                    {% endif %}
+                </div>
+            {% else %}
+                <h3>{% trans "No available groups yet" %}</h3>
             {% endif %}
-            {% for i in pages %}
-                {% if page_obj.number == i %}
-                    <a href="?page={{i}}" class="active">{{i}}</a>
-                {% else %}
-                    <a href="?page={{i}}">{{i}}</a>
-                {% endif %}
-            {% endfor %}
-            {% if page_obj.has_next %}
-                <a href="?page={{ page_obj.next_page_number }}">&raquo;</a>
-            {% endif %}
+            <a class="btn btn-primary" href={% url 'groups:group_create' %}>{% trans "Create group" %}</a>
         </div>
-    {% else %}
-        <h3>{% trans "No available groups yet" %}</h3>
-    {% endif %}
-    <a class="create-button" href={% url 'groups:group_create' %}>{% trans "Create group" %}</a>
+    </div>
 </div>
 {% endblock main_content %}

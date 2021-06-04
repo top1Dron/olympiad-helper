@@ -2,47 +2,31 @@
 
 {% load static i18n %}
 
-<form method="post" action={% url 'groups:create_competition' group.id %}>
-    {% csrf_token %}
-
-    {% if form.non_field_errors %}
-        <ul>
-        {% for error in form.non_field_errors %}
-            <li>{{ error }}</li>
-        {% endfor %}
-        </ul>
-    {% endif %}
-    {% for hidden_field in form.hidden_fields %}
-        {% if hidden_field.errors %}
-        <ul>
-            {% for error in hidden_field.errors %}
-            <li>({% trans "Hidden field" %} {{ hidden_field.name }}) {{ error }}</li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-        {{ hidden_field }}
-    {% endfor %}
-    
-    <p>
-        {{ form.title.label_tag }}</br>
-        {{ form.title.errors }}
-        {% trans 'Competition title' as competition_title %}
-        {% render_field form.title placeholder=competition_title %}</br></br>
-
-        {{ form.description.label_tag }}</br>
-        {{ form.description.errors }}
-        {% trans 'Competition description' as competition_description %}
-        {% render_field form.description placeholder=competition_description %}</br></br>
-
-        {{ form.start_date.label_tag }}</br>
-        {{ form.start_date.errors }}
-        {% trans 'Competition start date' as comp_start_date %}
-        {% render_field form.start_date placeholder=comp_start_date class='flatpickr js-flatpickr-dateTime' %}</br></br>
-
-        {{ form.end_date.label_tag }}</br>
-        {{ form.end_date.errors }}
-        {% trans 'Competition end date' as comp_end_date %}
-        {% render_field form.end_date placeholder=comp_end_date class='flatpickr js-flatpickr-dateTime' %}</br></br>
-    </p>
-    <button class="create-button" type="submit">{% trans "Create" %}</button>
-</form>
+<div class="card my-2 justify-content-md-start">
+    <div class="card-header"><h4>{% trans "Create competition" %}</h4></div>
+    <div class="card-body">
+        <form method="post" action={% url 'groups:create_competition' group.id %}>
+        {% csrf_token %}
+        
+        <p>
+            <div class="form-floating mb-3">
+                {% render_field form.title class="form-control" %}
+                {{ form.title.label_tag }}
+            </div>
+            <div class="form-floating mb-3">
+                {% render_field form.description class="form-control"%}
+                {{ form.description.label_tag }}
+            </div>
+            <div class="form-floating mb-3">
+                {% render_field form.start_date class='flatpickr js-flatpickr-dateTime form-control' %}
+                {{ form.start_date.label_tag }}
+            </div>
+            <div class="form-floating mb-3">
+                {% render_field form.end_date class='flatpickr js-flatpickr-dateTime form-control' %}
+                {{ form.end_date.label_tag }}
+            </div>
+        </p>
+        <button class="btn btn-success" type="submit">{% trans "Create" %}</button>
+    </form>
+    </div>
+</div>

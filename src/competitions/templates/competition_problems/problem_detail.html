@@ -3,32 +3,51 @@
 
 {% block title %}{{object.title}}{% endblock title %}
 {% block main_content %}
-    <div class="wrapper">
-        <h1>{{object.title}}</h1>
-        <p>{{object.description|safe}}</br>
-        {% if object.description_photo %}
-        <img src='{{object.description_photo.url}}'</p>
-        {% endif %}
-        <p>{{object.input_condition}}</p>
-        <p>{{object.output_condition}}</p>
-        <p>{% if object.special_warning %}{{ object.special_warning|safe }}{% endif %}</p>
-        <hr>
-        <p>
-        <span>{% trans "Memory limit" %}:{{object.memory_limit}} MiB</span></br>
-        <span>{% trans "Time limit" %}:{{object.time_limit}} {% trans "seconds" %}</span>
-        </p>
-        <hr>
-        {% for sample in object.get_all_samples %}
-            <div><strong>{% trans "Input example " %}#{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
-            <div><strong>{% trans "Output example " %}#{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
-            <hr>
-        {%empty%}
-            <span>{% trans "No samples. Think by yourself." %}</span>
-            <hr>
-        {% endfor %}
-        {% if user.is_authenticated and is_active_for_submit %}
-            <span><a href="{% url 'competitions:submit_solution' competition.id object.number %}">{% trans "Submit solution" %}</a></span>
-        {% endif %}
-        
+    <div class="container"  style="padding-top:50px; padding-bottom:50px;">
+        <div class="card">
+            <div class="card-body">
+                <nav style="--bs-breadcrumb-divider: '>'; mb-2" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="{% url 'competitions:competition_list' %}" class="text-decoration-none">{% trans "Competitions" %}</a></li>
+                        <li class="breadcrumb-item"><a href="{% url 'competitions:competition_detail' competition.id %}" class="text-decoration-none">{{competition.title}}</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{object.title}}</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header"><h3>{{object.title}}</h3></div>
+            <div class="card-body">
+                <p class="card-text">{{object.description|safe}}</br>
+                {% if object.description_photo %}
+                    <img src='{{object.description_photo.url}}'></p>
+                {% endif %}
+                
+                <strong>{% trans "Input" %}</strong>
+                <p class="card-text">{{object.input_condition|safe}}</p>
+                
+                <strong>{% trans "Output" %}</strong>
+                <p class="card-text">{{object.output_condition|safe}}</p>
+                
+                <p class="card-text">{% if object.special_warning %}{{ object.special_warning|safe }}{% endif %}</p>
+                <hr>
+                <p>
+                {% comment %} <span>{% trans "Memory limit" %}: {{object.memory_limit}} MiB</span></br> {% endcomment %}
+                <span class="card-text">{% trans "Time limit" %}: {{object.time_limit}} {% trans "seconds" %}</span>
+                </p>
+                <hr>
+                {% for sample in object.get_all_samples %}
+                    <div class="card-text"><strong>{% trans "Input example " %}#{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
+                    <div class="card-text"><strong>{% trans "Output example " %}#{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
+                    <hr>
+                {%empty%}
+                    <span class="card-text">{% trans "No samples. Think by yourself." %}</span>
+                    <hr>
+                {% endfor %}
+                {% if user.is_authenticated and is_active_for_submit %}
+                    <a href="{% url 'competitions:submit_solution' competition.id object.number %}" class="btn btn-primary">{% trans "Submit solution" %}</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 {% endblock main_content %}

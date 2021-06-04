@@ -2,29 +2,37 @@
 
 
 {% block tab_content %}
-<div class='list'>
-    {% if  users_count%}
-        <div class="table">
-            <div class="row header">
-                <div class="cell"><span>{% trans "User" %}</span></div>
-                <div class="cell"><span>{% trans "Solved problems" %}</span></div>
+    {% if  users_count %}
+        <div class="card mt-2">
+            <div class="card-body">
+                <table class="table align-middle table-bordered">
+                    <thead class="table-primary">
+                        <tr>
+                            <th class="text-center">{% trans "User" %}</th>
+                            <th class="text-center">{% trans "Solved problems" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for username, solved_problems in users_count.items %}
+                       {% if forloop.counter|divisibleby:2 %}
+                            <tr class="table-secondary">
+                        {% else %}
+                            <tr>
+                        {% endif %}
+                            <td data-title="{% trans 'User' %}">
+                                {{ username }}
+                            </td>
+                            <td data-title="{% trans 'Solved problems' %}">
+                                {{ solved_problems }}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
             </div>
-    {% endif %}
-    {% for username, solved_problems in users_count.items %}
-        <div class="row">
-            <div class="cell" data-title="User">
-                <span>{{ username }}</span>
-            </div>
-            <div class="cell" data-title="Solved problems">
-                <span>{{ solved_problems }}</span>
-            </div></td>
         </div>
-    {% empty %}
+    {% else %}
         <h3>{% trans "Noone successfully solved at least 1 problem in competition yet." %}</h3>
-    {% endfor %}
-    {% if  users_count%}
-        </tbody>
-        </div>
     {% endif %}
 </div>
 {% endblock tab_content %}

@@ -1,39 +1,47 @@
 {% extends 'base.html' %} 
-{% load static i18n %}
+{% load static i18n widget_tweaks %}
 
-{% block title %}{% trans "Find problem to competition" %}{% endblock title %}
+{% block title %}{% trans "Add problem to competition" %}{% endblock title %}
 
-{% comment %} {% block extra_head %}
-    <script src={% static 'js/competitions/search_and_add_problem_to_competition.js' %} type='module'></script>
-{% endblock extra_head %} {% endcomment %}
 
 {% block main_content %}
-<div class='wrapper'>
-    <form id='search_problem_form' method='post' action=''>
-        {% csrf_token %}
-        {% if form.non_field_errors %}
-            <ul>
-            {% for error in form.non_field_errors %}
-                <li>{{ error }}</li>
-            {% endfor %}
-            </ul>
-        {% endif %}
-        {% for hidden_field in form.hidden_fields %}
-            {% if hidden_field.errors %}
-            <ul>
-                {% for error in hidden_field.errors %}
-                <li>({% trans "Hidden field " %}{{ hidden_field.name }}) {{ error }}</li>
+<div class='container' style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+        <div class="card-header"><h4>{% trans "Add problem to competition" %}</h4></div>
+        <div class="card-body">
+            <form id='search_problem_form' method='post' action=''>
+                {% csrf_token %}
+                {% if form.non_field_errors %}
+                    <ul>
+                    {% for error in form.non_field_errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+                {% for hidden_field in form.hidden_fields %}
+                    {% if hidden_field.errors %}
+                    <ul>
+                        {% for error in hidden_field.errors %}
+                        <li>({% trans "Hidden field " %}{{ hidden_field.name }}) {{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    {{ hidden_field }}
                 {% endfor %}
-            </ul>
-            {% endif %}
-            {{ hidden_field }}
-        {% endfor %}
-        {{ search_form.problem_search_field.label_tag }}</br>
-        {{ search_form.problem_search_field.errors }}
-        {{ search_form.problem_search_field }}
-        <span id='if_problem_founded'></span></br>
-        <input type='submit' disabled='disabled' value='Add problem' id='add_problem_to_competition' placeholder="{% trans "Type a problem" %}">
-    </form>
+                <div class="form-floating mb-3">
+                    {% render_field search_form.problem_search_field class="form-control"%}
+                    {{ search_form.problem_search_field.label_tag }}
+                </div>
+                <span id='if_problem_founded'></span>
+                <input type='submit' class="btn btn-outline-success" disabled='disabled' value='Add problem' id='add_problem_to_competition' placeholder="{% trans "Type a problem" %}">
+            </form>
+        </div>
+    </div>
+    
     {% comment %} {% trans "Create problem" %} {% endcomment %}
 </div>
 {% endblock main_content %}
+
+{% block extra_js %}
+    <script src={% static 'js/competitions/search_and_add_problem_to_competition.js' %} type='module'></script>
+{% endblock extra_js %}

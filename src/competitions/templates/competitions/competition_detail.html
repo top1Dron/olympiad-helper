@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static i18n %}
+{% load static i18n widget_tweaks %}
 
 {% block title %}{{competition.title}}{% endblock title %}
 {% comment %} {% block extra_head %}
@@ -10,10 +10,62 @@
     <script src={% static 'js/competitions/competition_detail.js' %} type='module'></script>
     <script src={% static 'js/competitions/delete_problem_from_competition.js' %}></script>
 {% endblock extra_head %} {% endcomment %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/ajax_tabs.css' %}">
+    <link rel="stylesheet" href="{% static 'css/competitions/competition_problems.css' %}">
+{% endblock extra_css %}
 
 {% block main_content %}
-<div class="wrapper">
-    <h2>{{competition.title}}</h2>
+<div class="container" style="padding-top:50px; padding-bottom:50px;">
+    <div class="card">
+        <div class="card-body">
+            <nav style="--bs-breadcrumb-divider: '>'; mb-2" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% url 'competitions:competition_list' %}" class="text-decoration-none">{% trans "Competitions" %}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{competition.title}}</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header"><h3>{{competition.title}}</h3></div>
+        <div class="card-body">
+            <div class="tab-wrap">
+                <input type="radio" name="tabs" id="problems" data={% url 'competitions:competition_problems' competition.pk %} group.pk %} checked>
+                <div class="tab-label-content">
+                    <label for="problems">
+                        {% trans "Problems" %}
+                    </label>
+                </div>
+
+                <input type="radio" name="tabs" id="leaderboard" data={% url 'competitions:get_competition_leaderboard' competition.pk %}>
+                <div class="tab-label-content">
+                    <label for="leaderboard">
+                        {% trans "Leaderboard" %}
+                    </label>
+                </div>
+
+                <input type="radio" name="tabs" id="competition-queue" data={% url 'competitions:competition_solution_list' competition.pk %}>
+                <div class="tab-label-content">
+                    <label for="competition-queue">
+                        {% trans "Competition queue" %}
+                    </label>
+                </div>
+                <div class="slide"></div>
+            </div>
+            {% for message in messages %}
+                <div class="alert alert-error">
+                    
+                    <div class="alert alert-danger" role="alert">
+                    {% render_field message.message %}<button type="button" class="close" data-dismiss="alert">×</button>
+                    </div>
+                    
+                </div>
+            {% endfor %}
+            <div id='tab-data'>{% block tab_content %}{% endblock tab_content %}</div>
+        </div>
+    </div>
+    {% comment %} <h2>{{competition.title}}</h2>
         <div class="tab-wrap">
             <input type="radio" name="tabs" id="problems" data={% url 'competitions:competition_problems' competition.pk %} group.pk %} checked>
             <div class="tab-label-content">
@@ -47,6 +99,11 @@
             </ul>
         {% endif %}
         <div id='tab-data'>{% block tab_content %}{% endblock tab_content %}</div>
-    </div>
+    </div> {% endcomment %}
 </div>
 {% endblock main_content %}
+    
+{% block extra_js %}
+    <script src={% static 'js/competitions/competition_detail.js' %} type='module'></script>
+    <script src={% static 'js/competitions/delete_problem_from_competition.js' %}></script>
+{% endblock extra_js %}
