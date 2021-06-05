@@ -151,16 +151,11 @@ def redirect_to_full_url(request, short_id):
         return redirect(reverse('news:index'))
 
 
-def set_language_from_url(request, redirect_to, user_language):
+def set_language_from_url(request, redirect_to:str, user_language):
     # path = reverse('news:index')
     translation.activate(user_language)
     request.session[translation.LANGUAGE_SESSION_KEY] = user_language
-    # redirect_to = request.POST.get('next')
-    logger.info(redirect_to)
-    logger.info(request.session[translation.LANGUAGE_SESSION_KEY])
-    # if redirect_to:
-        # return redirect(redirect_to)
-    return redirect('news:index')
+    return redirect(f'/{user_language}{redirect_to}')
 
 
 @require_http_methods(['DELETE'])

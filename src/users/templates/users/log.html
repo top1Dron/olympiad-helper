@@ -47,9 +47,13 @@
                     <div class="btn-layer"></div>
                     <input type="submit" value="{% trans 'Login' %}">
                 </div>
+                <div class="alert alert-error">
                 {% for message in messages %}
-                    <p class='messages'>{{ message }}</p>
+                        <div class="alert alert-danger" role="alert">
+                            {{message}}<button type="button" class="close" data-bs-dismiss="alert">×</button>
+                        </div>
                 {% endfor %}
+                </div>
                 <div class="signup-link">{% trans "Not a member" %}? <a href="">{% trans "Signup now" %}</a></div>
             </form>
             <form action="{% url 'users:signup' %}" class="signup" method="post">

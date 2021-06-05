@@ -88,54 +88,49 @@
   {% comment %} </header> {% endcomment %}
 
 </main>
-<div class="main_content w-100" style="background-image: url('{% static "img/background.jpg" %}');min-height:76.5vh;">{% block main_content %}{% endblock main_content %}</div>
+<div class="main_content w-100" style="background-image: url('{% static "img/background.jpg" %}');min-height:70vh;">{% block main_content %}{% endblock main_content %}</div>
 <footer class="bg-light mt-2">
   <div class="container">
     <div class="row">
-        <div class="col-6 col-md-3">
-            <h5 class="text-center">Dron dev</h5>
+        <div class="col-6 col-md-4">
+            <h5 class="text-center">Olympiad-helper</h5>
             <ul class="list-unstyled text-small text-center">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="{% url 'news:index' %}" class="link-secondary text-decoration-none">{% trans "News" %}</a></li>
+                <li><a class="link-secondary text-decoration-none" href="{% url 'judge:problem_list' %}">{% trans "Problems" %}</a></li>
+                <li><a class="link-secondary text-decoration-none" href="{% url 'judge:solution_list' %}">{% trans "Queue" %}</a></li>
+                <li><a class="link-secondary text-decoration-none" href="{% url 'competitions:competition_list' %}">{% trans "Competitions" %}</a></li>
+                {% if user.is_authenticated %}
+                  <li class="nav-item"><a class="link-secondary text-decoration-none" href="{% url 'groups:group_list' %}">{% trans "Groups" %}</a></li>
+                {% else %}
+                  <li></li>
+                {% endif %}
             </ul>
         </div>
-        <div class="col-6 col-md-3">
-            <h5 class="text-center">Dron dev</h5>
+        <div class="col-6 col-md-4">
+            <h5 class="text-center">{% trans "Recommended literature" %}</h5>
             <ul class="list-unstyled text-small text-center">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="https://www.e-olymp.com/uk/help/how-to-solve-a-problem" class="link-secondary text-decoration-none">{% trans "How to solve a problem" %}</a></li>
+                <li><a href="https://ru.pdfdrive.com/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-e186671794.html" class="link-secondary text-decoration-none">{% trans "Grokking Algorithms" %}</a></li>
+                <li><a href="https://ioinformatics.org/files/booklet-ioi2018.pdf" class="link-secondary text-decoration-none">Booklet (IOI 2018)</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md-3">
+        <div class="col-6 col-md-4">
             <h5 class="text-center">Dron dev</h5>
             <ul class="list-unstyled text-small text-center">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
             </ul>
         </div>
-        <div class="col-6 col-md-3">
-            <h5 class="text-center">Dron dev</h5>
-            <ul class="list-unstyled text-small text-center">
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-                <li><a href="" class="link-secondary">Blog</a></li>
-            </ul>
-        </div>
+    </div>
+    <div class="row text-center">
+      <div class="text-secondary fs-6">{% trans "Developed by Andrew Moshko" %}</div>
     </div>
   </div>
 </footer>
