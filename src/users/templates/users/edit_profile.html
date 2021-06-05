@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static i18n widget_tweaks %}
+
+{% block title %}{{ user.username }}{% endblock title %}
+
+{% block main_content %}
+    <div class="container" style="padding-top:50px; padding-bottom:50px;">
+        <div class="card">
+            <div class="card-header"><h4>{% trans "Edit profile" %} {{ user.username }}</h4></div>
+            <div class="card-body">
+                {% for key, value in form.errors.items %}
+                    <div class="alert alert-error">
+                        <div class="alert alert-danger" role="alert">
+                            {{value.as_text}}<button type="button" class="close" data-bs-dismiss="alert">×</button>
+                        </div>
+                    </div>
+                {% endfor %}
+                 <form method="post" action='' enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-group g-3">
+                        <h5 for="{{form.avatar.auto_id}}" class="form-label">{{ form.avatar.label }}</h5>
+                        <div class="text-center">
+                            {% if form.avatar.value.url is not None %}
+                                <img id="avatar" src="{{MEDIA_URL}}{{form.avatar.value.url}}" alt="avatar" height="300px" width="300px">
+                            {% else %}
+                                <img id="avatar" src="{% static 'img/default-image.jpg' %}" alt="default" height="300px" width="300px">
+                            {% endif %}
+                            <div class="card-body">
+                                {{ form.avatar }}
+                            </div>
+                            {% for error in form.avatar.errors %}
+                                <div class="alert alert-danger">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    {{ error|striptags }}
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="form-group g-3 my-3">
+                        <h5 class="form-label" for="{{ form.email.auto_id }}">{{ form.email.label}}</h5>
+                        {% render_field form.email class="form-control" %}
+                    </div>
+                    <div class="form-group g-3 my-3">
+                        <h5 class="form-label" for="{{ form.first_name.auto_id }}">{{ form.first_name.label}}</h5>
+                        {% render_field form.first_name class="form-control" %}
+                    </div>
+                    <div class="form-group g-3 my-3">
+                        <h5 class="form-label" for="{{ form.last_name.auto_id }}">{{ form.last_name.label}}</h5>
+                        {% render_field form.last_name class="form-control" %}
+                    </div>
+                    <button class="btn btn-success" type="submit">{% trans "Update" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock main_content %}
+
+{% block extra_js %}
+    <script src="{% static 'js/edit_profile.js' %}"></script>
+{% endblock extra_js %}

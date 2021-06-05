@@ -17,7 +17,7 @@ import traceback
 
 logger = logging.getLogger(__name__)
 
-# logging.disabled(logging.DEBUG)
+logging.disabled = True
 
 
 def create_solution(user, problem_number, programming_language, source_code) -> int:
@@ -140,10 +140,13 @@ def _test_execution(test, execute_line, time_limit, solution):
         test.output_data = test.output_data.replace('\r', '')
         test_status = 'PD'
 
+        logger.info(test.output_data)
+        logger.info(test_output)
+
         if test_error_string != '':
             logger.info(f'{test.problem} {test.test_number} - done failed. {test_error_string}')
             test_status = 'RE'
-        elif test.output_data == test_output.removesuffix('\n'):
+        elif test.output_data == test_output.rstrip('\n'):
             logger.info(f'{test.problem} {test.test_number} - done successfully.')
             test_status = 'AC'
         else:

@@ -5710,3 +5710,128 @@ INFO 2021-06-05 00:44:23,263 views 163 <QueryDict: {'csrfmiddlewaretoken': ['nZc
 INFO 2021-06-05 00:45:35,692 views 163 <QueryDict: {'csrfmiddlewaretoken': ['r8pcu0YGrCu40zKqTpYRCXBeX23tyaNbV8JzczB6ouLWNAiCjjjenM5MADMkUIml'], 'problem_search_field': ['3. Площа многокутника']}>
 INFO 2021-06-05 00:46:14,629 views 159 /news/
 INFO 2021-06-05 00:46:14,629 views 160 en
+INFO 2021-06-05 11:03:21,679 views 159 /users/profile/last1war/edit
+INFO 2021-06-05 11:03:21,681 views 160 uk
+INFO 2021-06-05 11:14:52,998 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-14-52-065_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-14-52-065_last1war.cpp
+INFO 2021-06-05 11:14:53,057 execute_solutions 147 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:14:53,093 execute_solutions 147 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:14:53,123 execute_solutions 147 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:14:53,156 execute_solutions 147 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:15:30,054 execute_solutions 98 go build -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-15-29-788_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-15-29-788_last1war.go
+ERROR 2021-06-05 11:15:30,127 execute_solutions 117 status - CE, config/media/2021-06-05--11-15-29-788_last1war.go:1:1: expected 'package', found ackage
+
+INFO 2021-06-05 11:16:07,740 execute_solutions 98 go build -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-16-03-449_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-16-03-449_last1war.go
+INFO 2021-06-05 11:16:08,006 execute_solutions 147 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:16:08,040 execute_solutions 147 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:16:08,062 execute_solutions 147 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:16:08,085 execute_solutions 147 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:16:47,675 execute_solutions 150 Simple problem 1 - done failed
+INFO 2021-06-05 11:16:47,758 execute_solutions 150 Simple problem 2 - done failed
+INFO 2021-06-05 11:16:47,819 execute_solutions 150 Simple problem 3 - done failed
+INFO 2021-06-05 11:16:47,886 execute_solutions 150 Simple problem 4 - done failed
+INFO 2021-06-05 11:18:06,181 execute_solutions 152 Simple problem 1 - done failed
+INFO 2021-06-05 11:18:06,690 execute_solutions 152 Simple problem 2 - done failed
+INFO 2021-06-05 11:18:07,025 execute_solutions 152 Simple problem 3 - done failed
+INFO 2021-06-05 11:18:07,387 execute_solutions 152 Simple problem 4 - done failed
+INFO 2021-06-05 11:20:51,318 execute_solutions 143 2 3
+INFO 2021-06-05 11:20:51,326 execute_solutions 144 2 3
+
+
+INFO 2021-06-05 11:20:51,320 execute_solutions 143 2 3
+INFO 2021-06-05 11:20:51,328 execute_solutions 144 2 3
+
+
+INFO 2021-06-05 11:20:51,340 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:20:51,343 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:20:51,503 execute_solutions 143 9 9
+INFO 2021-06-05 11:20:51,503 execute_solutions 143 9 9
+INFO 2021-06-05 11:20:51,504 execute_solutions 144 9 9
+
+
+INFO 2021-06-05 11:20:51,504 execute_solutions 144 9 9
+
+
+INFO 2021-06-05 11:20:51,510 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:20:51,515 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:20:51,623 execute_solutions 143 4 5
+INFO 2021-06-05 11:20:51,623 execute_solutions 144 4 5
+
+
+INFO 2021-06-05 11:20:51,634 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:20:51,638 execute_solutions 143 4 5
+INFO 2021-06-05 11:20:51,638 execute_solutions 144 4 5
+
+
+INFO 2021-06-05 11:20:51,659 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:20:51,703 execute_solutions 143 4 0
+INFO 2021-06-05 11:20:51,704 execute_solutions 144 4 0
+
+
+INFO 2021-06-05 11:20:51,710 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:20:51,807 execute_solutions 143 4 0
+INFO 2021-06-05 11:20:51,807 execute_solutions 144 4 0
+
+
+INFO 2021-06-05 11:20:51,816 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:21:32,539 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-21-31-616_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-21-31-616_last1war.cpp
+INFO 2021-06-05 11:21:32,642 execute_solutions 143 2 3
+INFO 2021-06-05 11:21:32,643 execute_solutions 144 2 3
+
+INFO 2021-06-05 11:21:32,653 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:21:32,681 execute_solutions 143 9 9
+INFO 2021-06-05 11:21:32,681 execute_solutions 144 9 9
+
+INFO 2021-06-05 11:21:32,689 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:21:32,716 execute_solutions 143 4 5
+INFO 2021-06-05 11:21:32,717 execute_solutions 144 4 5
+
+INFO 2021-06-05 11:21:32,724 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:21:32,746 execute_solutions 143 4 0
+INFO 2021-06-05 11:21:32,748 execute_solutions 144 4 0
+
+INFO 2021-06-05 11:21:32,756 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:21:56,303 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-21-55-194_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-21-55-194_last1war.cpp
+INFO 2021-06-05 11:21:56,383 execute_solutions 143 2 3
+INFO 2021-06-05 11:21:56,383 execute_solutions 144 2 3
+INFO 2021-06-05 11:21:56,395 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:21:56,423 execute_solutions 143 9 9
+INFO 2021-06-05 11:21:56,425 execute_solutions 144 9 9
+INFO 2021-06-05 11:21:56,436 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:21:56,463 execute_solutions 143 4 5
+INFO 2021-06-05 11:21:56,464 execute_solutions 144 4 5
+INFO 2021-06-05 11:21:56,475 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:21:56,498 execute_solutions 143 4 0
+INFO 2021-06-05 11:21:56,499 execute_solutions 144 4 0
+INFO 2021-06-05 11:21:56,511 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:26:19,849 execute_solutions 98 /usr/bin/g++  -std=c++17 -o /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-26-18-423_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-05--11-26-18-423_last1war.cpp
+INFO 2021-06-05 11:26:19,934 execute_solutions 143 2 3
+INFO 2021-06-05 11:26:19,935 execute_solutions 144 2 3
+
+INFO 2021-06-05 11:26:19,942 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 11:26:19,972 execute_solutions 143 9 9
+INFO 2021-06-05 11:26:19,973 execute_solutions 144 9 9
+
+INFO 2021-06-05 11:26:19,982 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 11:26:20,008 execute_solutions 143 4 5
+INFO 2021-06-05 11:26:20,009 execute_solutions 144 4 5
+
+INFO 2021-06-05 11:26:20,017 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 11:26:20,035 execute_solutions 143 4 0
+INFO 2021-06-05 11:26:20,036 execute_solutions 144 4 0
+
+INFO 2021-06-05 11:26:20,041 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-05 11:58:48,128 views 108 False
+INFO 2021-06-05 11:58:48,137 views 109 
+INFO 2021-06-05 12:00:52,450 views 109 False
+INFO 2021-06-05 12:00:52,458 views 110 
+INFO 2021-06-05 12:01:58,540 views 109 False
+INFO 2021-06-05 12:01:58,541 views 110 
+INFO 2021-06-05 12:08:21,308 views 106 True
+INFO 2021-06-05 12:19:21,146 views 106 True
+INFO 2021-06-05 13:28:18,011 views 106 True
+INFO 2021-06-05 13:28:26,727 views 106 True
+INFO 2021-06-05 13:37:21,039 views 106 True
+INFO 2021-06-05 13:37:45,283 views 106 True
+INFO 2021-06-05 13:38:35,240 views 106 True
+INFO 2021-06-05 13:52:10,369 views 106 True
+INFO 2021-06-05 13:58:40,214 views 106 True

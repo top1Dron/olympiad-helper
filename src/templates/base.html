@@ -64,9 +64,15 @@
             
             {% if user.is_authenticated %}
               <div class="dropdown text-md-end">
-                <a type="button" class="dropdown-toggle text-decoration-none text-light" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#" id="dropdownUser">{{user.username}}</a>
+                <a type="button" class="dropdown-toggle text-decoration-none text-light" data-bs-toggle="dropdown" role="button" aria-expanded="false" href="#" id="dropdownUser">
+                  {% if user.avatar.url is not None %}
+                    <img src="{{ MEDIA_URL }}{{ user.avatar.url }}" alt="mdo" width="32" height="32" class="rounded-circle">
+                  {% endif %}
+                  {{user.username}}
+                </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownUser">
                   <li><a href="{% url 'users:profile' user.username %}" class="dropdown-item">{% trans "Profile" %}</a></li>
+                  <li><a href="{% url 'users:edit_profile' user.username %}" class="dropdown-item">{% trans "Edit profile" %}</a></li>
                   <div class="dropdown-divider"></div>
                   <li><a href="{% url 'users:logout' %}" class="dropdown-item">{% trans "Logout" %}</a></li>
                 </ul>

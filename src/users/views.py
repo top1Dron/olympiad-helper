@@ -1,9 +1,9 @@
-from .forms import CustomUserCreationForm, LoginForm, CustomPasswordResetForm, PasswordResetConfirmForm
+from .forms import CustomUserCreationForm, LoginForm, CustomPasswordResetForm, PasswordResetConfirmForm, CustomUserChangeForm
 from .services import get_and_activate_user, get_user_by_email, get_user_by_username
 from .tasks import task_send_email
 from .tokens import account_activation_token
 from django.contrib import messages
-from django.contrib.auth import authenticate, login, logout, views as auth_views
+from django.contrib.auth import authenticate, login, logout, views as auth_views, forms as auth_forms
 from django.contrib.auth.decorators import login_required
 from django.contrib.sites.shortcuts import get_current_site
 from django.shortcuts import render, redirect, reverse
@@ -95,6 +95,22 @@ def api_activate_account(request, uidb64, token):
 def user_profile(request, username):
     user = get_user_by_username(username)
     return render(request, 'users/profile.html', {'user': user})
+
+
+def edit_user_profile(request, username):
+    form = CustomUserChangeForm(instance=get_user_by_username(username))
+    # password_form = auth_forms.SetPasswordForm(user=get_user_by_username(username))
+    if request.method == 'POST':
+        form = CustomUserChangeForm(request.POST, request.FILES, instance=get_user_by_username(username))
+        if form.is_valid():
+            logger.info(form.is_valid())
+            form.save()
+            # password_form.save()
+            return redirect(reverse_lazy('users:profile', kwargs={'username': username}))
+        else:
+            logger.info(form.is_valid())
+            logger.info(form.errors)
+    return render(request, 'users/edit_profile.html', {'form': form})
 
 
 class CustomPasswordResetView(auth_views.PasswordResetView):

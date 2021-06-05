@@ -34,7 +34,11 @@ class CustomUserChangeForm(UserChangeForm):
 
     class Meta:
         model = CustomUser
-        fields = ('email',)
+        fields = ('email', 'avatar', 'first_name', 'last_name')
+
+        widgets = {'avatar':forms.FileInput(
+            attrs={'class':'form-control', 'required': False, } 
+        )}
 
 
 class CustomPasswordResetForm(PasswordResetForm):
