@@ -1,7 +1,5 @@
-from .forms import CustomUserCreationForm, LoginForm, CustomPasswordResetForm, PasswordResetConfirmForm, CustomUserChangeForm
-from .services import get_and_activate_user, get_user_by_email, get_user_by_username
-from .tasks import task_send_email
-from .tokens import account_activation_token
+import logging
+
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout, views as auth_views, forms as auth_forms
 from django.contrib.auth.decorators import login_required
@@ -12,7 +10,12 @@ from django.urls import reverse_lazy
 from django.utils.encoding import force_bytes, force_text
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.utils.translation import ugettext_lazy as _
-import logging
+
+from .forms import CustomUserCreationForm, LoginForm, CustomPasswordResetForm, PasswordResetConfirmForm, CustomUserChangeForm
+from .services import get_and_activate_user, get_user_by_email, get_user_by_username
+from .tasks import task_send_email
+from .tokens import account_activation_token
+
 
 logger = logging.getLogger(__name__)
 
@@ -44,6 +47,7 @@ def api_login_user(request):
             return render(request, 'users/log.html', context={'signup_form': signup_form, 'login_form': login_form, 'signup':False})
 
 
+@login_required
 def api_logout_user(request):
     logout(request)
     return redirect(reverse('judge:problem_list'))
@@ -85,11 +89,6 @@ def api_activate_account(request, uidb64, token):
     else:
         messages.error(request, _('Activation link is invalid!'))
     return api_get_login_and_register_user(request)
-
-
-# def api_password_reset(request):
-# TODO
-#     pass
 
 
 def user_profile(request, username):

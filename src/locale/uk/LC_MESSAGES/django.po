@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-20 16:30+0300\n"
+"POT-Creation-Date: 2021-06-12 14:32+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,185 +22,244 @@ msgstr ""
 "(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: competitions/apps.py:9 competitions/models.py:21
+#: competitions/templates/competition_problems/problem_detail.html:11
+#: competitions/templates/competition_problems/submit_solution.html:18
+#: competitions/templates/competitions/competition_detail.html:25
 #: competitions/templates/competitions/competition_list.html:4
-#: competitions/templates/competitions/competition_list.html:13
-#: groups/templates/groups/group_detail.html:40
-#: news/templates/news/index.html:15 templates/base.html:25
+#: competitions/templates/competitions/competition_list.html:18
+#: groups/templates/groups/group_detail.html:81
+#: news/templates/news/index.html:19 templates/base.html:47
+#: templates/base.html:90
 msgid "Competitions"
 msgstr "Змагання"
 
-#: competitions/forms.py:7 groups/templates/groups/competition_create.html:29
+#: competitions/forms.py:12
+#: competitions/templates/competitions/competition_list.html:27
+#: news/templates/news/index.html:28
 msgid "Competition title"
 msgstr "Назва змагання"
 
-#: competitions/forms.py:9 groups/templates/groups/competition_create.html:39
+#: competitions/forms.py:14
 msgid "Competition start date"
 msgstr "Дата початку змагання"
 
-#: competitions/forms.py:13 groups/templates/groups/competition_create.html:44
+#: competitions/forms.py:18
 msgid "Competition end date"
 msgstr "Дата кінця змагання"
 
-#: competitions/models.py:8 groups/templates/groups/group_list.html:19
-#: groups/templates/groups/group_list.html:24
+#: competitions/forms.py:30
+msgid "End date have to go after start_date"
+msgstr "Дата завершення повинна бути після дати початку"
+
+#: competitions/models.py:8 groups/templates/groups/group_list.html:23
+#: groups/templates/groups/group_list.html:30
 msgid "Description"
 msgstr "Деталі"
 
 #: competitions/models.py:20
-#, fuzzy
-#| msgid "Competitions"
 msgid "Competition"
 msgstr "Змагання"
 
-#: competitions/templates/competition_problems/problem_detail.html:17
-#: judge/templates/judge/problem_detail.html:23
-msgid "Memory limit"
-msgstr "Ліміт пам'яті"
+#: competitions/templates/competition_problems/problem_detail.html:26
+#: judge/models.py:68 judge/templates/judge/problem_detail.html:27
+msgid "Input"
+msgstr "Вхід"
 
-#: competitions/templates/competition_problems/problem_detail.html:18
-#: judge/templates/judge/problem_detail.html:24
+#: competitions/templates/competition_problems/problem_detail.html:29
+#: judge/models.py:69 judge/templates/judge/problem_detail.html:30
+msgid "Output"
+msgstr "Вихід"
+
+#: competitions/templates/competition_problems/problem_detail.html:37
+#: judge/templates/judge/problem_detail.html:38
 msgid "Time limit"
 msgstr "Ліміт часу"
 
-#: competitions/templates/competition_problems/problem_detail.html:18
-#: judge/templates/judge/problem_detail.html:24
+#: competitions/templates/competition_problems/problem_detail.html:37
+#: judge/templates/judge/problem_detail.html:38
 msgid "seconds"
 msgstr "секунд"
 
-#: competitions/templates/competition_problems/problem_detail.html:22
-#: judge/templates/judge/problem_detail.html:28
+#: competitions/templates/competition_problems/problem_detail.html:41
+#: judge/templates/judge/problem_detail.html:42
 msgid "Input example "
 msgstr "Вхідні дані "
 
-#: competitions/templates/competition_problems/problem_detail.html:23
-#: judge/templates/judge/problem_detail.html:29
+#: competitions/templates/competition_problems/problem_detail.html:42
+#: judge/templates/judge/problem_detail.html:43
 msgid "Output example "
 msgstr "Вихідні дані "
 
-#: competitions/templates/competition_problems/problem_detail.html:26
-#: judge/templates/judge/problem_detail.html:32
+#: competitions/templates/competition_problems/problem_detail.html:45
+#: judge/templates/judge/problem_detail.html:46
 msgid "No samples. Think by yourself."
 msgstr "Прикладів немає. Придумайте їх самостійно."
 
-#: competitions/templates/competition_problems/problem_detail.html:30
-#: judge/templates/judge/problem_detail.html:36
+#: competitions/templates/competition_problems/problem_detail.html:49
+#: competitions/templates/competition_problems/submit_solution.html:21
+#: competitions/templates/competition_problems/submit_solution.html:27
+#: judge/templates/judge/problem_detail.html:50
+#: judge/templates/judge/submit_solution.html:16
 msgid "Submit solution"
 msgstr "Відправити розв'язок"
 
 #: competitions/templates/competition_problems/search_problems_to_competition.html:4
-msgid "Find problem to competition"
+#: competitions/templates/competition_problems/search_problems_to_competition.html:10
+#: competitions/templates/competitions/competition_problems.html:73
+msgid "Add problem to competition"
 msgstr "Додати задачу до змагання"
 
 #: competitions/templates/competition_problems/search_problems_to_competition.html:25
-#: competitions/templates/competition_problems/submit_solution.html:27
-#: competitions/templates/competitions/competition_create.html:27
+#: competitions/templates/competitions/competition_create.html:28
 msgid "Hidden field "
 msgstr "Скрите поле "
 
-#: competitions/templates/competition_problems/search_problems_to_competition.html:35
+#: competitions/templates/competition_problems/search_problems_to_competition.html:36
 #: judge/forms.py:38
 msgid "Type a problem"
 msgstr "Введіть номер або назву задачі"
 
-#: competitions/templates/competition_problems/solution_list.html:12
-#: competitions/templates/competition_problems/solution_list.html:35
-#: judge/templates/judge/solution_list.html:22
-#: judge/templates/judge/solution_list.html:45
+#: competitions/templates/competition_problems/solution_list.html:7
+#: judge/models.py:163 judge/templates/judge/solution_list.html:4
+#: judge/templates/judge/solution_list.html:17
+msgid "Solutions"
+msgstr "Розв'язки"
+
+#: competitions/templates/competition_problems/solution_list.html:16
+#: competitions/templates/competition_problems/solution_list.html:41
+#: judge/templates/judge/solution_list.html:26
+#: judge/templates/judge/solution_list.html:51
 #: templates/admin/statistics.html:21 templates/admin/statistics.html:35
 #: templates/admin/statistics.html:55 templates/admin/statistics.html:69
 msgid "Problem title"
 msgstr "Заголовок завдання"
 
-#: competitions/templates/competition_problems/solution_list.html:15
-#: competitions/templates/competition_problems/solution_list.html:38
-#: judge/templates/judge/solution_list.html:25
-#: judge/templates/judge/solution_list.html:48
+#: competitions/templates/competition_problems/solution_list.html:19
+#: competitions/templates/competition_problems/solution_list.html:44
+#: judge/templates/judge/solution_detail.html:26
+#: judge/templates/judge/solution_list.html:29
+#: judge/templates/judge/solution_list.html:54
 msgid "Author"
 msgstr "Автор"
 
-#: competitions/templates/competition_problems/solution_list.html:18
-#: competitions/templates/competition_problems/solution_list.html:41
+#: competitions/templates/competition_problems/solution_list.html:22
+#: competitions/templates/competition_problems/solution_list.html:47
 #: judge/forms.py:8 judge/forms.py:17 judge/models.py:27 judge/models.py:37
-#: judge/templates/judge/solution_list.html:28
-#: judge/templates/judge/solution_list.html:51
+#: judge/templates/judge/solution_detail.html:22
+#: judge/templates/judge/solution_list.html:32
+#: judge/templates/judge/solution_list.html:57
 msgid "Programming language"
 msgstr "Мова програмування"
 
-#: competitions/templates/competition_problems/solution_list.html:21
-#: competitions/templates/competition_problems/solution_list.html:44
-#: judge/models.py:148 judge/templates/judge/solution_list.html:31
-#: judge/templates/judge/solution_list.html:54
+#: competitions/templates/competition_problems/solution_list.html:25
+#: competitions/templates/competition_problems/solution_list.html:50
+#: judge/models.py:148 judge/templates/judge/solution_detail.html:18
+#: judge/templates/judge/solution_list.html:35
+#: judge/templates/judge/solution_list.html:60
 msgid "Solving date"
 msgstr "Дата відправки"
 
-#: competitions/templates/competition_problems/solution_list.html:24
-#: competitions/templates/competition_problems/solution_list.html:47
+#: competitions/templates/competition_problems/solution_list.html:28
+#: competitions/templates/competition_problems/solution_list.html:53
 #: competitions/templates/competitions/competition_problems.html:9
-#: judge/templates/judge/problem_list.html:40
-#: judge/templates/judge/solution_list.html:34
-#: judge/templates/judge/solution_list.html:57
+#: judge/templates/judge/problem_list.html:42
+#: judge/templates/judge/solution_detail.html:30
+#: judge/templates/judge/solution_detail.html:44
+#: judge/templates/judge/solution_list.html:38
+#: judge/templates/judge/solution_list.html:63
 msgid "Status"
 msgstr "Статус"
 
-#: competitions/templates/competition_problems/solution_list.html:27
-#: competitions/templates/competition_problems/solution_list.html:50
-#: judge/templates/judge/solution_list.html:37
-#: judge/templates/judge/solution_list.html:60
+#: competitions/templates/competition_problems/solution_list.html:31
+#: competitions/templates/competition_problems/solution_list.html:65
+#: judge/templates/judge/solution_detail.html:45
+#: judge/templates/judge/solution_list.html:41
+#: judge/templates/judge/solution_list.html:75
 msgid "Time usage"
 msgstr "Затрачено часу"
 
-#: competitions/templates/competition_problems/solution_list.html:72
+#: competitions/templates/competition_problems/solution_list.html:88
 msgid "No submitted solutions in this competition yet."
 msgstr "У цьому змаганні поки ніхто не відправляв розв'язки."
 
 #: competitions/templates/competition_problems/submit_solution.html:5
-msgid "Solve task "
-msgstr "Розв'язати задачу "
+msgid "Solve competition problem"
+msgstr "Розв'язати задачу"
 
-#: competitions/templates/competition_problems/submit_solution.html:47
-#: judge/templates/judge/submit_solution.html:47
+#: competitions/templates/competition_problems/submit_solution.html:43
+#: groups/templates/groups/group_create.html:30
+#: judge/templates/judge/submit_solution.html:32
+msgid "Hidden field"
+msgstr "Скрите поле"
+
+#: competitions/templates/competition_problems/submit_solution.html:63
+#: judge/templates/judge/submit_solution.html:52
 msgid "Submit"
 msgstr "Відправити"
 
 #: competitions/templates/competitions/competition_create.html:5
-#: groups/templates/groups/group_detail_competitions_tab.html:23
+#: groups/templates/groups/competition_create.html:6
+#: groups/templates/groups/group_detail_competitions_tab.html:51
 msgid "Create competition"
 msgstr "Створити змагання"
 
-#: competitions/templates/competitions/competition_create.html:51
-#: groups/templates/groups/competition_create.html:47
-#: groups/templates/groups/group_create.html:44
+#: competitions/templates/competitions/competition_create.html:52
+#: groups/templates/groups/competition_create.html:29
+#: groups/templates/groups/group_create.html:50
 msgid "Create"
 msgstr "Створити"
 
-#: competitions/templates/competitions/competition_detail.html:21
-#: judge/models.py:106 judge/templates/judge/problem_list.html:4
-#: judge/templates/judge/problem_list.html:14 templates/base.html:23
+#: competitions/templates/competitions/competition_detail.html:38
+#: judge/models.py:106 judge/templates/judge/problem_detail.html:13
+#: judge/templates/judge/problem_list.html:4
+#: judge/templates/judge/problem_list.html:36 templates/base.html:45
+#: templates/base.html:88
 msgid "Problems"
 msgstr "Задачі"
 
-#: competitions/templates/competitions/competition_detail.html:28
+#: competitions/templates/competitions/competition_detail.html:45
 msgid "Leaderboard"
 msgstr "Дошка лідерів"
 
-#: competitions/templates/competitions/competition_detail.html:35
+#: competitions/templates/competitions/competition_detail.html:52
 msgid "Competition queue"
 msgstr "Розв'язки задач змагання"
 
-#: competitions/templates/competitions/competition_list.html:54
+#: competitions/templates/competitions/competition_list.html:30
+#: groups/templates/groups/group_detail_competitions_tab.html:18
+#: groups/templates/groups/group_detail_group_tab.html:19
+#: news/templates/news/index.html:31
+msgid "Start date"
+msgstr "Дата початку"
+
+#: competitions/templates/competitions/competition_list.html:33
+#: groups/templates/groups/group_detail_competitions_tab.html:21
+#: groups/templates/groups/group_detail_group_tab.html:22
+#: news/templates/news/index.html:34
+msgid "End date"
+msgstr "Дата завершення"
+
+#: competitions/templates/competitions/competition_list.html:36
+#: groups/models.py:17 groups/templates/groups/group_detail.html:67
+#: news/templates/news/index.html:37
+msgid "Group"
+msgstr "Група"
+
+#: competitions/templates/competitions/competition_list.html:84
 msgid "No available competitions yet."
 msgstr "На даний момент немає доступних змагань."
 
 #: competitions/templates/competitions/competition_problems.html:10
-#: judge/forms.py:69 judge/templates/judge/problem_list.html:41
+#: judge/forms.py:69 judge/templates/judge/problem_list.html:43
 msgid "Number"
 msgstr "Номер"
 
 #: competitions/templates/competitions/competition_problems.html:11
-#: groups/templates/groups/group_detail_group_tab.html:9
-#: groups/templates/groups/group_list.html:18
-#: groups/templates/groups/group_list.html:23
-#: judge/templates/judge/problem_list.html:42 news/models.py:6
+#: groups/templates/groups/group_detail_competitions_tab.html:15
+#: groups/templates/groups/group_detail_group_tab.html:16
+#: groups/templates/groups/group_list.html:22
+#: groups/templates/groups/group_list.html:29
+#: judge/templates/judge/problem_list.html:44 news/models.py:6
 msgid "Title"
 msgstr "Заголовок"
 
@@ -208,23 +267,27 @@ msgstr "Заголовок"
 msgid "Delete?"
 msgstr "Видалити?"
 
-#: competitions/templates/competitions/competition_problems.html:47
+#: competitions/templates/competitions/competition_problems.html:25
+#: judge/templates/judge/problem_list.html:56
+msgid "Not submitted"
+msgstr "Не відправлялась"
+
+#: competitions/templates/competitions/competition_problems.html:65
 msgid "No problems in this competition yet."
 msgstr "У цьому змаганні поки немає задач для розв'язку."
 
-#: competitions/templates/competitions/competition_problems.html:55
-msgid "Add problem to competition"
-msgstr "Додати задачу до змагання"
-
-#: competitions/templates/competitions/leaderboard.html:9 users/models.py:32
+#: competitions/templates/competitions/leaderboard.html:11
+#: competitions/templates/competitions/leaderboard.html:22 users/models.py:41
 msgid "User"
 msgstr "Користувач"
 
-#: competitions/templates/competitions/leaderboard.html:10
+#: competitions/templates/competitions/leaderboard.html:12
+#: competitions/templates/competitions/leaderboard.html:25
+#: users/templates/users/profile.html:50
 msgid "Solved problems"
 msgstr "Кількість вирішених задач"
 
-#: competitions/templates/competitions/leaderboard.html:23
+#: competitions/templates/competitions/leaderboard.html:35
 msgid "Noone successfully solved at least 1 problem in competition yet."
 msgstr "У цьому змаганні поки ніхто успішно не вирішив хоча б 1 задачу"
 
@@ -264,23 +327,23 @@ msgstr "Зараховано"
 msgid "Competition not found"
 msgstr "Змагання не знайдено"
 
-#: competitions/views.py:114 judge/views.py:68
+#: competitions/views.py:114 judge/views.py:67
 msgid "Problem not found"
 msgstr "Задачу не знайдено"
 
-#: competitions/views.py:166
+#: competitions/views.py:171
 msgid "Problem added successfully!"
 msgstr "Задачу додано успішно!"
 
-#: competitions/views.py:168
+#: competitions/views.py:173
 msgid "This problem is already in competition!"
 msgstr "Це завдання вже є у змаганні!"
 
-#: competitions/views.py:208
+#: competitions/views.py:213
 msgid "Problem in this competition not found"
 msgstr "У цьому змаганні поки немає задач для розв'язку."
 
-#: competitions/views.py:209
+#: competitions/views.py:214
 msgid "Problem deleted from competition"
 msgstr "Задачу видалено зі змагання"
 
@@ -292,11 +355,11 @@ msgstr "Англійська"
 msgid "Ukrainian"
 msgstr "Українська"
 
-#: config/urls.py:12
+#: config/urls.py:13
 msgid "Olympiad-helper administration"
 msgstr "Olympiad-helper адміністрація"
 
-#: config/urls.py:13
+#: config/urls.py:14
 msgid "Welcome to Olympiad-helper administration zone"
 msgstr "Ласкаво просимо до адміністративної зони Olympiad-helper"
 
@@ -304,20 +367,18 @@ msgstr "Ласкаво просимо до адміністративної зо
 msgid "User groups"
 msgstr "Користувачі груп"
 
-#: groups/models.py:8 groups/templates/groups/group_create.html:36
+#: groups/models.py:8 groups/templates/groups/group_create.html:39
 msgid "Group name"
 msgstr "Назва групи"
 
-#: groups/models.py:9 groups/templates/groups/group_create.html:41
+#: groups/models.py:9 groups/templates/groups/group_create.html:46
 msgid "Group description"
 msgstr "Опис групи"
 
-#: groups/models.py:17 groups/templates/groups/group_detail.html:26
-msgid "Group"
-msgstr "Група"
-
-#: groups/models.py:18 groups/templates/groups/group_list.html:4
-#: groups/templates/groups/group_list.html:14 templates/base.html:27
+#: groups/models.py:18 groups/templates/groups/group_detail.html:32
+#: groups/templates/groups/group_list.html:4
+#: groups/templates/groups/group_list.html:16 templates/base.html:49
+#: templates/base.html:92
 msgid "Groups"
 msgstr "Групи"
 
@@ -329,7 +390,7 @@ msgstr "Вчитель"
 msgid "Student"
 msgstr "Студент"
 
-#: groups/models.py:34
+#: groups/models.py:34 groups/templates/groups/group_detail_members_tab.html:13
 msgid "Role"
 msgstr "Роль"
 
@@ -337,62 +398,62 @@ msgstr "Роль"
 msgid "User group"
 msgstr "Користувацькі групи"
 
-#: groups/templates/groups/competition_create.html:19
-#: groups/templates/groups/group_create.html:26
-#: judge/templates/judge/submit_solution.html:27
-msgid "Hidden field"
-msgstr "Скрите поле"
-
-#: groups/templates/groups/competition_create.html:34
-msgid "Competition description"
-msgstr "Опис змагання"
-
 #: groups/templates/groups/group_create.html:5
-#: groups/templates/groups/group_list.html:47
+#: groups/templates/groups/group_create.html:14
+#: groups/templates/groups/group_list.html:53
 msgid "Create group"
 msgstr "Створити групу"
 
-#: groups/templates/groups/group_detail.html:33
+#: groups/templates/groups/group_detail.html:74
 msgid "Members"
 msgstr "Учасники"
 
-#: groups/templates/groups/group_detail_competitions_tab.html:21
+#: groups/templates/groups/group_detail_competitions_tab.html:6
+msgid "Group competitions"
+msgstr "Групові змагання"
+
+#: groups/templates/groups/group_detail_competitions_tab.html:49
 msgid "No competitions in this group yet"
 msgstr "У цій групі поки не проводилися змагання"
 
-#: groups/templates/groups/group_detail_group_tab.html:12
-msgid "Start date"
-msgstr "Дата початку"
+#: groups/templates/groups/group_detail_group_tab.html:7
+msgid "Active competitions"
+msgstr "Активні змагання"
 
-#: groups/templates/groups/group_detail_group_tab.html:15
-msgid "End date"
-msgstr "Дата завершення"
-
-#: groups/templates/groups/group_detail_group_tab.html:33
+#: groups/templates/groups/group_detail_group_tab.html:51
 msgid "No active competitions in this group yet"
 msgstr "У цій групі на поточний час немає активних змагань"
 
-#: groups/templates/groups/group_detail_members_tab.html:58
+#: groups/templates/groups/group_detail_members_tab.html:6
+msgid "Active members"
+msgstr "Активні учасники"
+
+#: groups/templates/groups/group_detail_members_tab.html:12
+#: groups/templates/groups/group_detail_members_tab.html:35
+msgid "Member"
+msgstr "Учасник"
+
+#: groups/templates/groups/group_detail_members_tab.html:63
 msgid "No members in this group yet"
 msgstr "У цій групі поки немає учасників"
 
-#: groups/templates/groups/group_detail_members_tab.html:61
+#: groups/templates/groups/group_detail_members_tab.html:67
 msgid "Invite link"
 msgstr "Посилання на вступ до групи"
 
-#: groups/templates/groups/group_list.html:45
+#: groups/templates/groups/group_list.html:51
 msgid "No available groups yet"
 msgstr "Поки нема доступних груп"
 
-#: groups/views.py:48
+#: groups/views.py:52
 msgid "Group not found"
 msgstr "Групу не знайдено"
 
-#: groups/views.py:148
+#: groups/views.py:166
 msgid "User in this group not found"
 msgstr "Користувача у цій групі не знайдено"
 
-#: groups/views.py:149
+#: groups/views.py:167
 msgid "User deleted from group"
 msgstr "Користувача видалено із групи"
 
@@ -476,19 +537,11 @@ msgstr "Комбінаторика"
 msgid "Breadth-first-search"
 msgstr "Пошук-вглибину"
 
-#: judge/models.py:68 judge/templates/judge/problem_detail.html:14
-msgid "Input"
-msgstr "Вхід"
-
-#: judge/models.py:69 judge/templates/judge/problem_detail.html:17
-msgid "Output"
-msgstr "Вихід"
-
 #: judge/models.py:70
 msgid "Warning"
 msgstr "Попередження"
 
-#: judge/models.py:105
+#: judge/models.py:105 judge/templates/judge/solution_detail.html:14
 msgid "Problem"
 msgstr "Задача"
 
@@ -509,14 +562,9 @@ msgid "Problem tests"
 msgstr "Тести до задачі"
 
 #: judge/models.py:162 judge/templates/judge/solution_detail.html:4
-#: judge/templates/judge/solution_detail.html:8
+#: judge/templates/judge/solution_detail.html:9
 msgid "Solution"
 msgstr "Розв'язкок"
-
-#: judge/models.py:163 judge/templates/judge/solution_list.html:4
-#: judge/templates/judge/solution_list.html:14
-msgid "Solutions"
-msgstr "Розв'язки"
 
 #: judge/models.py:185 judge/models.py:186
 msgid "Solution tests"
@@ -534,19 +582,23 @@ msgstr "Статус рішення задачі користувачем"
 msgid "User problem statuses"
 msgstr "Статуси рішення задач користувачами"
 
-#: judge/templates/judge/problem_list.html:86
+#: judge/templates/judge/problem_list.html:103
 msgid "No problems founded"
 msgstr "Жодної задачі не знайдено"
 
-#: judge/templates/judge/solution_list.html:82
-msgid "No submitted solutions yet"
-msgstr "Поки немає відправлених розв'язків"
+#: judge/templates/judge/solution_detail.html:34
+msgid "Avg time usage"
+msgstr "Затрачено часу"
+
+#: judge/templates/judge/solution_detail.html:43
+msgid "Test"
+msgstr "Тест"
 
 #: judge/templates/judge/submit_solution.html:5
-msgid "Solve task"
-msgstr "Розв'язати задачу"
+msgid "Solve problem"
+msgstr "Вирішити задачу"
 
-#: judge/views.py:102
+#: judge/views.py:101
 msgid "Solution not found"
 msgstr "Розв'язок не знайдений"
 
@@ -562,8 +614,8 @@ msgstr "Стаття"
 msgid "Articles"
 msgstr "Статті"
 
-#: news/templates/news/index.html:5 news/templates/news/index.html:39
-#: templates/base.html:22
+#: news/templates/news/index.html:5 news/templates/news/index.html:74
+#: templates/base.html:44 templates/base.html:87
 msgid "News"
 msgstr "Новини"
 
@@ -589,31 +641,67 @@ msgstr "Відсоток правильних розв'язків"
 msgid "Most solvable problems"
 msgstr "Задачі, які розв'язують більш за все"
 
-#: templates/base.html:24
+#: templates/base.html:46 templates/base.html:89
 msgid "Queue"
 msgstr "Черга"
 
-#: templates/base.html:30
+#: templates/base.html:64
+msgid "Profile"
+msgstr "Профіль"
+
+#: templates/base.html:65 users/templates/users/edit_profile.html:10
+msgid "Edit profile"
+msgstr "Редагувати профіль"
+
+#: templates/base.html:67
+msgid "Logout"
+msgstr "Вийти"
+
+#: templates/base.html:72
 msgid "Sign in/Sign up"
 msgstr "Вхід/Реєстрація"
+
+#: templates/base.html:99
+msgid "Recommended literature"
+msgstr "Рекомендована література"
+
+#: templates/base.html:101
+msgid "How to solve a problem"
+msgstr "Як вирішити задачу"
+
+#: templates/base.html:102
+msgid "Grokking Algorithms"
+msgstr "Грокаем алгоритми"
+
+#: templates/base.html:104
+msgid "Solving Olympic problems on programming"
+msgstr "Вирішуємо олімпіадні задачі з програмування"
+
+#: templates/base.html:108
+msgid "Similar resources"
+msgstr "Схожі ресурси"
+
+#: templates/base.html:118
+msgid "Developed by Andrew Moshko"
+msgstr "Розробив Андрій Мошко"
 
 #: users/forms.py:29
 msgid "Email"
 msgstr "Email"
 
-#: users/forms.py:30 users/templates/users/log.html:40
+#: users/forms.py:30 users/templates/users/log.html:42
 msgid "Password"
 msgstr "Пароль"
 
-#: users/forms.py:43
+#: users/forms.py:47
 msgid "Confirm your password reset on "
 msgstr "Підтвердіть вашу зміну пароля на "
 
-#: users/forms.py:61
+#: users/forms.py:65
 msgid "User with inputed email is not exists!"
 msgstr "Користувача з введеними поштою не зареєстровано у системі!"
 
-#: users/forms.py:63
+#: users/forms.py:67
 msgid "The user is blocked or not confused his mail!"
 msgstr "Користувача заблоковано або він не підтвердив свою пошту!"
 
@@ -629,11 +717,11 @@ msgstr "Суперкористувач повинен мати is_staff=True."
 msgid "Superuser must have is_superuser=True."
 msgstr "Суперкористувач повинен мати is_superuser=True."
 
-#: users/models.py:9
+#: users/models.py:17
 msgid "email address"
 msgstr "Email пошта"
 
-#: users/models.py:33
+#: users/models.py:42
 msgid "Users"
 msgstr "Користувачі"
 
@@ -645,98 +733,102 @@ msgstr "Привіт"
 msgid "Please click on the link to confirm your registration"
 msgstr "Будь ласка, натисни на посилання для підтвердження реєстрації"
 
+#: users/templates/users/edit_profile.html:52
+msgid "Update"
+msgstr "Оновити"
+
 #: users/templates/users/log.html:5
 msgid "Login & Signup"
 msgstr "Вхід/Реєстрація"
 
-#: users/templates/users/log.html:14
+#: users/templates/users/log.html:15
 msgid "Login Form"
 msgstr "Форма входу"
 
-#: users/templates/users/log.html:15
+#: users/templates/users/log.html:16
 msgid "Signup Form"
 msgstr "Реєстрація"
 
-#: users/templates/users/log.html:21 users/templates/users/log.html:47
+#: users/templates/users/log.html:22 users/templates/users/log.html:49
 msgid "Login"
 msgstr "Вхід"
 
-#: users/templates/users/log.html:22 users/templates/users/log.html:83
+#: users/templates/users/log.html:23 users/templates/users/log.html:91
 msgid "Signup"
 msgstr "Реєстрація"
 
-#: users/templates/users/log.html:35
-#: users/templates/users/password_reset.html:28
+#: users/templates/users/log.html:37
+#: users/templates/users/password_reset.html:29
 msgid "Email Address"
 msgstr "Email пошта"
 
-#: users/templates/users/log.html:43
+#: users/templates/users/log.html:45
 msgid "Forgot password?"
 msgstr "Забули пароль?"
 
-#: users/templates/users/log.html:52
+#: users/templates/users/log.html:58
 msgid "Not a member"
 msgstr "Ще не зареєстровані?"
 
-#: users/templates/users/log.html:52
+#: users/templates/users/log.html:58
 msgid "Signup now"
 msgstr "Зареєструватися зараз"
 
-#: users/templates/users/log.html:68
+#: users/templates/users/log.html:78
 msgid "Username"
 msgstr "Нікнейм"
 
-#: users/templates/users/log.html:77
-#: users/templates/users/password_reset_confirm.html:36
+#: users/templates/users/log.html:85
+#: users/templates/users/password_reset_confirm.html:37
 msgid "Confirm password"
 msgstr "Підтвердіть пароль"
 
 #: users/templates/users/password_reset.html:5
 #: users/templates/users/password_reset_confirm.html:5
-#: users/templates/users/password_reset_confirm.html:14
-#: users/templates/users/password_reset_done.html:14
+#: users/templates/users/password_reset_confirm.html:15
+#: users/templates/users/password_reset_done.html:15
 msgid "Reset your password"
 msgstr "Зміна вашого пароля"
 
-#: users/templates/users/password_reset.html:14
+#: users/templates/users/password_reset.html:15
 msgid "Reset Password"
 msgstr "Зміна пароля"
 
-#: users/templates/users/password_reset.html:36
+#: users/templates/users/password_reset.html:37
 msgid "Confirm password reset"
 msgstr "Підтвердіть зміну пароля"
 
-#: users/templates/users/password_reset.html:38
-#: users/templates/users/password_reset_confirm.html:46
+#: users/templates/users/password_reset.html:39
+#: users/templates/users/password_reset_confirm.html:47
 msgid "Remembered password? Login"
 msgstr "Згадали пароль? Авторизуйтесь"
 
 #: users/templates/users/password_reset_complete.html:4
-#: users/templates/users/password_reset_complete.html:13
+#: users/templates/users/password_reset_complete.html:14
 msgid "Password reset"
 msgstr "Зміна паролю"
 
-#: users/templates/users/password_reset_complete.html:16
+#: users/templates/users/password_reset_complete.html:17
 msgid "Your password has been set. You can "
 msgstr "Ваш пароль було змінено. Ви можете"
 
-#: users/templates/users/password_reset_complete.html:16
+#: users/templates/users/password_reset_complete.html:17
 msgid "log in now"
 msgstr "авторизуйтесь зараз"
 
-#: users/templates/users/password_reset_confirm.html:21
+#: users/templates/users/password_reset_confirm.html:22
 msgid "Please, enter your new password twice:"
 msgstr "Будь ласка, введіть ваш пароль двічі:"
 
-#: users/templates/users/password_reset_confirm.html:31
+#: users/templates/users/password_reset_confirm.html:32
 msgid "Enter your new password"
 msgstr "Введіть ваш новий пароль"
 
-#: users/templates/users/password_reset_confirm.html:44
+#: users/templates/users/password_reset_confirm.html:45
 msgid "Change my password"
 msgstr "Змінити пароль"
 
-#: users/templates/users/password_reset_confirm.html:52
+#: users/templates/users/password_reset_confirm.html:53
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
@@ -748,7 +840,7 @@ msgstr ""
 msgid "Reset your Password"
 msgstr "Змініть Ваш пароль"
 
-#: users/templates/users/password_reset_done.html:17
+#: users/templates/users/password_reset_done.html:18
 msgid "We've emailed you instructions for setting your password."
 msgstr "Ми вислали інструкцію зі зміни пароля на вашу пошту."
 
@@ -771,6 +863,22 @@ msgstr "Дякуємо за користуванням нашим сервісо
 #, python-format
 msgid "The %(site_name)s team"
 msgstr "Команда %(site_name)s"
+
+#: users/templates/users/profile.html:35
+msgid "Last visit at"
+msgstr "Останній раз онлайн був"
+
+#: users/templates/users/profile.html:42
+msgid "Joined at"
+msgstr "Приєднався"
+
+#: users/templates/users/profile.html:54
+msgid "Total submissions"
+msgstr "Усього відправлень"
+
+#: users/templates/users/profile.html:58
+msgid "Accepted submits"
+msgstr "Зарахованих відпраленнь"
 
 #: users/views.py:39
 msgid "User is not active!"
@@ -801,6 +909,21 @@ msgstr ""
 #: users/views.py:86
 msgid "Activation link is invalid!"
 msgstr "Посилання активації не дійсне!"
+
+#~ msgid "Memory limit"
+#~ msgstr "Ліміт пам'яті"
+
+#~ msgid "Find problem to competition"
+#~ msgstr "Додати задачу до змагання"
+
+#~ msgid "Solve task "
+#~ msgstr "Розв'язати задачу "
+
+#~ msgid "Competition description"
+#~ msgstr "Опис змагання"
+
+#~ msgid "Solve task"
+#~ msgstr "Розв'язати задачу"
 
 #~ msgid "Create problem"
 #~ msgstr "Створити задачу"

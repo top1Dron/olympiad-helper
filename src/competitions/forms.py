@@ -25,7 +25,6 @@ class CompetitionForm(forms.ModelForm):
 
     def clean(self):
         data = self.cleaned_data
-        logger.info(data)
         if data['end_date'] <= data['start_date']:
-            raise forms.ValidationError(_('Start date have to go after start_date'))
+            raise forms.ValidationError(_('End date have to go after start_date'))
         return super().clean()

@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <title>{% block title %}Base template{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% comment %} <link rel="stylesheet" href="{% static 'css/judge/base.css' %}"> {% endcomment %}
     <link href="{% static 'assets/dist/css/bootstrap.css' %}" rel="stylesheet">
     {% block extra_css %}{% endblock extra_css %}
 
@@ -24,18 +23,9 @@
           font-size: 3.5rem;
         }
       }
-      {% comment %} .navbar-nav > .active > a {
-        color: aqua;
-        background-color: chartreuse;
-      }
-      .nav-item > a:hover {
-        color: aqua;
-      } {% endcomment %}
     </style>
 
     <link rel="short icon" href="{% static 'favicon.ico' %}">
-    {% comment %} <script src="{% static 'js/base.js' %}" type="module"></script> {% endcomment %}
-    {% comment %} <link href="{% static 'css/headers.css' %}" rel="stylesheet"> {% endcomment %}
     {% block extra_head %}{% endblock extra_head %}
 </head>
 <body>
@@ -85,11 +75,10 @@
         </div>
       </div>
     </nav>
-  {% comment %} </header> {% endcomment %}
 
 </main>
-<div class="main_content w-100" style="background-image: url('{% static "img/background.jpg" %}');min-height:70vh;">{% block main_content %}{% endblock main_content %}</div>
-<footer class="bg-light mt-2">
+<div class="main_content w-100" style="background-image: url('{% static "img/background.jpg" %}');min-height:80vh;">{% block main_content %}{% endblock main_content %}</div>
+<footer class="bg-light mt-2 d-bottom">
   <div class="container">
     <div class="row">
         <div class="col-6 col-md-4">
@@ -112,20 +101,16 @@
                 <li><a href="https://www.e-olymp.com/uk/help/how-to-solve-a-problem" class="link-secondary text-decoration-none">{% trans "How to solve a problem" %}</a></li>
                 <li><a href="https://ru.pdfdrive.com/%D0%93%D1%80%D0%BE%D0%BA%D0%B0%D0%B5%D0%BC-%D0%B0%D0%BB%D0%B3%D0%BE%D1%80%D0%B8%D1%82%D0%BC%D1%8B-e186671794.html" class="link-secondary text-decoration-none">{% trans "Grokking Algorithms" %}</a></li>
                 <li><a href="https://ioinformatics.org/files/booklet-ioi2018.pdf" class="link-secondary text-decoration-none">Booklet (IOI 2018)</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="http://vvman.lutsk.ua/file/k60.pdf" class="link-secondary text-decoration-none">{% trans "Solving Olympic problems on programming" %}</a></li>
             </ul>
         </div>
         <div class="col-6 col-md-4">
-            <h5 class="text-center">Dron dev</h5>
+            <h5 class="text-center">{% trans "Similar resources" %}</h5>
             <ul class="list-unstyled text-small text-center">
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
-                <li><a href="" class="link-secondary text-decoration-none">Blog</a></li>
+                <li><a href="https://judge.u-aizu.ac.jp/onlinejudge/" class="link-secondary text-decoration-none">AIZU online judge</a></li>
+                <li><a href="https://www.spoj.com/" class="link-secondary text-decoration-none">SPOJ</a></li>
+                <li><a href="https://www.e-olymp.com/uk/" class="link-secondary text-decoration-none">E-Olymp</a></li>
+                <li><a href="https://www.urionlinejudge.com.br/judge/en/login" class="link-secondary text-decoration-none">URI online judge</a></li>
             </ul>
         </div>
     </div>

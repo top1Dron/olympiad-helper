@@ -57,6 +57,11 @@ class Problem(models.Model):
 
         ('CB', _('Combinatorics')),
         ('BS', _('Breadth-first-search')),
+        ('2S', _('2-set')),
+        ('AS', _('Algorithms on strings')),
+        ('BG', _('Beginners')),
+        ('SB', _('Binary-search')),
+        ('DS', _('Depth-first-search'))
     )
 
     number = models.SlugField(max_length=1000, unique=True)

@@ -25,7 +25,7 @@ class ProblemListView(ListView):
     model = Problem
     template_name = 'judge/problem_list.html'
     context_object_name = 'problems'
-    paginate_by = 10
+    paginate_by = 3
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

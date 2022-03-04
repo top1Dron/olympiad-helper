@@ -5895,3 +5895,165 @@ INFO 2021-06-05 14:26:26,323 views 159 /news/
 INFO 2021-06-05 14:26:26,324 views 160 en
 INFO 2021-06-05 14:26:29,620 views 159 /news/
 INFO 2021-06-05 14:26:29,634 views 160 uk
+INFO 2021-06-05 16:55:49,154 execute_solutions 143 2 3
+INFO 2021-06-05 16:55:49,157 execute_solutions 144 2 3
+
+INFO 2021-06-05 16:55:49,166 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-05 16:55:49,290 execute_solutions 143 9 9
+INFO 2021-06-05 16:55:49,290 execute_solutions 144 9 9
+
+INFO 2021-06-05 16:55:49,299 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-05 16:55:49,420 execute_solutions 143 4 5
+INFO 2021-06-05 16:55:49,421 execute_solutions 144 4 5
+
+INFO 2021-06-05 16:55:49,428 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-05 16:55:49,590 execute_solutions 143 4 0
+INFO 2021-06-05 16:55:49,591 execute_solutions 144 4 0
+
+INFO 2021-06-05 16:55:49,605 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-12 14:44:36,492 views 106 True
+INFO 2021-06-12 14:45:16,927 views 106 True
+INFO 2021-06-12 14:53:02,745 execute_solutions 98 /usr/bin/g++  -std=c++14 -o /usr/projects/olympiad-helper/src/config/media/2021-06-12--14-53-01-776_admin /usr/projects/olympiad-helper/src/config/media/2021-06-12--14-53-01-776_admin.cpp
+INFO 2021-06-12 14:53:02,808 execute_solutions 143 50.0
+INFO 2021-06-12 14:53:02,809 execute_solutions 144 50.0
+INFO 2021-06-12 14:53:02,817 execute_solutions 150 The area of a polygon 1 - done successfully.
+INFO 2021-06-19 14:50:48,050 forms 28 {'title': 'Lorem, ipsum dolor.', 'start_date': datetime.datetime(2021, 6, 12, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 7, 10, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem atque dolores tenetur veritatis impedit natus alias animi maxime nihil officiis.'}
+INFO 2021-06-19 14:51:27,690 forms 28 {'title': 'Lorem ipsum dolor sit amet.', 'start_date': datetime.datetime(2021, 6, 1, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'end_date': datetime.datetime(2021, 6, 30, 12, 0, tzinfo=<DstTzInfo 'Europe/Kiev' EEST+3:00:00 DST>), 'description': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, provident aspernatur ipsa, placeat repellendus totam ex quam incidunt quis consequatur qui temporibus nam.'}
+INFO 2021-06-19 15:18:15,183 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-18-12-412_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-18-12-412_admin.cpp
+INFO 2021-06-19 15:18:15,222 execute_solutions 143 3
+INFO 2021-06-19 15:18:15,222 execute_solutions 144 252
+INFO 2021-06-19 15:18:15,232 execute_solutions 153 Three states 1 - done failed
+INFO 2021-06-19 15:22:23,209 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-22-20-797_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-22-20-797_admin.cpp
+INFO 2021-06-19 15:22:23,277 execute_solutions 143 Problem test - 3
+INFO 2021-06-19 15:22:23,278 execute_solutions 144 Real - 252
+INFO 2021-06-19 15:22:23,291 execute_solutions 153 Three states 1 - done failed
+INFO 2021-06-19 15:23:57,626 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-23-55-616_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-23-55-616_admin.cpp
+INFO 2021-06-19 15:23:57,817 execute_solutions 143 Problem test - 3
+INFO 2021-06-19 15:23:57,819 execute_solutions 144 Real - 252
+INFO 2021-06-19 15:23:57,836 execute_solutions 153 Three states 1 - done failed
+INFO 2021-06-19 15:25:24,875 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-25-23-128_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-25-23-128_admin.cpp
+INFO 2021-06-19 15:25:24,956 execute_solutions 143 Problem test - 3
+INFO 2021-06-19 15:25:24,957 execute_solutions 144 Real - 3
+INFO 2021-06-19 15:25:24,967 execute_solutions 150 Three states 1 - done successfully.
+INFO 2021-06-19 15:30:55,410 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-30-54-944_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-30-54-944_last1war.cpp
+INFO 2021-06-19 15:30:55,467 execute_solutions 143 Problem test - 50.0
+INFO 2021-06-19 15:30:55,468 execute_solutions 144 Real - ww50.0
+INFO 2021-06-19 15:30:55,480 execute_solutions 153 summer test 2021: The area of a polygon 1 - done failed
+INFO 2021-06-19 15:49:17,937 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-19 15:49:17,938 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-19 15:49:17,944 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-19 15:49:18,034 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-19 15:49:18,036 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-19 15:49:18,043 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-19 15:49:18,150 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-19 15:49:18,151 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-19 15:49:18,165 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-19 15:49:18,285 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-19 15:49:18,287 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-19 15:49:18,303 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-19 15:50:02,349 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-50-02-196_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-50-02-196_admin.cpp
+ERROR 2021-06-19 15:50:02,412 execute_solutions 117 status - CE, /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-50-02-196_admin.cpp:2:8: warning: character constant too long for its type
+ print(f'{s[0]} {s[1]}')
+        ^~~~~~~~~~~~~~~
+/usr/projects/olympiad-helper/src/config/media/2021-06-19--15-50-02-196_admin.cpp:1:1: error: ‘s’ does not name a type
+ s = input()
+ ^
+
+INFO 2021-06-19 15:52:43,053 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-52-42-343_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--15-52-42-343_admin.cpp
+INFO 2021-06-19 15:52:43,141 execute_solutions 143 Problem test - 50.0
+INFO 2021-06-19 15:52:43,142 execute_solutions 144 Real - 50.0
+INFO 2021-06-19 15:52:43,168 execute_solutions 150 summer test 2021: The area of a polygon 1 - done successfully.
+INFO 2021-06-19 15:58:31,345 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-19 15:58:31,346 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-19 15:58:31,364 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-19 15:58:31,439 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-19 15:58:31,440 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-19 15:58:31,449 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-19 15:58:31,565 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-19 15:58:31,566 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-19 15:58:31,574 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-19 15:58:31,642 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-19 15:58:31,643 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-19 15:58:31,652 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-19 16:01:03,714 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-19--16-01-03-075_admin /usr/projects/olympiad-helper/src/config/media/2021-06-19--16-01-03-075_admin.cpp
+INFO 2021-06-19 16:01:03,941 execute_solutions 143 Problem test - 50.0
+INFO 2021-06-19 16:01:03,948 execute_solutions 144 Real - 50.0
+INFO 2021-06-19 16:01:04,014 execute_solutions 150 summer test 2021: The area of a polygon 1 - done successfully.
+INFO 2021-06-22 23:56:03,785 views 163 <QueryDict: {'csrfmiddlewaretoken': ['ATqapSBm9XlxTMCSHrd6wbcBjJzWuCkHKcXwAD5C3VMpm3ySjmCTmnJScrLd4YTh'], 'problem_search_field': ['1. Проста задача']}>
+INFO 2021-06-22 23:56:13,921 views 163 <QueryDict: {'csrfmiddlewaretoken': ['MFPqv4y8w5RNxORxYnyoqhdDnWdqh1imWYmMGP2oq3iF05NxAiXbgtKUgEpHRnRW'], 'problem_search_field': ['2. Черга з захистом від помилок']}>
+INFO 2021-06-22 23:58:03,392 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-22--23-58-02-494_last1war /usr/projects/olympiad-helper/src/config/media/2021-06-22--23-58-02-494_last1war.cpp
+INFO 2021-06-22 23:58:03,503 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-22 23:58:03,504 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-22 23:58:03,525 execute_solutions 150 summer test 2021: Simple problem 1 - done successfully.
+INFO 2021-06-22 23:58:03,577 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-22 23:58:03,578 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-22 23:58:03,601 execute_solutions 150 summer test 2021: Simple problem 2 - done successfully.
+INFO 2021-06-22 23:58:03,637 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-22 23:58:03,638 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-22 23:58:03,658 execute_solutions 150 summer test 2021: Simple problem 3 - done successfully.
+INFO 2021-06-22 23:58:03,692 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-22 23:58:03,693 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-22 23:58:03,707 execute_solutions 150 summer test 2021: Simple problem 4 - done successfully.
+INFO 2021-06-23 00:01:44,411 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-01-43-938_admin /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-01-43-938_admin.cpp
+INFO 2021-06-23 00:01:44,505 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-23 00:01:44,506 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-23 00:01:44,515 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-23 00:01:44,559 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-23 00:01:44,561 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-23 00:01:44,567 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-23 00:01:44,601 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-23 00:01:44,601 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-23 00:01:44,611 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-23 00:01:44,644 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-23 00:01:44,645 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-23 00:01:44,653 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-23 00:37:05,751 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-37-05-295_admin /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-37-05-295_admin.cpp
+INFO 2021-06-23 00:37:05,821 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-23 00:37:05,823 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-23 00:37:05,834 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-23 00:37:05,872 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-23 00:37:05,872 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-23 00:37:05,879 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-23 00:37:05,910 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-23 00:37:05,911 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-23 00:37:05,920 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-23 00:37:05,957 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-23 00:37:05,959 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-23 00:37:05,967 execute_solutions 150 Simple problem 4 - done successfully.
+INFO 2021-06-23 00:43:03,617 execute_solutions 98 /usr/bin/g++ -std=c++11 -o /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-43-02-973_admin /usr/projects/olympiad-helper/src/config/media/2021-06-23--00-43-02-973_admin.cpp
+INFO 2021-06-23 00:43:03,810 execute_solutions 143 Problem test - 2 3
+INFO 2021-06-23 00:43:03,815 execute_solutions 144 Real - 2 3
+
+INFO 2021-06-23 00:43:03,909 execute_solutions 150 Simple problem 1 - done successfully.
+INFO 2021-06-23 00:43:04,003 execute_solutions 143 Problem test - 9 9
+INFO 2021-06-23 00:43:04,006 execute_solutions 144 Real - 9 9
+
+INFO 2021-06-23 00:43:04,027 execute_solutions 150 Simple problem 2 - done successfully.
+INFO 2021-06-23 00:43:04,076 execute_solutions 143 Problem test - 4 5
+INFO 2021-06-23 00:43:04,078 execute_solutions 144 Real - 4 5
+
+INFO 2021-06-23 00:43:04,097 execute_solutions 150 Simple problem 3 - done successfully.
+INFO 2021-06-23 00:43:04,140 execute_solutions 143 Problem test - 4 0
+INFO 2021-06-23 00:43:04,143 execute_solutions 144 Real - 4 0
+
+INFO 2021-06-23 00:43:04,174 execute_solutions 150 Simple problem 4 - done successfully.

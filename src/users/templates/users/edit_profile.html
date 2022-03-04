@@ -10,10 +10,8 @@
             <div class="card-header"><h4>{% trans "Edit profile" %} {{ user.username }}</h4></div>
             <div class="card-body">
                 {% for key, value in form.errors.items %}
-                    <div class="alert alert-error">
-                        <div class="alert alert-danger" role="alert">
-                            {{value.as_text}}<button type="button" class="close" data-bs-dismiss="alert">×</button>
-                        </div>
+                    <div class="alert alert-danger" role="alert">
+                        {{value.as_text}}<button type="button" class="close" data-bs-dismiss="alert">×</button>
                     </div>
                 {% endfor %}
                  <form method="post" action='' enctype="multipart/form-data">

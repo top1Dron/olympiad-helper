@@ -38,8 +38,8 @@
                 </p>
                 <hr>
                 {% for sample in object.get_all_samples %}
-                    <div class="card-text"><strong>{% trans "Input example " %}#{{forloop.counter}}</strong></br>{{sample.sample_input|safe}}</div>
-                    <div class="card-text"><strong>{% trans "Output example " %}#{{forloop.counter}}</strong></br>{{sample.sample_output|safe}}</div>
+                    <div class="card-text"><strong>{% trans "Input example " %}#{{forloop.counter}}</strong></br>{{sample.sample_input|linebreaks}}</div>
+                    <div class="card-text"><strong>{% trans "Output example " %}#{{forloop.counter}}</strong></br>{{sample.sample_output|linebreaks}}</div>
                     <hr>
                 {%empty%}
                     <span class="card-text">{% trans "No samples. Think by yourself." %}</span>

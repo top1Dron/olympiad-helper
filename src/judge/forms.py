@@ -62,11 +62,7 @@ class ProblemFilterForm(forms.ModelForm):
     class Meta:
         model = Problem
         fields = ['number', 'difficulty', 'classification']
-        # widgets = {'classification': forms.Select()}
 
     def __init__(self, *args, **kwargs):
         super(ProblemFilterForm, self).__init__(*args, **kwargs)
         self.fields['number'].label = _('Number')
-    #     # for field in ('difficulty', 'classification'):
-    #     self.fields['difficulty'].empty_label = 'All problems'
-        # self.fields['difficulty'].choices.append(('', _('All problems')))

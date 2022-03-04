@@ -140,8 +140,8 @@ def _test_execution(test, execute_line, time_limit, solution):
         test.output_data = test.output_data.replace('\r', '')
         test_status = 'PD'
 
-        logger.info(test.output_data)
-        logger.info(test_output)
+        logger.info(f'Problem test - {test.output_data}')
+        logger.info(f'Real - {test_output}')
 
         if test_error_string != '':
             logger.info(f'{test.problem} {test.test_number} - done failed. {test_error_string}')
